@@ -1,0 +1,263 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="dd/d9e/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_settings_fragment" kind="class" language="Java" prot="public">
+    <compoundname>de::backxtar::clevercharge::fragmentsMain::SettingsFragment</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Fragment</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="dd/d9e/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_settings_fragment_1a843510ac43fd1b346dbcbb06fb52196a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>de.backxtar.clevercharge.fragmentsMain.SettingsFragment.SettingsFragment</definition>
+        <argsstring>()</argsstring>
+        <name>SettingsFragment</name>
+        <qualifiedname>de.backxtar.clevercharge.fragmentsMain.SettingsFragment.SettingsFragment</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Settings constructor. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/SettingsFragment.java" line="36" column="12" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/SettingsFragment.java" bodystart="36" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d9e/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_settings_fragment_1a4019754fa3211bcefc7fb4561d6bae3d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void de.backxtar.clevercharge.fragmentsMain.SettingsFragment.onCreate</definition>
+        <argsstring>(Bundle savedInstanceState)</argsstring>
+        <name>onCreate</name>
+        <qualifiedname>de.backxtar.clevercharge.fragmentsMain.SettingsFragment.onCreate</qualifiedname>
+        <param>
+          <type>Bundle</type>
+          <declname>savedInstanceState</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>On create fragment. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>savedInstanceState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/SettingsFragment.java" line="45" column="17" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/SettingsFragment.java" bodystart="45" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d9e/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_settings_fragment_1ac9bb4d1e8bde587504965b064507b651" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>View</type>
+        <definition>View de.backxtar.clevercharge.fragmentsMain.SettingsFragment.onCreateView</definition>
+        <argsstring>(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)</argsstring>
+        <name>onCreateView</name>
+        <qualifiedname>de.backxtar.clevercharge.fragmentsMain.SettingsFragment.onCreateView</qualifiedname>
+        <param>
+          <type>LayoutInflater</type>
+          <declname>inflater</declname>
+        </param>
+        <param>
+          <type>ViewGroup</type>
+          <declname>container</declname>
+        </param>
+        <param>
+          <type>Bundle</type>
+          <declname>savedInstanceState</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>On create fragment view. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>inflater</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>container</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>savedInstanceState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>new view of fragment </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/SettingsFragment.java" line="59" column="17" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/SettingsFragment.java" bodystart="59" bodyend="69"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="dd/d9e/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_settings_fragment_1a525b1723a811fc951a34453a9bb669c6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void de.backxtar.clevercharge.fragmentsMain.SettingsFragment.initTextFields</definition>
+        <argsstring>(View view)</argsstring>
+        <name>initTextFields</name>
+        <qualifiedname>de.backxtar.clevercharge.fragmentsMain.SettingsFragment.initTextFields</qualifiedname>
+        <param>
+          <type>View</type>
+          <declname>view</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Init display text fields objects. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>view</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/SettingsFragment.java" line="75" column="18" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/SettingsFragment.java" bodystart="75" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d9e/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_settings_fragment_1a5ea85a3b864767052f21e33c7a23008f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void de.backxtar.clevercharge.fragmentsMain.SettingsFragment.initProgress</definition>
+        <argsstring>(View view)</argsstring>
+        <name>initProgress</name>
+        <qualifiedname>de.backxtar.clevercharge.fragmentsMain.SettingsFragment.initProgress</qualifiedname>
+        <param>
+          <type>View</type>
+          <declname>view</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Init progress bar object. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>view</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/SettingsFragment.java" line="92" column="18" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/SettingsFragment.java" bodystart="92" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d9e/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_settings_fragment_1a5634823e49f4618438c87c0d150dede4" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void de.backxtar.clevercharge.fragmentsMain.SettingsFragment.initLogout</definition>
+        <argsstring>(View view)</argsstring>
+        <name>initLogout</name>
+        <qualifiedname>de.backxtar.clevercharge.fragmentsMain.SettingsFragment.initLogout</qualifiedname>
+        <param>
+          <type>View</type>
+          <declname>view</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Init logout button object. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>view</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/SettingsFragment.java" line="129" column="18" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/SettingsFragment.java" bodystart="129" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d9e/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_settings_fragment_1abc823ee9f98ad1672d8806131a3cefec" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean de.backxtar.clevercharge.fragmentsMain.SettingsFragment.logout</definition>
+        <argsstring>(Activity activity)</argsstring>
+        <name>logout</name>
+        <qualifiedname>de.backxtar.clevercharge.fragmentsMain.SettingsFragment.logout</qualifiedname>
+        <param>
+          <type>Activity</type>
+          <declname>activity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Logout function of the button <computeroutput><ref refid="" kindref="compound">initLogout(View)</ref></computeroutput>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>activity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>success or fail as boolean </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/SettingsFragment.java" line="149" column="21" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/SettingsFragment.java" bodystart="149" bodyend="168"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Settings fragment. <simplesect kind="author"><para>Jörg Quick, Tilo Steinmetzer </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Fragment</label>
+      </node>
+      <node id="1">
+        <label>de.backxtar.clevercharge.fragmentsMain.SettingsFragment</label>
+        <link refid="dd/d9e/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_settings_fragment"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Fragment</label>
+      </node>
+      <node id="1">
+        <label>de.backxtar.clevercharge.fragmentsMain.SettingsFragment</label>
+        <link refid="dd/d9e/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_settings_fragment"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/SettingsFragment.java" line="31" column="7" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/SettingsFragment.java" bodystart="31" bodyend="169"/>
+    <listofallmembers>
+      <member refid="dd/d9e/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_settings_fragment_1a5634823e49f4618438c87c0d150dede4" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::fragmentsMain::SettingsFragment</scope><name>initLogout</name></member>
+      <member refid="dd/d9e/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_settings_fragment_1a5ea85a3b864767052f21e33c7a23008f" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::fragmentsMain::SettingsFragment</scope><name>initProgress</name></member>
+      <member refid="dd/d9e/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_settings_fragment_1a525b1723a811fc951a34453a9bb669c6" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::fragmentsMain::SettingsFragment</scope><name>initTextFields</name></member>
+      <member refid="dd/d9e/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_settings_fragment_1abc823ee9f98ad1672d8806131a3cefec" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::fragmentsMain::SettingsFragment</scope><name>logout</name></member>
+      <member refid="dd/d9e/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_settings_fragment_1a4019754fa3211bcefc7fb4561d6bae3d" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::fragmentsMain::SettingsFragment</scope><name>onCreate</name></member>
+      <member refid="dd/d9e/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_settings_fragment_1ac9bb4d1e8bde587504965b064507b651" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::fragmentsMain::SettingsFragment</scope><name>onCreateView</name></member>
+      <member refid="dd/d9e/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_settings_fragment_1a843510ac43fd1b346dbcbb06fb52196a" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::fragmentsMain::SettingsFragment</scope><name>SettingsFragment</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

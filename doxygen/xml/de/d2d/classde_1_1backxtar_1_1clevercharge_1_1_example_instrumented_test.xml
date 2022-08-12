@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="de/d2d/classde_1_1backxtar_1_1clevercharge_1_1_example_instrumented_test" kind="class" language="Java" prot="public">
+    <compoundname>de::backxtar::clevercharge::ExampleInstrumentedTest</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="de/d2d/classde_1_1backxtar_1_1clevercharge_1_1_example_instrumented_test_1a5e80d6c51c2a9087a53818a84c07a577" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void de.backxtar.clevercharge.ExampleInstrumentedTest.useAppContext</definition>
+        <argsstring>()</argsstring>
+        <name>useAppContext</name>
+        <qualifiedname>de.backxtar.clevercharge.ExampleInstrumentedTest.useAppContext</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/androidTest/java/de/backxtar/clevercharge/ExampleInstrumentedTest.java" line="21" column="17" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/androidTest/java/de/backxtar/clevercharge/ExampleInstrumentedTest.java" bodystart="21" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Instrumented test, which will execute on an Android device.</para>
+<para><simplesect kind="see"><para><ulink url="http://d.android.com/tools/testing">Testing documentation</ulink> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>de.backxtar.clevercharge.ExampleInstrumentedTest</label>
+        <link refid="de/d2d/classde_1_1backxtar_1_1clevercharge_1_1_example_instrumented_test"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/androidTest/java/de/backxtar/clevercharge/ExampleInstrumentedTest.java" line="19" column="7" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/androidTest/java/de/backxtar/clevercharge/ExampleInstrumentedTest.java" bodystart="19" bodyend="26"/>
+    <listofallmembers>
+      <member refid="de/d2d/classde_1_1backxtar_1_1clevercharge_1_1_example_instrumented_test_1a5e80d6c51c2a9087a53818a84c07a577" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::ExampleInstrumentedTest</scope><name>useAppContext</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

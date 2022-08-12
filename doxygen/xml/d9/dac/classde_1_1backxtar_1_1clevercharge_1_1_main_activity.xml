@@ -1,0 +1,456 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="d9/dac/classde_1_1backxtar_1_1clevercharge_1_1_main_activity" kind="class" language="Java" prot="public">
+    <compoundname>de::backxtar::clevercharge::MainActivity</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">AppCompatActivity</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">LocationListener</basecompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="d9/dac/classde_1_1backxtar_1_1clevercharge_1_1_main_activity_1aaa4a914fb28887803a30edbd8bc8a56c" prot="private" static="yes" mutable="no">
+        <type>BottomNavigationView</type>
+        <definition>BottomNavigationView de.backxtar.clevercharge.MainActivity.navigation</definition>
+        <argsstring></argsstring>
+        <name>navigation</name>
+        <qualifiedname>de.backxtar.clevercharge.MainActivity.navigation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Bottom navigation. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/MainActivity.java" line="53" column="41" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/MainActivity.java" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d9/dac/classde_1_1backxtar_1_1clevercharge_1_1_main_activity_1ab6bd8ec4d035ec9b51b6d9e30862a7ad" prot="private" static="no" mutable="no">
+        <type>FragmentManager</type>
+        <definition>FragmentManager de.backxtar.clevercharge.MainActivity.fragmentManager</definition>
+        <argsstring></argsstring>
+        <name>fragmentManager</name>
+        <qualifiedname>de.backxtar.clevercharge.MainActivity.fragmentManager</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fragment manager. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/MainActivity.java" line="58" column="29" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/MainActivity.java" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/dac/classde_1_1backxtar_1_1clevercharge_1_1_main_activity_1ad31ad71cbf0a30ca6e27c374dd096d4f" prot="private" static="no" mutable="no">
+        <type><ref refid="d3/dc6/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_navigation_manager" kindref="compound">NavigationManager</ref></type>
+        <definition>NavigationManager de.backxtar.clevercharge.MainActivity.navigationManager</definition>
+        <argsstring></argsstring>
+        <name>navigationManager</name>
+        <qualifiedname>de.backxtar.clevercharge.MainActivity.navigationManager</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Navigation manager. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/MainActivity.java" line="63" column="31" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/MainActivity.java" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/dac/classde_1_1backxtar_1_1clevercharge_1_1_main_activity_1a922bab2adc4da3d5e3903e5e30d59052" prot="private" static="no" mutable="no">
+        <type>LocationManager</type>
+        <definition>LocationManager de.backxtar.clevercharge.MainActivity.locationManager</definition>
+        <argsstring></argsstring>
+        <name>locationManager</name>
+        <qualifiedname>de.backxtar.clevercharge.MainActivity.locationManager</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Location manager for user&apos;s location. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/MainActivity.java" line="68" column="29" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/MainActivity.java" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/dac/classde_1_1backxtar_1_1clevercharge_1_1_main_activity_1a2a552bc230035a24eebd03eed92f4487" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int de.backxtar.clevercharge.MainActivity.LOCATION_REQUEST_CODE</definition>
+        <argsstring></argsstring>
+        <name>LOCATION_REQUEST_CODE</name>
+        <qualifiedname>de.backxtar.clevercharge.MainActivity.LOCATION_REQUEST_CODE</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Request code for getting permissions. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/MainActivity.java" line="73" column="17" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/MainActivity.java" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="d9/dac/classde_1_1backxtar_1_1clevercharge_1_1_main_activity_1a25a8d1e1e0c9c5bfb34d4d15d54f73b5" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void de.backxtar.clevercharge.MainActivity.onCreate</definition>
+        <argsstring>(Bundle savedInstanceState)</argsstring>
+        <name>onCreate</name>
+        <qualifiedname>de.backxtar.clevercharge.MainActivity.onCreate</qualifiedname>
+        <param>
+          <type>Bundle</type>
+          <declname>savedInstanceState</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>On create activity. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>savedInstanceState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/MainActivity.java" line="81" column="20" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/MainActivity.java" bodystart="81" bodyend="94"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="d9/dac/classde_1_1backxtar_1_1clevercharge_1_1_main_activity_1a4dcc08428b3d200e37b84cc80190d62c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void de.backxtar.clevercharge.MainActivity.runMain</definition>
+        <argsstring>()</argsstring>
+        <name>runMain</name>
+        <qualifiedname>de.backxtar.clevercharge.MainActivity.runMain</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Run main method if permissions granted! Permission listener: <computeroutput><ref refid="" kindref="compound">onRequestPermissionsResult(int, String[], int[])</ref></computeroutput> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/MainActivity.java" line="101" column="18" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/MainActivity.java" bodystart="101" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/dac/classde_1_1backxtar_1_1clevercharge_1_1_main_activity_1a46da312ae93f2760f13f793d8df99dd1" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void de.backxtar.clevercharge.MainActivity.initObjects</definition>
+        <argsstring>()</argsstring>
+        <name>initObjects</name>
+        <qualifiedname>de.backxtar.clevercharge.MainActivity.initObjects</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize Objects </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/MainActivity.java" line="184" column="18" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/MainActivity.java" bodystart="184" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/dac/classde_1_1backxtar_1_1clevercharge_1_1_main_activity_1a3511931cdc214fcdd40acc853ab458fb" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean de.backxtar.clevercharge.MainActivity.isFragmentInBackstack</definition>
+        <argsstring>(String tag)</argsstring>
+        <name>isFragmentInBackstack</name>
+        <qualifiedname>de.backxtar.clevercharge.MainActivity.isFragmentInBackstack</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>tag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>BackStack check. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as string </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>yes or no as boolean </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/MainActivity.java" line="205" column="21" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/MainActivity.java" bodystart="205" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/dac/classde_1_1backxtar_1_1clevercharge_1_1_main_activity_1aea745fbc0ffb7eb4ed2bb8d0ce8b2684" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean de.backxtar.clevercharge.MainActivity.areProvidersEnabled</definition>
+        <argsstring>()</argsstring>
+        <name>areProvidersEnabled</name>
+        <qualifiedname>de.backxtar.clevercharge.MainActivity.areProvidersEnabled</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if any provider is enabled. <simplesect kind="return"><para>boolean if some services are activated </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/MainActivity.java" line="213" column="21" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/MainActivity.java" bodystart="213" bodyend="221"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d9/dac/classde_1_1backxtar_1_1clevercharge_1_1_main_activity_1a79ddb017931d77b8d847d49000411967" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void de.backxtar.clevercharge.MainActivity.onRequestPermissionsResult</definition>
+        <argsstring>(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults)</argsstring>
+        <name>onRequestPermissionsResult</name>
+        <qualifiedname>de.backxtar.clevercharge.MainActivity.onRequestPermissionsResult</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>requestCode</declname>
+        </param>
+        <param>
+          <type>@NonNull String[]</type>
+          <declname>permissions</declname>
+        </param>
+        <param>
+          <type>@NonNull int[]</type>
+          <declname>grantResults</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Permission request listener <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>requestCode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as int </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>permissions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as string array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>grantResults</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as int array </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/MainActivity.java" line="168" column="17" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/MainActivity.java" bodystart="168" bodyend="178"/>
+        <references refid="da/da6/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_message_service_1ac4ac04d455ed4804dca168aa75203943" compoundref="db/dc2/_message_service_8java" startline="59" endline="77">de.backxtar.clevercharge.services.MessageService.sendToast</references>
+      </memberdef>
+      <memberdef kind="function" id="d9/dac/classde_1_1backxtar_1_1clevercharge_1_1_main_activity_1ad4597842af7b7d877832a8f7eaea4774" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void de.backxtar.clevercharge.MainActivity.onLocationChanged</definition>
+        <argsstring>(@NonNull Location location)</argsstring>
+        <name>onLocationChanged</name>
+        <qualifiedname>de.backxtar.clevercharge.MainActivity.onLocationChanged</qualifiedname>
+        <param>
+          <type>@NonNull Location</type>
+          <declname>location</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Listen to location changes. Executed when location has changed. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>location</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/MainActivity.java" line="228" column="17" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/MainActivity.java" bodystart="228" bodyend="234"/>
+        <references refid="de/d7e/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager_1a95d82602fdeb77e8f7e8e8da92c415a1" compoundref="d3/dcc/_user_manager_8java" startline="86" endline="88">de.backxtar.clevercharge.managers.UserManager.setMyPosition</references>
+      </memberdef>
+      <memberdef kind="function" id="d9/dac/classde_1_1backxtar_1_1clevercharge_1_1_main_activity_1ae77b9fa09c33e8cac94218ca79073927" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void de.backxtar.clevercharge.MainActivity.onProviderEnabled</definition>
+        <argsstring>(@NonNull String provider)</argsstring>
+        <name>onProviderEnabled</name>
+        <qualifiedname>de.backxtar.clevercharge.MainActivity.onProviderEnabled</qualifiedname>
+        <param>
+          <type>@NonNull String</type>
+          <declname>provider</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Listen to provider enabled events. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>provider</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as string </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/MainActivity.java" line="241" column="17" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/MainActivity.java" bodystart="241" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/dac/classde_1_1backxtar_1_1clevercharge_1_1_main_activity_1a9d8bac050d91974d8ddc298a9ed31481" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void de.backxtar.clevercharge.MainActivity.onProviderDisabled</definition>
+        <argsstring>(@NonNull String provider)</argsstring>
+        <name>onProviderDisabled</name>
+        <qualifiedname>de.backxtar.clevercharge.MainActivity.onProviderDisabled</qualifiedname>
+        <param>
+          <type>@NonNull String</type>
+          <declname>provider</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Listen to provider disable events. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>provider</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as string. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/MainActivity.java" line="250" column="17" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/MainActivity.java" bodystart="250" bodyend="252"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/dac/classde_1_1backxtar_1_1clevercharge_1_1_main_activity_1a30cb1a90a9b55ee68d84ff45d2a5617f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void de.backxtar.clevercharge.MainActivity.onBackPressed</definition>
+        <argsstring>()</argsstring>
+        <name>onBackPressed</name>
+        <qualifiedname>de.backxtar.clevercharge.MainActivity.onBackPressed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Disable back button. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/MainActivity.java" line="258" column="17" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/MainActivity.java" bodystart="258" bodyend="260"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="d9/dac/classde_1_1backxtar_1_1clevercharge_1_1_main_activity_1a377aeeb370ac0b59bd79be73c6cdeedd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void de.backxtar.clevercharge.MainActivity.updateBadges</definition>
+        <argsstring>(int menuItemId, int number)</argsstring>
+        <name>updateBadges</name>
+        <qualifiedname>de.backxtar.clevercharge.MainActivity.updateBadges</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>menuItemId</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Update menu badges. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>menuItemId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as int </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as int </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/MainActivity.java" line="267" column="24" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/MainActivity.java" bodystart="267" bodyend="270"/>
+        <referencedby refid="d4/d81/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_1af6595dbe29147ff3c8f9c669f9e5c55a" compoundref="de/de8/_article_adapter_8java" startline="131" endline="171">de.backxtar.clevercharge.data.ArticleAdapter.onBindViewHolder</referencedby>
+        <referencedby refid="d9/dc7/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_popup_service_1af74f3ec6cd6fb55d81a1938af49efdd8" compoundref="d3/d34/_popup_service_8java" startline="130" endline="253">de.backxtar.clevercharge.services.PopupService.showPopup</referencedby>
+        <referencedby refid="d7/d15/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_report_service_1a00d302af860369770540aacfcd3d4405" compoundref="d3/de2/_report_service_8java" startline="107" endline="153">de.backxtar.clevercharge.services.ReportService.showPopup</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="d9/dac/classde_1_1backxtar_1_1clevercharge_1_1_main_activity" kindref="compound">MainActivity</ref> of the app. <simplesect kind="author"><para>Jörg Quick, Tilo Steinmetzer </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>LocationListener</label>
+      </node>
+      <node id="2">
+        <label>AppCompatActivity</label>
+      </node>
+      <node id="1">
+        <label>de.backxtar.clevercharge.MainActivity</label>
+        <link refid="d9/dac/classde_1_1backxtar_1_1clevercharge_1_1_main_activity"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>LocationListener</label>
+      </node>
+      <node id="2">
+        <label>AppCompatActivity</label>
+      </node>
+      <node id="1">
+        <label>de.backxtar.clevercharge.MainActivity</label>
+        <link refid="d9/dac/classde_1_1backxtar_1_1clevercharge_1_1_main_activity"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/MainActivity.java" line="46" column="7" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/MainActivity.java" bodystart="46" bodyend="271"/>
+    <listofallmembers>
+      <member refid="d9/dac/classde_1_1backxtar_1_1clevercharge_1_1_main_activity_1aea745fbc0ffb7eb4ed2bb8d0ce8b2684" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::MainActivity</scope><name>areProvidersEnabled</name></member>
+      <member refid="d9/dac/classde_1_1backxtar_1_1clevercharge_1_1_main_activity_1ab6bd8ec4d035ec9b51b6d9e30862a7ad" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::MainActivity</scope><name>fragmentManager</name></member>
+      <member refid="d9/dac/classde_1_1backxtar_1_1clevercharge_1_1_main_activity_1a46da312ae93f2760f13f793d8df99dd1" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::MainActivity</scope><name>initObjects</name></member>
+      <member refid="d9/dac/classde_1_1backxtar_1_1clevercharge_1_1_main_activity_1a3511931cdc214fcdd40acc853ab458fb" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::MainActivity</scope><name>isFragmentInBackstack</name></member>
+      <member refid="d9/dac/classde_1_1backxtar_1_1clevercharge_1_1_main_activity_1a2a552bc230035a24eebd03eed92f4487" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::MainActivity</scope><name>LOCATION_REQUEST_CODE</name></member>
+      <member refid="d9/dac/classde_1_1backxtar_1_1clevercharge_1_1_main_activity_1a922bab2adc4da3d5e3903e5e30d59052" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::MainActivity</scope><name>locationManager</name></member>
+      <member refid="d9/dac/classde_1_1backxtar_1_1clevercharge_1_1_main_activity_1aaa4a914fb28887803a30edbd8bc8a56c" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::MainActivity</scope><name>navigation</name></member>
+      <member refid="d9/dac/classde_1_1backxtar_1_1clevercharge_1_1_main_activity_1ad31ad71cbf0a30ca6e27c374dd096d4f" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::MainActivity</scope><name>navigationManager</name></member>
+      <member refid="d9/dac/classde_1_1backxtar_1_1clevercharge_1_1_main_activity_1a30cb1a90a9b55ee68d84ff45d2a5617f" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::MainActivity</scope><name>onBackPressed</name></member>
+      <member refid="d9/dac/classde_1_1backxtar_1_1clevercharge_1_1_main_activity_1a25a8d1e1e0c9c5bfb34d4d15d54f73b5" prot="protected" virt="non-virtual"><scope>de::backxtar::clevercharge::MainActivity</scope><name>onCreate</name></member>
+      <member refid="d9/dac/classde_1_1backxtar_1_1clevercharge_1_1_main_activity_1ad4597842af7b7d877832a8f7eaea4774" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::MainActivity</scope><name>onLocationChanged</name></member>
+      <member refid="d9/dac/classde_1_1backxtar_1_1clevercharge_1_1_main_activity_1a9d8bac050d91974d8ddc298a9ed31481" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::MainActivity</scope><name>onProviderDisabled</name></member>
+      <member refid="d9/dac/classde_1_1backxtar_1_1clevercharge_1_1_main_activity_1ae77b9fa09c33e8cac94218ca79073927" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::MainActivity</scope><name>onProviderEnabled</name></member>
+      <member refid="d9/dac/classde_1_1backxtar_1_1clevercharge_1_1_main_activity_1a79ddb017931d77b8d847d49000411967" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::MainActivity</scope><name>onRequestPermissionsResult</name></member>
+      <member refid="d9/dac/classde_1_1backxtar_1_1clevercharge_1_1_main_activity_1a4dcc08428b3d200e37b84cc80190d62c" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::MainActivity</scope><name>runMain</name></member>
+      <member refid="d9/dac/classde_1_1backxtar_1_1clevercharge_1_1_main_activity_1a377aeeb370ac0b59bd79be73c6cdeedd" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::MainActivity</scope><name>updateBadges</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

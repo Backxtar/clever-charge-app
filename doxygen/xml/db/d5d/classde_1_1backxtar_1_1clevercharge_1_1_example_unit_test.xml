@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="db/d5d/classde_1_1backxtar_1_1clevercharge_1_1_example_unit_test" kind="class" language="Java" prot="public">
+    <compoundname>de::backxtar::clevercharge::ExampleUnitTest</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="db/d5d/classde_1_1backxtar_1_1clevercharge_1_1_example_unit_test_1a0734eedbca3cefadd072a26b1d195408" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void de.backxtar.clevercharge.ExampleUnitTest.addition_isCorrect</definition>
+        <argsstring>()</argsstring>
+        <name>addition_isCorrect</name>
+        <qualifiedname>de.backxtar.clevercharge.ExampleUnitTest.addition_isCorrect</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/test/java/de/backxtar/clevercharge/ExampleUnitTest.java" line="15" column="17" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/test/java/de/backxtar/clevercharge/ExampleUnitTest.java" bodystart="15" bodyend="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Example local unit test, which will execute on the development machine (host).</para>
+<para><simplesect kind="see"><para><ulink url="http://d.android.com/tools/testing">Testing documentation</ulink> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>de.backxtar.clevercharge.ExampleUnitTest</label>
+        <link refid="db/d5d/classde_1_1backxtar_1_1clevercharge_1_1_example_unit_test"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/test/java/de/backxtar/clevercharge/ExampleUnitTest.java" line="12" column="7" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/test/java/de/backxtar/clevercharge/ExampleUnitTest.java" bodystart="12" bodyend="18"/>
+    <listofallmembers>
+      <member refid="db/d5d/classde_1_1backxtar_1_1clevercharge_1_1_example_unit_test_1a0734eedbca3cefadd072a26b1d195408" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::ExampleUnitTest</scope><name>addition_isCorrect</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

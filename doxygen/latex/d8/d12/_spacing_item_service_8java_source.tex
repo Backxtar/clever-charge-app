@@ -1,0 +1,39 @@
+\hypertarget{_spacing_item_service_8java_source}{}\doxysection{Spacing\+Item\+Service.\+java}
+\label{_spacing_item_service_8java_source}\index{D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-\/softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/SpacingItemService.java@{D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-\/softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/SpacingItemService.java}}
+\mbox{\hyperlink{_spacing_item_service_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_spacing_item_service_8java_source_l00001}00001 \textcolor{keyword}{package }de.backxtar.clevercharge.services;}
+\DoxyCodeLine{\Hypertarget{_spacing_item_service_8java_source_l00002}00002 }
+\DoxyCodeLine{\Hypertarget{_spacing_item_service_8java_source_l00003}00003 \textcolor{keyword}{import} android.graphics.Rect;}
+\DoxyCodeLine{\Hypertarget{_spacing_item_service_8java_source_l00004}00004 \textcolor{keyword}{import} android.view.View;}
+\DoxyCodeLine{\Hypertarget{_spacing_item_service_8java_source_l00005}00005 }
+\DoxyCodeLine{\Hypertarget{_spacing_item_service_8java_source_l00006}00006 \textcolor{keyword}{import} androidx.annotation.NonNull;}
+\DoxyCodeLine{\Hypertarget{_spacing_item_service_8java_source_l00007}00007 \textcolor{keyword}{import} androidx.recyclerview.widget.RecyclerView;}
+\DoxyCodeLine{\Hypertarget{_spacing_item_service_8java_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{_spacing_item_service_8java_source_l00015}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1services_1_1_spacing_item_service}{00015}} \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1services_1_1_spacing_item_service}{SpacingItemService}} \textcolor{keyword}{extends} RecyclerView.ItemDecoration \{}
+\DoxyCodeLine{\Hypertarget{_spacing_item_service_8java_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{_spacing_item_service_8java_source_l00017}00017     \textcolor{comment}{/* Global variables */}}
+\DoxyCodeLine{\Hypertarget{_spacing_item_service_8java_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{_spacing_item_service_8java_source_l00022}00022     \textcolor{keyword}{private} \textcolor{keyword}{final} \textcolor{keywordtype}{int} verticalSpaceHeight;}
+\DoxyCodeLine{\Hypertarget{_spacing_item_service_8java_source_l00023}00023     \textcolor{comment}{//=======================================}}
+\DoxyCodeLine{\Hypertarget{_spacing_item_service_8java_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{_spacing_item_service_8java_source_l00029}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1services_1_1_spacing_item_service_a0477cecf74ff6f1e18cb204f14483034}{00029}}     \textcolor{keyword}{public} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1services_1_1_spacing_item_service_a0477cecf74ff6f1e18cb204f14483034}{SpacingItemService}}(\textcolor{keywordtype}{int} verticalSpaceHeight) \{}
+\DoxyCodeLine{\Hypertarget{_spacing_item_service_8java_source_l00030}00030         this.verticalSpaceHeight = verticalSpaceHeight;}
+\DoxyCodeLine{\Hypertarget{_spacing_item_service_8java_source_l00031}00031     \}}
+\DoxyCodeLine{\Hypertarget{_spacing_item_service_8java_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{_spacing_item_service_8java_source_l00040}00040     @Override}
+\DoxyCodeLine{\Hypertarget{_spacing_item_service_8java_source_l00041}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1services_1_1_spacing_item_service_a07cdaca50d02f2a8d10878ec77fd60b2}{00041}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1services_1_1_spacing_item_service_a07cdaca50d02f2a8d10878ec77fd60b2}{getItemOffsets}}(@NonNull Rect outRect, @NonNull View view, @NonNull RecyclerView parent, @NonNull RecyclerView.State state) \{}
+\DoxyCodeLine{\Hypertarget{_spacing_item_service_8java_source_l00042}00042         super.getItemOffsets(outRect, view, parent, state);}
+\DoxyCodeLine{\Hypertarget{_spacing_item_service_8java_source_l00043}00043 }
+\DoxyCodeLine{\Hypertarget{_spacing_item_service_8java_source_l00044}00044         \textcolor{keywordflow}{if} (parent.getAdapter() != \textcolor{keyword}{null} \&\& parent.getAdapter().getItemCount() != 0) \{}
+\DoxyCodeLine{\Hypertarget{_spacing_item_service_8java_source_l00045}00045             \textcolor{keywordflow}{if} (parent.getChildAdapterPosition(view) != parent.getAdapter().getItemCount() -\/ 1)}
+\DoxyCodeLine{\Hypertarget{_spacing_item_service_8java_source_l00046}00046                 outRect.bottom = verticalSpaceHeight;}
+\DoxyCodeLine{\Hypertarget{_spacing_item_service_8java_source_l00047}00047             \textcolor{keywordflow}{else} outRect.bottom = 210;}
+\DoxyCodeLine{\Hypertarget{_spacing_item_service_8java_source_l00048}00048 }
+\DoxyCodeLine{\Hypertarget{_spacing_item_service_8java_source_l00049}00049             \textcolor{keywordflow}{if} (parent.getChildAdapterPosition(view) == 0)}
+\DoxyCodeLine{\Hypertarget{_spacing_item_service_8java_source_l00050}00050                 outRect.top = 35;}
+\DoxyCodeLine{\Hypertarget{_spacing_item_service_8java_source_l00051}00051         \}}
+\DoxyCodeLine{\Hypertarget{_spacing_item_service_8java_source_l00052}00052     \}}
+\DoxyCodeLine{\Hypertarget{_spacing_item_service_8java_source_l00053}00053 \}}
+
+\end{DoxyCode}

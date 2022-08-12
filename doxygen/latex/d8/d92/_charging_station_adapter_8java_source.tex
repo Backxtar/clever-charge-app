@@ -1,0 +1,166 @@
+\hypertarget{_charging_station_adapter_8java_source}{}\doxysection{Charging\+Station\+Adapter.\+java}
+\label{_charging_station_adapter_8java_source}\index{D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-\/softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ChargingStationAdapter.java@{D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-\/softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ChargingStationAdapter.java}}
+\mbox{\hyperlink{_charging_station_adapter_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00001}00001 \textcolor{keyword}{package }de.backxtar.clevercharge.data;}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00002}00002 }
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00003}00003 \textcolor{keyword}{import} android.annotation.SuppressLint;}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00004}00004 \textcolor{keyword}{import} android.content.Context;}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00005}00005 \textcolor{keyword}{import} android.view.LayoutInflater;}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00006}00006 \textcolor{keyword}{import} android.view.View;}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00007}00007 \textcolor{keyword}{import} android.view.ViewGroup;}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00008}00008 \textcolor{keyword}{import} android.widget.TextView;}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00009}00009 }
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00010}00010 \textcolor{keyword}{import} androidx.annotation.NonNull;}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00011}00011 \textcolor{keyword}{import} androidx.core.content.ContextCompat;}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00012}00012 \textcolor{keyword}{import} androidx.recyclerview.widget.RecyclerView;}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00013}00013 }
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00014}00014 \textcolor{keyword}{import} java.util.ArrayList;}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00015}00015 \textcolor{keyword}{import} java.util.HashMap;}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00016}00016 \textcolor{keyword}{import} java.util.Locale;}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00017}00017 }
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00018}00018 \textcolor{keyword}{import} de.backxtar.clevercharge.R;}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00019}00019 \textcolor{keyword}{import} de.backxtar.clevercharge.interfaces.RecyclerViewInterface;}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00020}00020 \textcolor{keyword}{import} de.backxtar.clevercharge.managers.UserManager;}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00021}00021 }
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00028}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter}{00028}} \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter}{ChargingStationAdapter}} \textcolor{keyword}{extends} RecyclerView.Adapter<ChargingStationAdapter.ViewHolder> \{}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00030}00030     \textcolor{comment}{/* Global variables */}}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00035}00035     \textcolor{keyword}{private} \textcolor{keyword}{final} \mbox{\hyperlink{interfacede_1_1backxtar_1_1clevercharge_1_1interfaces_1_1_recycler_view_interface}{RecyclerViewInterface}} recyclerViewInterface;}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00040}00040     \textcolor{keyword}{private} ArrayList<ChargingStation> station\_list;}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00041}00041 }
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00045}00045     \textcolor{keyword}{private} \textcolor{keyword}{final} Context context;}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00046}00046     \textcolor{comment}{//==========================================================}}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00053}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter_a7a251edaf5c0c726a0e8f69ed08bc776}{00053}}     \textcolor{keyword}{public} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter_a7a251edaf5c0c726a0e8f69ed08bc776}{ChargingStationAdapter}}(\mbox{\hyperlink{interfacede_1_1backxtar_1_1clevercharge_1_1interfaces_1_1_recycler_view_interface}{RecyclerViewInterface}} recyclerViewInterface, ArrayList<ChargingStation> station\_list, Context context) \{}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00054}00054         this.recyclerViewInterface = recyclerViewInterface;}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00055}00055         this.station\_list = station\_list;}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00056}00056         this.context = context;}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00057}00057     \}}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00058}00058 }
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00059}00059     \textcolor{comment}{/* ViewHolder class */}}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00060}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter_1_1_view_holder}{00060}}     \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter_1_1_view_holder}{ViewHolder}} \textcolor{keyword}{extends} RecyclerView.\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter_1_1_view_holder}{ViewHolder}} \{}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00061}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter_1_1_view_holder_a4869359cb7ec689458388cd692b93da1}{00061}}         \textcolor{keyword}{public} TextView operator, location, conn;}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00062}00062 }
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00067}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter_1_1_view_holder_a48f631548f53138633e2bc18c6a05a80}{00067}}         \textcolor{keyword}{public} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter_1_1_view_holder_a48f631548f53138633e2bc18c6a05a80}{ViewHolder}}(@NonNull View itemView, \mbox{\hyperlink{interfacede_1_1backxtar_1_1clevercharge_1_1interfaces_1_1_recycler_view_interface}{RecyclerViewInterface}} recyclerViewInterface) \{}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00068}00068             super(itemView);}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00069}00069 }
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00070}00070             operator = itemView.findViewById(R.id.txtTitle);}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00071}00071             location = itemView.findViewById(R.id.txtLocation);}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00072}00072             conn = itemView.findViewById(R.id.txtConnection);}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00073}00073 }
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00074}00074             itemView.setOnClickListener(v -\/> \{}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00075}00075                 \textcolor{keywordtype}{int} pos = getAdapterPosition();}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00076}00076 }
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00077}00077                 \textcolor{keywordflow}{if} (recyclerViewInterface == \textcolor{keyword}{null} || pos == RecyclerView.NO\_POSITION) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00078}00078                 recyclerViewInterface.\mbox{\hyperlink{interfacede_1_1backxtar_1_1clevercharge_1_1interfaces_1_1_recycler_view_interface_ada0d47aa7604b262f2c4115063510a1d}{onItemClick}}(pos, station\_list.get(pos));}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00079}00079             \});}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00080}00080         \}}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00081}00081     \}}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00082}00082 }
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00088}00088     @Override}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00089}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter_aa14214e3e8413471450d01c310dcd9b6}{00089}}     \textcolor{keyword}{public} \textcolor{keywordtype}{int} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter_aa14214e3e8413471450d01c310dcd9b6}{getItemViewType}}(\textcolor{keywordtype}{int} position) \{}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00090}00090         HashMap<Integer, String> defect\_msg = \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager}{UserManager}}.\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager_aa4e7c73b0bb07f0dcf5a612f9bce416a}{getApi\_data}}().\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_a6a9d3a50e360265ecef575ebfaefcc4c}{getDefect\_stations\_map}}();}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00091}00091         ArrayList<Integer> fav = \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager}{UserManager}}.\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager_aa4e7c73b0bb07f0dcf5a612f9bce416a}{getApi\_data}}().\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_a1dfa2252e57d3dedcafcd225e709be7f}{getFavorites}}();}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00092}00092         \textcolor{keywordtype}{int} type = 0;}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00093}00093 }
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00094}00094         \textcolor{keywordflow}{if} (fav.isEmpty() \&\& defect\_msg.isEmpty()) \{}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00095}00095             \textcolor{keywordflow}{if} (station\_list.get(position).getModule\_type() == \mbox{\hyperlink{enumde_1_1backxtar_1_1clevercharge_1_1data_1_1_module_type}{ModuleType}}.FAST\_CHARGING) type = 3;}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00096}00096             \textcolor{keywordflow}{else} type = 4;}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00097}00097         \}}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00098}00098 }
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00099}00099         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (fav.isEmpty() \&\& !defect\_msg.isEmpty()) \{}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00100}00100             \textcolor{keywordflow}{if} (defect\_msg.containsKey(station\_list.get(position).getId())) \{}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00101}00101                 \textcolor{keywordflow}{if} (station\_list.get(position).getModule\_type() == \mbox{\hyperlink{enumde_1_1backxtar_1_1clevercharge_1_1data_1_1_module_type}{ModuleType}}.FAST\_CHARGING) type = -\/1;}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00102}00102                 \textcolor{keywordflow}{else} type = -\/2;}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00103}00103             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00104}00104                 \textcolor{keywordflow}{if} (station\_list.get(position).getModule\_type() == \mbox{\hyperlink{enumde_1_1backxtar_1_1clevercharge_1_1data_1_1_module_type}{ModuleType}}.FAST\_CHARGING) type = 3;}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00105}00105                 \textcolor{keywordflow}{else} type = 4;}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00106}00106             \}}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00107}00107         \}}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00108}00108 }
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00109}00109         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (defect\_msg.isEmpty() \&\& !fav.isEmpty()) \{}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00110}00110             \textcolor{keywordflow}{if} (fav.contains(station\_list.get(position).getId())) \{}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00111}00111                 \textcolor{keywordflow}{if} (station\_list.get(position).getModule\_type() == \mbox{\hyperlink{enumde_1_1backxtar_1_1clevercharge_1_1data_1_1_module_type}{ModuleType}}.FAST\_CHARGING) type = 1;}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00112}00112                 \textcolor{keywordflow}{else} type = 2;}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00113}00113             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00114}00114                 \textcolor{keywordflow}{if} (station\_list.get(position).getModule\_type() == \mbox{\hyperlink{enumde_1_1backxtar_1_1clevercharge_1_1data_1_1_module_type}{ModuleType}}.FAST\_CHARGING) type = 3;}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00115}00115                 \textcolor{keywordflow}{else} type = 4;}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00116}00116             \}}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00117}00117         \}}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00118}00118 }
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00119}00119         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (!fav.isEmpty() \&\& !defect\_msg.isEmpty()) \{}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00120}00120             \textcolor{keywordflow}{if} (defect\_msg.containsKey(station\_list.get(position).getId())) \{}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00121}00121                 \textcolor{keywordflow}{if} (station\_list.get(position).getModule\_type() == \mbox{\hyperlink{enumde_1_1backxtar_1_1clevercharge_1_1data_1_1_module_type}{ModuleType}}.FAST\_CHARGING) type = -\/1;}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00122}00122                 \textcolor{keywordflow}{else} type = -\/2;}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00123}00123             \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (fav.contains(station\_list.get(position).getId())) \{}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00124}00124                 \textcolor{keywordflow}{if} (station\_list.get(position).getModule\_type() == \mbox{\hyperlink{enumde_1_1backxtar_1_1clevercharge_1_1data_1_1_module_type}{ModuleType}}.FAST\_CHARGING) type = 1;}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00125}00125                 \textcolor{keywordflow}{else} type = 2;}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00126}00126             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00127}00127                 \textcolor{keywordflow}{if} (station\_list.get(position).getModule\_type() == \mbox{\hyperlink{enumde_1_1backxtar_1_1clevercharge_1_1data_1_1_module_type}{ModuleType}}.FAST\_CHARGING) type = 3;}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00128}00128                 \textcolor{keywordflow}{else} type = 4;}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00129}00129             \}}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00130}00130         \}}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00131}00131 }
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00132}00132         \textcolor{keywordflow}{return} type;}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00133}00133     \}}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00134}00134 }
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00141}00141     @NonNull}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00142}00142     @Override}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00143}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter_a60068cb998dfcc2f990369d554ca2b82}{00143}}     \textcolor{keyword}{public} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter_1_1_view_holder}{ViewHolder}} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter_a60068cb998dfcc2f990369d554ca2b82}{onCreateViewHolder}}(@NonNull ViewGroup parent, \textcolor{keywordtype}{int} viewType) \{}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00144}00144         Context context = parent.getContext();}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00145}00145         LayoutInflater inflater = LayoutInflater.from(context);}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00146}00146         View view;}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00147}00147 }
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00148}00148         \textcolor{keywordflow}{switch} (viewType) \{}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00149}00149             \textcolor{keywordflow}{case} -\/1 : view = inflater.inflate(R.layout.station\_item\_2\_block, parent, \textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00150}00150                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00151}00151             \textcolor{keywordflow}{case} -\/2 : view = inflater.inflate(R.layout.station\_item\_1\_block, parent, \textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00152}00152                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00153}00153             \textcolor{keywordflow}{case} 1 : view = inflater.inflate(R.layout.station\_item\_2\_fav, parent, \textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00154}00154                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00155}00155             \textcolor{keywordflow}{case} 2 : view = inflater.inflate(R.layout.station\_item\_1\_fav, parent, \textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00156}00156                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00157}00157             \textcolor{keywordflow}{case} 3 : view = inflater.inflate(R.layout.station\_item\_2, parent, \textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00158}00158                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00159}00159             \textcolor{keywordflow}{case} 4 : view = inflater.inflate(R.layout.station\_item\_1, parent, \textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00160}00160                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00161}00161             \textcolor{keywordflow}{default}: view = inflater.inflate(R.layout.station\_item\_not\_avail, parent, \textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00162}00162         \}}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00163}00163         \textcolor{keywordflow}{return} \textcolor{keyword}{new} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter_1_1_view_holder}{ViewHolder}}(view, recyclerViewInterface);}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00164}00164     \}}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00165}00165 }
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00171}00171     @SuppressLint(\textcolor{stringliteral}{"{}SetTextI18n"{}})}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00172}00172     @Override}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00173}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter_a3faf615a173caef09b3b6a62140fbda6}{00173}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter_a3faf615a173caef09b3b6a62140fbda6}{onBindViewHolder}}(@NonNull \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter_1_1_view_holder}{ViewHolder}} holder, \textcolor{keywordtype}{int} position) \{}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00174}00174 }
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00175}00175         \textcolor{keywordflow}{if} (holder.getItemViewType() != 0) \{}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00176}00176             \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station}{ChargingStation}} station = station\_list.get(position);}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00177}00177             \textcolor{keyword}{final} \textcolor{keywordtype}{double} distance = station.\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_a66043478cfd9a40c66f4e86a7d39748a}{getDistance}}();}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00178}00178             String dist = \textcolor{stringliteral}{"{}("{}} + String.format(Locale.getDefault(),\textcolor{stringliteral}{"{}\%.2f"{}}, distance) + \textcolor{stringliteral}{"{}km)"{}};}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00179}00179             holder.operator.setText(station.\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_af753f3a0c179e10f6713c473ea3db300}{getOperator}}() + \textcolor{stringliteral}{"{} "{}} + dist);}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00180}00180             holder.location.setText(station.\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_afadcdca20dcbb26ec63f1329d8587fb4}{getStreet}}() + \textcolor{stringliteral}{"{} "{}} + station.\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_a458efa55632d03f2f2c187414bf056ab}{getNumber}}());}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00181}00181             holder.conn.setText(station.\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_ac3c6cb9ec9ecfe14bb0923d82178bc74}{getPostal\_code}}() + \textcolor{stringliteral}{"{} "{}} + station.\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_a46d8eb13339b35d44f74ec14d548ac9b}{getLocation}}());}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00182}00182         \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00183}00183             holder.operator.setText(context.getResources().getString(R.string.not\_available));}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00184}00184             holder.location.setText(context.getResources().getString(R.string.not\_available));}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00185}00185             holder.conn.setText(context.getResources().getString(R.string.not\_available));}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00186}00186             holder.conn.setTextColor(ContextCompat.getColor(context, R.color.notAvailable));}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00187}00187         \}}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00188}00188     \}}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00189}00189 }
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00194}00194     @Override}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00195}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter_a51bcc44fe16b44a9b889fd99c02a0608}{00195}}     \textcolor{keyword}{public} \textcolor{keywordtype}{int} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter_a51bcc44fe16b44a9b889fd99c02a0608}{getItemCount}}() \{}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00196}00196         \textcolor{keywordflow}{return} station\_list.size();}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00197}00197     \}}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00198}00198 }
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00203}00203     @SuppressLint(\textcolor{stringliteral}{"{}NotifyDataSetChanged"{}})}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00204}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter_a2b1bf989f6f76efa88e010b03bbe7dba}{00204}}     public \textcolor{keywordtype}{void} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter_a2b1bf989f6f76efa88e010b03bbe7dba}{updateAdapter}}(ArrayList<\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station}{ChargingStation}}> filteredList) \{}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00205}00205         station\_list = filteredList;}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00206}00206         notifyDataSetChanged();}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00207}00207     \}}
+\DoxyCodeLine{\Hypertarget{_charging_station_adapter_8java_source_l00208}00208 \}}
+
+\end{DoxyCode}

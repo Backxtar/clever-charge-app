@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="db/dce/_home_fragment_8java" kind="file" language="Java">
+    <compoundname>HomeFragment.java</compoundname>
+    <innerclass refid="dc/d44/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_home_fragment" prot="public">de::backxtar::clevercharge::fragmentsMain::HomeFragment</innerclass>
+    <innernamespace refid="d5/d4f/namespacede_1_1backxtar_1_1clevercharge_1_1fragments_main">de::backxtar::clevercharge::fragmentsMain</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">package<sp/></highlight><highlight class="normal">de.backxtar.clevercharge.fragmentsMain;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>android.annotation.SuppressLint;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>android.os.Bundle;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>androidx.fragment.app.Fragment;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>androidx.recyclerview.widget.LinearLayoutManager;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>androidx.recyclerview.widget.RecyclerView;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>androidx.swiperefreshlayout.widget.SwipeRefreshLayout;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>android.view.Gravity;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>android.view.LayoutInflater;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>android.view.View;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>android.view.ViewGroup;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>android.widget.TextView;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.util.concurrent.CompletableFuture;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>de.backxtar.clevercharge.R;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>de.backxtar.clevercharge.data.ArticleAdapter;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>de.backxtar.clevercharge.data.ChargingStationAdapter;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>de.backxtar.clevercharge.data.ModuleType;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>de.backxtar.clevercharge.managers.UserManager;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>de.backxtar.clevercharge.services.DownloadService;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>de.backxtar.clevercharge.services.MessageService;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>de.backxtar.clevercharge.services.SpacingItemService;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>de.backxtar.clevercharge.managers.StationManager;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="dc/d44/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_home_fragment" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="dc/d44/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_home_fragment" kindref="compound">HomeFragment</ref><sp/></highlight><highlight class="keyword">extends</highlight><highlight class="normal"><sp/>Fragment<sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Global<sp/>variables<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/><ref refid="d4/d81/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter" kindref="compound">ArticleAdapter</ref><sp/>adapter;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//==============================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="dc/d44/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_home_fragment_1ae7916a3ee29bdc55451281ea298e43c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="dc/d44/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_home_fragment_1ae7916a3ee29bdc55451281ea298e43c3" kindref="member">HomeFragment</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Required<sp/>empty<sp/>public<sp/>constructor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>@Override</highlight></codeline>
+<codeline lineno="57" refid="dc/d44/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_home_fragment_1a53e08545cee66f83f5e5a0edc34851a1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/d44/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_home_fragment_1a53e08545cee66f83f5e5a0edc34851a1" kindref="member">onCreate</ref>(Bundle<sp/>savedInstanceState)<sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>super.onCreate(savedInstanceState);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>@SuppressLint(</highlight><highlight class="stringliteral">&quot;SetTextI18n&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>@Override</highlight></codeline>
+<codeline lineno="70" refid="dc/d44/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_home_fragment_1ac651aa3626b3c2c947551bf7e390b742" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>View<sp/><ref refid="dc/d44/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_home_fragment_1ac651aa3626b3c2c947551bf7e390b742" kindref="member">onCreateView</ref>(LayoutInflater<sp/>inflater,<sp/>ViewGroup<sp/>container,</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Bundle<sp/>savedInstanceState)<sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>View<sp/>view<sp/>=<sp/>inflater.inflate(R.layout.fragment_home,<sp/>container,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TextView<sp/>all_stations<sp/>=<sp/>view.findViewById(R.id.all_stations);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TextView<sp/>fc_stations<sp/>=<sp/>view.findViewById(R.id.fc_stations);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TextView<sp/>nc_stations<sp/>=<sp/>view.findViewById(R.id.nc_stations);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>all_stations.setText(Integer.toString(<ref refid="d2/d96/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager" kindref="compound">StationManager</ref>.<ref refid="d2/d96/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_1a5154a6718e345d9eba0c07ec99f096fd" kindref="member">getStationAmount</ref>()));</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fc_stations.setText(Integer.toString(<ref refid="d2/d96/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager" kindref="compound">StationManager</ref>.<ref refid="d2/d96/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_1a21dbe93b9bbd9b272c9ba5dcf34d535d" kindref="member">sort</ref>(<ref refid="dd/d57/enumde_1_1backxtar_1_1clevercharge_1_1data_1_1_module_type" kindref="compound">ModuleType</ref>.FAST_CHARGING).size()));</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nc_stations.setText(Integer.toString(<ref refid="d2/d96/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager" kindref="compound">StationManager</ref>.<ref refid="d2/d96/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_1a21dbe93b9bbd9b272c9ba5dcf34d535d" kindref="member">sort</ref>(<ref refid="dd/d57/enumde_1_1backxtar_1_1clevercharge_1_1data_1_1_module_type" kindref="compound">ModuleType</ref>.STANDARD).size()));</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RecyclerView<sp/>recyclerView<sp/>=<sp/>view.findViewById(R.id.fav_rv);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>adapter<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="d4/d81/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter" kindref="compound">ArticleAdapter</ref>(<ref refid="de/d7e/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager" kindref="compound">UserManager</ref>.<ref refid="de/d7e/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager_1aec331a849cb8f78997bafd5432f2115e" kindref="member">getArticles</ref>(),<sp/>getActivity());</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/d22/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_spacing_item_service" kindref="compound">SpacingItemService</ref><sp/>spacingItemService<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="d7/d22/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_spacing_item_service" kindref="compound">SpacingItemService</ref>(55);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>recyclerView.addItemDecoration(spacingItemService);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>recyclerView.setAdapter(adapter);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>recyclerView.setLayoutManager(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>LinearLayoutManager(getContext()));</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>initSwipeRefresh(view);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>view;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>initSwipeRefresh(View<sp/>view)<sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SwipeRefreshLayout<sp/>refreshLayout<sp/>=<sp/>view.findViewById(R.id.swipe_home);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>refreshLayout.setColorSchemeResources(R.color.primary);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>refreshLayout.setOnRefreshListener(()<sp/>-&gt;<sp/>CompletableFuture.supplyAsync(<ref refid="dc/d75/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_download_service_1aa5f73fe4db1608145f95dc158f098e46" kindref="member">DownloadService::getArticles</ref>)</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.whenComplete((articles,<sp/>throwable)<sp/>-&gt;<sp/>{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MessageService<sp/>msgService;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(throwable<sp/>!=<sp/>null<sp/>||<sp/>articles<sp/>==<sp/>null)<sp/>{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>msgService<sp/>=<sp/>new<sp/>MessageService(getActivity(),<sp/>getResources().getString(R.string.something_went_wrong),<sp/>Gravity.TOP,<sp/>true);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>msgService.sendToast();</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>msgService<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="da/da6/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_message_service" kindref="compound">MessageService</ref>(getActivity(),<sp/>getResources().getString(R.string.update_successful),<sp/>Gravity.TOP,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>msgService.<ref refid="da/da6/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_message_service_1ac4ac04d455ed4804dca168aa75203943" kindref="member">sendToast</ref>();</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="de/d7e/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager" kindref="compound">UserManager</ref>.<ref refid="de/d7e/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager_1a7762c6854143eb0e8eeb0bf235f17f52" kindref="member">setArticles</ref>(articles);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(getActivity()<sp/>!=<sp/></highlight><highlight class="keyword">null</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>getActivity().runOnUiThread(()<sp/>-&gt;<sp/>{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>adapter.<ref refid="d4/d81/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_1a70a5bcc855aebb65ae749452bc1a2aab" kindref="member">setArticles</ref>(<ref refid="de/d7e/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager" kindref="compound">UserManager</ref>.<ref refid="de/d7e/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager_1aec331a849cb8f78997bafd5432f2115e" kindref="member">getArticles</ref>());</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>refreshLayout.setRefreshing(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}));</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/HomeFragment.java"/>
+  </compounddef>
+</doxygen>

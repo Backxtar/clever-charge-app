@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="d5/d2c/classde_1_1backxtar_1_1clevercharge_1_1_loading_screen" kind="class" language="Java" prot="public">
+    <compoundname>de::backxtar::clevercharge::LoadingScreen</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">AppCompatActivity</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d5/d2c/classde_1_1backxtar_1_1clevercharge_1_1_loading_screen_1ae24f3fc321ead6ee55daa38df1be2e4f" prot="private" static="no" mutable="no">
+        <type>Intent</type>
+        <definition>Intent de.backxtar.clevercharge.LoadingScreen.intent</definition>
+        <argsstring></argsstring>
+        <name>intent</name>
+        <qualifiedname>de.backxtar.clevercharge.LoadingScreen.intent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>New intent for switching. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/LoadingScreen.java" line="37" column="20" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/LoadingScreen.java" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="d5/d2c/classde_1_1backxtar_1_1clevercharge_1_1_loading_screen_1a3576280bfc02203be6c9d13d4bfe3957" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void de.backxtar.clevercharge.LoadingScreen.onCreate</definition>
+        <argsstring>(Bundle savedInstanceState)</argsstring>
+        <name>onCreate</name>
+        <qualifiedname>de.backxtar.clevercharge.LoadingScreen.onCreate</qualifiedname>
+        <param>
+          <type>Bundle</type>
+          <declname>savedInstanceState</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>On create activity. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>savedInstanceState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/LoadingScreen.java" line="45" column="20" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/LoadingScreen.java" bodystart="45" bodyend="83"/>
+        <references refid="dc/d75/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_download_service_1aa5f73fe4db1608145f95dc158f098e46" compoundref="d8/d0f/_download_service_8java" startline="78" endline="84">de.backxtar.clevercharge.services.DownloadService.getArticles</references>
+        <references refid="dc/d75/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_download_service_1ac572f7a40930620aef9d93f4500ca961" compoundref="d8/d0f/_download_service_8java" startline="31" endline="36">de.backxtar.clevercharge.services.DownloadService.getStations</references>
+        <references refid="da/da6/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_message_service_1ac4ac04d455ed4804dca168aa75203943" compoundref="db/dc2/_message_service_8java" startline="59" endline="77">de.backxtar.clevercharge.services.MessageService.sendToast</references>
+        <references refid="de/d7e/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager_1a7762c6854143eb0e8eeb0bf235f17f52" compoundref="d3/dcc/_user_manager_8java" startline="70" endline="72">de.backxtar.clevercharge.managers.UserManager.setArticles</references>
+        <references refid="d2/d96/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_1aa32bde646cafbedd9764b704299b5cb9" compoundref="d1/dfe/_station_manager_8java" startline="52" endline="54">de.backxtar.clevercharge.managers.StationManager.setStation_list</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="d5/d2c/classde_1_1backxtar_1_1clevercharge_1_1_loading_screen" kindref="compound">LoadingScreen</ref> of the app. <simplesect kind="author"><para>Jörg Quick, Tilo Steinmetzer </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>AppCompatActivity</label>
+      </node>
+      <node id="1">
+        <label>de.backxtar.clevercharge.LoadingScreen</label>
+        <link refid="d5/d2c/classde_1_1backxtar_1_1clevercharge_1_1_loading_screen"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>AppCompatActivity</label>
+      </node>
+      <node id="1">
+        <label>de.backxtar.clevercharge.LoadingScreen</label>
+        <link refid="d5/d2c/classde_1_1backxtar_1_1clevercharge_1_1_loading_screen"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/LoadingScreen.java" line="30" column="7" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/LoadingScreen.java" bodystart="30" bodyend="84"/>
+    <listofallmembers>
+      <member refid="d5/d2c/classde_1_1backxtar_1_1clevercharge_1_1_loading_screen_1ae24f3fc321ead6ee55daa38df1be2e4f" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::LoadingScreen</scope><name>intent</name></member>
+      <member refid="d5/d2c/classde_1_1backxtar_1_1clevercharge_1_1_loading_screen_1a3576280bfc02203be6c9d13d4bfe3957" prot="protected" virt="non-virtual"><scope>de::backxtar::clevercharge::LoadingScreen</scope><name>onCreate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

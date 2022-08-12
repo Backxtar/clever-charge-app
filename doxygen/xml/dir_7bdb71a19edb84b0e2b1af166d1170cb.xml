@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="dir_7bdb71a19edb84b0e2b1af166d1170cb" kind="dir">
+    <compoundname>D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data</compoundname>
+    <innerfile refid="d7/dca/_a_p_i_response_8java">APIResponse.java</innerfile>
+    <innerfile refid="d4/d01/_article_8java">Article.java</innerfile>
+    <innerfile refid="de/de8/_article_adapter_8java">ArticleAdapter.java</innerfile>
+    <innerfile refid="d4/df0/_charging_station_8java">ChargingStation.java</innerfile>
+    <innerfile refid="d8/d92/_charging_station_adapter_8java">ChargingStationAdapter.java</innerfile>
+    <innerfile refid="dd/d4e/_module_type_8java">ModuleType.java</innerfile>
+    <innerfile refid="da/dec/_plug_type_8java">PlugType.java</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/"/>
+  </compounddef>
+</doxygen>

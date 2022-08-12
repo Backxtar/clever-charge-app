@@ -1,0 +1,430 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="d2/d96/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager" kind="class" language="Java" prot="public">
+    <compoundname>de::backxtar::clevercharge::managers::StationManager</compoundname>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="d2/d96/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_1a6c91738732f77d9f0020cac82fee5e1d" prot="private" static="yes" mutable="no">
+        <type>final Comparator&lt; <ref refid="d2/dae/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station" kindref="compound">ChargingStation</ref> &gt;</type>
+        <definition>final Comparator&lt;ChargingStation&gt; de.backxtar.clevercharge.managers.StationManager.sortByDistance</definition>
+        <argsstring></argsstring>
+        <name>sortByDistance</name>
+        <qualifiedname>de.backxtar.clevercharge.managers.StationManager.sortByDistance</qualifiedname>
+        <initializer>= Comparator.comparingDouble(<ref refid="d2/dae/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_1a66043478cfd9a40c66f4e86a7d39748a" kindref="member">ChargingStation::getDistance</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Static comparator for sorting recyclerView. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/managers/StationManager.java" line="27" column="37" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/managers/StationManager.java" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d96/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_1acad8199063151bb0fff6b28624563551" prot="private" static="yes" mutable="no">
+        <type>ArrayList&lt; <ref refid="d2/dae/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station" kindref="compound">ChargingStation</ref> &gt;</type>
+        <definition>ArrayList&lt;ChargingStation&gt; de.backxtar.clevercharge.managers.StationManager.station_storage</definition>
+        <argsstring></argsstring>
+        <name>station_storage</name>
+        <qualifiedname>de.backxtar.clevercharge.managers.StationManager.station_storage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Global station storage. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/managers/StationManager.java" line="32" column="30" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/managers/StationManager.java" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d96/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_1a84efcc38634893fb4fb4c3983bd1d324" prot="private" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int de.backxtar.clevercharge.managers.StationManager.range</definition>
+        <argsstring></argsstring>
+        <name>range</name>
+        <qualifiedname>de.backxtar.clevercharge.managers.StationManager.range</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Static search radius. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/managers/StationManager.java" line="37" column="24" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/managers/StationManager.java" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="d2/d96/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_1a0d8c6d5bcd2802d6ca42942c5a129825" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Comparator&lt; <ref refid="d2/dae/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station" kindref="compound">ChargingStation</ref> &gt;</type>
+        <definition>static Comparator&lt; ChargingStation &gt; de.backxtar.clevercharge.managers.StationManager.getSortByDistance</definition>
+        <argsstring>()</argsstring>
+        <name>getSortByDistance</name>
+        <qualifiedname>de.backxtar.clevercharge.managers.StationManager.getSortByDistance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get comparator for sorting stations by distance. <simplesect kind="return"><para>Comparator&lt;ChargingStation&gt; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/managers/StationManager.java" line="44" column="30" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/managers/StationManager.java" bodystart="44" bodyend="46"/>
+        <referencedby refid="d3/d46/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_search_fragment_1a8701efe6b123aa2c5487761b3e4bfe7b" compoundref="d1/da2/_search_fragment_8java" startline="90" endline="104">de.backxtar.clevercharge.fragmentsMain.SearchFragment.onCreateView</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d2/d96/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_1aa32bde646cafbedd9764b704299b5cb9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void de.backxtar.clevercharge.managers.StationManager.setStation_list</definition>
+        <argsstring>(ArrayList&lt; ChargingStation &gt; station_list)</argsstring>
+        <name>setStation_list</name>
+        <qualifiedname>de.backxtar.clevercharge.managers.StationManager.setStation_list</qualifiedname>
+        <param>
+          <type>ArrayList&lt; <ref refid="d2/dae/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station" kindref="compound">ChargingStation</ref> &gt;</type>
+          <declname>station_list</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Setter for container. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>station_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of station objects </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/managers/StationManager.java" line="52" column="24" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/managers/StationManager.java" bodystart="52" bodyend="54"/>
+        <referencedby refid="d5/d2c/classde_1_1backxtar_1_1clevercharge_1_1_loading_screen_1a3576280bfc02203be6c9d13d4bfe3957" compoundref="d9/db6/_loading_screen_8java" startline="45" endline="83">de.backxtar.clevercharge.LoadingScreen.onCreate</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d2/d96/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_1a4a644c181d0abc0d2c021f18bee25c41" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ArrayList&lt; <ref refid="d2/dae/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station" kindref="compound">ChargingStation</ref> &gt;</type>
+        <definition>static ArrayList&lt; ChargingStation &gt; de.backxtar.clevercharge.managers.StationManager.getStation_list</definition>
+        <argsstring>()</argsstring>
+        <name>getStation_list</name>
+        <qualifiedname>de.backxtar.clevercharge.managers.StationManager.getStation_list</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Getter for station container. <simplesect kind="return"><para>arrayList with station objects </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/managers/StationManager.java" line="60" column="29" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/managers/StationManager.java" bodystart="60" bodyend="62"/>
+        <referencedby refid="d3/d46/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_search_fragment_1a8701efe6b123aa2c5487761b3e4bfe7b" compoundref="d1/da2/_search_fragment_8java" startline="90" endline="104">de.backxtar.clevercharge.fragmentsMain.SearchFragment.onCreateView</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d2/d96/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_1a6c41af67582d82de2ad7f094ca70aaab" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int de.backxtar.clevercharge.managers.StationManager.getRange</definition>
+        <argsstring>()</argsstring>
+        <name>getRange</name>
+        <qualifiedname>de.backxtar.clevercharge.managers.StationManager.getRange</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Getter for view range. <simplesect kind="return"><para>range as int </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/managers/StationManager.java" line="68" column="23" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/managers/StationManager.java" bodystart="68" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d96/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_1a914e6fc28c83126e7ce15a29de76c836" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void de.backxtar.clevercharge.managers.StationManager.setRange</definition>
+        <argsstring>(int range)</argsstring>
+        <name>setRange</name>
+        <qualifiedname>de.backxtar.clevercharge.managers.StationManager.setRange</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Setter for view range. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>range</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as int </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/managers/StationManager.java" line="76" column="24" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/managers/StationManager.java" bodystart="76" bodyend="78"/>
+        <referencedby refid="db/d96/classde_1_1backxtar_1_1clevercharge_1_1_login_1a24ca4a6d588d025fb2caba526586d45b" compoundref="d9/d7f/_login_8java" startline="47" endline="92">de.backxtar.clevercharge.Login.onCreate</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d2/d96/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_1a5154a6718e345d9eba0c07ec99f096fd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int de.backxtar.clevercharge.managers.StationManager.getStationAmount</definition>
+        <argsstring>()</argsstring>
+        <name>getStationAmount</name>
+        <qualifiedname>de.backxtar.clevercharge.managers.StationManager.getStationAmount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get amount of stations. <simplesect kind="return"><para>amount of stations as int </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/managers/StationManager.java" line="84" column="23" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/managers/StationManager.java" bodystart="84" bodyend="86"/>
+        <referencedby refid="dc/d44/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_home_fragment_1ac651aa3626b3c2c947551bf7e390b742" compoundref="db/dce/_home_fragment_8java" startline="70" endline="92">de.backxtar.clevercharge.fragmentsMain.HomeFragment.onCreateView</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d2/d96/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_1a21dbe93b9bbd9b272c9ba5dcf34d535d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ArrayList&lt; <ref refid="d2/dae/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station" kindref="compound">ChargingStation</ref> &gt;</type>
+        <definition>static ArrayList&lt; ChargingStation &gt; de.backxtar.clevercharge.managers.StationManager.sort</definition>
+        <argsstring>(final ModuleType module_type)</argsstring>
+        <name>sort</name>
+        <qualifiedname>de.backxtar.clevercharge.managers.StationManager.sort</qualifiedname>
+        <param>
+          <type>final <ref refid="dd/d57/enumde_1_1backxtar_1_1clevercharge_1_1data_1_1_module_type" kindref="compound">ModuleType</ref></type>
+          <declname>module_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sort by ModuleType <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>module_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as enum </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>new sorted ArrayList&lt;ChargingStations&gt; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/managers/StationManager.java" line="93" column="29" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/managers/StationManager.java" bodystart="93" bodyend="97"/>
+        <referencedby refid="dc/d44/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_home_fragment_1ac651aa3626b3c2c947551bf7e390b742" compoundref="db/dce/_home_fragment_8java" startline="70" endline="92">de.backxtar.clevercharge.fragmentsMain.HomeFragment.onCreateView</referencedby>
+        <referencedby refid="d2/d96/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_1ab26276092c693a031e875316ddb1eb0b" compoundref="d1/dfe/_station_manager_8java" startline="115" endline="119">de.backxtar.clevercharge.managers.StationManager.sortByFavAndLocal</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d2/d96/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_1a76d0ece7a7a2755f82d7b58ba9cb431b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ArrayList&lt; <ref refid="d2/dae/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station" kindref="compound">ChargingStation</ref> &gt;</type>
+        <definition>static ArrayList&lt; ChargingStation &gt; de.backxtar.clevercharge.managers.StationManager.sort</definition>
+        <argsstring>(final double lat, final double lon)</argsstring>
+        <name>sort</name>
+        <qualifiedname>de.backxtar.clevercharge.managers.StationManager.sort</qualifiedname>
+        <param>
+          <type>final double</type>
+          <declname>lat</declname>
+        </param>
+        <param>
+          <type>final double</type>
+          <declname>lon</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sort station by radius. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of centered point </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lon</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of centered point </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>new sorted ArrayList&lt;ChargingStation&gt; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/managers/StationManager.java" line="105" column="29" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/managers/StationManager.java" bodystart="105" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d96/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_1ab26276092c693a031e875316ddb1eb0b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ArrayList&lt; <ref refid="d2/dae/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station" kindref="compound">ChargingStation</ref> &gt;</type>
+        <definition>static ArrayList&lt; ChargingStation &gt; de.backxtar.clevercharge.managers.StationManager.sortByFavAndLocal</definition>
+        <argsstring>()</argsstring>
+        <name>sortByFavAndLocal</name>
+        <qualifiedname>de.backxtar.clevercharge.managers.StationManager.sortByFavAndLocal</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Only local favorites. <simplesect kind="return"><para>new sorted ArrayList&lt;ChargingStation&gt; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/managers/StationManager.java" line="115" column="29" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/managers/StationManager.java" bodystart="115" bodyend="119"/>
+        <references refid="de/d7e/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager_1aa4e7c73b0bb07f0dcf5a612f9bce416a" compoundref="d3/dcc/_user_manager_8java" startline="46" endline="48">de.backxtar.clevercharge.managers.UserManager.getApi_data</references>
+        <references refid="d0/dbd/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_1a1dfa2252e57d3dedcafcd225e709be7f" compoundref="d7/dca/_a_p_i_response_8java" startline="106" endline="108">de.backxtar.clevercharge.data.APIResponse.getFavorites</references>
+        <references refid="de/d7e/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager_1ae4f909b33cee9349c04878d1106de0cb" compoundref="d3/dcc/_user_manager_8java" startline="78" endline="80">de.backxtar.clevercharge.managers.UserManager.getMyPosition</references>
+        <references refid="d2/d96/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_1a21dbe93b9bbd9b272c9ba5dcf34d535d" compoundref="d1/dfe/_station_manager_8java" startline="93" endline="97">de.backxtar.clevercharge.managers.StationManager.sort</references>
+      </memberdef>
+      <memberdef kind="function" id="d2/d96/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_1a90cc885bc23aaf437ec10f20c74f9355" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ArrayList&lt; <ref refid="d2/dae/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station" kindref="compound">ChargingStation</ref> &gt;</type>
+        <definition>static ArrayList&lt; ChargingStation &gt; de.backxtar.clevercharge.managers.StationManager.getFavorites</definition>
+        <argsstring>()</argsstring>
+        <name>getFavorites</name>
+        <qualifiedname>de.backxtar.clevercharge.managers.StationManager.getFavorites</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a list with favorites. <simplesect kind="return"><para>a sorted list only with favorites </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/managers/StationManager.java" line="125" column="29" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/managers/StationManager.java" bodystart="125" bodyend="129"/>
+        <references refid="de/d7e/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager_1aa4e7c73b0bb07f0dcf5a612f9bce416a" compoundref="d3/dcc/_user_manager_8java" startline="46" endline="48">de.backxtar.clevercharge.managers.UserManager.getApi_data</references>
+        <references refid="d0/dbd/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_1a1dfa2252e57d3dedcafcd225e709be7f" compoundref="d7/dca/_a_p_i_response_8java" startline="106" endline="108">de.backxtar.clevercharge.data.APIResponse.getFavorites</references>
+      </memberdef>
+      <memberdef kind="function" id="d2/d96/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_1a84363e55138545c015867ac16fa9c50a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ArrayList&lt; <ref refid="d2/dae/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station" kindref="compound">ChargingStation</ref> &gt;</type>
+        <definition>static ArrayList&lt; ChargingStation &gt; de.backxtar.clevercharge.managers.StationManager.getDefects</definition>
+        <argsstring>()</argsstring>
+        <name>getDefects</name>
+        <qualifiedname>de.backxtar.clevercharge.managers.StationManager.getDefects</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a list with defect stations. <simplesect kind="return"><para>a sorted list only with defect stations </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/managers/StationManager.java" line="135" column="29" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/managers/StationManager.java" bodystart="135" bodyend="139"/>
+        <references refid="de/d7e/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager_1aa4e7c73b0bb07f0dcf5a612f9bce416a" compoundref="d3/dcc/_user_manager_8java" startline="46" endline="48">de.backxtar.clevercharge.managers.UserManager.getApi_data</references>
+        <references refid="d0/dbd/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_1a6a9d3a50e360265ecef575ebfaefcc4c" compoundref="d7/dca/_a_p_i_response_8java" startline="114" endline="116">de.backxtar.clevercharge.data.APIResponse.getDefect_stations_map</references>
+        <referencedby refid="d2/d96/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_1a2deb1b9045b98fec83251a5384717dd8" compoundref="d1/dfe/_station_manager_8java" startline="147" endline="151">de.backxtar.clevercharge.managers.StationManager.getLocalDefects</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d2/d96/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_1a2deb1b9045b98fec83251a5384717dd8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ArrayList&lt; <ref refid="d2/dae/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station" kindref="compound">ChargingStation</ref> &gt;</type>
+        <definition>static ArrayList&lt; ChargingStation &gt; de.backxtar.clevercharge.managers.StationManager.getLocalDefects</definition>
+        <argsstring>(final double lat, final double lon)</argsstring>
+        <name>getLocalDefects</name>
+        <qualifiedname>de.backxtar.clevercharge.managers.StationManager.getLocalDefects</qualifiedname>
+        <param>
+          <type>final double</type>
+          <declname>lat</declname>
+        </param>
+        <param>
+          <type>final double</type>
+          <declname>lon</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a list with local defect stations. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as double </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lon</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as double </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a sorted list only with local defect stations </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/managers/StationManager.java" line="147" column="29" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/managers/StationManager.java" bodystart="147" bodyend="151"/>
+        <references refid="d2/d96/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_1a84363e55138545c015867ac16fa9c50a" compoundref="d1/dfe/_station_manager_8java" startline="135" endline="139">de.backxtar.clevercharge.managers.StationManager.getDefects</references>
+      </memberdef>
+      <memberdef kind="function" id="d2/d96/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_1a98502b65e413f3a97ad1f74db18dd540" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>static String de.backxtar.clevercharge.managers.StationManager.convertEnum</definition>
+        <argsstring>(Context context, ModuleType module_type)</argsstring>
+        <name>convertEnum</name>
+        <qualifiedname>de.backxtar.clevercharge.managers.StationManager.convertEnum</qualifiedname>
+        <param>
+          <type>Context</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type><ref refid="dd/d57/enumde_1_1backxtar_1_1clevercharge_1_1data_1_1_module_type" kindref="compound">ModuleType</ref></type>
+          <declname>module_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert enum into string <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>module_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as enum </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>enum as string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/managers/StationManager.java" line="158" column="26" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/managers/StationManager.java" bodystart="158" bodyend="161"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Wrapper for data. <simplesect kind="author"><para>Jörg Quick, Tilo Steinmetzer </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>de.backxtar.clevercharge.managers.StationManager</label>
+        <link refid="d2/d96/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/managers/StationManager.java" line="20" column="7" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/managers/StationManager.java" bodystart="20" bodyend="162"/>
+    <listofallmembers>
+      <member refid="d2/d96/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_1a98502b65e413f3a97ad1f74db18dd540" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::managers::StationManager</scope><name>convertEnum</name></member>
+      <member refid="d2/d96/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_1a84363e55138545c015867ac16fa9c50a" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::managers::StationManager</scope><name>getDefects</name></member>
+      <member refid="d2/d96/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_1a90cc885bc23aaf437ec10f20c74f9355" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::managers::StationManager</scope><name>getFavorites</name></member>
+      <member refid="d2/d96/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_1a2deb1b9045b98fec83251a5384717dd8" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::managers::StationManager</scope><name>getLocalDefects</name></member>
+      <member refid="d2/d96/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_1a6c41af67582d82de2ad7f094ca70aaab" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::managers::StationManager</scope><name>getRange</name></member>
+      <member refid="d2/d96/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_1a0d8c6d5bcd2802d6ca42942c5a129825" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::managers::StationManager</scope><name>getSortByDistance</name></member>
+      <member refid="d2/d96/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_1a4a644c181d0abc0d2c021f18bee25c41" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::managers::StationManager</scope><name>getStation_list</name></member>
+      <member refid="d2/d96/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_1a5154a6718e345d9eba0c07ec99f096fd" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::managers::StationManager</scope><name>getStationAmount</name></member>
+      <member refid="d2/d96/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_1a84efcc38634893fb4fb4c3983bd1d324" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::managers::StationManager</scope><name>range</name></member>
+      <member refid="d2/d96/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_1a914e6fc28c83126e7ce15a29de76c836" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::managers::StationManager</scope><name>setRange</name></member>
+      <member refid="d2/d96/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_1aa32bde646cafbedd9764b704299b5cb9" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::managers::StationManager</scope><name>setStation_list</name></member>
+      <member refid="d2/d96/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_1a21dbe93b9bbd9b272c9ba5dcf34d535d" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::managers::StationManager</scope><name>sort</name></member>
+      <member refid="d2/d96/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_1a76d0ece7a7a2755f82d7b58ba9cb431b" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::managers::StationManager</scope><name>sort</name></member>
+      <member refid="d2/d96/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_1a6c91738732f77d9f0020cac82fee5e1d" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::managers::StationManager</scope><name>sortByDistance</name></member>
+      <member refid="d2/d96/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_1ab26276092c693a031e875316ddb1eb0b" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::managers::StationManager</scope><name>sortByFavAndLocal</name></member>
+      <member refid="d2/d96/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_1acad8199063151bb0fff6b28624563551" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::managers::StationManager</scope><name>station_storage</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

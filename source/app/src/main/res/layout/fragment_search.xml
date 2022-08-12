@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragmentsMain.SearchFragment"
+    android:background="@color/background">
+
+    <View
+        android:id="@+id/headerBackground"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_125sdp"
+        android:background="@color/primary"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:text="@string/station_list"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20ssp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:shadowColor="@color/lightBlack"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="2"
+        android:fontFamily="@font/poppins_light"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="@dimen/_26sdp"
+        android:layout_height="@dimen/_26sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:src="@drawable/ic_search"
+        app:layout_constraintBottom_toBottomOf="@id/txtTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/txtTitle"
+        android:tint="@color/white" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        app:cardBackgroundColor="@color/card_background"
+        app:cardCornerRadius="@dimen/_16sdp"
+        app:layout_constraintBottom_toBottomOf="@id/headerBackground"
+        app:layout_constraintTop_toBottomOf="@id/headerBackground"
+        app:cardElevation="@dimen/_8sdp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/_14sdp"
+            android:paddingRight="@dimen/_14sdp"
+            android:paddingLeft="@dimen/_14sdp">
+
+            <TextView
+                android:id="@+id/detailHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary_text"
+                android:text="@string/make_a_choice"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:fontFamily="@font/poppins_light"/>
+
+            <LinearLayout
+                android:id="@+id/stationsLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/detailHeading">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/search_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/txt_box_stroke_login"
+                    android:padding="@dimen/_4sdp"
+                    android:drawableStart="@drawable/ic_search"
+                    android:drawableTint="@color/primary"
+                    android:textAlignment="center"
+                    android:hint="@string/search_for_stations"
+                    android:textColor="@color/primary"
+                    android:textColorHint="@color/secondary_text"
+                    android:minHeight="45dp"
+                    android:textCursorDrawable="@drawable/text_cursor"
+                    android:fontFamily="@font/poppins_light"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginEnd="@dimen/_6sdp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/local"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/_11sdp"
+                            android:textAllCaps="true"
+                            android:textColor="@color/primary_text"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/poppins_light"/>
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/only_local"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:track="@drawable/switch_track"
+                            android:textColor="@color/primary_text"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/_11ssp"
+                            android:theme="@style/SwitchTheme"
+                            android:thumb="@drawable/switch_thumb"
+                            android:layout_gravity="center"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/only_fav"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:track="@drawable/switch_track"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/_11ssp"
+                            android:theme="@style/SwitchTheme"
+                            android:thumb="@drawable/switch_thumb"
+                            android:textColor="@color/primary_text"
+                            android:layout_gravity="center" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/favorites"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/_11sdp"
+                            android:textAllCaps="true"
+                            android:textColor="@color/primary_text"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/_7sdp"
+                            android:fontFamily="@font/poppins_light"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_search"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/cardHeader"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="@dimen/_minus10sdp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/all_rv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layoutAnimation="@anim/recycler_anim"
+            android:scrollbars="none"
+            android:overScrollMode="never"
+            android:clipToPadding="false"
+            android:padding="@dimen/_16sdp">
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

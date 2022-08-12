@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="da/dec/_plug_type_8java" kind="file" language="Java">
+    <compoundname>PlugType.java</compoundname>
+    <innerclass refid="dc/d18/enumde_1_1backxtar_1_1clevercharge_1_1data_1_1_plug_type" prot="public">de::backxtar::clevercharge::data::PlugType</innerclass>
+    <innernamespace refid="d0/d99/namespacede_1_1backxtar_1_1clevercharge_1_1data">de::backxtar::clevercharge::data</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">package<sp/></highlight><highlight class="normal">de.backxtar.clevercharge.data;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>com.google.gson.annotations.SerializedName;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="dc/d18/enumde_1_1backxtar_1_1clevercharge_1_1data_1_1_plug_type" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="dc/d18/enumde_1_1backxtar_1_1clevercharge_1_1data_1_1_plug_type" kindref="compound">PlugType</ref><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="dc/d18/enumde_1_1backxtar_1_1clevercharge_1_1data_1_1_plug_type_1acc5e553542fb12254ff2751e76a8194d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>@<ref refid="dc/d18/enumde_1_1backxtar_1_1clevercharge_1_1data_1_1_plug_type_1acc5e553542fb12254ff2751e76a8194d" kindref="member">SerializedName</ref>(</highlight><highlight class="stringliteral">&quot;AC<sp/>Steckdose<sp/>Typ<sp/>2&quot;</highlight><highlight class="normal">)<sp/>AC_PLUG_TYPE_2,</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>@SerializedName(&quot;AC<sp/>Kupplung<sp/>Typ<sp/>2&quot;)<sp/>AC_CLUTCH_TYPE_2,</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>@SerializedName(&quot;AC<sp/>Schuko&quot;)<sp/>AC_SCHUKO,</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>@SerializedName(&quot;DC<sp/>Kupplung<sp/>Combo&quot;)<sp/>DC_CLUTCH_COMBO,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>@SerializedName(&quot;DC<sp/>CHAdeMO&quot;)<sp/>DC_CHADEMO</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/PlugType.java"/>
+  </compounddef>
+</doxygen>

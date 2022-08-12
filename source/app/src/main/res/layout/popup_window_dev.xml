@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_12sdp"
+        app:cardBackgroundColor="@color/card_background"
+        app:cardCornerRadius="@dimen/_16sdp"
+        app:cardElevation="@dimen/_8sdp">
+
+        <ImageButton
+            android:id="@+id/btn_info_close"
+            android:layout_width="@dimen/_22sdp"
+            android:layout_height="@dimen/_22sdp"
+            android:layout_gravity="end|top"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginEnd="@dimen/_4sdp"
+            android:background="@color/transparent"
+            android:src="@drawable/close_layer" />
+
+        <ImageButton
+            android:id="@+id/btn_favorite"
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:layout_gravity="start|top"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_star"
+            android:scaleType="fitXY" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:orientation="vertical"
+            android:padding="@dimen/_8sdp">
+
+            <TextView
+                android:id="@+id/info_op_range"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Betreiber (340km)"
+                android:textAlignment="center"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_light"/>
+
+            <TextView
+                android:id="@+id/info_street"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Beispielstrasse 7"
+                android:textAlignment="center"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/_10sdp"
+                android:fontFamily="@font/poppins_light"/>
+
+            <TextView
+                android:id="@+id/info_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="64689 Testgebiet"
+                android:textAlignment="center"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/_10sdp"
+                android:fontFamily="@font/poppins_light"/>
+
+            <TextView
+                android:id="@+id/info_available"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_gravity="center"
+                android:text="Available"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/dashboard_item_2_dark"
+                android:textSize="@dimen/_10sdp"
+                android:fontFamily="@font/poppins_light"/>
+
+            <TextView
+                android:id="@+id/info_module"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Do not support FAST CHARGING"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/notAvailable"
+                android:textSize="@dimen/_10sdp"
+                android:fontFamily="@font/poppins_light"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_gravity="center"
+                android:text="More information"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/_14sdp"
+                android:fontFamily="@font/poppins_light"/>
+
+            <TextView
+                android:id="@+id/info_power"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Max. Power: 80kW"
+                android:textAlignment="center"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/_10sdp"
+                android:fontFamily="@font/poppins_light"/>
+
+            <TextView
+                android:id="@+id/info_conn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Connections: 2"
+                android:textAlignment="center"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/_10sdp"
+                android:fontFamily="@font/poppins_light"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_gravity="center"
+                android:text="Issue"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/_14sdp"
+                android:fontFamily="@font/poppins_light"/>
+
+            <TextView
+                android:id="@+id/info_issue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Irgendwas"
+                android:background="@drawable/txt_box_stroke_report"
+                android:padding="@dimen/_4sdp"
+                android:textAlignment="center"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/_10sdp"
+                android:fontFamily="@font/poppins_light"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_gravity="center">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_report"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/_28sdp"
+                    android:drawableStart="@drawable/ic_report"
+                    android:padding="@dimen/_2sdp"
+                    android:background="@drawable/round_corner"
+                    android:backgroundTint="@color/notAvailable"
+                    android:text="@string/report"
+                    android:elevation="@dimen/_8sdp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins_light"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_fix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:minHeight="@dimen/_28sdp"
+                    android:drawableEnd="@drawable/ic_fix"
+                    android:padding="@dimen/_2sdp"
+                    android:background="@drawable/round_corner"
+                    android:backgroundTint="@color/dashboard_item_2_dark"
+                    android:text="@string/fix"
+                    android:elevation="@dimen/_8sdp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins_light"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <ImageView
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_centerHorizontal="true"
+        android:elevation="@dimen/_8sdp"
+        android:src="@color/white"
+        android:layout_marginTop="@dimen/_12sdp" />
+
+    <ImageView
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_centerHorizontal="true"
+        android:elevation="@dimen/_9sdp"
+        android:src="@drawable/ic_info" />
+
+    <!--<de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_centerHorizontal="true"
+        android:elevation="@dimen/_8sdp"
+        android:src="@color/white"
+        android:layout_marginTop="@dimen/_12sdp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_centerHorizontal="true"
+        android:elevation="@dimen/_9sdp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_info" />-->
+
+</RelativeLayout>

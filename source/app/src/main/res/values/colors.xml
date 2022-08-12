@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#6A7CFF</color>
+    <color name="background">#F3F3F3</color>
+    <color name="card_background">#FFFFFF</color>
+    <color name="primary_text">#565B65</color>
+    <color name="secondary_text">#9B9A9D</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="softWhite">#FFFFFF</color>
+    <color name="whiteTrans">#75221F1F</color>
+    <color name="yellow">#FFC107</color>
+    <color name="notAvailable">#FF4454</color>
+    <color name="notAvailableLight">#FF737F</color>
+    <color name="dashboard_item_1">#2CC2EA</color>
+    <color name="dashboard_item_2">#4DE9C9</color>
+    <color name="dashboard_item_2_dark">#0BD3A9</color>
+    <color name="dashboard_item_3">#72A4FF</color>
+    <color name="dashboard_item_4">#8B72FF</color>
+    <color name="transparent">#00000000</color>
+    <color name="unchecked">#626070</color>
+    <color name="dateColor">#565B65</color>
+    <color name="lightBlack">#30171717</color>
+</resources>

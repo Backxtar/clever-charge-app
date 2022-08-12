@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.CleverCharge" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/primary</item>
+    </style>
+
+    <style name="alertAnimations" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowEnterAnimation">@anim/popup_fade_in_anim</item>
+        <item name="android:windowExitAnimation">@anim/popup_fade_out_anim</item>
+    </style>
+
+    <style name="AlertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert" >
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+    </style>
+
+    <style name="SwitchTheme" parent="Widget.AppCompat.CompoundButton.Switch" >
+        <item name="android:colorForeground">@color/whiteTrans</item>
+        <item name="textAllCaps">true</item>
+        <item name="colorAccent">@color/primary</item>
+    </style>
+</resources>

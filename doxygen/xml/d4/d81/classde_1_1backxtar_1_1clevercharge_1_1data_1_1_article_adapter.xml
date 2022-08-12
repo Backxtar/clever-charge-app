@@ -1,0 +1,325 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="d4/d81/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter" kind="class" language="Java" prot="public">
+    <compoundname>de::backxtar::clevercharge::data::ArticleAdapter</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">RecyclerView::Adapter&lt; ArticleAdapter.ViewHolder &gt;</basecompoundref>
+    <innerclass refid="df/d44/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_1_1_view_holder" prot="public">de::backxtar::clevercharge::data::ArticleAdapter::ViewHolder</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d4/d81/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_1a4324b6c9e5b64f9c68fcc7b76ab3c617" prot="private" static="no" mutable="no">
+        <type>ArrayList&lt; <ref refid="d9/dd9/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article" kindref="compound">Article</ref> &gt;</type>
+        <definition>ArrayList&lt;Article&gt; de.backxtar.clevercharge.data.ArticleAdapter.articles</definition>
+        <argsstring></argsstring>
+        <name>articles</name>
+        <qualifiedname>de.backxtar.clevercharge.data.ArticleAdapter.articles</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="d9/dd9/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article" kindref="compound">Article</ref> list. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ArticleAdapter.java" line="52" column="23" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ArticleAdapter.java" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d4/d81/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_1aafde4bdf54f14a0a14469a958dea75d1" prot="private" static="no" mutable="no">
+        <type>final Activity</type>
+        <definition>final Activity de.backxtar.clevercharge.data.ArticleAdapter.activity</definition>
+        <argsstring></argsstring>
+        <name>activity</name>
+        <qualifiedname>de.backxtar.clevercharge.data.ArticleAdapter.activity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Activity of recyclerView. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ArticleAdapter.java" line="57" column="28" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ArticleAdapter.java" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d4/d81/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_1ab8e9b7cc4d212b9cd99ecb4e68913cd7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>de.backxtar.clevercharge.data.ArticleAdapter.ArticleAdapter</definition>
+        <argsstring>(ArrayList&lt; Article &gt; articles, Activity activity)</argsstring>
+        <name>ArticleAdapter</name>
+        <qualifiedname>de.backxtar.clevercharge.data.ArticleAdapter.ArticleAdapter</qualifiedname>
+        <param>
+          <type>ArrayList&lt; <ref refid="d9/dd9/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article" kindref="compound">Article</ref> &gt;</type>
+          <declname>articles</declname>
+        </param>
+        <param>
+          <type>Activity</type>
+          <declname>activity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="d4/d81/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter" kindref="compound">ArticleAdapter</ref> constructor. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>articles</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as ArrayList </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>activity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ArticleAdapter.java" line="65" column="12" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ArticleAdapter.java" bodystart="65" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d81/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_1a1f8b257be72724e5d8b06f157b657062" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int de.backxtar.clevercharge.data.ArticleAdapter.getItemViewType</definition>
+        <argsstring>(int position)</argsstring>
+        <name>getItemViewType</name>
+        <qualifiedname>de.backxtar.clevercharge.data.ArticleAdapter.getItemViewType</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return a viewType based on read / non read. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as int </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>type as int </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ArticleAdapter.java" line="100" column="16" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ArticleAdapter.java" bodystart="100" bodyend="103"/>
+        <references refid="de/d7e/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager_1aa4e7c73b0bb07f0dcf5a612f9bce416a" compoundref="d3/dcc/_user_manager_8java" startline="46" endline="48">de.backxtar.clevercharge.managers.UserManager.getApi_data</references>
+        <references refid="d0/dbd/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_1ac49a16a4f8a09b721496c6b6e3037cb4" compoundref="d7/dca/_a_p_i_response_8java" startline="130" endline="130">de.backxtar.clevercharge.data.APIResponse.getNews_read_ids</references>
+      </memberdef>
+      <memberdef kind="function" id="d4/d81/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_1abc3961efc24bfdbae7e18bf26fec62ac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="df/d44/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_1_1_view_holder" kindref="compound">ViewHolder</ref></type>
+        <definition>ViewHolder de.backxtar.clevercharge.data.ArticleAdapter.onCreateViewHolder</definition>
+        <argsstring>(@NonNull ViewGroup parent, int viewType)</argsstring>
+        <name>onCreateViewHolder</name>
+        <qualifiedname>de.backxtar.clevercharge.data.ArticleAdapter.onCreateViewHolder</qualifiedname>
+        <param>
+          <type>@NonNull ViewGroup</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>viewType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates the viewHolders layout. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as viewGroup </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>viewType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as viewType </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>new viewHolder object </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ArticleAdapter.java" line="113" column="23" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ArticleAdapter.java" bodystart="113" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d81/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_1af6595dbe29147ff3c8f9c669f9e5c55a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void de.backxtar.clevercharge.data.ArticleAdapter.onBindViewHolder</definition>
+        <argsstring>(@NonNull ViewHolder holder, int position)</argsstring>
+        <name>onBindViewHolder</name>
+        <qualifiedname>de.backxtar.clevercharge.data.ArticleAdapter.onBindViewHolder</qualifiedname>
+        <param>
+          <type>@NonNull <ref refid="df/d44/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_1_1_view_holder" kindref="compound">ViewHolder</ref></type>
+          <declname>holder</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates 1 item in itemList <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>holder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as int </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ArticleAdapter.java" line="131" column="17" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ArticleAdapter.java" bodystart="131" bodyend="171"/>
+        <references refid="de/d7e/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager_1aa4e7c73b0bb07f0dcf5a612f9bce416a" compoundref="d3/dcc/_user_manager_8java" startline="46" endline="48">de.backxtar.clevercharge.managers.UserManager.getApi_data</references>
+        <references refid="de/d7e/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager_1aec331a849cb8f78997bafd5432f2115e" compoundref="d3/dcc/_user_manager_8java" startline="62" endline="64">de.backxtar.clevercharge.managers.UserManager.getArticles</references>
+        <references refid="d9/dd9/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_1a35402171d2514f06f126c6f7069daa85" compoundref="d4/d01/_article_8java" startline="74" endline="76">de.backxtar.clevercharge.data.Article.getAuthor</references>
+        <references refid="d9/dd9/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_1a5f9244dacc55e7e020d8984cb44ede0c" compoundref="d4/d01/_article_8java" startline="114" endline="116">de.backxtar.clevercharge.data.Article.getContent</references>
+        <references refid="d9/dd9/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_1a0a5591bcd0baa5b9a3b16c65054feb3d" compoundref="d4/d01/_article_8java" startline="90" endline="92">de.backxtar.clevercharge.data.Article.getDescription</references>
+        <references refid="d9/dd9/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_1ade52c2932db39a707e0ba2087584885b" compoundref="d4/d01/_article_8java" startline="58" endline="60">de.backxtar.clevercharge.data.Article.getId</references>
+        <references refid="d0/dbd/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_1ac49a16a4f8a09b721496c6b6e3037cb4" compoundref="d7/dca/_a_p_i_response_8java" startline="130" endline="130">de.backxtar.clevercharge.data.APIResponse.getNews_read_ids</references>
+        <references refid="d9/dd9/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_1a1c3840686f87d0a95571f256fa23ea1b" compoundref="d4/d01/_article_8java" startline="106" endline="108">de.backxtar.clevercharge.data.Article.getPublishedAt</references>
+        <references refid="d9/dd9/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_1a3f96833b87f7eb27de73b6cc03c3b270" compoundref="d4/d01/_article_8java" startline="82" endline="84">de.backxtar.clevercharge.data.Article.getTitle</references>
+        <references refid="d9/dd9/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_1a71c5f421f8f115d5967a4b289d70ad31" compoundref="d4/d01/_article_8java" startline="98" endline="100">de.backxtar.clevercharge.data.Article.getUrlToImage</references>
+        <references refid="d9/dac/classde_1_1backxtar_1_1clevercharge_1_1_main_activity_1a377aeeb370ac0b59bd79be73c6cdeedd" compoundref="d4/d79/_main_activity_8java" startline="267" endline="270">de.backxtar.clevercharge.MainActivity.updateBadges</references>
+      </memberdef>
+      <memberdef kind="function" id="d4/d81/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_1a0a3e396c23fa833db7898170a4d8e6b0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int de.backxtar.clevercharge.data.ArticleAdapter.getItemCount</definition>
+        <argsstring>()</argsstring>
+        <name>getItemCount</name>
+        <qualifiedname>de.backxtar.clevercharge.data.ArticleAdapter.getItemCount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get item count of list. <simplesect kind="return"><para>item count as int </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ArticleAdapter.java" line="178" column="16" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ArticleAdapter.java" bodystart="178" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d81/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_1a70a5bcc855aebb65ae749452bc1a2aab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void de.backxtar.clevercharge.data.ArticleAdapter.setArticles</definition>
+        <argsstring>(ArrayList&lt; Article &gt; articles)</argsstring>
+        <name>setArticles</name>
+        <qualifiedname>de.backxtar.clevercharge.data.ArticleAdapter.setArticles</qualifiedname>
+        <param>
+          <type>ArrayList&lt; <ref refid="d9/dd9/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article" kindref="compound">Article</ref> &gt;</type>
+          <declname>articles</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets new list for the adapter. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>articles</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as ArrayList </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ArticleAdapter.java" line="187" column="17" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ArticleAdapter.java" bodystart="187" bodyend="190"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="d4/d81/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_1aa65655244a03483cdc472130a0d8f47c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void de.backxtar.clevercharge.data.ArticleAdapter.callApi</definition>
+        <argsstring>(int article_id)</argsstring>
+        <name>callApi</name>
+        <qualifiedname>de.backxtar.clevercharge.data.ArticleAdapter.callApi</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>article_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Contact the api to mark news as read. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>article_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as int </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ArticleAdapter.java" line="196" column="18" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ArticleAdapter.java" bodystart="196" bodyend="205"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="d4/d81/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter" kindref="compound">ArticleAdapter</ref> <simplesect kind="author"><para>Jörg Quick, Tilo Steinmetzer </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>RecyclerView::Adapter&lt; ArticleAdapter.ViewHolder &gt;</label>
+      </node>
+      <node id="1">
+        <label>de.backxtar.clevercharge.data.ArticleAdapter</label>
+        <link refid="d4/d81/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>RecyclerView::Adapter&lt; ArticleAdapter.ViewHolder &gt;</label>
+      </node>
+      <node id="1">
+        <label>de.backxtar.clevercharge.data.ArticleAdapter</label>
+        <link refid="d4/d81/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ArticleAdapter.java" line="45" column="7" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ArticleAdapter.java" bodystart="45" bodyend="206"/>
+    <listofallmembers>
+      <member refid="d4/d81/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_1aafde4bdf54f14a0a14469a958dea75d1" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::data::ArticleAdapter</scope><name>activity</name></member>
+      <member refid="d4/d81/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_1ab8e9b7cc4d212b9cd99ecb4e68913cd7" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::data::ArticleAdapter</scope><name>ArticleAdapter</name></member>
+      <member refid="d4/d81/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_1a4324b6c9e5b64f9c68fcc7b76ab3c617" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::data::ArticleAdapter</scope><name>articles</name></member>
+      <member refid="d4/d81/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_1aa65655244a03483cdc472130a0d8f47c" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::data::ArticleAdapter</scope><name>callApi</name></member>
+      <member refid="d4/d81/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_1a0a3e396c23fa833db7898170a4d8e6b0" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::data::ArticleAdapter</scope><name>getItemCount</name></member>
+      <member refid="d4/d81/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_1a1f8b257be72724e5d8b06f157b657062" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::data::ArticleAdapter</scope><name>getItemViewType</name></member>
+      <member refid="d4/d81/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_1af6595dbe29147ff3c8f9c669f9e5c55a" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::data::ArticleAdapter</scope><name>onBindViewHolder</name></member>
+      <member refid="d4/d81/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_1abc3961efc24bfdbae7e18bf26fec62ac" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::data::ArticleAdapter</scope><name>onCreateViewHolder</name></member>
+      <member refid="d4/d81/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_1a70a5bcc855aebb65ae749452bc1a2aab" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::data::ArticleAdapter</scope><name>setArticles</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

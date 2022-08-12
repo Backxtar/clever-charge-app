@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="dir_bce1ff9d3897734f0a9d16bce71c5517" kind="dir">
+    <compoundname>D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge</compoundname>
+    <innerdir refid="dir_7bdb71a19edb84b0e2b1af166d1170cb">D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data</innerdir>
+    <innerdir refid="dir_c2799160278c18bc730992cd48735db6">D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsLogin</innerdir>
+    <innerdir refid="dir_5bfed53de6304aeb71e3c3c6718524c5">D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain</innerdir>
+    <innerdir refid="dir_48b95da53ff35e73307d5da0bf4629c7">D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/interfaces</innerdir>
+    <innerdir refid="dir_38d5e106a370b5628a71e85b703cf23c">D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/managers</innerdir>
+    <innerdir refid="dir_1355f9ae0b44fbf38a8817ce95e086bf">D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services</innerdir>
+    <innerfile refid="d9/db6/_loading_screen_8java">LoadingScreen.java</innerfile>
+    <innerfile refid="d9/d7f/_login_8java">Login.java</innerfile>
+    <innerfile refid="d4/d79/_main_activity_8java">MainActivity.java</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/"/>
+  </compounddef>
+</doxygen>

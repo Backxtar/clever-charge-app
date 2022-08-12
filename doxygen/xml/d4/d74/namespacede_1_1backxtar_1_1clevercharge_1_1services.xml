@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="d4/d74/namespacede_1_1backxtar_1_1clevercharge_1_1services" kind="namespace" language="Java">
+    <compoundname>de::backxtar::clevercharge::services</compoundname>
+    <innerclass refid="dc/d75/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_download_service" prot="public">de::backxtar::clevercharge::services::DownloadService</innerclass>
+    <innerclass refid="da/da6/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_message_service" prot="public">de::backxtar::clevercharge::services::MessageService</innerclass>
+    <innerclass refid="d9/dc7/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_popup_service" prot="public">de::backxtar::clevercharge::services::PopupService</innerclass>
+    <innerclass refid="d7/d15/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_report_service" prot="public">de::backxtar::clevercharge::services::ReportService</innerclass>
+    <innerclass refid="d9/dd1/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_save_state_service" prot="public">de::backxtar::clevercharge::services::SaveStateService</innerclass>
+    <innerclass refid="d7/d22/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_spacing_item_service" prot="public">de::backxtar::clevercharge::services::SpacingItemService</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/DownloadService.java" line="1" column="15"/>
+  </compounddef>
+</doxygen>

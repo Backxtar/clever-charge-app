@@ -1,0 +1,68 @@
+\hypertarget{_a_p_i_response_8java_source}{}\doxysection{APIResponse.\+java}
+\label{_a_p_i_response_8java_source}\index{D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-\/softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/APIResponse.java@{D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-\/softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/APIResponse.java}}
+\mbox{\hyperlink{_a_p_i_response_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_a_p_i_response_8java_source_l00001}\mbox{\hyperlink{namespacede_1_1backxtar_1_1clevercharge_1_1data}{00001}} \textcolor{keyword}{package }de.backxtar.clevercharge.data;}
+\DoxyCodeLine{\Hypertarget{_a_p_i_response_8java_source_l00002}00002 }
+\DoxyCodeLine{\Hypertarget{_a_p_i_response_8java_source_l00003}00003 \textcolor{keyword}{import} java.util.ArrayList;}
+\DoxyCodeLine{\Hypertarget{_a_p_i_response_8java_source_l00004}00004 \textcolor{keyword}{import} java.util.HashMap;}
+\DoxyCodeLine{\Hypertarget{_a_p_i_response_8java_source_l00005}00005 }
+\DoxyCodeLine{\Hypertarget{_a_p_i_response_8java_source_l00012}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response}{00012}} \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response}{APIResponse}} \{}
+\DoxyCodeLine{\Hypertarget{_a_p_i_response_8java_source_l00013}00013 }
+\DoxyCodeLine{\Hypertarget{_a_p_i_response_8java_source_l00014}00014     \textcolor{comment}{/* Response values */}}
+\DoxyCodeLine{\Hypertarget{_a_p_i_response_8java_source_l00015}00015 }
+\DoxyCodeLine{\Hypertarget{_a_p_i_response_8java_source_l00019}00019     \textcolor{keyword}{private} \textcolor{keywordtype}{int} response\_code;}
+\DoxyCodeLine{\Hypertarget{_a_p_i_response_8java_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{_a_p_i_response_8java_source_l00024}00024     \textcolor{keyword}{private} String response\_msg;}
+\DoxyCodeLine{\Hypertarget{_a_p_i_response_8java_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{_a_p_i_response_8java_source_l00029}00029     \textcolor{keyword}{private} \textcolor{keywordtype}{int} user\_id;}
+\DoxyCodeLine{\Hypertarget{_a_p_i_response_8java_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{_a_p_i_response_8java_source_l00034}00034     \textcolor{keyword}{private} String user\_name;}
+\DoxyCodeLine{\Hypertarget{_a_p_i_response_8java_source_l00035}00035 }
+\DoxyCodeLine{\Hypertarget{_a_p_i_response_8java_source_l00039}00039     \textcolor{keyword}{private} String user\_email;}
+\DoxyCodeLine{\Hypertarget{_a_p_i_response_8java_source_l00040}00040 }
+\DoxyCodeLine{\Hypertarget{_a_p_i_response_8java_source_l00044}00044     \textcolor{keyword}{private} \textcolor{keywordtype}{boolean} is\_dev;}
+\DoxyCodeLine{\Hypertarget{_a_p_i_response_8java_source_l00045}00045 }
+\DoxyCodeLine{\Hypertarget{_a_p_i_response_8java_source_l00049}00049     \textcolor{keyword}{private} ArrayList<Integer> fav\_station\_ids;}
+\DoxyCodeLine{\Hypertarget{_a_p_i_response_8java_source_l00050}00050 }
+\DoxyCodeLine{\Hypertarget{_a_p_i_response_8java_source_l00054}00054     \textcolor{keyword}{private} HashMap<Integer, String> defect\_stations\_map;}
+\DoxyCodeLine{\Hypertarget{_a_p_i_response_8java_source_l00055}00055 }
+\DoxyCodeLine{\Hypertarget{_a_p_i_response_8java_source_l00059}00059     \textcolor{keyword}{private} ArrayList<Integer> news\_read\_ids;}
+\DoxyCodeLine{\Hypertarget{_a_p_i_response_8java_source_l00060}00060     \textcolor{comment}{//=====================================================}}
+\DoxyCodeLine{\Hypertarget{_a_p_i_response_8java_source_l00061}00061 }
+\DoxyCodeLine{\Hypertarget{_a_p_i_response_8java_source_l00066}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_ad9ff40e155d754986ec06ff9445d2342}{00066}}     \textcolor{keyword}{public} \textcolor{keywordtype}{int} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_ad9ff40e155d754986ec06ff9445d2342}{getResponseCode}}() \{}
+\DoxyCodeLine{\Hypertarget{_a_p_i_response_8java_source_l00067}00067         \textcolor{keywordflow}{return} response\_code;}
+\DoxyCodeLine{\Hypertarget{_a_p_i_response_8java_source_l00068}00068     \}}
+\DoxyCodeLine{\Hypertarget{_a_p_i_response_8java_source_l00069}00069 }
+\DoxyCodeLine{\Hypertarget{_a_p_i_response_8java_source_l00074}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_afd5fedc67ce5d7f9e25fb62320f39ae4}{00074}}     \textcolor{keyword}{public} \textcolor{keywordtype}{int} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_afd5fedc67ce5d7f9e25fb62320f39ae4}{getUserID}}() \{}
+\DoxyCodeLine{\Hypertarget{_a_p_i_response_8java_source_l00075}00075         \textcolor{keywordflow}{return} user\_id;}
+\DoxyCodeLine{\Hypertarget{_a_p_i_response_8java_source_l00076}00076     \}}
+\DoxyCodeLine{\Hypertarget{_a_p_i_response_8java_source_l00077}00077 }
+\DoxyCodeLine{\Hypertarget{_a_p_i_response_8java_source_l00082}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_a923f2aa54c422d8834e278a90b4c1d77}{00082}}     \textcolor{keyword}{public} String \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_a923f2aa54c422d8834e278a90b4c1d77}{getUserNAME}}() \{}
+\DoxyCodeLine{\Hypertarget{_a_p_i_response_8java_source_l00083}00083         \textcolor{keywordflow}{return} user\_name;}
+\DoxyCodeLine{\Hypertarget{_a_p_i_response_8java_source_l00084}00084     \}}
+\DoxyCodeLine{\Hypertarget{_a_p_i_response_8java_source_l00085}00085 }
+\DoxyCodeLine{\Hypertarget{_a_p_i_response_8java_source_l00090}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_a66fb65f639242e3fe284a0d95e08a387}{00090}}     \textcolor{keyword}{public} String \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_a66fb65f639242e3fe284a0d95e08a387}{getUserEMAIL}}() \{}
+\DoxyCodeLine{\Hypertarget{_a_p_i_response_8java_source_l00091}00091         \textcolor{keywordflow}{return} user\_email;}
+\DoxyCodeLine{\Hypertarget{_a_p_i_response_8java_source_l00092}00092     \}}
+\DoxyCodeLine{\Hypertarget{_a_p_i_response_8java_source_l00093}00093 }
+\DoxyCodeLine{\Hypertarget{_a_p_i_response_8java_source_l00098}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_aae2b4b46075811d17953cbe894a7fe00}{00098}}     \textcolor{keyword}{public} \textcolor{keywordtype}{boolean} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_aae2b4b46075811d17953cbe894a7fe00}{isDEV}}() \{}
+\DoxyCodeLine{\Hypertarget{_a_p_i_response_8java_source_l00099}00099         \textcolor{keywordflow}{return} is\_dev;}
+\DoxyCodeLine{\Hypertarget{_a_p_i_response_8java_source_l00100}00100     \}}
+\DoxyCodeLine{\Hypertarget{_a_p_i_response_8java_source_l00101}00101 }
+\DoxyCodeLine{\Hypertarget{_a_p_i_response_8java_source_l00106}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_a1dfa2252e57d3dedcafcd225e709be7f}{00106}}     \textcolor{keyword}{public} ArrayList<Integer> \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_a1dfa2252e57d3dedcafcd225e709be7f}{getFavorites}}() \{}
+\DoxyCodeLine{\Hypertarget{_a_p_i_response_8java_source_l00107}00107         \textcolor{keywordflow}{return} fav\_station\_ids;}
+\DoxyCodeLine{\Hypertarget{_a_p_i_response_8java_source_l00108}00108     \}}
+\DoxyCodeLine{\Hypertarget{_a_p_i_response_8java_source_l00109}00109 }
+\DoxyCodeLine{\Hypertarget{_a_p_i_response_8java_source_l00114}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_a6a9d3a50e360265ecef575ebfaefcc4c}{00114}}     \textcolor{keyword}{public} HashMap<Integer, String> \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_a6a9d3a50e360265ecef575ebfaefcc4c}{getDefect\_stations\_map}}() \{}
+\DoxyCodeLine{\Hypertarget{_a_p_i_response_8java_source_l00115}00115         \textcolor{keywordflow}{return} defect\_stations\_map;}
+\DoxyCodeLine{\Hypertarget{_a_p_i_response_8java_source_l00116}00116     \}}
+\DoxyCodeLine{\Hypertarget{_a_p_i_response_8java_source_l00117}00117 }
+\DoxyCodeLine{\Hypertarget{_a_p_i_response_8java_source_l00122}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_a1ef4ebb0932445824a673dd411eb80ab}{00122}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_a1ef4ebb0932445824a673dd411eb80ab}{setDefect\_stations\_map}}(HashMap<Integer, String> defect\_stations\_map) \{}
+\DoxyCodeLine{\Hypertarget{_a_p_i_response_8java_source_l00123}00123         this.defect\_stations\_map = defect\_stations\_map;}
+\DoxyCodeLine{\Hypertarget{_a_p_i_response_8java_source_l00124}00124     \}}
+\DoxyCodeLine{\Hypertarget{_a_p_i_response_8java_source_l00125}00125 }
+\DoxyCodeLine{\Hypertarget{_a_p_i_response_8java_source_l00130}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_ac49a16a4f8a09b721496c6b6e3037cb4}{00130}}     \textcolor{keyword}{public} ArrayList<Integer> \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_ac49a16a4f8a09b721496c6b6e3037cb4}{getNews\_read\_ids}}() \{ \textcolor{keywordflow}{return} news\_read\_ids; \}}
+\DoxyCodeLine{\Hypertarget{_a_p_i_response_8java_source_l00131}00131 \}}
+
+\end{DoxyCode}

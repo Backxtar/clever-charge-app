@@ -1,0 +1,189 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="df/d44/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_1_1_view_holder" kind="class" language="Java" prot="public">
+    <compoundname>de::backxtar::clevercharge::data::ArticleAdapter::ViewHolder</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">RecyclerView.ViewHolder</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="df/d44/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_1_1_view_holder_1ad28924c0dd8ba6fdbd136015ad3a292d" prot="private" static="no" mutable="no">
+        <type>final ImageView</type>
+        <definition>final ImageView de.backxtar.clevercharge.data.ArticleAdapter.ViewHolder.image</definition>
+        <argsstring></argsstring>
+        <name>image</name>
+        <qualifiedname>de.backxtar.clevercharge.data.ArticleAdapter.ViewHolder.image</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ArticleAdapter.java" line="72" column="33" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ArticleAdapter.java" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d44/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_1_1_view_holder_1a7708d5cd2779b1d97e60c874209322e8" prot="private" static="no" mutable="no">
+        <type>final TextView</type>
+        <definition>final TextView de.backxtar.clevercharge.data.ArticleAdapter.ViewHolder.author</definition>
+        <argsstring></argsstring>
+        <name>author</name>
+        <qualifiedname>de.backxtar.clevercharge.data.ArticleAdapter.ViewHolder.author</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ArticleAdapter.java" line="73" column="32" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ArticleAdapter.java" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d44/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_1_1_view_holder_1a13b6014647fd6561cd17eac763c8dcee" prot="private" static="no" mutable="no">
+        <type>final TextView</type>
+        <definition>final TextView de.backxtar.clevercharge.data.ArticleAdapter.ViewHolder.date</definition>
+        <argsstring></argsstring>
+        <name>date</name>
+        <qualifiedname>de.backxtar.clevercharge.data.ArticleAdapter.ViewHolder.date</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ArticleAdapter.java" line="73" column="39" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ArticleAdapter.java" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d44/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_1_1_view_holder_1a8ff95a986db6cf6a1f23e5836d70a1b8" prot="private" static="no" mutable="no">
+        <type>final TextView</type>
+        <definition>final TextView de.backxtar.clevercharge.data.ArticleAdapter.ViewHolder.title</definition>
+        <argsstring></argsstring>
+        <name>title</name>
+        <qualifiedname>de.backxtar.clevercharge.data.ArticleAdapter.ViewHolder.title</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ArticleAdapter.java" line="73" column="44" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ArticleAdapter.java" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d44/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_1_1_view_holder_1a5fa35838158629240cee62577373de5c" prot="private" static="no" mutable="no">
+        <type>final TextView</type>
+        <definition>final TextView de.backxtar.clevercharge.data.ArticleAdapter.ViewHolder.desc</definition>
+        <argsstring></argsstring>
+        <name>desc</name>
+        <qualifiedname>de.backxtar.clevercharge.data.ArticleAdapter.ViewHolder.desc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ArticleAdapter.java" line="73" column="50" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ArticleAdapter.java" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d44/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_1_1_view_holder_1a9d4bd369dbdee48a739b7f05122333fd" prot="private" static="no" mutable="no">
+        <type>final TextView</type>
+        <definition>final TextView de.backxtar.clevercharge.data.ArticleAdapter.ViewHolder.content</definition>
+        <argsstring></argsstring>
+        <name>content</name>
+        <qualifiedname>de.backxtar.clevercharge.data.ArticleAdapter.ViewHolder.content</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ArticleAdapter.java" line="73" column="55" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ArticleAdapter.java" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d44/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_1_1_view_holder_1ada0fa1f0438b79829dbd3eb324ba6aa0" prot="private" static="no" mutable="no">
+        <type>final ProgressBar</type>
+        <definition>final ProgressBar de.backxtar.clevercharge.data.ArticleAdapter.ViewHolder.bar</definition>
+        <argsstring></argsstring>
+        <name>bar</name>
+        <qualifiedname>de.backxtar.clevercharge.data.ArticleAdapter.ViewHolder.bar</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ArticleAdapter.java" line="74" column="35" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ArticleAdapter.java" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d44/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_1_1_view_holder_1a8046fc36e0a010cef77d6ac21f7014ca" prot="private" static="no" mutable="no">
+        <type>ImageButton</type>
+        <definition>ImageButton de.backxtar.clevercharge.data.ArticleAdapter.ViewHolder.read</definition>
+        <argsstring></argsstring>
+        <name>read</name>
+        <qualifiedname>de.backxtar.clevercharge.data.ArticleAdapter.ViewHolder.read</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ArticleAdapter.java" line="75" column="29" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ArticleAdapter.java" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="df/d44/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_1_1_view_holder_1a8083c702b6755bd6e87c6cee72da0d47" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>de.backxtar.clevercharge.data.ArticleAdapter.ViewHolder.ViewHolder</definition>
+        <argsstring>(@NonNull View itemView)</argsstring>
+        <name>ViewHolder</name>
+        <qualifiedname>de.backxtar.clevercharge.data.ArticleAdapter.ViewHolder.ViewHolder</qualifiedname>
+        <param>
+          <type>@NonNull View</type>
+          <declname>itemView</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="df/d44/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_1_1_view_holder" kindref="compound">ViewHolder</ref> constructor. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>itemView</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as view </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ArticleAdapter.java" line="81" column="16" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ArticleAdapter.java" bodystart="81" bodyend="91"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>RecyclerView::ViewHolder</label>
+      </node>
+      <node id="1">
+        <label>de.backxtar.clevercharge.data.ArticleAdapter.ViewHolder</label>
+        <link refid="df/d44/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_1_1_view_holder"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>RecyclerView::ViewHolder</label>
+      </node>
+      <node id="1">
+        <label>de.backxtar.clevercharge.data.ArticleAdapter.ViewHolder</label>
+        <link refid="df/d44/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_1_1_view_holder"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ArticleAdapter.java" line="71" column="11" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ArticleAdapter.java" bodystart="71" bodyend="92"/>
+    <listofallmembers>
+      <member refid="df/d44/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_1_1_view_holder_1a7708d5cd2779b1d97e60c874209322e8" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::data::ArticleAdapter::ViewHolder</scope><name>author</name></member>
+      <member refid="df/d44/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_1_1_view_holder_1ada0fa1f0438b79829dbd3eb324ba6aa0" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::data::ArticleAdapter::ViewHolder</scope><name>bar</name></member>
+      <member refid="df/d44/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_1_1_view_holder_1a9d4bd369dbdee48a739b7f05122333fd" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::data::ArticleAdapter::ViewHolder</scope><name>content</name></member>
+      <member refid="df/d44/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_1_1_view_holder_1a13b6014647fd6561cd17eac763c8dcee" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::data::ArticleAdapter::ViewHolder</scope><name>date</name></member>
+      <member refid="df/d44/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_1_1_view_holder_1a5fa35838158629240cee62577373de5c" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::data::ArticleAdapter::ViewHolder</scope><name>desc</name></member>
+      <member refid="df/d44/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_1_1_view_holder_1ad28924c0dd8ba6fdbd136015ad3a292d" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::data::ArticleAdapter::ViewHolder</scope><name>image</name></member>
+      <member refid="df/d44/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_1_1_view_holder_1a8046fc36e0a010cef77d6ac21f7014ca" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::data::ArticleAdapter::ViewHolder</scope><name>read</name></member>
+      <member refid="df/d44/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_1_1_view_holder_1a8ff95a986db6cf6a1f23e5836d70a1b8" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::data::ArticleAdapter::ViewHolder</scope><name>title</name></member>
+      <member refid="df/d44/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_1_1_view_holder_1a8083c702b6755bd6e87c6cee72da0d47" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::data::ArticleAdapter::ViewHolder</scope><name>ViewHolder</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

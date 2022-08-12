@@ -1,0 +1,178 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="da/da6/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_message_service" kind="class" language="Java" prot="public">
+    <compoundname>de::backxtar::clevercharge::services::MessageService</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="da/da6/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_message_service_1a79e61f031839b89053097d645b2ae395" prot="private" static="no" mutable="no">
+        <type>Activity</type>
+        <definition>Activity de.backxtar.clevercharge.services.MessageService.activity</definition>
+        <argsstring></argsstring>
+        <name>activity</name>
+        <qualifiedname>de.backxtar.clevercharge.services.MessageService.activity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Current activity. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/MessageService.java" line="24" column="22" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/MessageService.java" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/da6/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_message_service_1a7a3e97271e7c5cbb729386c505dfe971" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String de.backxtar.clevercharge.services.MessageService.message</definition>
+        <argsstring></argsstring>
+        <name>message</name>
+        <qualifiedname>de.backxtar.clevercharge.services.MessageService.message</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Message to be send. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/MessageService.java" line="29" column="20" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/MessageService.java" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="da/da6/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_message_service_1a1cc4dbaea5ba4f31058ad7154a26e839" prot="package" static="no" mutable="no">
+        <type>int</type>
+        <definition>int de.backxtar.clevercharge.services.MessageService.gravity</definition>
+        <argsstring></argsstring>
+        <name>gravity</name>
+        <qualifiedname>de.backxtar.clevercharge.services.MessageService.gravity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Position of the toast. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/MessageService.java" line="34" column="9" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/MessageService.java" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/da6/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_message_service_1aa46f9113a5f78b2b77cb217e36138db3" prot="package" static="no" mutable="no">
+        <type>boolean</type>
+        <definition>boolean de.backxtar.clevercharge.services.MessageService.error</definition>
+        <argsstring></argsstring>
+        <name>error</name>
+        <qualifiedname>de.backxtar.clevercharge.services.MessageService.error</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Is error message or success message. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/MessageService.java" line="39" column="13" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/MessageService.java" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="da/da6/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_message_service_1a250fe10f8b9fc126b42b51488e4150a6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>de.backxtar.clevercharge.services.MessageService.MessageService</definition>
+        <argsstring>(Activity activity, String message, int gravity, boolean error)</argsstring>
+        <name>MessageService</name>
+        <qualifiedname>de.backxtar.clevercharge.services.MessageService.MessageService</qualifiedname>
+        <param>
+          <type>Activity</type>
+          <declname>activity</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>gravity</declname>
+        </param>
+        <param>
+          <type>boolean</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="da/da6/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_message_service" kindref="compound">MessageService</ref> constructor. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>activity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as String </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gravity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as int </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as boolean </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/MessageService.java" line="49" column="12" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/MessageService.java" bodystart="49" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="da/da6/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_message_service_1ac4ac04d455ed4804dca168aa75203943" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void de.backxtar.clevercharge.services.MessageService.sendToast</definition>
+        <argsstring>()</argsstring>
+        <name>sendToast</name>
+        <qualifiedname>de.backxtar.clevercharge.services.MessageService.sendToast</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send toast to top location. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/MessageService.java" line="59" column="17" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/MessageService.java" bodystart="59" bodyend="77"/>
+        <referencedby refid="d5/d2c/classde_1_1backxtar_1_1clevercharge_1_1_loading_screen_1a3576280bfc02203be6c9d13d4bfe3957" compoundref="d9/db6/_loading_screen_8java" startline="45" endline="83">de.backxtar.clevercharge.LoadingScreen.onCreate</referencedby>
+        <referencedby refid="db/d96/classde_1_1backxtar_1_1clevercharge_1_1_login_1a24ca4a6d588d025fb2caba526586d45b" compoundref="d9/d7f/_login_8java" startline="47" endline="92">de.backxtar.clevercharge.Login.onCreate</referencedby>
+        <referencedby refid="d9/dac/classde_1_1backxtar_1_1clevercharge_1_1_main_activity_1a79ddb017931d77b8d847d49000411967" compoundref="d4/d79/_main_activity_8java" startline="168" endline="178">de.backxtar.clevercharge.MainActivity.onRequestPermissionsResult</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="da/da6/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_message_service" kindref="compound">MessageService</ref> object. <simplesect kind="author"><para>Jörg Quick, Tilo Steinmetzer </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>de.backxtar.clevercharge.services.MessageService</label>
+        <link refid="da/da6/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_message_service"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/MessageService.java" line="17" column="7" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/MessageService.java" bodystart="17" bodyend="78"/>
+    <listofallmembers>
+      <member refid="da/da6/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_message_service_1a79e61f031839b89053097d645b2ae395" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::services::MessageService</scope><name>activity</name></member>
+      <member refid="da/da6/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_message_service_1aa46f9113a5f78b2b77cb217e36138db3" prot="package" virt="non-virtual"><scope>de::backxtar::clevercharge::services::MessageService</scope><name>error</name></member>
+      <member refid="da/da6/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_message_service_1a1cc4dbaea5ba4f31058ad7154a26e839" prot="package" virt="non-virtual"><scope>de::backxtar::clevercharge::services::MessageService</scope><name>gravity</name></member>
+      <member refid="da/da6/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_message_service_1a7a3e97271e7c5cbb729386c505dfe971" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::services::MessageService</scope><name>message</name></member>
+      <member refid="da/da6/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_message_service_1a250fe10f8b9fc126b42b51488e4150a6" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::services::MessageService</scope><name>MessageService</name></member>
+      <member refid="da/da6/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_message_service_1ac4ac04d455ed4804dca168aa75203943" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::services::MessageService</scope><name>sendToast</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

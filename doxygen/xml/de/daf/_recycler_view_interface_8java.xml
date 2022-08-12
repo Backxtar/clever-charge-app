@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="de/daf/_recycler_view_interface_8java" kind="file" language="Java">
+    <compoundname>RecyclerViewInterface.java</compoundname>
+    <innerclass refid="df/dc0/interfacede_1_1backxtar_1_1clevercharge_1_1interfaces_1_1_recycler_view_interface" prot="public">de::backxtar::clevercharge::interfaces::RecyclerViewInterface</innerclass>
+    <innernamespace refid="d2/dd4/namespacede_1_1backxtar_1_1clevercharge_1_1interfaces">de::backxtar::clevercharge::interfaces</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="d2/dd4/namespacede_1_1backxtar_1_1clevercharge_1_1interfaces" refkind="compound"><highlight class="keyword">package<sp/></highlight><highlight class="normal">de.backxtar.clevercharge.interfaces;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>de.backxtar.clevercharge.data.ChargingStation;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="df/dc0/interfacede_1_1backxtar_1_1clevercharge_1_1interfaces_1_1_recycler_view_interface" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="df/dc0/interfacede_1_1backxtar_1_1clevercharge_1_1interfaces_1_1_recycler_view_interface" kindref="compound">RecyclerViewInterface</ref><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="df/dc0/interfacede_1_1backxtar_1_1clevercharge_1_1interfaces_1_1_recycler_view_interface_1ada0d47aa7604b262f2c4115063510a1d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="df/dc0/interfacede_1_1backxtar_1_1clevercharge_1_1interfaces_1_1_recycler_view_interface_1ada0d47aa7604b262f2c4115063510a1d" kindref="member">onItemClick</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>position,<sp/><ref refid="d2/dae/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station" kindref="compound">ChargingStation</ref><sp/>station);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/interfaces/RecyclerViewInterface.java"/>
+  </compounddef>
+</doxygen>

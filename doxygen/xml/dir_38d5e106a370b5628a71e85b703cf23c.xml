@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="dir_38d5e106a370b5628a71e85b703cf23c" kind="dir">
+    <compoundname>D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/managers</compoundname>
+    <innerfile refid="d3/daf/_login_manager_8java">LoginManager.java</innerfile>
+    <innerfile refid="d2/d09/_navigation_manager_8java">NavigationManager.java</innerfile>
+    <innerfile refid="d1/dfe/_station_manager_8java">StationManager.java</innerfile>
+    <innerfile refid="d3/dcc/_user_manager_8java">UserManager.java</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/managers/"/>
+  </compounddef>
+</doxygen>

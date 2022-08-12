@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="dd/d4e/_module_type_8java" kind="file" language="Java">
+    <compoundname>ModuleType.java</compoundname>
+    <innerclass refid="dd/d57/enumde_1_1backxtar_1_1clevercharge_1_1data_1_1_module_type" prot="public">de::backxtar::clevercharge::data::ModuleType</innerclass>
+    <innernamespace refid="d0/d99/namespacede_1_1backxtar_1_1clevercharge_1_1data">de::backxtar::clevercharge::data</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">package<sp/></highlight><highlight class="normal">de.backxtar.clevercharge.data;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>com.google.gson.annotations.SerializedName;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="dd/d57/enumde_1_1backxtar_1_1clevercharge_1_1data_1_1_module_type" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="dd/d57/enumde_1_1backxtar_1_1clevercharge_1_1data_1_1_module_type" kindref="compound">ModuleType</ref><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="dd/d57/enumde_1_1backxtar_1_1clevercharge_1_1data_1_1_module_type_1ab867124291945cf49ba845674ce2106b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>@<ref refid="dd/d57/enumde_1_1backxtar_1_1clevercharge_1_1data_1_1_module_type_1ab867124291945cf49ba845674ce2106b" kindref="member">SerializedName</ref>(</highlight><highlight class="stringliteral">&quot;Normalladeeinrichtung&quot;</highlight><highlight class="normal">)<sp/>STANDARD,</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>@SerializedName(&quot;Schnellladeeinrichtung&quot;)<sp/>FAST_CHARGING</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ModuleType.java"/>
+  </compounddef>
+</doxygen>

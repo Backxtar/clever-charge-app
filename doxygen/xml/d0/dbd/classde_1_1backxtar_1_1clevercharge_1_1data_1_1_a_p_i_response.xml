@@ -1,0 +1,355 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="d0/dbd/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response" kind="class" language="Java" prot="public">
+    <compoundname>de::backxtar::clevercharge::data::APIResponse</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d0/dbd/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_1a91988c3748a4c9e43f827b2b57125ff4" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int de.backxtar.clevercharge.data.APIResponse.response_code</definition>
+        <argsstring></argsstring>
+        <name>response_code</name>
+        <qualifiedname>de.backxtar.clevercharge.data.APIResponse.response_code</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Response code. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/APIResponse.java" line="19" column="17" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/APIResponse.java" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/dbd/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_1a161682089191b7b1d1e34ccfb58820af" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String de.backxtar.clevercharge.data.APIResponse.response_msg</definition>
+        <argsstring></argsstring>
+        <name>response_msg</name>
+        <qualifiedname>de.backxtar.clevercharge.data.APIResponse.response_msg</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Response message. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/APIResponse.java" line="24" column="20" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/APIResponse.java" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/dbd/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_1ad62164cae984b225143a26907318ef49" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int de.backxtar.clevercharge.data.APIResponse.user_id</definition>
+        <argsstring></argsstring>
+        <name>user_id</name>
+        <qualifiedname>de.backxtar.clevercharge.data.APIResponse.user_id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>User ID. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/APIResponse.java" line="29" column="17" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/APIResponse.java" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/dbd/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_1a844f014156e1482eb8e47a345b8d6fa8" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String de.backxtar.clevercharge.data.APIResponse.user_name</definition>
+        <argsstring></argsstring>
+        <name>user_name</name>
+        <qualifiedname>de.backxtar.clevercharge.data.APIResponse.user_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Username. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/APIResponse.java" line="34" column="20" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/APIResponse.java" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/dbd/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_1a6d866edba03bd922c3bafa18775e36a1" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String de.backxtar.clevercharge.data.APIResponse.user_email</definition>
+        <argsstring></argsstring>
+        <name>user_email</name>
+        <qualifiedname>de.backxtar.clevercharge.data.APIResponse.user_email</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>User mail. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/APIResponse.java" line="39" column="20" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/APIResponse.java" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/dbd/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_1ae844889ed1e8566a1a37ac17ce06d957" prot="private" static="no" mutable="no">
+        <type>boolean</type>
+        <definition>boolean de.backxtar.clevercharge.data.APIResponse.is_dev</definition>
+        <argsstring></argsstring>
+        <name>is_dev</name>
+        <qualifiedname>de.backxtar.clevercharge.data.APIResponse.is_dev</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Is dev or normal user. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/APIResponse.java" line="44" column="21" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/APIResponse.java" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/dbd/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_1a2cc5326af1d90e2721dc8999430c0dad" prot="private" static="no" mutable="no">
+        <type>ArrayList&lt; Integer &gt;</type>
+        <definition>ArrayList&lt;Integer&gt; de.backxtar.clevercharge.data.APIResponse.fav_station_ids</definition>
+        <argsstring></argsstring>
+        <name>fav_station_ids</name>
+        <qualifiedname>de.backxtar.clevercharge.data.APIResponse.fav_station_ids</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Favorite stations. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/APIResponse.java" line="49" column="23" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/APIResponse.java" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/dbd/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_1a0a7bab24267bd43ec28e7d534022fd15" prot="private" static="no" mutable="no">
+        <type>HashMap&lt; Integer, String &gt;</type>
+        <definition>HashMap&lt;Integer, String&gt; de.backxtar.clevercharge.data.APIResponse.defect_stations_map</definition>
+        <argsstring></argsstring>
+        <name>defect_stations_map</name>
+        <qualifiedname>de.backxtar.clevercharge.data.APIResponse.defect_stations_map</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Defect stations with report msg. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/APIResponse.java" line="54" column="21" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/APIResponse.java" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/dbd/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_1a70f6e968c62c14fbceb0568e02b9ffd8" prot="private" static="no" mutable="no">
+        <type>ArrayList&lt; Integer &gt;</type>
+        <definition>ArrayList&lt;Integer&gt; de.backxtar.clevercharge.data.APIResponse.news_read_ids</definition>
+        <argsstring></argsstring>
+        <name>news_read_ids</name>
+        <qualifiedname>de.backxtar.clevercharge.data.APIResponse.news_read_ids</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>News marked as read. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/APIResponse.java" line="59" column="23" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/APIResponse.java" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d0/dbd/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_1ad9ff40e155d754986ec06ff9445d2342" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int de.backxtar.clevercharge.data.APIResponse.getResponseCode</definition>
+        <argsstring>()</argsstring>
+        <name>getResponseCode</name>
+        <qualifiedname>de.backxtar.clevercharge.data.APIResponse.getResponseCode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get response code send by api. <simplesect kind="return"><para>code as int </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/APIResponse.java" line="66" column="16" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/APIResponse.java" bodystart="66" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/dbd/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_1afd5fedc67ce5d7f9e25fb62320f39ae4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int de.backxtar.clevercharge.data.APIResponse.getUserID</definition>
+        <argsstring>()</argsstring>
+        <name>getUserID</name>
+        <qualifiedname>de.backxtar.clevercharge.data.APIResponse.getUserID</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get users id. <simplesect kind="return"><para>userId as int </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/APIResponse.java" line="74" column="16" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/APIResponse.java" bodystart="74" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/dbd/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_1a923f2aa54c422d8834e278a90b4c1d77" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String de.backxtar.clevercharge.data.APIResponse.getUserNAME</definition>
+        <argsstring>()</argsstring>
+        <name>getUserNAME</name>
+        <qualifiedname>de.backxtar.clevercharge.data.APIResponse.getUserNAME</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get users username. <simplesect kind="return"><para>userName as String </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/APIResponse.java" line="82" column="19" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/APIResponse.java" bodystart="82" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/dbd/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_1a66fb65f639242e3fe284a0d95e08a387" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String de.backxtar.clevercharge.data.APIResponse.getUserEMAIL</definition>
+        <argsstring>()</argsstring>
+        <name>getUserEMAIL</name>
+        <qualifiedname>de.backxtar.clevercharge.data.APIResponse.getUserEMAIL</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get users email. <simplesect kind="return"><para>userMail as String </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/APIResponse.java" line="90" column="19" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/APIResponse.java" bodystart="90" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/dbd/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_1aae2b4b46075811d17953cbe894a7fe00" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean de.backxtar.clevercharge.data.APIResponse.isDEV</definition>
+        <argsstring>()</argsstring>
+        <name>isDEV</name>
+        <qualifiedname>de.backxtar.clevercharge.data.APIResponse.isDEV</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get users permissions. <simplesect kind="return"><para>as bool </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/APIResponse.java" line="98" column="20" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/APIResponse.java" bodystart="98" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/dbd/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_1a1dfa2252e57d3dedcafcd225e709be7f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ArrayList&lt; Integer &gt;</type>
+        <definition>ArrayList&lt; Integer &gt; de.backxtar.clevercharge.data.APIResponse.getFavorites</definition>
+        <argsstring>()</argsstring>
+        <name>getFavorites</name>
+        <qualifiedname>de.backxtar.clevercharge.data.APIResponse.getFavorites</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get users favorites <simplesect kind="return"><para>favorites as ArrayList&lt;Integer&gt; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/APIResponse.java" line="106" column="22" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/APIResponse.java" bodystart="106" bodyend="108"/>
+        <referencedby refid="d2/d96/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_1a90cc885bc23aaf437ec10f20c74f9355" compoundref="d1/dfe/_station_manager_8java" startline="125" endline="129">de.backxtar.clevercharge.managers.StationManager.getFavorites</referencedby>
+        <referencedby refid="d8/d60/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter_1aa14214e3e8413471450d01c310dcd9b6" compoundref="d8/d92/_charging_station_adapter_8java" startline="89" endline="133">de.backxtar.clevercharge.data.ChargingStationAdapter.getItemViewType</referencedby>
+        <referencedby refid="d9/dc7/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_popup_service_1af74f3ec6cd6fb55d81a1938af49efdd8" compoundref="d3/d34/_popup_service_8java" startline="130" endline="253">de.backxtar.clevercharge.services.PopupService.showPopup</referencedby>
+        <referencedby refid="d2/d96/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_1ab26276092c693a031e875316ddb1eb0b" compoundref="d1/dfe/_station_manager_8java" startline="115" endline="119">de.backxtar.clevercharge.managers.StationManager.sortByFavAndLocal</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d0/dbd/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_1a6a9d3a50e360265ecef575ebfaefcc4c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>HashMap&lt; Integer, String &gt;</type>
+        <definition>HashMap&lt; Integer, String &gt; de.backxtar.clevercharge.data.APIResponse.getDefect_stations_map</definition>
+        <argsstring>()</argsstring>
+        <name>getDefect_stations_map</name>
+        <qualifiedname>de.backxtar.clevercharge.data.APIResponse.getDefect_stations_map</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get global defect stations. <simplesect kind="return"><para>defect stations as HashMap&lt;Integer, String&gt; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/APIResponse.java" line="114" column="20" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/APIResponse.java" bodystart="114" bodyend="116"/>
+        <referencedby refid="d2/d96/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_1a84363e55138545c015867ac16fa9c50a" compoundref="d1/dfe/_station_manager_8java" startline="135" endline="139">de.backxtar.clevercharge.managers.StationManager.getDefects</referencedby>
+        <referencedby refid="d8/d60/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter_1aa14214e3e8413471450d01c310dcd9b6" compoundref="d8/d92/_charging_station_adapter_8java" startline="89" endline="133">de.backxtar.clevercharge.data.ChargingStationAdapter.getItemViewType</referencedby>
+        <referencedby refid="d9/dc7/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_popup_service_1af74f3ec6cd6fb55d81a1938af49efdd8" compoundref="d3/d34/_popup_service_8java" startline="130" endline="253">de.backxtar.clevercharge.services.PopupService.showPopup</referencedby>
+        <referencedby refid="d7/d15/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_report_service_1a00d302af860369770540aacfcd3d4405" compoundref="d3/de2/_report_service_8java" startline="107" endline="153">de.backxtar.clevercharge.services.ReportService.showPopup</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d0/dbd/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_1a1ef4ebb0932445824a673dd411eb80ab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void de.backxtar.clevercharge.data.APIResponse.setDefect_stations_map</definition>
+        <argsstring>(HashMap&lt; Integer, String &gt; defect_stations_map)</argsstring>
+        <name>setDefect_stations_map</name>
+        <qualifiedname>de.backxtar.clevercharge.data.APIResponse.setDefect_stations_map</qualifiedname>
+        <param>
+          <type>HashMap&lt; Integer, String &gt;</type>
+          <declname>defect_stations_map</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set global defect stations. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>defect_stations_map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/APIResponse.java" line="122" column="17" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/APIResponse.java" bodystart="122" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/dbd/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_1ac49a16a4f8a09b721496c6b6e3037cb4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ArrayList&lt; Integer &gt;</type>
+        <definition>ArrayList&lt; Integer &gt; de.backxtar.clevercharge.data.APIResponse.getNews_read_ids</definition>
+        <argsstring>()</argsstring>
+        <name>getNews_read_ids</name>
+        <qualifiedname>de.backxtar.clevercharge.data.APIResponse.getNews_read_ids</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get users news. <simplesect kind="return"><para>read news as ArrayList&lt;Integer&gt; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/APIResponse.java" line="130" column="22" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/APIResponse.java" bodystart="130" bodyend="130"/>
+        <referencedby refid="d4/d81/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_1a1f8b257be72724e5d8b06f157b657062" compoundref="de/de8/_article_adapter_8java" startline="100" endline="103">de.backxtar.clevercharge.data.ArticleAdapter.getItemViewType</referencedby>
+        <referencedby refid="d4/d81/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_1af6595dbe29147ff3c8f9c669f9e5c55a" compoundref="de/de8/_article_adapter_8java" startline="131" endline="171">de.backxtar.clevercharge.data.ArticleAdapter.onBindViewHolder</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="d0/dbd/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response" kindref="compound">APIResponse</ref> container. <simplesect kind="author"><para>Jörg Quick, Tilo Steinmetzer </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>de.backxtar.clevercharge.data.APIResponse</label>
+        <link refid="d0/dbd/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/APIResponse.java" line="12" column="7" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/APIResponse.java" bodystart="12" bodyend="131"/>
+    <listofallmembers>
+      <member refid="d0/dbd/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_1a0a7bab24267bd43ec28e7d534022fd15" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::data::APIResponse</scope><name>defect_stations_map</name></member>
+      <member refid="d0/dbd/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_1a2cc5326af1d90e2721dc8999430c0dad" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::data::APIResponse</scope><name>fav_station_ids</name></member>
+      <member refid="d0/dbd/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_1a6a9d3a50e360265ecef575ebfaefcc4c" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::data::APIResponse</scope><name>getDefect_stations_map</name></member>
+      <member refid="d0/dbd/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_1a1dfa2252e57d3dedcafcd225e709be7f" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::data::APIResponse</scope><name>getFavorites</name></member>
+      <member refid="d0/dbd/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_1ac49a16a4f8a09b721496c6b6e3037cb4" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::data::APIResponse</scope><name>getNews_read_ids</name></member>
+      <member refid="d0/dbd/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_1ad9ff40e155d754986ec06ff9445d2342" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::data::APIResponse</scope><name>getResponseCode</name></member>
+      <member refid="d0/dbd/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_1a66fb65f639242e3fe284a0d95e08a387" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::data::APIResponse</scope><name>getUserEMAIL</name></member>
+      <member refid="d0/dbd/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_1afd5fedc67ce5d7f9e25fb62320f39ae4" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::data::APIResponse</scope><name>getUserID</name></member>
+      <member refid="d0/dbd/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_1a923f2aa54c422d8834e278a90b4c1d77" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::data::APIResponse</scope><name>getUserNAME</name></member>
+      <member refid="d0/dbd/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_1ae844889ed1e8566a1a37ac17ce06d957" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::data::APIResponse</scope><name>is_dev</name></member>
+      <member refid="d0/dbd/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_1aae2b4b46075811d17953cbe894a7fe00" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::data::APIResponse</scope><name>isDEV</name></member>
+      <member refid="d0/dbd/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_1a70f6e968c62c14fbceb0568e02b9ffd8" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::data::APIResponse</scope><name>news_read_ids</name></member>
+      <member refid="d0/dbd/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_1a91988c3748a4c9e43f827b2b57125ff4" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::data::APIResponse</scope><name>response_code</name></member>
+      <member refid="d0/dbd/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_1a161682089191b7b1d1e34ccfb58820af" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::data::APIResponse</scope><name>response_msg</name></member>
+      <member refid="d0/dbd/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_1a1ef4ebb0932445824a673dd411eb80ab" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::data::APIResponse</scope><name>setDefect_stations_map</name></member>
+      <member refid="d0/dbd/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_1a6d866edba03bd922c3bafa18775e36a1" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::data::APIResponse</scope><name>user_email</name></member>
+      <member refid="d0/dbd/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_1ad62164cae984b225143a26907318ef49" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::data::APIResponse</scope><name>user_id</name></member>
+      <member refid="d0/dbd/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_1a844f014156e1482eb8e47a345b8d6fa8" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::data::APIResponse</scope><name>user_name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

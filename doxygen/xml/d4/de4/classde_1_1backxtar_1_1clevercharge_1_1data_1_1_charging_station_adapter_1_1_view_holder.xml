@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="d4/de4/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter_1_1_view_holder" kind="class" language="Java" prot="public">
+    <compoundname>de::backxtar::clevercharge::data::ChargingStationAdapter::ViewHolder</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">RecyclerView.ViewHolder</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d4/de4/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter_1_1_view_holder_1a4869359cb7ec689458388cd692b93da1" prot="public" static="no" mutable="no">
+        <type>TextView</type>
+        <definition>TextView de.backxtar.clevercharge.data.ChargingStationAdapter.ViewHolder.operator,location, conn</definition>
+        <argsstring></argsstring>
+        <name>operator, location, conn</name>
+        <qualifiedname>de.backxtar.clevercharge.data.ChargingStationAdapter.ViewHolder.operator, location, conn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ChargingStationAdapter.java" line="61" column="25" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ChargingStationAdapter.java" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d4/de4/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter_1_1_view_holder_1a48f631548f53138633e2bc18c6a05a80" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>de.backxtar.clevercharge.data.ChargingStationAdapter.ViewHolder.ViewHolder</definition>
+        <argsstring>(@NonNull View itemView, RecyclerViewInterface recyclerViewInterface)</argsstring>
+        <name>ViewHolder</name>
+        <qualifiedname>de.backxtar.clevercharge.data.ChargingStationAdapter.ViewHolder.ViewHolder</qualifiedname>
+        <param>
+          <type>@NonNull View</type>
+          <declname>itemView</declname>
+        </param>
+        <param>
+          <type><ref refid="df/dc0/interfacede_1_1backxtar_1_1clevercharge_1_1interfaces_1_1_recycler_view_interface" kindref="compound">RecyclerViewInterface</ref></type>
+          <declname>recyclerViewInterface</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>itemView</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as view </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ChargingStationAdapter.java" line="67" column="16" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ChargingStationAdapter.java" bodystart="67" bodyend="80"/>
+        <references refid="df/dc0/interfacede_1_1backxtar_1_1clevercharge_1_1interfaces_1_1_recycler_view_interface_1ada0d47aa7604b262f2c4115063510a1d">de.backxtar.clevercharge.interfaces.RecyclerViewInterface.onItemClick</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>RecyclerView.ViewHolder</label>
+      </node>
+      <node id="1">
+        <label>de.backxtar.clevercharge.data.ChargingStationAdapter.ViewHolder</label>
+        <link refid="d4/de4/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter_1_1_view_holder"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>RecyclerView.ViewHolder</label>
+      </node>
+      <node id="3">
+        <label>TextView</label>
+      </node>
+      <node id="1">
+        <label>de.backxtar.clevercharge.data.ChargingStationAdapter.ViewHolder</label>
+        <link refid="d4/de4/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter_1_1_view_holder"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+operator, location, conn</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ChargingStationAdapter.java" line="60" column="11" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ChargingStationAdapter.java" bodystart="60" bodyend="81"/>
+    <listofallmembers>
+      <member refid="d4/de4/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter_1_1_view_holder_1a4869359cb7ec689458388cd692b93da1" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::data::ChargingStationAdapter::ViewHolder</scope><name>operator, location, conn</name></member>
+      <member refid="d4/de4/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter_1_1_view_holder_1a48f631548f53138633e2bc18c6a05a80" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::data::ChargingStationAdapter::ViewHolder</scope><name>ViewHolder</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="db/d23/classde_1_1backxtar_1_1clevercharge_1_1_build_config" kind="class" language="Java" prot="public">
+    <compoundname>de::backxtar::clevercharge::BuildConfig</compoundname>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="db/d23/classde_1_1backxtar_1_1clevercharge_1_1_build_config_1a5a9121f7a413fdf1f70de84f3edda897" prot="public" static="yes" mutable="no">
+        <type>final boolean</type>
+        <definition>final boolean de.backxtar.clevercharge.BuildConfig.DEBUG</definition>
+        <argsstring></argsstring>
+        <name>DEBUG</name>
+        <qualifiedname>de.backxtar.clevercharge.BuildConfig.DEBUG</qualifiedname>
+        <initializer>= Boolean.parseBoolean(&quot;true&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/build/generated/source/buildConfig/debug/de/backxtar/clevercharge/BuildConfig.java" line="7" column="31" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/build/generated/source/buildConfig/debug/de/backxtar/clevercharge/BuildConfig.java" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d23/classde_1_1backxtar_1_1clevercharge_1_1_build_config_1ab2e854887c9e3aaf4da5734d2f2fe8ac" prot="public" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String de.backxtar.clevercharge.BuildConfig.APPLICATION_ID</definition>
+        <argsstring></argsstring>
+        <name>APPLICATION_ID</name>
+        <qualifiedname>de.backxtar.clevercharge.BuildConfig.APPLICATION_ID</qualifiedname>
+        <initializer>= &quot;de.backxtar.clevercharge&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/build/generated/source/buildConfig/debug/de/backxtar/clevercharge/BuildConfig.java" line="8" column="30" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/build/generated/source/buildConfig/debug/de/backxtar/clevercharge/BuildConfig.java" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d23/classde_1_1backxtar_1_1clevercharge_1_1_build_config_1abec58744c1fe7e3a504f02b244aff9e2" prot="public" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String de.backxtar.clevercharge.BuildConfig.BUILD_TYPE</definition>
+        <argsstring></argsstring>
+        <name>BUILD_TYPE</name>
+        <qualifiedname>de.backxtar.clevercharge.BuildConfig.BUILD_TYPE</qualifiedname>
+        <initializer>= &quot;debug&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/build/generated/source/buildConfig/debug/de/backxtar/clevercharge/BuildConfig.java" line="9" column="30" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/build/generated/source/buildConfig/debug/de/backxtar/clevercharge/BuildConfig.java" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d23/classde_1_1backxtar_1_1clevercharge_1_1_build_config_1af8f7236a9e078722d327570a4c92d5c8" prot="public" static="yes" mutable="no">
+        <type>final int</type>
+        <definition>final int de.backxtar.clevercharge.BuildConfig.VERSION_CODE</definition>
+        <argsstring></argsstring>
+        <name>VERSION_CODE</name>
+        <qualifiedname>de.backxtar.clevercharge.BuildConfig.VERSION_CODE</qualifiedname>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/build/generated/source/buildConfig/debug/de/backxtar/clevercharge/BuildConfig.java" line="10" column="27" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/build/generated/source/buildConfig/debug/de/backxtar/clevercharge/BuildConfig.java" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d23/classde_1_1backxtar_1_1clevercharge_1_1_build_config_1a24d3af6a4ec9893e8f5d4135de117e60" prot="public" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String de.backxtar.clevercharge.BuildConfig.VERSION_NAME</definition>
+        <argsstring></argsstring>
+        <name>VERSION_NAME</name>
+        <qualifiedname>de.backxtar.clevercharge.BuildConfig.VERSION_NAME</qualifiedname>
+        <initializer>= &quot;1.0&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/build/generated/source/buildConfig/debug/de/backxtar/clevercharge/BuildConfig.java" line="11" column="30" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/build/generated/source/buildConfig/debug/de/backxtar/clevercharge/BuildConfig.java" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>de.backxtar.clevercharge.BuildConfig</label>
+        <link refid="db/d23/classde_1_1backxtar_1_1clevercharge_1_1_build_config"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/build/generated/source/buildConfig/debug/de/backxtar/clevercharge/BuildConfig.java" line="6" column="13" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/build/generated/source/buildConfig/debug/de/backxtar/clevercharge/BuildConfig.java" bodystart="6" bodyend="12"/>
+    <listofallmembers>
+      <member refid="db/d23/classde_1_1backxtar_1_1clevercharge_1_1_build_config_1ab2e854887c9e3aaf4da5734d2f2fe8ac" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::BuildConfig</scope><name>APPLICATION_ID</name></member>
+      <member refid="db/d23/classde_1_1backxtar_1_1clevercharge_1_1_build_config_1abec58744c1fe7e3a504f02b244aff9e2" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::BuildConfig</scope><name>BUILD_TYPE</name></member>
+      <member refid="db/d23/classde_1_1backxtar_1_1clevercharge_1_1_build_config_1a5a9121f7a413fdf1f70de84f3edda897" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::BuildConfig</scope><name>DEBUG</name></member>
+      <member refid="db/d23/classde_1_1backxtar_1_1clevercharge_1_1_build_config_1af8f7236a9e078722d327570a4c92d5c8" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::BuildConfig</scope><name>VERSION_CODE</name></member>
+      <member refid="db/d23/classde_1_1backxtar_1_1clevercharge_1_1_build_config_1a24d3af6a4ec9893e8f5d4135de117e60" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::BuildConfig</scope><name>VERSION_NAME</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

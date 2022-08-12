@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="dir_1355f9ae0b44fbf38a8817ce95e086bf" kind="dir">
+    <compoundname>D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services</compoundname>
+    <innerfile refid="d8/d0f/_download_service_8java">DownloadService.java</innerfile>
+    <innerfile refid="db/dc2/_message_service_8java">MessageService.java</innerfile>
+    <innerfile refid="d3/d34/_popup_service_8java">PopupService.java</innerfile>
+    <innerfile refid="d3/de2/_report_service_8java">ReportService.java</innerfile>
+    <innerfile refid="df/dc3/_save_state_service_8java">SaveStateService.java</innerfile>
+    <innerfile refid="d8/d12/_spacing_item_service_8java">SpacingItemService.java</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/"/>
+  </compounddef>
+</doxygen>

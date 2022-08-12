@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="d7/de2/_example_unit_test_8java" kind="file" language="Java">
+    <compoundname>ExampleUnitTest.java</compoundname>
+    <innerclass refid="db/d5d/classde_1_1backxtar_1_1clevercharge_1_1_example_unit_test" prot="public">de::backxtar::clevercharge::ExampleUnitTest</innerclass>
+    <innernamespace refid="d7/d28/namespacede_1_1backxtar_1_1clevercharge">de::backxtar::clevercharge</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">package<sp/></highlight><highlight class="normal">de.backxtar.clevercharge;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.junit.Test;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>org.junit.Assert.*;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="db/d5d/classde_1_1backxtar_1_1clevercharge_1_1_example_unit_test" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="db/d5d/classde_1_1backxtar_1_1clevercharge_1_1_example_unit_test" kindref="compound">ExampleUnitTest</ref><sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>@Test</highlight></codeline>
+<codeline lineno="15" refid="db/d5d/classde_1_1backxtar_1_1clevercharge_1_1_example_unit_test_1a0734eedbca3cefadd072a26b1d195408" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="db/d5d/classde_1_1backxtar_1_1clevercharge_1_1_example_unit_test_1a0734eedbca3cefadd072a26b1d195408" kindref="member">addition_isCorrect</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertEquals(4,<sp/>2<sp/>+<sp/>2);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/test/java/de/backxtar/clevercharge/ExampleUnitTest.java"/>
+  </compounddef>
+</doxygen>

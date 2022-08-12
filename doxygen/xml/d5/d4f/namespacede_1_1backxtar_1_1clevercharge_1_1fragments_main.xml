@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="d5/d4f/namespacede_1_1backxtar_1_1clevercharge_1_1fragments_main" kind="namespace" language="Java">
+    <compoundname>de::backxtar::clevercharge::fragmentsMain</compoundname>
+    <innerclass refid="da/daa/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_dev_fragment" prot="public">de::backxtar::clevercharge::fragmentsMain::DevFragment</innerclass>
+    <innerclass refid="dc/d44/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_home_fragment" prot="public">de::backxtar::clevercharge::fragmentsMain::HomeFragment</innerclass>
+    <innerclass refid="d7/dd4/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_map_fragment" prot="public">de::backxtar::clevercharge::fragmentsMain::MapFragment</innerclass>
+    <innerclass refid="d3/d46/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_search_fragment" prot="public">de::backxtar::clevercharge::fragmentsMain::SearchFragment</innerclass>
+    <innerclass refid="dd/d9e/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_settings_fragment" prot="public">de::backxtar::clevercharge::fragmentsMain::SettingsFragment</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/DevFragment.java" line="1" column="15"/>
+  </compounddef>
+</doxygen>

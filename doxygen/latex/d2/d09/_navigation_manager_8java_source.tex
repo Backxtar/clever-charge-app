@@ -1,0 +1,50 @@
+\hypertarget{_navigation_manager_8java_source}{}\doxysection{Navigation\+Manager.\+java}
+\label{_navigation_manager_8java_source}\index{D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-\/softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/managers/NavigationManager.java@{D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-\/softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/managers/NavigationManager.java}}
+\mbox{\hyperlink{_navigation_manager_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_navigation_manager_8java_source_l00001}00001 \textcolor{keyword}{package }de.backxtar.clevercharge.managers;}
+\DoxyCodeLine{\Hypertarget{_navigation_manager_8java_source_l00002}00002 }
+\DoxyCodeLine{\Hypertarget{_navigation_manager_8java_source_l00003}00003 \textcolor{keyword}{import} androidx.fragment.app.Fragment;}
+\DoxyCodeLine{\Hypertarget{_navigation_manager_8java_source_l00004}00004 }
+\DoxyCodeLine{\Hypertarget{_navigation_manager_8java_source_l00005}00005 \textcolor{keyword}{import} de.backxtar.clevercharge.fragmentsMain.DevFragment;}
+\DoxyCodeLine{\Hypertarget{_navigation_manager_8java_source_l00006}00006 \textcolor{keyword}{import} de.backxtar.clevercharge.fragmentsMain.HomeFragment;}
+\DoxyCodeLine{\Hypertarget{_navigation_manager_8java_source_l00007}00007 \textcolor{keyword}{import} de.backxtar.clevercharge.fragmentsMain.MapFragment;}
+\DoxyCodeLine{\Hypertarget{_navigation_manager_8java_source_l00008}00008 \textcolor{keyword}{import} de.backxtar.clevercharge.fragmentsMain.SearchFragment;}
+\DoxyCodeLine{\Hypertarget{_navigation_manager_8java_source_l00009}00009 \textcolor{keyword}{import} de.backxtar.clevercharge.fragmentsMain.SettingsFragment;}
+\DoxyCodeLine{\Hypertarget{_navigation_manager_8java_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{_navigation_manager_8java_source_l00017}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_navigation_manager}{00017}} \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_navigation_manager}{NavigationManager}} \{}
+\DoxyCodeLine{\Hypertarget{_navigation_manager_8java_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{_navigation_manager_8java_source_l00019}00019     \textcolor{comment}{/* Global variables */}}
+\DoxyCodeLine{\Hypertarget{_navigation_manager_8java_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{_navigation_manager_8java_source_l00024}00024     \textcolor{keyword}{private} \textcolor{keyword}{final} Fragment map;}
+\DoxyCodeLine{\Hypertarget{_navigation_manager_8java_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{_navigation_manager_8java_source_l00029}00029     \textcolor{keyword}{private} \textcolor{keyword}{final} Fragment settings;}
+\DoxyCodeLine{\Hypertarget{_navigation_manager_8java_source_l00030}00030     \textcolor{comment}{//================================}}
+\DoxyCodeLine{\Hypertarget{_navigation_manager_8java_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{_navigation_manager_8java_source_l00035}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_navigation_manager_a47783e6c021ef777012a30610952674e}{00035}}     \textcolor{keyword}{public} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_navigation_manager_a47783e6c021ef777012a30610952674e}{NavigationManager}}() \{}
+\DoxyCodeLine{\Hypertarget{_navigation_manager_8java_source_l00036}00036         this.map = \textcolor{keyword}{new} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_map_fragment}{MapFragment}}();}
+\DoxyCodeLine{\Hypertarget{_navigation_manager_8java_source_l00037}00037         this.settings = \textcolor{keyword}{new} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_settings_fragment}{SettingsFragment}}();}
+\DoxyCodeLine{\Hypertarget{_navigation_manager_8java_source_l00038}00038     \}}
+\DoxyCodeLine{\Hypertarget{_navigation_manager_8java_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{_navigation_manager_8java_source_l00044}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_navigation_manager_a1f5ea365bb17a810ef056fbc9388b306}{00044}}     \textcolor{keyword}{public} Fragment \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_navigation_manager_a1f5ea365bb17a810ef056fbc9388b306}{getHome}}() \{}
+\DoxyCodeLine{\Hypertarget{_navigation_manager_8java_source_l00045}00045         \textcolor{keywordflow}{return} \textcolor{keyword}{new} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_home_fragment}{HomeFragment}}();}
+\DoxyCodeLine{\Hypertarget{_navigation_manager_8java_source_l00046}00046     \}}
+\DoxyCodeLine{\Hypertarget{_navigation_manager_8java_source_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{_navigation_manager_8java_source_l00052}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_navigation_manager_ad1cc2c79929bd21ac10926d224464bc7}{00052}}     \textcolor{keyword}{public} Fragment \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_navigation_manager_ad1cc2c79929bd21ac10926d224464bc7}{getMap}}() \{}
+\DoxyCodeLine{\Hypertarget{_navigation_manager_8java_source_l00053}00053         \textcolor{keywordflow}{return} map;}
+\DoxyCodeLine{\Hypertarget{_navigation_manager_8java_source_l00054}00054     \}}
+\DoxyCodeLine{\Hypertarget{_navigation_manager_8java_source_l00055}00055 }
+\DoxyCodeLine{\Hypertarget{_navigation_manager_8java_source_l00060}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_navigation_manager_ab6747f672a298c8123828516e69c241b}{00060}}     \textcolor{keyword}{public} Fragment \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_navigation_manager_ab6747f672a298c8123828516e69c241b}{getSearch}}() \{}
+\DoxyCodeLine{\Hypertarget{_navigation_manager_8java_source_l00061}00061         \textcolor{keywordflow}{return} \textcolor{keyword}{new} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_search_fragment}{SearchFragment}}();}
+\DoxyCodeLine{\Hypertarget{_navigation_manager_8java_source_l00062}00062     \}}
+\DoxyCodeLine{\Hypertarget{_navigation_manager_8java_source_l00063}00063 }
+\DoxyCodeLine{\Hypertarget{_navigation_manager_8java_source_l00068}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_navigation_manager_a4806817b6fddd0107692582fbf255a86}{00068}}     \textcolor{keyword}{public} Fragment \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_navigation_manager_a4806817b6fddd0107692582fbf255a86}{getSettings}}() \{}
+\DoxyCodeLine{\Hypertarget{_navigation_manager_8java_source_l00069}00069         \textcolor{keywordflow}{return} settings;}
+\DoxyCodeLine{\Hypertarget{_navigation_manager_8java_source_l00070}00070     \}}
+\DoxyCodeLine{\Hypertarget{_navigation_manager_8java_source_l00071}00071 }
+\DoxyCodeLine{\Hypertarget{_navigation_manager_8java_source_l00076}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_navigation_manager_a04a20dc4e4982ef47898226c522e28e2}{00076}}     \textcolor{keyword}{public} Fragment \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_navigation_manager_a04a20dc4e4982ef47898226c522e28e2}{getDev}}() \{}
+\DoxyCodeLine{\Hypertarget{_navigation_manager_8java_source_l00077}00077         \textcolor{keywordflow}{return} \textcolor{keyword}{new} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_dev_fragment}{DevFragment}}();}
+\DoxyCodeLine{\Hypertarget{_navigation_manager_8java_source_l00078}00078     \}}
+\DoxyCodeLine{\Hypertarget{_navigation_manager_8java_source_l00079}00079 \}}
+
+\end{DoxyCode}

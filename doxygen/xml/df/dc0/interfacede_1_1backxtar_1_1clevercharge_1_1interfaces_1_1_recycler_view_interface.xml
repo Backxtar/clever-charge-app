@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="df/dc0/interfacede_1_1backxtar_1_1clevercharge_1_1interfaces_1_1_recycler_view_interface" kind="interface" language="Java" prot="public">
+    <compoundname>de::backxtar::clevercharge::interfaces::RecyclerViewInterface</compoundname>
+    <derivedcompoundref refid="da/daa/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_dev_fragment" prot="public" virt="non-virtual">de.backxtar.clevercharge.fragmentsMain.DevFragment</derivedcompoundref>
+    <derivedcompoundref refid="d3/d46/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_search_fragment" prot="public" virt="non-virtual">de.backxtar.clevercharge.fragmentsMain.SearchFragment</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="df/dc0/interfacede_1_1backxtar_1_1clevercharge_1_1interfaces_1_1_recycler_view_interface_1ada0d47aa7604b262f2c4115063510a1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void de.backxtar.clevercharge.interfaces.RecyclerViewInterface.onItemClick</definition>
+        <argsstring>(int position, ChargingStation station)</argsstring>
+        <name>onItemClick</name>
+        <qualifiedname>de.backxtar.clevercharge.interfaces.RecyclerViewInterface.onItemClick</qualifiedname>
+        <reimplementedby refid="da/daa/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_dev_fragment_1ac0dce7e1f324fc5bdfc3ee7a4558b99a">onItemClick</reimplementedby>
+        <reimplementedby refid="d3/d46/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_search_fragment_1ad13d718f135a39e029721ffe65f4f909">onItemClick</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/dae/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station" kindref="compound">ChargingStation</ref></type>
+          <declname>station</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>On item click interface for recyclerview. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as int </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>station</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/interfaces/RecyclerViewInterface.java" line="17" column="10"/>
+        <referencedby refid="d4/de4/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter_1_1_view_holder_1a48f631548f53138633e2bc18c6a05a80" compoundref="d8/d92/_charging_station_adapter_8java" startline="67" endline="80">de.backxtar.clevercharge.data.ChargingStationAdapter.ViewHolder.ViewHolder</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Custom recyclerView interface. <simplesect kind="author"><para>Jörg Quick, Tilo Steinmetzer </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>de.backxtar.clevercharge.interfaces.RecyclerViewInterface</label>
+        <link refid="df/dc0/interfacede_1_1backxtar_1_1clevercharge_1_1interfaces_1_1_recycler_view_interface"/>
+      </node>
+      <node id="2">
+        <label>de.backxtar.clevercharge.fragmentsMain.DevFragment</label>
+        <link refid="da/daa/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_dev_fragment"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>de.backxtar.clevercharge.fragmentsMain.SearchFragment</label>
+        <link refid="d3/d46/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_search_fragment"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>de.backxtar.clevercharge.interfaces.RecyclerViewInterface</label>
+        <link refid="df/dc0/interfacede_1_1backxtar_1_1clevercharge_1_1interfaces_1_1_recycler_view_interface"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/interfaces/RecyclerViewInterface.java" line="10" column="18" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/interfaces/RecyclerViewInterface.java" bodystart="10" bodyend="18"/>
+    <listofallmembers>
+      <member refid="df/dc0/interfacede_1_1backxtar_1_1clevercharge_1_1interfaces_1_1_recycler_view_interface_1ada0d47aa7604b262f2c4115063510a1d" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::interfaces::RecyclerViewInterface</scope><name>onItemClick</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

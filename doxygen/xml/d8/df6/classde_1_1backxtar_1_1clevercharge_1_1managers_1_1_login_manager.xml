@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="d8/df6/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_login_manager" kind="class" language="Java" prot="public">
+    <compoundname>de::backxtar::clevercharge::managers::LoginManager</compoundname>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="d8/df6/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_login_manager_1ae2ab89f2de851994e4ec3f121f94e0d9" prot="private" static="yes" mutable="no">
+        <type>Fragment</type>
+        <definition>Fragment de.backxtar.clevercharge.managers.LoginManager.signIn</definition>
+        <argsstring></argsstring>
+        <name>signIn</name>
+        <qualifiedname>de.backxtar.clevercharge.managers.LoginManager.signIn</qualifiedname>
+        <initializer>= new <ref refid="df/dac/classde_1_1backxtar_1_1clevercharge_1_1fragments_login_1_1_login_sign_in_fragment" kindref="compound">LoginSignInFragment</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Static SignIn fragment. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/managers/LoginManager.java" line="21" column="29" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/managers/LoginManager.java" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d8/df6/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_login_manager_1a5d4e72ea785a166bc9d70aaefb3e666b" prot="private" static="yes" mutable="no">
+        <type>Fragment</type>
+        <definition>Fragment de.backxtar.clevercharge.managers.LoginManager.signUp</definition>
+        <argsstring></argsstring>
+        <name>signUp</name>
+        <qualifiedname>de.backxtar.clevercharge.managers.LoginManager.signUp</qualifiedname>
+        <initializer>= new <ref refid="d5/d12/classde_1_1backxtar_1_1clevercharge_1_1fragments_login_1_1_login_sign_up_fragment" kindref="compound">LoginSignUpFragment</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Static SignUp fragment. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/managers/LoginManager.java" line="26" column="29" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/managers/LoginManager.java" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="d8/df6/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_login_manager_1a897d0d837e1e1e3b687ebb3e45d9e815" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Fragment</type>
+        <definition>static Fragment de.backxtar.clevercharge.managers.LoginManager.getSignIn</definition>
+        <argsstring>()</argsstring>
+        <name>getSignIn</name>
+        <qualifiedname>de.backxtar.clevercharge.managers.LoginManager.getSignIn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Getter for sign in. <simplesect kind="return"><para>sign in object </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/managers/LoginManager.java" line="33" column="28" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/managers/LoginManager.java" bodystart="33" bodyend="35"/>
+        <referencedby refid="db/d96/classde_1_1backxtar_1_1clevercharge_1_1_login_1a24ca4a6d588d025fb2caba526586d45b" compoundref="d9/d7f/_login_8java" startline="47" endline="92">de.backxtar.clevercharge.Login.onCreate</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d8/df6/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_login_manager_1a69eec5c979f8b9288c5e07f6ad3514f5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Fragment</type>
+        <definition>static Fragment de.backxtar.clevercharge.managers.LoginManager.getSignUp</definition>
+        <argsstring>()</argsstring>
+        <name>getSignUp</name>
+        <qualifiedname>de.backxtar.clevercharge.managers.LoginManager.getSignUp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Getter for sign up. <simplesect kind="return"><para>sign up object </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/managers/LoginManager.java" line="41" column="28" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/managers/LoginManager.java" bodystart="41" bodyend="43"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>ChargingStation container. <simplesect kind="author"><para>Jörg Quick, Tilo Steinmetzer </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>de.backxtar.clevercharge.managers.LoginManager</label>
+        <link refid="d8/df6/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_login_manager"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/managers/LoginManager.java" line="14" column="7" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/managers/LoginManager.java" bodystart="14" bodyend="44"/>
+    <listofallmembers>
+      <member refid="d8/df6/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_login_manager_1a897d0d837e1e1e3b687ebb3e45d9e815" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::managers::LoginManager</scope><name>getSignIn</name></member>
+      <member refid="d8/df6/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_login_manager_1a69eec5c979f8b9288c5e07f6ad3514f5" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::managers::LoginManager</scope><name>getSignUp</name></member>
+      <member refid="d8/df6/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_login_manager_1ae2ab89f2de851994e4ec3f121f94e0d9" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::managers::LoginManager</scope><name>signIn</name></member>
+      <member refid="d8/df6/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_login_manager_1a5d4e72ea785a166bc9d70aaefb3e666b" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::managers::LoginManager</scope><name>signUp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

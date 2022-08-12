@@ -1,0 +1,220 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="dc/d75/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_download_service" kind="class" language="Java" prot="public">
+    <compoundname>de::backxtar::clevercharge::services::DownloadService</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="dc/d75/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_download_service_1ac572f7a40930620aef9d93f4500ca961" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ArrayList&lt; <ref refid="d2/dae/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station" kindref="compound">ChargingStation</ref> &gt;</type>
+        <definition>static ArrayList&lt; ChargingStation &gt; de.backxtar.clevercharge.services.DownloadService.getStations</definition>
+        <argsstring>()</argsstring>
+        <name>getStations</name>
+        <qualifiedname>de.backxtar.clevercharge.services.DownloadService.getStations</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Docker for station arrayList. <simplesect kind="return"><para>array of station objects </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/DownloadService.java" line="31" column="29" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/DownloadService.java" bodystart="31" bodyend="36"/>
+        <references refid="dc/d75/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_download_service_1a38499dd278e4c77c5048d131ed13ab08" compoundref="d8/d0f/_download_service_8java" startline="93" endline="116">de.backxtar.clevercharge.services.DownloadService.getJson</references>
+        <referencedby refid="d5/d2c/classde_1_1backxtar_1_1clevercharge_1_1_loading_screen_1a3576280bfc02203be6c9d13d4bfe3957" compoundref="d9/db6/_loading_screen_8java" startline="45" endline="83">de.backxtar.clevercharge.LoadingScreen.onCreate</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="dc/d75/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_download_service_1a518fd601ccdd20b9d22ac754eff30d54" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d0/dbd/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response" kindref="compound">APIResponse</ref></type>
+        <definition>static APIResponse de.backxtar.clevercharge.services.DownloadService.getResponse</definition>
+        <argsstring>(String endpoint, String[] params)</argsstring>
+        <name>getResponse</name>
+        <qualifiedname>de.backxtar.clevercharge.services.DownloadService.getResponse</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>endpoint</declname>
+        </param>
+        <param>
+          <type>String[]</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get response from api for list requests. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>endpoint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as string </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>params</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as stringArray </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>new APIResponse class </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/DownloadService.java" line="44" column="31" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/DownloadService.java" bodystart="44" bodyend="57"/>
+        <references refid="dc/d75/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_download_service_1a38499dd278e4c77c5048d131ed13ab08" compoundref="d8/d0f/_download_service_8java" startline="93" endline="116">de.backxtar.clevercharge.services.DownloadService.getJson</references>
+        <referencedby refid="db/d96/classde_1_1backxtar_1_1clevercharge_1_1_login_1a24ca4a6d588d025fb2caba526586d45b" compoundref="d9/d7f/_login_8java" startline="47" endline="92">de.backxtar.clevercharge.Login.onCreate</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="dc/d75/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_download_service_1a8ea9fda7e2197ffd3452267d599b3b23" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d0/dbd/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response" kindref="compound">APIResponse</ref></type>
+        <definition>static APIResponse de.backxtar.clevercharge.services.DownloadService.getResponse</definition>
+        <argsstring>(String endpoint)</argsstring>
+        <name>getResponse</name>
+        <qualifiedname>de.backxtar.clevercharge.services.DownloadService.getResponse</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>endpoint</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get response from api for non list requests. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>endpoint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as string </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>new APIResponse class </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/DownloadService.java" line="64" column="31" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/DownloadService.java" bodystart="64" bodyend="72"/>
+        <references refid="dc/d75/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_download_service_1a38499dd278e4c77c5048d131ed13ab08" compoundref="d8/d0f/_download_service_8java" startline="93" endline="116">de.backxtar.clevercharge.services.DownloadService.getJson</references>
+      </memberdef>
+      <memberdef kind="function" id="dc/d75/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_download_service_1aa5f73fe4db1608145f95dc158f098e46" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ArrayList&lt; <ref refid="d9/dd9/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article" kindref="compound">Article</ref> &gt;</type>
+        <definition>static ArrayList&lt; Article &gt; de.backxtar.clevercharge.services.DownloadService.getArticles</definition>
+        <argsstring>()</argsstring>
+        <name>getArticles</name>
+        <qualifiedname>de.backxtar.clevercharge.services.DownloadService.getArticles</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get articles from api. <simplesect kind="return"><para>an article arrayList </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/DownloadService.java" line="78" column="29" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/DownloadService.java" bodystart="78" bodyend="84"/>
+        <references refid="dc/d75/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_download_service_1a38499dd278e4c77c5048d131ed13ab08" compoundref="d8/d0f/_download_service_8java" startline="93" endline="116">de.backxtar.clevercharge.services.DownloadService.getJson</references>
+        <referencedby refid="d5/d2c/classde_1_1backxtar_1_1clevercharge_1_1_loading_screen_1a3576280bfc02203be6c9d13d4bfe3957" compoundref="d9/db6/_loading_screen_8java" startline="45" endline="83">de.backxtar.clevercharge.LoadingScreen.onCreate</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="dc/d75/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_download_service_1a38499dd278e4c77c5048d131ed13ab08" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>static String de.backxtar.clevercharge.services.DownloadService.getJson</definition>
+        <argsstring>(String endpoint)</argsstring>
+        <name>getJson</name>
+        <qualifiedname>de.backxtar.clevercharge.services.DownloadService.getJson</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>endpoint</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Download json from api. <simplesect kind="return"><para>json data string </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>endpoint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>api endpoint <ref refid="" kindref="compound">https://api.aurora-theogenia.de/chargingstations/charging_stations.json</ref></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/DownloadService.java" line="93" column="26" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/DownloadService.java" bodystart="93" bodyend="116"/>
+        <referencedby refid="dc/d75/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_download_service_1aa5f73fe4db1608145f95dc158f098e46" compoundref="d8/d0f/_download_service_8java" startline="78" endline="84">de.backxtar.clevercharge.services.DownloadService.getArticles</referencedby>
+        <referencedby refid="dc/d75/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_download_service_1a518fd601ccdd20b9d22ac754eff30d54" compoundref="d8/d0f/_download_service_8java" startline="44" endline="57">de.backxtar.clevercharge.services.DownloadService.getResponse</referencedby>
+        <referencedby refid="dc/d75/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_download_service_1ac572f7a40930620aef9d93f4500ca961" compoundref="d8/d0f/_download_service_8java" startline="31" endline="36">de.backxtar.clevercharge.services.DownloadService.getStations</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="dc/d75/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_download_service_1ace974e9023c2bf8220074d399b423d70" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>InputStream</type>
+        <definition>static InputStream de.backxtar.clevercharge.services.DownloadService.read</definition>
+        <argsstring>(URL url)</argsstring>
+        <name>read</name>
+        <qualifiedname>de.backxtar.clevercharge.services.DownloadService.read</qualifiedname>
+        <param>
+          <type>URL</type>
+          <declname>url</declname>
+        </param>
+        <exceptions> throws IOException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create InputStream with connection timeout (for big files). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>api url </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Configured InputStream object </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IOException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if url is bad or doesn&apos;t exist </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/DownloadService.java" line="124" column="32" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/DownloadService.java" bodystart="124" bodyend="131"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="dc/d75/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_download_service" kindref="compound">DownloadService</ref> of the app. <simplesect kind="author"><para>Jörg Quick, Tilo Steinmetzer </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>de.backxtar.clevercharge.services.DownloadService</label>
+        <link refid="dc/d75/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_download_service"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/DownloadService.java" line="25" column="7" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/DownloadService.java" bodystart="25" bodyend="132"/>
+    <listofallmembers>
+      <member refid="dc/d75/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_download_service_1aa5f73fe4db1608145f95dc158f098e46" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::services::DownloadService</scope><name>getArticles</name></member>
+      <member refid="dc/d75/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_download_service_1a38499dd278e4c77c5048d131ed13ab08" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::services::DownloadService</scope><name>getJson</name></member>
+      <member refid="dc/d75/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_download_service_1a518fd601ccdd20b9d22ac754eff30d54" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::services::DownloadService</scope><name>getResponse</name></member>
+      <member refid="dc/d75/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_download_service_1a8ea9fda7e2197ffd3452267d599b3b23" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::services::DownloadService</scope><name>getResponse</name></member>
+      <member refid="dc/d75/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_download_service_1ac572f7a40930620aef9d93f4500ca961" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::services::DownloadService</scope><name>getStations</name></member>
+      <member refid="dc/d75/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_download_service_1ace974e9023c2bf8220074d399b423d70" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::services::DownloadService</scope><name>read</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

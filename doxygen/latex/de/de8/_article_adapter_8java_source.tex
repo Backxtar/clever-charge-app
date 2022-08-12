@@ -1,0 +1,163 @@
+\hypertarget{_article_adapter_8java_source}{}\doxysection{Article\+Adapter.\+java}
+\label{_article_adapter_8java_source}\index{D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-\/softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ArticleAdapter.java@{D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-\/softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ArticleAdapter.java}}
+\mbox{\hyperlink{_article_adapter_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00001}00001 \textcolor{keyword}{package }de.backxtar.clevercharge.data;}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00002}00002 }
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00003}00003 \textcolor{keyword}{import} android.annotation.SuppressLint;}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00004}00004 \textcolor{keyword}{import} android.app.Activity;}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00005}00005 \textcolor{keyword}{import} android.content.Context;}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00006}00006 \textcolor{keyword}{import} android.graphics.drawable.Drawable;}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00007}00007 \textcolor{keyword}{import} android.view.Gravity;}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00008}00008 \textcolor{keyword}{import} android.view.LayoutInflater;}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00009}00009 \textcolor{keyword}{import} android.view.View;}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00010}00010 \textcolor{keyword}{import} android.view.ViewGroup;}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00011}00011 \textcolor{keyword}{import} android.widget.ImageButton;}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00012}00012 \textcolor{keyword}{import} android.widget.ImageView;}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00013}00013 \textcolor{keyword}{import} android.widget.ProgressBar;}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00014}00014 \textcolor{keyword}{import} android.widget.TextView;}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00015}00015 \textcolor{keyword}{import} android.widget.Toast;}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00017}00017 \textcolor{keyword}{import} androidx.annotation.NonNull;}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00018}00018 \textcolor{keyword}{import} androidx.annotation.Nullable;}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00019}00019 \textcolor{keyword}{import} androidx.recyclerview.widget.RecyclerView;}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00021}00021 \textcolor{keyword}{import} com.bumptech.glide.Glide;}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00022}00022 \textcolor{keyword}{import} com.bumptech.glide.load.DataSource;}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00023}00023 \textcolor{keyword}{import} com.bumptech.glide.load.engine.DiskCacheStrategy;}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00024}00024 \textcolor{keyword}{import} com.bumptech.glide.load.engine.GlideException;}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00025}00025 \textcolor{keyword}{import} com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00026}00026 \textcolor{keyword}{import} com.bumptech.glide.request.RequestListener;}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00027}00027 \textcolor{keyword}{import} com.bumptech.glide.request.RequestOptions;}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00028}00028 \textcolor{keyword}{import} com.bumptech.glide.request.target.Target;}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00030}00030 \textcolor{keyword}{import} java.util.ArrayList;}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00031}00031 \textcolor{keyword}{import} java.util.concurrent.CompletableFuture;}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00033}00033 \textcolor{keyword}{import} de.backxtar.clevercharge.MainActivity;}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00034}00034 \textcolor{keyword}{import} de.backxtar.clevercharge.R;}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00035}00035 \textcolor{keyword}{import} de.backxtar.clevercharge.managers.UserManager;}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00036}00036 \textcolor{keyword}{import} de.backxtar.clevercharge.services.DownloadService;}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00037}00037 \textcolor{keyword}{import} de.backxtar.clevercharge.services.MessageService;}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00038}00038 }
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00045}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter}{00045}} \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter}{ArticleAdapter}} \textcolor{keyword}{extends} RecyclerView.Adapter<ArticleAdapter.ViewHolder> \{}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00046}00046 }
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00047}00047     \textcolor{comment}{/* Global adapter variables */}}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00048}00048 }
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00052}00052     \textcolor{keyword}{private} ArrayList<Article> articles;}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00053}00053 }
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00057}00057     \textcolor{keyword}{private} \textcolor{keyword}{final} Activity activity;}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00058}00058     \textcolor{comment}{//====================================}}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00059}00059 }
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00065}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_ab8e9b7cc4d212b9cd99ecb4e68913cd7}{00065}}     \textcolor{keyword}{public} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_ab8e9b7cc4d212b9cd99ecb4e68913cd7}{ArticleAdapter}}(ArrayList<Article> articles, Activity activity) \{}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00066}00066         this.articles = articles;}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00067}00067         this.activity = activity;}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00068}00068     \}}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00069}00069 }
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00070}00070     \textcolor{comment}{/* ViewHolder class of the adapter */}}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00071}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_1_1_view_holder}{00071}}     \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_1_1_view_holder}{ViewHolder}} \textcolor{keyword}{extends} RecyclerView.\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_1_1_view_holder}{ViewHolder}} \{}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00072}00072         \textcolor{keyword}{private} \textcolor{keyword}{final} ImageView image;}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00073}00073         \textcolor{keyword}{private} \textcolor{keyword}{final} TextView author, date, title, desc, content;}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00074}00074         \textcolor{keyword}{private} \textcolor{keyword}{final} ProgressBar bar;}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00075}00075         \textcolor{keyword}{private} ImageButton read;}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00076}00076 }
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00081}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_1_1_view_holder_a8083c702b6755bd6e87c6cee72da0d47}{00081}}         \textcolor{keyword}{public} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_1_1_view_holder_a8083c702b6755bd6e87c6cee72da0d47}{ViewHolder}}(@NonNull View itemView) \{}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00082}00082             super(itemView);}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00083}00083             image = itemView.findViewById(R.id.newsImg);}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00084}00084             author = itemView.findViewById(R.id.newsAuthor);}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00085}00085             date = itemView.findViewById(R.id.newsDate);}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00086}00086             title = itemView.findViewById(R.id.newsTitle);}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00087}00087             desc = itemView.findViewById(R.id.newsDesc);}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00088}00088             content = itemView.findViewById(R.id.contentNews);}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00089}00089             bar = itemView.findViewById(R.id.load\_photo);}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00090}00090             read = itemView.findViewById(R.id.mark\_as\_read);}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00091}00091         \}}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00092}00092     \}}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00093}00093 }
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00099}00099     @Override}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00100}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_a1f8b257be72724e5d8b06f157b657062}{00100}}     \textcolor{keyword}{public} \textcolor{keywordtype}{int} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_a1f8b257be72724e5d8b06f157b657062}{getItemViewType}}(\textcolor{keywordtype}{int} position) \{}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00101}00101         ArrayList<Integer> news\_ids = \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager}{UserManager}}.\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager_aa4e7c73b0bb07f0dcf5a612f9bce416a}{getApi\_data}}().\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_ac49a16a4f8a09b721496c6b6e3037cb4}{getNews\_read\_ids}}();}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00102}00102         \textcolor{keywordflow}{return} news\_ids.contains(articles.get(position).getId()) ? 1 : 0;}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00103}00103     \}}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00104}00104 }
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00111}00111     @NonNull}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00112}00112     @Override}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00113}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_abc3961efc24bfdbae7e18bf26fec62ac}{00113}}     \textcolor{keyword}{public} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_1_1_view_holder}{ViewHolder}} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_abc3961efc24bfdbae7e18bf26fec62ac}{onCreateViewHolder}}(@NonNull ViewGroup parent, \textcolor{keywordtype}{int} viewType) \{}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00114}00114         Context context = parent.getContext();}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00115}00115         LayoutInflater inflater = LayoutInflater.from(context);}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00116}00116 }
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00117}00117         View view;}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00118}00118         \textcolor{keywordflow}{if} (viewType == 1) view = inflater.inflate(R.layout.dashboard\_item\_2, parent, \textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00119}00119         \textcolor{keywordflow}{else} view = inflater.inflate(R.layout.dashboard\_item\_1, parent, \textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00120}00120 }
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00121}00121         \textcolor{keywordflow}{return} \textcolor{keyword}{new} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_1_1_view_holder}{ViewHolder}}(view);}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00122}00122     \}}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00123}00123 }
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00129}00129     @SuppressLint(\{\textcolor{stringliteral}{"{}CheckResult"{}}, \textcolor{stringliteral}{"{}NotifyDataSetChanged"{}}\})}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00130}00130     @Override}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00131}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_af6595dbe29147ff3c8f9c669f9e5c55a}{00131}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_af6595dbe29147ff3c8f9c669f9e5c55a}{onBindViewHolder}}(@NonNull \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_1_1_view_holder}{ViewHolder}} holder, \textcolor{keywordtype}{int} position) \{}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00132}00132         \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article}{Article}} article = articles.get(position);}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00133}00133 }
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00134}00134         RequestOptions requestOptions = \textcolor{keyword}{new} RequestOptions();}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00135}00135         requestOptions.centerCrop();}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00136}00136         requestOptions.diskCacheStrategy(DiskCacheStrategy.ALL);}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00137}00137 }
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00138}00138         Glide.with(activity)}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00139}00139                 .load(article.\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_a71c5f421f8f115d5967a4b289d70ad31}{getUrlToImage}}())}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00140}00140                 .apply(requestOptions)}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00141}00141                 .listener(\textcolor{keyword}{new} RequestListener<Drawable>() \{}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00142}00142                     @Override}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00143}00143                     \textcolor{keyword}{public} \textcolor{keywordtype}{boolean} onLoadFailed(@Nullable GlideException e, Object model, Target<Drawable> target, \textcolor{keywordtype}{boolean} isFirstResource) \{}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00144}00144                         holder.bar.setVisibility(View.GONE);}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00145}00145                         \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00146}00146                     \}}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00147}00147 }
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00148}00148                     @Override}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00149}00149                     \textcolor{keyword}{public} \textcolor{keywordtype}{boolean} onResourceReady(Drawable resource, Object model, Target<Drawable> target, DataSource dataSource, \textcolor{keywordtype}{boolean} isFirstResource) \{}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00150}00150                         holder.bar.setVisibility(View.GONE);}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00151}00151                         \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00152}00152                     \}}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00153}00153                 \})}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00154}00154                 .transition(DrawableTransitionOptions.withCrossFade())}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00155}00155                 .into(holder.image);}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00156}00156 }
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00157}00157         holder.author.setText(article.\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_a35402171d2514f06f126c6f7069daa85}{getAuthor}}());}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00158}00158         holder.date.setText(article.\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_a1c3840686f87d0a95571f256fa23ea1b}{getPublishedAt}}());}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00159}00159         holder.title.setText(article.\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_a3f96833b87f7eb27de73b6cc03c3b270}{getTitle}}());}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00160}00160         holder.desc.setText(article.\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_a0a5591bcd0baa5b9a3b16c65054feb3d}{getDescription}}());}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00161}00161         holder.content.setText(article.\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_a5f9244dacc55e7e020d8984cb44ede0c}{getContent}}());}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00162}00162 }
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00163}00163         \textcolor{keywordflow}{if} (holder.read != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00164}00164             holder.read.setOnClickListener(v -\/> \{}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00165}00165                 callApi(article.\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_ade52c2932db39a707e0ba2087584885b}{getId}}());}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00166}00166                 \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager}{UserManager}}.\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager_aa4e7c73b0bb07f0dcf5a612f9bce416a}{getApi\_data}}().\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_ac49a16a4f8a09b721496c6b6e3037cb4}{getNews\_read\_ids}}().add(article.\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_ade52c2932db39a707e0ba2087584885b}{getId}}());}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00167}00167                 \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1_main_activity}{MainActivity}}.\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1_main_activity_a377aeeb370ac0b59bd79be73c6cdeedd}{updateBadges}}(R.id.nav\_home, \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager}{UserManager}}.\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager_aec331a849cb8f78997bafd5432f2115e}{getArticles}}().size() -\/ \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager}{UserManager}}.\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager_aa4e7c73b0bb07f0dcf5a612f9bce416a}{getApi\_data}}().\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_ac49a16a4f8a09b721496c6b6e3037cb4}{getNews\_read\_ids}}().size());}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00168}00168                 notifyDataSetChanged();}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00169}00169             \});}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00170}00170         \}}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00171}00171     \}}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00172}00172 }
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00177}00177     @Override}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00178}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_a0a3e396c23fa833db7898170a4d8e6b0}{00178}}     \textcolor{keyword}{public} \textcolor{keywordtype}{int} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_a0a3e396c23fa833db7898170a4d8e6b0}{getItemCount}}() \{}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00179}00179         \textcolor{keywordflow}{return} articles.size();}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00180}00180     \}}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00181}00181 }
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00186}00186     @SuppressLint(\textcolor{stringliteral}{"{}NotifyDataSetChanged"{}})}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00187}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_a70a5bcc855aebb65ae749452bc1a2aab}{00187}}     public \textcolor{keywordtype}{void} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter_a70a5bcc855aebb65ae749452bc1a2aab}{setArticles}}(ArrayList<\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article}{Article}}> articles) \{}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00188}00188         this.articles = articles;}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00189}00189         notifyDataSetChanged();}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00190}00190     \}}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00191}00191 }
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00196}00196     \textcolor{keyword}{private} \textcolor{keywordtype}{void} callApi(\textcolor{keywordtype}{int} article\_id) \{}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00197}00197         CompletableFuture.supplyAsync(() -\/> \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1services_1_1_download_service}{DownloadService}}.\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1services_1_1_download_service_a518fd601ccdd20b9d22ac754eff30d54}{getResponse}}(\textcolor{stringliteral}{"{}set\_read"{}},}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00198}00198                 \textcolor{keyword}{new} String[]\{\textcolor{stringliteral}{"{}user\_id="{}} + UserManager.getApi\_data().getUserID(), \textcolor{stringliteral}{"{}news\_id="{}} + article\_id\}))}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00199}00199                 .whenComplete(((apiResponse, throwable) -\/> \{}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00200}00200                     \textcolor{keywordflow}{if} (throwable != \textcolor{keyword}{null} || apiResponse.getResponseCode() != 1) \{}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00201}00201                         MessageService service = new MessageService(activity, \textcolor{stringliteral}{"{}Something went wrong!"{}}, Gravity.TOP, true);}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00202}00202                         activity.runOnUiThread(service::sendToast);}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00203}00203                     \}}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00204}00204                 \}));}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00205}00205     \}}
+\DoxyCodeLine{\Hypertarget{_article_adapter_8java_source_l00206}00206 \}}
+
+\end{DoxyCode}

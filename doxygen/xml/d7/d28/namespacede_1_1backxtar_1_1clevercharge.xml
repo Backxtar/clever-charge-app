@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="d7/d28/namespacede_1_1backxtar_1_1clevercharge" kind="namespace" language="Java">
+    <compoundname>de::backxtar::clevercharge</compoundname>
+    <innerclass refid="db/d23/classde_1_1backxtar_1_1clevercharge_1_1_build_config" prot="public">de::backxtar::clevercharge::BuildConfig</innerclass>
+    <innerclass refid="de/d2d/classde_1_1backxtar_1_1clevercharge_1_1_example_instrumented_test" prot="public">de::backxtar::clevercharge::ExampleInstrumentedTest</innerclass>
+    <innerclass refid="db/d5d/classde_1_1backxtar_1_1clevercharge_1_1_example_unit_test" prot="public">de::backxtar::clevercharge::ExampleUnitTest</innerclass>
+    <innerclass refid="d5/d2c/classde_1_1backxtar_1_1clevercharge_1_1_loading_screen" prot="public">de::backxtar::clevercharge::LoadingScreen</innerclass>
+    <innerclass refid="db/d96/classde_1_1backxtar_1_1clevercharge_1_1_login" prot="public">de::backxtar::clevercharge::Login</innerclass>
+    <innerclass refid="d9/dac/classde_1_1backxtar_1_1clevercharge_1_1_main_activity" prot="public">de::backxtar::clevercharge::MainActivity</innerclass>
+    <innernamespace refid="d0/d99/namespacede_1_1backxtar_1_1clevercharge_1_1data">de::backxtar::clevercharge::data</innernamespace>
+    <innernamespace refid="d2/d85/namespacede_1_1backxtar_1_1clevercharge_1_1fragments_login">de::backxtar::clevercharge::fragmentsLogin</innernamespace>
+    <innernamespace refid="d5/d4f/namespacede_1_1backxtar_1_1clevercharge_1_1fragments_main">de::backxtar::clevercharge::fragmentsMain</innernamespace>
+    <innernamespace refid="d2/dd4/namespacede_1_1backxtar_1_1clevercharge_1_1interfaces">de::backxtar::clevercharge::interfaces</innernamespace>
+    <innernamespace refid="d4/d2a/namespacede_1_1backxtar_1_1clevercharge_1_1managers">de::backxtar::clevercharge::managers</innernamespace>
+    <innernamespace refid="d4/d74/namespacede_1_1backxtar_1_1clevercharge_1_1services">de::backxtar::clevercharge::services</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Automatically generated file. DO NOT MODIFY </para>
+    </detaileddescription>
+    <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/build/generated/source/buildConfig/debug/de/backxtar/clevercharge/BuildConfig.java" line="4" column="15"/>
+  </compounddef>
+</doxygen>

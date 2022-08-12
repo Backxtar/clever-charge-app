@@ -1,0 +1,77 @@
+\hypertarget{_loading_screen_8java_source}{}\doxysection{Loading\+Screen.\+java}
+\label{_loading_screen_8java_source}\index{D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-\/softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/LoadingScreen.java@{D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-\/softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/LoadingScreen.java}}
+\mbox{\hyperlink{_loading_screen_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00001}00001 \textcolor{keyword}{package }de.backxtar.clevercharge;}
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00002}00002 \textcolor{keyword}{import} androidx.appcompat.app.AppCompatActivity;}
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00003}00003 \textcolor{keyword}{import} androidx.core.view.ViewCompat;}
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00004}00004 }
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00005}00005 \textcolor{keyword}{import} android.content.Intent;}
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00006}00006 \textcolor{keyword}{import} android.os.Build;}
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00007}00007 \textcolor{keyword}{import} android.os.Bundle;}
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00008}00008 \textcolor{keyword}{import} android.os.Handler;}
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00009}00009 \textcolor{keyword}{import} android.util.Log;}
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00010}00010 \textcolor{keyword}{import} android.view.WindowManager;}
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00011}00011 \textcolor{keyword}{import} android.widget.Toast;}
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00013}00013 \textcolor{keyword}{import} java.util.ArrayList;}
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00014}00014 \textcolor{keyword}{import} java.util.Comparator;}
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00015}00015 \textcolor{keyword}{import} java.util.concurrent.CompletableFuture;}
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00017}00017 \textcolor{keyword}{import} de.backxtar.clevercharge.data.Article;}
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00018}00018 \textcolor{keyword}{import} de.backxtar.clevercharge.data.ChargingStation;}
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00019}00019 \textcolor{keyword}{import} de.backxtar.clevercharge.managers.StationManager;}
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00020}00020 \textcolor{keyword}{import} de.backxtar.clevercharge.managers.UserManager;}
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00021}00021 \textcolor{keyword}{import} de.backxtar.clevercharge.services.DownloadService;}
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00022}00022 \textcolor{keyword}{import} de.backxtar.clevercharge.services.MessageService;}
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00030}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1_loading_screen}{00030}} \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1_loading_screen}{LoadingScreen}} \textcolor{keyword}{extends} AppCompatActivity \{}
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00032}00032     \textcolor{comment}{/* Global variables */}}
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00033}00033 }
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00037}00037     \textcolor{keyword}{private} Intent intent;}
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00038}00038     \textcolor{comment}{//========================}}
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00044}00044     @Override}
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00045}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1_loading_screen_a3576280bfc02203be6c9d13d4bfe3957}{00045}}     \textcolor{keyword}{protected} \textcolor{keywordtype}{void} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1_loading_screen_a3576280bfc02203be6c9d13d4bfe3957}{onCreate}}(Bundle savedInstanceState) \{}
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00046}00046         super.onCreate(savedInstanceState);}
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00047}00047         getWindow().setFlags(WindowManager.LayoutParams.FLAG\_FULLSCREEN,}
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00048}00048                 WindowManager.LayoutParams.FLAG\_FULLSCREEN);}
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00049}00049         setContentView(R.layout.activity\_loading\_screen);}
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00050}00050         intent = \textcolor{keyword}{new} Intent(\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1_loading_screen}{LoadingScreen}}.this, \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1_login}{Login}}.class);}
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00051}00051 }
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00052}00052         CompletableFuture<ArrayList<ChargingStation>> stationList = CompletableFuture.supplyAsync(\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1services_1_1_download_service_ac572f7a40930620aef9d93f4500ca961}{DownloadService::getStations}})}
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00053}00053                 .whenComplete((stations, throwable) -\/> \{}
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00054}00054                     \textcolor{keywordflow}{if} (throwable != \textcolor{keyword}{null} || stations == \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00055}00055                         intent.putExtra(\textcolor{stringliteral}{"{}result\_download"{}}, \textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00056}00056                         \textcolor{keywordflow}{throw} \textcolor{keyword}{new} RuntimeException(\textcolor{stringliteral}{"{}Cant download stations."{}});}
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00057}00057                     \}}
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00058}00058                     \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager}{StationManager}}.\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_aa32bde646cafbedd9764b704299b5cb9}{setStation\_list}}(stations);}
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00059}00059                     intent.putExtra(\textcolor{stringliteral}{"{}result\_download"{}}, \textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00060}00060                 \});}
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00061}00061 }
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00062}00062         CompletableFuture<ArrayList<Article>> articleList = CompletableFuture.supplyAsync(\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1services_1_1_download_service_aa5f73fe4db1608145f95dc158f098e46}{DownloadService::getArticles}})}
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00063}00063                 .whenComplete((articles, throwable) -\/> \{}
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00064}00064                     \textcolor{keywordflow}{if} (throwable != \textcolor{keyword}{null} || articles == \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00065}00065                         intent.putExtra(\textcolor{stringliteral}{"{}result\_articles"{}}, \textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00066}00066                         \textcolor{keywordflow}{throw} \textcolor{keyword}{new} RuntimeException(\textcolor{stringliteral}{"{}Cant download articles."{}});}
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00067}00067                     \}}
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00068}00068                     \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager}{UserManager}}.\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager_a7762c6854143eb0e8eeb0bf235f17f52}{setArticles}}(articles);}
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00069}00069                     intent.putExtra(\textcolor{stringliteral}{"{}result\_articles"{}}, \textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00070}00070                 \});}
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00071}00071 }
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00072}00072         CompletableFuture.allOf(stationList, articleList)}
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00073}00073                 .whenComplete((unused, throwable) -\/> \{}
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00074}00074                     \textcolor{keywordflow}{if} (throwable != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00075}00075                         \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1services_1_1_message_service}{MessageService}} msg = \textcolor{keyword}{new} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1services_1_1_message_service}{MessageService}}(\textcolor{keyword}{this}, getResources().getString(R.string.error\_while\_getting\_data), Toast.LENGTH\_LONG, \textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00076}00076                         msg.\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1services_1_1_message_service_ac4ac04d455ed4804dca168aa75203943}{sendToast}}();}
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00077}00077                         \textcolor{keyword}{new} Handler().postDelayed(() -\/> System.exit(0), 3000);}
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00078}00078                         \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00079}00079                     \}}
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00080}00080                     startActivity(intent);}
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00081}00081                     finish();}
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00082}00082                 \});}
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00083}00083     \}}
+\DoxyCodeLine{\Hypertarget{_loading_screen_8java_source_l00084}00084 \}}
+
+\end{DoxyCode}

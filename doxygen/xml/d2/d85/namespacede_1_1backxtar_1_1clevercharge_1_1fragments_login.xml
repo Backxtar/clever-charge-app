@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="d2/d85/namespacede_1_1backxtar_1_1clevercharge_1_1fragments_login" kind="namespace" language="Java">
+    <compoundname>de::backxtar::clevercharge::fragmentsLogin</compoundname>
+    <innerclass refid="df/dac/classde_1_1backxtar_1_1clevercharge_1_1fragments_login_1_1_login_sign_in_fragment" prot="public">de::backxtar::clevercharge::fragmentsLogin::LoginSignInFragment</innerclass>
+    <innerclass refid="d5/d12/classde_1_1backxtar_1_1clevercharge_1_1fragments_login_1_1_login_sign_up_fragment" prot="public">de::backxtar::clevercharge::fragmentsLogin::LoginSignUpFragment</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsLogin/LoginSignInFragment.java" line="1" column="15"/>
+  </compounddef>
+</doxygen>

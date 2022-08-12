@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="d3/daf/_login_manager_8java" kind="file" language="Java">
+    <compoundname>LoginManager.java</compoundname>
+    <innerclass refid="d8/df6/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_login_manager" prot="public">de::backxtar::clevercharge::managers::LoginManager</innerclass>
+    <innernamespace refid="d4/d2a/namespacede_1_1backxtar_1_1clevercharge_1_1managers">de::backxtar::clevercharge::managers</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="d4/d2a/namespacede_1_1backxtar_1_1clevercharge_1_1managers" refkind="compound"><highlight class="keyword">package<sp/></highlight><highlight class="normal">de.backxtar.clevercharge.managers;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>androidx.fragment.app.Fragment;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>de.backxtar.clevercharge.fragmentsLogin.LoginSignInFragment;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>de.backxtar.clevercharge.fragmentsLogin.LoginSignUpFragment;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="d8/df6/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_login_manager" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d8/df6/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_login_manager" kindref="compound">LoginManager</ref><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Global<sp/>variables<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>Fragment<sp/>signIn<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="df/dac/classde_1_1backxtar_1_1clevercharge_1_1fragments_login_1_1_login_sign_in_fragment" kindref="compound">LoginSignInFragment</ref>();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>Fragment<sp/>signUp<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="d5/d12/classde_1_1backxtar_1_1clevercharge_1_1fragments_login_1_1_login_sign_up_fragment" kindref="compound">LoginSignUpFragment</ref>();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//==========================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="d8/df6/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_login_manager_1a897d0d837e1e1e3b687ebb3e45d9e815" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>Fragment<sp/><ref refid="d8/df6/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_login_manager_1a897d0d837e1e1e3b687ebb3e45d9e815" kindref="member">getSignIn</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>signIn;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="d8/df6/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_login_manager_1a69eec5c979f8b9288c5e07f6ad3514f5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>Fragment<sp/><ref refid="d8/df6/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_login_manager_1a69eec5c979f8b9288c5e07f6ad3514f5" kindref="member">getSignUp</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>signUp;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/managers/LoginManager.java"/>
+  </compounddef>
+</doxygen>

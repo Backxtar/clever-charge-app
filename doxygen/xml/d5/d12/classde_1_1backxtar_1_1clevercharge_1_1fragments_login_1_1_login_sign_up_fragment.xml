@@ -1,0 +1,328 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="d5/d12/classde_1_1backxtar_1_1clevercharge_1_1fragments_login_1_1_login_sign_up_fragment" kind="class" language="Java" prot="public">
+    <compoundname>de::backxtar::clevercharge::fragmentsLogin::LoginSignUpFragment</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Fragment</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d5/d12/classde_1_1backxtar_1_1clevercharge_1_1fragments_login_1_1_login_sign_up_fragment_1a212bb59a55e26854e76748b48b090415" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>de.backxtar.clevercharge.fragmentsLogin.LoginSignUpFragment.LoginSignUpFragment</definition>
+        <argsstring>()</argsstring>
+        <name>LoginSignUpFragment</name>
+        <qualifiedname>de.backxtar.clevercharge.fragmentsLogin.LoginSignUpFragment.LoginSignUpFragment</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sign up constructor </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsLogin/LoginSignUpFragment.java" line="34" column="12" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsLogin/LoginSignUpFragment.java" bodystart="34" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d12/classde_1_1backxtar_1_1clevercharge_1_1fragments_login_1_1_login_sign_up_fragment_1abcd4b3c09b95c17c54d44957ad1ab043" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void de.backxtar.clevercharge.fragmentsLogin.LoginSignUpFragment.onCreate</definition>
+        <argsstring>(Bundle savedInstanceState)</argsstring>
+        <name>onCreate</name>
+        <qualifiedname>de.backxtar.clevercharge.fragmentsLogin.LoginSignUpFragment.onCreate</qualifiedname>
+        <param>
+          <type>Bundle</type>
+          <declname>savedInstanceState</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>On create fragment. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>savedInstanceState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsLogin/LoginSignUpFragment.java" line="43" column="17" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsLogin/LoginSignUpFragment.java" bodystart="43" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d12/classde_1_1backxtar_1_1clevercharge_1_1fragments_login_1_1_login_sign_up_fragment_1a2c4cf0da9a9ea73cb594550b8ca97986" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>View</type>
+        <definition>View de.backxtar.clevercharge.fragmentsLogin.LoginSignUpFragment.onCreateView</definition>
+        <argsstring>(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)</argsstring>
+        <name>onCreateView</name>
+        <qualifiedname>de.backxtar.clevercharge.fragmentsLogin.LoginSignUpFragment.onCreateView</qualifiedname>
+        <param>
+          <type>LayoutInflater</type>
+          <declname>inflater</declname>
+        </param>
+        <param>
+          <type>ViewGroup</type>
+          <declname>container</declname>
+        </param>
+        <param>
+          <type>Bundle</type>
+          <declname>savedInstanceState</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>On create fragment view. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>inflater</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>container</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>savedInstanceState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>new view of fragment </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsLogin/LoginSignUpFragment.java" line="55" column="17" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsLogin/LoginSignUpFragment.java" bodystart="55" bodyend="71"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="d5/d12/classde_1_1backxtar_1_1clevercharge_1_1fragments_login_1_1_login_sign_up_fragment_1a920b5fe996b2fa0949aa266c389b622a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void de.backxtar.clevercharge.fragmentsLogin.LoginSignUpFragment.initHaveAccountListener</definition>
+        <argsstring>(FragmentManager manager, TextView haveAccount)</argsstring>
+        <name>initHaveAccountListener</name>
+        <qualifiedname>de.backxtar.clevercharge.fragmentsLogin.LoginSignUpFragment.initHaveAccountListener</qualifiedname>
+        <param>
+          <type>FragmentManager</type>
+          <declname>manager</declname>
+        </param>
+        <param>
+          <type>TextView</type>
+          <declname>haveAccount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Init listener for haveAccount. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>manager</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>haveAccount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsLogin/LoginSignUpFragment.java" line="78" column="18" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsLogin/LoginSignUpFragment.java" bodystart="78" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d12/classde_1_1backxtar_1_1clevercharge_1_1fragments_login_1_1_login_sign_up_fragment_1ae937f3c7d957db6d9e9321c64d4cc295" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void de.backxtar.clevercharge.fragmentsLogin.LoginSignUpFragment.initRegisterListener</definition>
+        <argsstring>(FragmentManager manager, AppCompatButton register, AppCompatEditText userName, AppCompatEditText userPasswd, AppCompatEditText userEmail)</argsstring>
+        <name>initRegisterListener</name>
+        <qualifiedname>de.backxtar.clevercharge.fragmentsLogin.LoginSignUpFragment.initRegisterListener</qualifiedname>
+        <param>
+          <type>FragmentManager</type>
+          <declname>manager</declname>
+        </param>
+        <param>
+          <type>AppCompatButton</type>
+          <declname>register</declname>
+        </param>
+        <param>
+          <type>AppCompatEditText</type>
+          <declname>userName</declname>
+        </param>
+        <param>
+          <type>AppCompatEditText</type>
+          <declname>userPasswd</declname>
+        </param>
+        <param>
+          <type>AppCompatEditText</type>
+          <declname>userEmail</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Init listener for register button. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>manager</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>register</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>userName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>userPasswd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>userEmail</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsLogin/LoginSignUpFragment.java" line="93" column="18" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsLogin/LoginSignUpFragment.java" bodystart="93" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d12/classde_1_1backxtar_1_1clevercharge_1_1fragments_login_1_1_login_sign_up_fragment_1a6ed934213943dc1a45f17d2bacd82922" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void de.backxtar.clevercharge.fragmentsLogin.LoginSignUpFragment.callApi</definition>
+        <argsstring>(FragmentManager manager, String user, String passwd, String email)</argsstring>
+        <name>callApi</name>
+        <qualifiedname>de.backxtar.clevercharge.fragmentsLogin.LoginSignUpFragment.callApi</qualifiedname>
+        <param>
+          <type>FragmentManager</type>
+          <declname>manager</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>user</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>passwd</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>email</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Call api to register the user <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>manager</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>user</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as String </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>passwd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as String </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>email</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as String </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsLogin/LoginSignUpFragment.java" line="120" column="18" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsLogin/LoginSignUpFragment.java" bodystart="120" bodyend="141"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>SignUp fragment. <simplesect kind="author"><para>Jörg Quick, Tilo Steinmetzer </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Fragment</label>
+      </node>
+      <node id="1">
+        <label>de.backxtar.clevercharge.fragmentsLogin.LoginSignUpFragment</label>
+        <link refid="d5/d12/classde_1_1backxtar_1_1clevercharge_1_1fragments_login_1_1_login_sign_up_fragment"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Fragment</label>
+      </node>
+      <node id="1">
+        <label>de.backxtar.clevercharge.fragmentsLogin.LoginSignUpFragment</label>
+        <link refid="d5/d12/classde_1_1backxtar_1_1clevercharge_1_1fragments_login_1_1_login_sign_up_fragment"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsLogin/LoginSignUpFragment.java" line="29" column="7" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsLogin/LoginSignUpFragment.java" bodystart="29" bodyend="142"/>
+    <listofallmembers>
+      <member refid="d5/d12/classde_1_1backxtar_1_1clevercharge_1_1fragments_login_1_1_login_sign_up_fragment_1a6ed934213943dc1a45f17d2bacd82922" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::fragmentsLogin::LoginSignUpFragment</scope><name>callApi</name></member>
+      <member refid="d5/d12/classde_1_1backxtar_1_1clevercharge_1_1fragments_login_1_1_login_sign_up_fragment_1a920b5fe996b2fa0949aa266c389b622a" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::fragmentsLogin::LoginSignUpFragment</scope><name>initHaveAccountListener</name></member>
+      <member refid="d5/d12/classde_1_1backxtar_1_1clevercharge_1_1fragments_login_1_1_login_sign_up_fragment_1ae937f3c7d957db6d9e9321c64d4cc295" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::fragmentsLogin::LoginSignUpFragment</scope><name>initRegisterListener</name></member>
+      <member refid="d5/d12/classde_1_1backxtar_1_1clevercharge_1_1fragments_login_1_1_login_sign_up_fragment_1a212bb59a55e26854e76748b48b090415" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::fragmentsLogin::LoginSignUpFragment</scope><name>LoginSignUpFragment</name></member>
+      <member refid="d5/d12/classde_1_1backxtar_1_1clevercharge_1_1fragments_login_1_1_login_sign_up_fragment_1abcd4b3c09b95c17c54d44957ad1ab043" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::fragmentsLogin::LoginSignUpFragment</scope><name>onCreate</name></member>
+      <member refid="d5/d12/classde_1_1backxtar_1_1clevercharge_1_1fragments_login_1_1_login_sign_up_fragment_1a2c4cf0da9a9ea73cb594550b8ca97986" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::fragmentsLogin::LoginSignUpFragment</scope><name>onCreateView</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

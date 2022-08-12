@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>API - Documentation</title>
+    <meta name="description" content="">
+    <meta name="author" content="backxtar">
+
+    <meta http-equiv="cleartype" content="on">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/hightlightjs-dark.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300&family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/style.css" media="all">
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+<body>
+<div class="left-menu">
+    <div class="content-logo">
+        <div class="logo">
+            <img alt="platform by Emily van den Heever from the Noun Project" title="platform by Emily van den Heever from the Noun Project" src="images/logo.png" height="32" />
+            <span>API Documentation</span>
+        </div>
+        <button class="burger-menu-icon" id="button-menu-mobile">
+            <svg width="34" height="34" viewBox="0 0 100 100"><path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"></path><path class="line line2" d="M 20,50 H 80"></path><path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"></path></svg>
+        </button>
+    </div>
+    <div class="mobile-menu-closer"></div>
+    <div class="content-menu">
+        <div class="content-infos">
+            <div class="info"><b>Version:</b> 1.0.0</div>
+            <div class="info"><b>Last Updated:</b> 13th Dec, 2021</div>
+            <div class="info"><b>Created by:</b> Jörg Quick</div>
+        </div>
+        <ul>
+            <li class="scroll-to-link active" data-target="content-get-started">
+                <a>GET STARTED</a>
+            </li>
+            <li class="scroll-to-link" data-target="register">
+                <a>REGISTER</a>
+            </li>
+            <li class="scroll-to-link" data-target="login">
+                <a>LOGIN</a>
+            </li>
+            <li class="scroll-to-link" data-target="set-fav">
+                <a>SET FAVORITES</a>
+            </li>
+            <li class="scroll-to-link" data-target="get-fav">
+                <a>GET FAVORITES</a>
+            </li>
+            <li class="scroll-to-link" data-target="del-fav">
+                <a>DEL FAVORITES</a>
+            </li>
+            <li class="scroll-to-link" data-target="content-errors">
+                <a>REQUEST CODES</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="content-page">
+    <div class="content-code"></div>
+    <div class="content">
+        <div class="overflow-hidden content-section" id="content-get-started">
+            <h1>GET STARTED</h1>
+            <pre>
+    API Endpoint
+
+        https://aurora-theogenia.de/clever_charge/
+                </pre>
+            <p>
+                The Clever Charge API provides programmatic access to a mysql database. It converts http requests to mysql statements. You can catch the response with a json libary.
+            </p>
+            <p>
+                To use this API, you need an <strong>ACCESS TOKEN</strong>. Please contact me at Discord to get a token. <strong>Backxtar#3244</strong>
+            </p>
+        </div>
+        <div class="overflow-hidden content-section" id="register">
+            <h2>REGISTER</h2>
+            <pre><code class="bash">
+# Here is an example
+GET https://aurora-theogenia.de/clever_charge/register/
+?access_token=your_token
+&username=test
+&userpasswd=1234
+&useremail=test@test.com
+                </code></pre>
+            <p>
+                To register an account you need to make a GET call to the following url :<br>
+                <code class="higlighted break-word">https://aurora-theogenia.de/clever_charge/register/</code>
+            </p>
+            <br>
+            <pre><code class="json">
+Result example :
+
+{
+    "response_code": 1,
+    "response_msg": "insert success"
+}
+                </code></pre>
+            <h4>QUERY PARAMETERS</h4>
+            <table class="central-overflow-x">
+                <thead>
+                <tr>
+                    <th>Field</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>access_token</td>
+                    <td>String</td>
+                    <td>Your token.</td>
+                </tr>
+                <tr>
+                    <td>username</td>
+                    <td>String</td>
+                    <td>username for the account to be registered.</td>
+                </tr>
+                <tr>
+                    <td>userpasswd</td>
+                    <td>String</td>
+                    <td>password for the account to be registered.</td>
+                </tr>
+                <tr>
+                    <td>useremail</td>
+                    <td>String</td>
+                    <td>email for the account to be registered.</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="overflow-hidden content-section" id="login">
+            <h2>LOGIN</h2>
+            <pre><code class="bash">
+# Here is an example
+GET https://aurora-theogenia.de/clever_charge/login/
+?access_token=your_token
+&username=test
+&userpasswd=1234
+                </code></pre>
+            <p>
+                To login with an account you need to make a GET call to the following url :<br>
+                <code class="higlighted break-word">https://aurora-theogenia.de/clever_charge/login/</code>
+            </p>
+            <br>
+            <pre><code class="json">
+Result example :
+
+{
+    "response_code": 1,
+    "response_msg": "login successful",
+    "user_id": 12,
+    "user_name": "test",
+    "user_email": "test@test.com",
+    "is_dev": false,
+    "favorites": 6,
+    "station_ids": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "defect_ids": [
+      1,
+      5,
+      7,
+      12,
+      22,
+      38,
+      49,
+      56,
+      70,
+      80,
+      99,
+      100
+    ]
+}
+                </code></pre>
+            <h4>QUERY PARAMETERS</h4>
+            <table class="central-overflow-x">
+                <thead>
+                <tr>
+                    <th>Field</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>access_token</td>
+                    <td>String</td>
+                    <td>Your token.</td>
+                </tr>
+                <tr>
+                    <td>username</td>
+                    <td>String</td>
+                    <td>username of the account.</td>
+                </tr>
+                <tr>
+                    <td>userpasswd</td>
+                    <td>String</td>
+                    <td>password of the account.</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="overflow-hidden content-section" id="set-fav">
+            <h2>SET FAVORITES</h2>
+            <pre><code class="bash">
+# Here is an example
+GET https://aurora-theogenia.de/clever_charge/set_fav/
+?access_token=your_token
+&userid=1
+&favorites=1,2,3,4,5
+                </code></pre>
+            <p>
+                To insert data into favorites you need to make a GET call to the following url :<br>
+                <code class="higlighted break-word">https://aurora-theogenia.de/clever_charge/set_fav/</code>
+            </p>
+            <br>
+            <pre><code class="json">
+Result example :
+
+{
+    "response_code": 1,
+    "response_msg": "insert success"
+}
+                </code></pre>
+            <h4>QUERY PARAMETERS</h4>
+            <table class="central-overflow-x">
+                <thead>
+                <tr>
+                    <th>Field</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>access_token</td>
+                    <td>String</td>
+                    <td>Your token.</td>
+                </tr>
+                <tr>
+                    <td>userid</td>
+                    <td>String</td>
+                    <td>userid of the account.</td>
+                </tr>
+                <tr>
+                    <td>favorites</td>
+                    <td>int</td>
+                    <td>list of station ids.</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="overflow-hidden content-section" id="get-fav">
+            <h2>GET FAVORITES</h2>
+            <pre><code class="bash">
+# Here is an example
+GET https://aurora-theogenia.de/clever_charge/get_fav/
+?access_token=your_token
+&userid=1
+                </code></pre>
+            <p>
+                To get data from favorites you need to make a GET call to the following url :<br>
+                <code class="higlighted break-word">https://aurora-theogenia.de/clever_charge/get_fav/</code>
+            </p>
+            <br>
+            <pre><code class="json">
+Result example :
+
+{
+    "response_code": 1,
+    "favorites": 9,
+    "station_ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+}
+                </code></pre>
+            <h4>QUERY PARAMETERS</h4>
+            <table class="central-overflow-x">
+                <thead>
+                <tr>
+                    <th>Field</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>access_token</td>
+                    <td>String</td>
+                    <td>Your token.</td>
+                </tr>
+                <tr>
+                    <td>userid</td>
+                    <td>String</td>
+                    <td>userid of the account.</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="overflow-hidden content-section" id="del-fav">
+            <h2>DEL FAVORITES</h2>
+            <pre><code class="bash">
+# Here is an example
+GET https://aurora-theogenia.de/clever_charge/del_fav/
+?access_token=your_token
+&userid=1
+&favorites=1,2,3,4
+                </code></pre>
+            <p>
+                To del data from favorites you need to make a GET call to the following url :<br>
+                <code class="higlighted break-word">https://aurora-theogenia.de/clever_charge/del_fav/</code>
+            </p>
+            <br>
+            <pre><code class="json">
+Result example :
+
+{
+    "response_code": 1,
+    "response_msg": "delete success"
+}
+                </code></pre>
+            <h4>QUERY PARAMETERS</h4>
+            <table class="central-overflow-x">
+                <thead>
+                <tr>
+                    <th>Field</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>access_token</td>
+                    <td>String</td>
+                    <td>Your token.</td>
+                </tr>
+                <tr>
+                    <td>userid</td>
+                    <td>String</td>
+                    <td>userid of the account.</td>
+                </tr>
+                <tr>
+                    <td>favorites</td>
+                    <td>int</td>
+                    <td>list of stationids.</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="overflow-hidden content-section" id="content-errors">
+            <h2>REQUEST CODES</h2>
+            <p>
+                The Clever Charge API uses the following request codes:
+            </p>
+            <table>
+                <thead>
+                <tr>
+                    <th>Request Code</th>
+                    <th>Meaning</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>0</td>
+                    <td>
+                        Action failed.
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>
+                        Action successful.
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>
+                        Some parameters are missing. This error appears when you don't pass every parameters.
+                    </td>
+                </tr>
+                <tr>
+                    <td>69</td>
+                    <td>
+                        Your token is not valid.
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="content-code"></div>
+</div>
+<a href="linktoapi" class="github-corner" aria-label="View source on Github" title="View source on Github"><svg width="80" height="80" viewBox="0 0 250 250" style="z-index:99999; fill:#70B7FD; color:#fff; position: fixed; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}@media only screen and (max-width:680px){ .github-corner > svg { right: auto!important; left: 0!important; transform: rotate(270deg)!important;}}</style>
+<!-- END Github Corner Ribbon - to remove -->
+<script src="js/script.js"></script>
+</body>
+</html>

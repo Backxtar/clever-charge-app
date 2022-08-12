@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="412" height="778" viewBox="0 0 412 778">
+  <defs>
+    <filter id="Rechteck_3" x="23.5" y="87.5" width="368" height="186" filterUnits="userSpaceOnUse">
+      <feOffset dx="1" dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rechteck_4" x="26.5" y="285.5" width="362" height="189" filterUnits="userSpaceOnUse">
+      <feOffset dx="1" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1.5" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rechteck_5" x="26.5" y="489.5" width="362" height="189" filterUnits="userSpaceOnUse">
+      <feOffset dx="1" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1.5" result="blur-3"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rechteck_6" x="23.5" y="696.5" width="368" height="69" filterUnits="userSpaceOnUse">
+      <feOffset dx="1" dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur-4"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-Overview_Page">
+      <rect width="412" height="778"/>
+    </clipPath>
+  </defs>
+  <g id="Overview_Page" data-name="Overview Page" clip-path="url(#clip-Overview_Page)">
+    <rect width="412" height="778" fill="#f0f0f0"/>
+    <g id="Rechteck_2" data-name="Rechteck 2" fill="#6a7cff" stroke="#707070" stroke-width="1">
+      <rect width="412" height="175" stroke="none"/>
+      <rect x="0.5" y="0.5" width="411" height="174" fill="none"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Rechteck_3)">
+      <g id="Rechteck_3-2" data-name="Rechteck 3" transform="translate(30 90)" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="353" height="171" rx="16" stroke="none"/>
+        <rect x="0.5" y="0.5" width="352" height="170" rx="15.5" fill="none"/>
+      </g>
+    </g>
+    <text id="Overview" transform="translate(30 54)" fill="#fff" font-size="25" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Overview</tspan></text>
+    <text id="Details" transform="translate(168 132)" fill="#414141" font-size="24" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Details</tspan></text>
+    <path id="ic_battery_full_24px" d="M22.173,5.5H19.25V2h-7V5.5H9.328A2.338,2.338,0,0,0,7,7.827V34.655A2.341,2.341,0,0,0,9.328,37H22.155A2.341,2.341,0,0,0,24.5,34.673V7.827A2.338,2.338,0,0,0,22.173,5.5Z" transform="translate(82.5 154)" fill="#6a7cff"/>
+    <path id="ic_battery_charging_full_24px" d="M22.173,5.5H19.25V2h-7V5.5H9.327A2.338,2.338,0,0,0,7,7.827V34.655A2.341,2.341,0,0,0,9.327,37H22.155A2.341,2.341,0,0,0,24.5,34.673V7.827A2.338,2.338,0,0,0,22.173,5.5ZM14,33.5V23.875H10.5l7-13.125v9.625H21Z" transform="translate(189 154)" fill="#4de9c9"/>
+    <path id="ic_battery_unknown_24px" d="M22.173,5.5H19.25V2h-7V5.5H9.327A2.338,2.338,0,0,0,7,7.827V34.655A2.341,2.341,0,0,0,9.327,37H22.155A2.341,2.341,0,0,0,24.5,34.673V7.827A2.338,2.338,0,0,0,22.173,5.5Zm-4.76,24.413H14.087V26.588h3.325Zm2.362-9.205s-.665.735-1.172,1.243a4.686,4.686,0,0,0-1.453,2.8h-2.8a5.127,5.127,0,0,1,1.628-3.5l1.628-1.645a2.624,2.624,0,1,0-4.48-1.855H10.5a5.25,5.25,0,1,1,10.5,0,4.18,4.18,0,0,1-1.225,2.958Z" transform="translate(304 154)" fill="#6a7cff"/>
+    <text id="All_stations" data-name="All stations" transform="translate(60 212)" fill="#717171" font-size="16" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">All stations</tspan></text>
+    <text id="Fast_charge" data-name="Fast charge" transform="translate(166 212)" fill="#717171" font-size="16" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Fast charge</tspan></text>
+    <text id="Normal_charge" data-name="Normal charge" transform="translate(267 212)" fill="#717171" font-size="16" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Normal charge</tspan></text>
+    <text id="_23456" data-name="23456" transform="translate(68 238)" fill="#414141" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">23456</tspan></text>
+    <text id="_2345" data-name="2345" transform="translate(185 238)" fill="#414141" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">2345</tspan></text>
+    <text id="_21456" data-name="21456" transform="translate(293 238)" fill="#414141" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">21456</tspan></text>
+    <path id="ic_trending_up_24px" d="M23,6l3.435,3.435-7.32,7.32-6-6L2,21.885,4.115,24l9-9,6,6,9.45-9.435L32,15V6Z" transform="translate(351 29)" fill="#fff"/>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Rechteck_4)">
+      <g id="Rechteck_4-2" data-name="Rechteck 4" transform="translate(30 287)" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="353" height="180" rx="16" stroke="none"/>
+        <rect x="0.5" y="0.5" width="352" height="179" rx="15.5" fill="none"/>
+      </g>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Rechteck_5)">
+      <g id="Rechteck_5-2" data-name="Rechteck 5" transform="translate(30 491)" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="353" height="180" rx="16" stroke="none"/>
+        <rect x="0.5" y="0.5" width="352" height="179" rx="15.5" fill="none"/>
+      </g>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Rechteck_6)">
+      <g id="Rechteck_6-2" data-name="Rechteck 6" transform="translate(30 699)" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="353" height="54" rx="16" stroke="none"/>
+        <rect x="0.5" y="0.5" width="352" height="53" rx="15.5" fill="none"/>
+      </g>
+    </g>
+    <g id="Rechteck_7" data-name="Rechteck 7" transform="translate(30 381)" fill="#fff" stroke="#707070" stroke-width="1">
+      <path d="M0,0H353a0,0,0,0,1,0,0V70a16,16,0,0,1-16,16H16A16,16,0,0,1,0,70V0A0,0,0,0,1,0,0Z" stroke="none"/>
+      <path d="M.5.5h352a0,0,0,0,1,0,0V70A15.5,15.5,0,0,1,337,85.5H16A15.5,15.5,0,0,1,.5,70V.5A0,0,0,0,1,.5.5Z" fill="none"/>
+    </g>
+    <g id="Rechteck_8" data-name="Rechteck 8" transform="translate(30 585)" fill="#fff" stroke="#707070" stroke-width="1">
+      <path d="M0,0H353a0,0,0,0,1,0,0V70a16,16,0,0,1-16,16H16A16,16,0,0,1,0,70V0A0,0,0,0,1,0,0Z" stroke="none"/>
+      <path d="M.5.5h352a0,0,0,0,1,0,0V70A15.5,15.5,0,0,1,337,85.5H16A15.5,15.5,0,0,1,.5,70V.5A0,0,0,0,1,.5.5Z" fill="none"/>
+    </g>
+    <text id="Bild" transform="translate(185 346)" fill="#414141" font-size="24" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Bild</tspan></text>
+    <text id="Bild-2" data-name="Bild" transform="translate(186 546)" fill="#414141" font-size="24" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Bild</tspan></text>
+    <text id="Author" transform="translate(41 373)" fill="#414141" font-size="16" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Author</tspan></text>
+    <text id="Author-2" data-name="Author" transform="translate(41 577)" fill="#414141" font-size="16" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Author</tspan></text>
+    <text id="Date" transform="translate(335 373)" fill="#414141" font-size="16" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Date</tspan></text>
+    <text id="Date-2" data-name="Date" transform="translate(337 577)" fill="#414141" font-size="16" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Date</tspan></text>
+    <text id="Information" transform="translate(141 434)" fill="#414141" font-size="24" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Information</tspan></text>
+    <text id="Information-2" data-name="Information" transform="translate(141 638)" fill="#414141" font-size="24" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Information</tspan></text>
+    <path id="ic_account_balance_24px" d="M4,10v7H7V10Zm6,0v7h3V10ZM2,22H21V19H2ZM16,10v7h3V10ZM11.5,1,2,6V8H21V6Z" transform="translate(58.13 714.5)" fill="#6a7cff"/>
+    <path id="ic_local_library_24px" d="M12,11.55A13.153,13.153,0,0,0,3,8V19a13.153,13.153,0,0,1,9,3.55A13.2,13.2,0,0,1,21,19V8A13.153,13.153,0,0,0,12,11.55ZM12,8A3,3,0,1,0,9,5,3,3,0,0,0,12,8Z" transform="translate(147.13 713.5)" fill="#616161"/>
+    <path id="ic_youtube_searched_for_24px" d="M18.315,14.957h-.87l-.293-.293A7.06,7.06,0,0,0,11.793,3a7.128,7.128,0,0,0-7.065,7.065H2l4.174,4.348L10.7,10.065H6.9a4.891,4.891,0,1,1,4.891,4.891,4.994,4.994,0,0,1-1.978-.413L8.207,16.152a7.038,7.038,0,0,0,8.174-.728l.293.293v.859L22.12,22l1.62-1.609Z" transform="translate(237.13 714)" fill="#616161"/>
+    <path id="ic_brightness_low_24px" d="M17.763,13.617,20.69,10.69,17.763,7.763V3.617H13.617L10.69.69,7.763,3.617H3.617V7.763L.69,10.69l2.927,2.927v4.147H7.763L10.69,20.69l2.927-2.927h4.147ZM10.69,16A5.305,5.305,0,1,1,16,10.69,5.309,5.309,0,0,1,10.69,16Z" transform="translate(331.18 715.085)" fill="#616161"/>
+  </g>
+</svg>

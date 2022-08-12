@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragmentsMain.SearchFragment"
+    android:background="@color/background">
+
+    <View
+        android:id="@+id/headerBackground"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_125sdp"
+        android:background="@color/primary"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:text="@string/settings"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20ssp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:shadowColor="@color/lightBlack"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="2"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="@dimen/_26sdp"
+        android:layout_height="@dimen/_26sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:src="@drawable/ic_settings"
+        app:layout_constraintBottom_toBottomOf="@id/txtTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/txtTitle"
+        android:tint="@color/white" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/cirlce_image"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_120sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/headerBackground"
+        app:layout_constraintTop_toBottomOf="@+id/headerBackground"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:src="@drawable/user"
+        app:civ_border_width="@dimen/_2sdp"
+        app:civ_border_color="@color/primary_text"
+        android:elevation="@dimen/_6sdp"/>
+
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@+id/cirlce_image"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layoutAnimation="@anim/recycler_anim">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/account_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/_16sdp"
+            app:cardBackgroundColor="@color/card_background">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="@dimen/_140sdp"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Account"
+                    android:textStyle="bold"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/_18sdp"
+                    android:fontFamily="@font/poppins_light"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/_4sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/username_set"
+                        android:textAlignment="center"
+                        android:textColor="@color/primary"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/poppins_light"/>
+
+                    <TextView
+                        android:id="@+id/account_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="sd"
+                        android:textAlignment="center"
+                        android:textColor="@color/primary_text"
+                        android:fontFamily="@font/poppins_light"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/_2sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/email_set"
+                        android:textAlignment="center"
+                        android:textColor="@color/primary"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/poppins_light"/>
+
+                    <TextView
+                        android:id="@+id/account_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="sd"
+                        android:textAlignment="center"
+                        android:textColor="@color/primary_text"
+                        android:fontFamily="@font/poppins_light"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/_2sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/role_set"
+                        android:textAlignment="center"
+                        android:textColor="@color/primary"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/poppins_light"/>
+
+                    <TextView
+                        android:id="@+id/account_role"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="sd"
+                        android:textAlignment="center"
+                        android:textColor="@color/primary_text"
+                        android:fontFamily="@font/poppins_light"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/_16sdp"
+            app:cardBackgroundColor="@color/card_background"
+            android:layout_marginTop="@dimen/_12sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/search_radius"
+                    android:textColor="@color/primary_text"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_18sdp"
+                    android:fontFamily="@font/poppins_light"/>
+
+                <TextView
+                    android:id="@+id/range_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10Km"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/_12sdp"
+                    android:fontFamily="@font/poppins_light"/>
+
+                <androidx.appcompat.widget.AppCompatSeekBar
+                    android:id="@+id/range_seekbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_20sdp"
+                    android:min="1"
+                    android:max="25"
+                    android:thumb="@drawable/seekbar_thumb"
+                    android:progressTint="@color/primary"
+                    android:layout_marginTop="@dimen/_4sdp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginBottom="@dimen/_6sdp"
+            android:id="@+id/btn_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/logout"
+            android:textColor="@color/white"
+            android:background="@drawable/round_corner"
+            android:backgroundTint="@color/notAvailable"
+            android:elevation="@dimen/_8sdp"
+            android:fontFamily="@font/poppins_light"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

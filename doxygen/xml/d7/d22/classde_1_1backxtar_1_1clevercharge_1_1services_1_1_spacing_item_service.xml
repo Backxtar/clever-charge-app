@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="d7/d22/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_spacing_item_service" kind="class" language="Java" prot="public">
+    <compoundname>de::backxtar::clevercharge::services::SpacingItemService</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">RecyclerView.ItemDecoration</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d7/d22/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_spacing_item_service_1a99bad774b550a5e3166a6a089deaed18" prot="private" static="no" mutable="no">
+        <type>final int</type>
+        <definition>final int de.backxtar.clevercharge.services.SpacingItemService.verticalSpaceHeight</definition>
+        <argsstring></argsstring>
+        <name>verticalSpaceHeight</name>
+        <qualifiedname>de.backxtar.clevercharge.services.SpacingItemService.verticalSpaceHeight</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Value for spacer. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/SpacingItemService.java" line="22" column="23" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/SpacingItemService.java" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d7/d22/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_spacing_item_service_1a0477cecf74ff6f1e18cb204f14483034" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>de.backxtar.clevercharge.services.SpacingItemService.SpacingItemService</definition>
+        <argsstring>(int verticalSpaceHeight)</argsstring>
+        <name>SpacingItemService</name>
+        <qualifiedname>de.backxtar.clevercharge.services.SpacingItemService.SpacingItemService</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>verticalSpaceHeight</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor for spacer. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>verticalSpaceHeight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as int </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/SpacingItemService.java" line="29" column="12" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/SpacingItemService.java" bodystart="29" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d22/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_spacing_item_service_1a07cdaca50d02f2a8d10878ec77fd60b2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void de.backxtar.clevercharge.services.SpacingItemService.getItemOffsets</definition>
+        <argsstring>(@NonNull Rect outRect, @NonNull View view, @NonNull RecyclerView parent, @NonNull RecyclerView.State state)</argsstring>
+        <name>getItemOffsets</name>
+        <qualifiedname>de.backxtar.clevercharge.services.SpacingItemService.getItemOffsets</qualifiedname>
+        <param>
+          <type>@NonNull Rect</type>
+          <declname>outRect</declname>
+        </param>
+        <param>
+          <type>@NonNull View</type>
+          <declname>view</declname>
+        </param>
+        <param>
+          <type>@NonNull RecyclerView</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>@NonNull RecyclerView.State</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get item offset and set spacer. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>outRect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>view</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/SpacingItemService.java" line="41" column="17" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/SpacingItemService.java" bodystart="41" bodyend="52"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="d7/d22/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_spacing_item_service" kindref="compound">SpacingItemService</ref> object. <simplesect kind="author"><para>Jörg Quick, Tilo Steinmetzer </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>RecyclerView::ItemDecoration</label>
+      </node>
+      <node id="1">
+        <label>de.backxtar.clevercharge.services.SpacingItemService</label>
+        <link refid="d7/d22/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_spacing_item_service"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>RecyclerView::ItemDecoration</label>
+      </node>
+      <node id="1">
+        <label>de.backxtar.clevercharge.services.SpacingItemService</label>
+        <link refid="d7/d22/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_spacing_item_service"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/SpacingItemService.java" line="15" column="7" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/SpacingItemService.java" bodystart="15" bodyend="53"/>
+    <listofallmembers>
+      <member refid="d7/d22/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_spacing_item_service_1a07cdaca50d02f2a8d10878ec77fd60b2" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::services::SpacingItemService</scope><name>getItemOffsets</name></member>
+      <member refid="d7/d22/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_spacing_item_service_1a0477cecf74ff6f1e18cb204f14483034" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::services::SpacingItemService</scope><name>SpacingItemService</name></member>
+      <member refid="d7/d22/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_spacing_item_service_1a99bad774b550a5e3166a6a089deaed18" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::services::SpacingItemService</scope><name>verticalSpaceHeight</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

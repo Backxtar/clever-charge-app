@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginLeft="@dimen/_16sdp"
+        app:cardBackgroundColor="@color/card_background"
+        app:cardCornerRadius="@dimen/_14sdp"
+        android:elevation="@dimen/cardview_default_elevation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_marginBottom="@dimen/_2sdp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/_40sdp"
+            android:paddingLeft="@dimen/_40sdp"
+            android:paddingTop="@dimen/_16sdp"
+            android:paddingEnd="@dimen/_16sdp"
+            android:paddingRight="@dimen/_16sdp"
+            android:paddingBottom="@dimen/_16sdp">
+
+            <ImageView
+                android:id="@+id/imgStar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_star"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:text="Operator"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toStartOf="@id/imgStar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:fontFamily="@font/poppins_light"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgLocation"
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:src="@drawable/ic_location"
+                app:layout_constraintStart_toStartOf="@id/txtTitle"
+                app:layout_constraintTop_toBottomOf="@id/txtTitle"
+                app:tint="@color/secondary_text"/>
+
+            <TextView
+                android:id="@+id/txtLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wetzkeil 44"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/_8ssp"
+                app:layout_constraintBottom_toBottomOf="@id/imgLocation"
+                app:layout_constraintStart_toEndOf="@id/imgLocation"
+                app:layout_constraintTop_toTopOf="@id/imgLocation"
+                android:fontFamily="@font/poppins_light"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgConnections"
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:src="@drawable/ic_area"
+                app:layout_constraintStart_toStartOf="@id/imgLocation"
+                app:layout_constraintTop_toBottomOf="@id/imgLocation"
+                app:tint="@color/secondary_text"/>
+
+            <TextView
+                android:id="@+id/txtConnection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 available connections"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/_8ssp"
+                app:layout_constraintBottom_toBottomOf="@id/imgConnections"
+                app:layout_constraintStart_toEndOf="@id/imgConnections"
+                app:layout_constraintTop_toTopOf="@id/imgConnections"
+                android:fontFamily="@font/poppins_light"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        app:cardBackgroundColor="@color/dashboard_item_3"
+        app:cardCornerRadius="@dimen/_14sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:elevation="@dimen/cardview_default_elevation">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_8sdp"
+            android:src="@drawable/ic_battery_nc"
+            app:tint="@color/white" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

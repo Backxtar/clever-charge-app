@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="dc/d44/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_home_fragment" kind="class" language="Java" prot="public">
+    <compoundname>de::backxtar::clevercharge::fragmentsMain::HomeFragment</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Fragment</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="dc/d44/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_home_fragment_1a0a0f724201eb20151d7cd7b273c168a4" prot="private" static="no" mutable="no">
+        <type><ref refid="d4/d81/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter" kindref="compound">ArticleAdapter</ref></type>
+        <definition>ArticleAdapter de.backxtar.clevercharge.fragmentsMain.HomeFragment.adapter</definition>
+        <argsstring></argsstring>
+        <name>adapter</name>
+        <qualifiedname>de.backxtar.clevercharge.fragmentsMain.HomeFragment.adapter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Article adapter. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/HomeFragment.java" line="42" column="28" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/HomeFragment.java" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="dc/d44/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_home_fragment_1ae7916a3ee29bdc55451281ea298e43c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>de.backxtar.clevercharge.fragmentsMain.HomeFragment.HomeFragment</definition>
+        <argsstring>()</argsstring>
+        <name>HomeFragment</name>
+        <qualifiedname>de.backxtar.clevercharge.fragmentsMain.HomeFragment.HomeFragment</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Home Constructor. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/HomeFragment.java" line="48" column="12" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/HomeFragment.java" bodystart="48" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d44/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_home_fragment_1a53e08545cee66f83f5e5a0edc34851a1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void de.backxtar.clevercharge.fragmentsMain.HomeFragment.onCreate</definition>
+        <argsstring>(Bundle savedInstanceState)</argsstring>
+        <name>onCreate</name>
+        <qualifiedname>de.backxtar.clevercharge.fragmentsMain.HomeFragment.onCreate</qualifiedname>
+        <param>
+          <type>Bundle</type>
+          <declname>savedInstanceState</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>On create fragment. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>savedInstanceState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/HomeFragment.java" line="57" column="17" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/HomeFragment.java" bodystart="57" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d44/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_home_fragment_1ac651aa3626b3c2c947551bf7e390b742" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>View</type>
+        <definition>View de.backxtar.clevercharge.fragmentsMain.HomeFragment.onCreateView</definition>
+        <argsstring>(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)</argsstring>
+        <name>onCreateView</name>
+        <qualifiedname>de.backxtar.clevercharge.fragmentsMain.HomeFragment.onCreateView</qualifiedname>
+        <param>
+          <type>LayoutInflater</type>
+          <declname>inflater</declname>
+        </param>
+        <param>
+          <type>ViewGroup</type>
+          <declname>container</declname>
+        </param>
+        <param>
+          <type>Bundle</type>
+          <declname>savedInstanceState</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>On create fragment view. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>inflater</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>container</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>savedInstanceState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>new view of fragment </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/HomeFragment.java" line="70" column="17" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/HomeFragment.java" bodystart="70" bodyend="92"/>
+        <references refid="de/d7e/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager_1aec331a849cb8f78997bafd5432f2115e" compoundref="d3/dcc/_user_manager_8java" startline="62" endline="64">de.backxtar.clevercharge.managers.UserManager.getArticles</references>
+        <references refid="d2/d96/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_1a5154a6718e345d9eba0c07ec99f096fd" compoundref="d1/dfe/_station_manager_8java" startline="84" endline="86">de.backxtar.clevercharge.managers.StationManager.getStationAmount</references>
+        <references refid="d2/d96/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_1a21dbe93b9bbd9b272c9ba5dcf34d535d" compoundref="d1/dfe/_station_manager_8java" startline="93" endline="97">de.backxtar.clevercharge.managers.StationManager.sort</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="dc/d44/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_home_fragment_1a23bd0e560ac086441bd51f7fe5aa50c2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void de.backxtar.clevercharge.fragmentsMain.HomeFragment.initSwipeRefresh</definition>
+        <argsstring>(View view)</argsstring>
+        <name>initSwipeRefresh</name>
+        <qualifiedname>de.backxtar.clevercharge.fragmentsMain.HomeFragment.initSwipeRefresh</qualifiedname>
+        <param>
+          <type>View</type>
+          <declname>view</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Init refresh object <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>view</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/HomeFragment.java" line="98" column="18" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/HomeFragment.java" bodystart="98" bodyend="120"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>ChargingStation container. <simplesect kind="author"><para>Jörg Quick, Tilo Steinmetzer </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Fragment</label>
+      </node>
+      <node id="1">
+        <label>de.backxtar.clevercharge.fragmentsMain.HomeFragment</label>
+        <link refid="dc/d44/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_home_fragment"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Fragment</label>
+      </node>
+      <node id="1">
+        <label>de.backxtar.clevercharge.fragmentsMain.HomeFragment</label>
+        <link refid="dc/d44/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_home_fragment"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/HomeFragment.java" line="35" column="7" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/HomeFragment.java" bodystart="35" bodyend="121"/>
+    <listofallmembers>
+      <member refid="dc/d44/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_home_fragment_1a0a0f724201eb20151d7cd7b273c168a4" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::fragmentsMain::HomeFragment</scope><name>adapter</name></member>
+      <member refid="dc/d44/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_home_fragment_1ae7916a3ee29bdc55451281ea298e43c3" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::fragmentsMain::HomeFragment</scope><name>HomeFragment</name></member>
+      <member refid="dc/d44/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_home_fragment_1a23bd0e560ac086441bd51f7fe5aa50c2" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::fragmentsMain::HomeFragment</scope><name>initSwipeRefresh</name></member>
+      <member refid="dc/d44/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_home_fragment_1a53e08545cee66f83f5e5a0edc34851a1" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::fragmentsMain::HomeFragment</scope><name>onCreate</name></member>
+      <member refid="dc/d44/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_home_fragment_1ac651aa3626b3c2c947551bf7e390b742" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::fragmentsMain::HomeFragment</scope><name>onCreateView</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

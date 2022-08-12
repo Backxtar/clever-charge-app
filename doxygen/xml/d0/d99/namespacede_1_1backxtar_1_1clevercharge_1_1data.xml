@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="d0/d99/namespacede_1_1backxtar_1_1clevercharge_1_1data" kind="namespace" language="Java">
+    <compoundname>de::backxtar::clevercharge::data</compoundname>
+    <innerclass refid="d0/dbd/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response" prot="public">de::backxtar::clevercharge::data::APIResponse</innerclass>
+    <innerclass refid="d9/dd9/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article" prot="public">de::backxtar::clevercharge::data::Article</innerclass>
+    <innerclass refid="d4/d81/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_article_adapter" prot="public">de::backxtar::clevercharge::data::ArticleAdapter</innerclass>
+    <innerclass refid="d2/dae/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station" prot="public">de::backxtar::clevercharge::data::ChargingStation</innerclass>
+    <innerclass refid="d8/d60/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter" prot="public">de::backxtar::clevercharge::data::ChargingStationAdapter</innerclass>
+    <innerclass refid="dd/d57/enumde_1_1backxtar_1_1clevercharge_1_1data_1_1_module_type" prot="public">de::backxtar::clevercharge::data::ModuleType</innerclass>
+    <innerclass refid="dc/d18/enumde_1_1backxtar_1_1clevercharge_1_1data_1_1_plug_type" prot="public">de::backxtar::clevercharge::data::PlugType</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/APIResponse.java" line="1" column="15"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="d4/d2a/namespacede_1_1backxtar_1_1clevercharge_1_1managers" kind="namespace" language="Java">
+    <compoundname>de::backxtar::clevercharge::managers</compoundname>
+    <innerclass refid="d8/df6/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_login_manager" prot="public">de::backxtar::clevercharge::managers::LoginManager</innerclass>
+    <innerclass refid="d3/dc6/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_navigation_manager" prot="public">de::backxtar::clevercharge::managers::NavigationManager</innerclass>
+    <innerclass refid="d2/d96/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager" prot="public">de::backxtar::clevercharge::managers::StationManager</innerclass>
+    <innerclass refid="de/d7e/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager" prot="public">de::backxtar::clevercharge::managers::UserManager</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/managers/LoginManager.java" line="1" column="15"/>
+  </compounddef>
+</doxygen>

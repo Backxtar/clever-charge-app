@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="df/dc3/_save_state_service_8java" kind="file" language="Java">
+    <compoundname>SaveStateService.java</compoundname>
+    <innerclass refid="d9/dd1/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_save_state_service" prot="public">de::backxtar::clevercharge::services::SaveStateService</innerclass>
+    <innernamespace refid="d4/d74/namespacede_1_1backxtar_1_1clevercharge_1_1services">de::backxtar::clevercharge::services</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">package<sp/></highlight><highlight class="normal">de.backxtar.clevercharge.services;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="d9/dd1/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_save_state_service" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d9/dd1/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_save_state_service" kindref="compound">SaveStateService</ref><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Global<sp/>variables<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/>local;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/>fav;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/>localDef;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>String<sp/>search;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//=========================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="d9/dd1/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_save_state_service_1a642625883891d0b721fa376d4afa88e0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="d9/dd1/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_save_state_service_1a642625883891d0b721fa376d4afa88e0" kindref="member">SaveStateService</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.local<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.fav<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.localDef<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="d9/dd1/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_save_state_service_1aa15304ff58e532866b64219d32cf6a5f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/><ref refid="d9/dd1/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_save_state_service_1aa15304ff58e532866b64219d32cf6a5f" kindref="member">isLocal</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>local;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="d9/dd1/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_save_state_service_1a5e1b87e2e5cf4791c241d520ac25eb3c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/><ref refid="d9/dd1/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_save_state_service_1a5e1b87e2e5cf4791c241d520ac25eb3c" kindref="member">isFav</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>fav;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="d9/dd1/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_save_state_service_1a62338817c63a16c6c6d7338565097735" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/><ref refid="d9/dd1/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_save_state_service_1a62338817c63a16c6c6d7338565097735" kindref="member">isLocalDef</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>localDef;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="d9/dd1/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_save_state_service_1a45f892560636947333b596eb251aaa77" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d9/dd1/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_save_state_service_1a45f892560636947333b596eb251aaa77" kindref="member">setLocal</ref>(</highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/>local)<sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.local<sp/>=<sp/>local;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="d9/dd1/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_save_state_service_1a9e7097fdb10c5d8b1a34aa30d495befe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d9/dd1/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_save_state_service_1a9e7097fdb10c5d8b1a34aa30d495befe" kindref="member">setFav</ref>(</highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/>fav)<sp/>{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.fav<sp/>=<sp/>fav;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="d9/dd1/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_save_state_service_1a0ad06b5abffb5b06ed2cf41ed3d4da24" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d9/dd1/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_save_state_service_1a0ad06b5abffb5b06ed2cf41ed3d4da24" kindref="member">setLocalDef</ref>(</highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/>localDef)<sp/>{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.localDef<sp/>=<sp/>localDef;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="d9/dd1/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_save_state_service_1abca7c0b03db072fa4bbae11dd3dba351" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>String<sp/><ref refid="d9/dd1/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_save_state_service_1abca7c0b03db072fa4bbae11dd3dba351" kindref="member">getSearch</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>search;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="d9/dd1/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_save_state_service_1a619132c0897ed3c75ec8fdb1646a3d10" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d9/dd1/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_save_state_service_1a619132c0897ed3c75ec8fdb1646a3d10" kindref="member">setSearch</ref>(String<sp/>search)<sp/>{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.search<sp/>=<sp/>search;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/SaveStateService.java"/>
+  </compounddef>
+</doxygen>

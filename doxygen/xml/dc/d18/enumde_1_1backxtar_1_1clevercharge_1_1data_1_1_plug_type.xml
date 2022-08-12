@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="dc/d18/enumde_1_1backxtar_1_1clevercharge_1_1data_1_1_plug_type" kind="enum" language="Java" prot="public">
+    <compoundname>de::backxtar::clevercharge::data::PlugType</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="dc/d18/enumde_1_1backxtar_1_1clevercharge_1_1data_1_1_plug_type_1acc5e553542fb12254ff2751e76a8194d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>de.backxtar.clevercharge.data.PlugType.SerializedName</definition>
+        <argsstring></argsstring>
+        <name>SerializedName</name>
+        <qualifiedname>de.backxtar.clevercharge.data.PlugType.SerializedName</qualifiedname>
+        <initializer>=(&quot;AC Steckdose Typ 2&quot;) AC_PLUG_TYPE_2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enum for AC_PLUG_TYPE_2.</para>
+<para>Enum for AC_CLUTCH_TYPE_2.</para>
+<para>Enum for AC_SCHUKO.</para>
+<para>Enum for DC_CLUTCH_COMBO.</para>
+<para>Enum for DC_CHADEMO. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/PlugType.java" line="19" column="1" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/PlugType.java" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="dc/d18/enumde_1_1backxtar_1_1clevercharge_1_1data_1_1_plug_type" kindref="compound">PlugType</ref> enum. <simplesect kind="author"><para>Jörg Quick, Tilo Steinmetzer </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 Enum for <ref refid="dc/d18/enumde_1_1backxtar_1_1clevercharge_1_1data_1_1_plug_type" kindref="compound">PlugType</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>de.backxtar.clevercharge.data.PlugType</label>
+        <link refid="dc/d18/enumde_1_1backxtar_1_1clevercharge_1_1data_1_1_plug_type"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/PlugType.java" line="14" column="7" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/PlugType.java" bodystart="14" bodyend="40"/>
+    <listofallmembers>
+      <member refid="dc/d18/enumde_1_1backxtar_1_1clevercharge_1_1data_1_1_plug_type_1acc5e553542fb12254ff2751e76a8194d" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::data::PlugType</scope><name>SerializedName</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

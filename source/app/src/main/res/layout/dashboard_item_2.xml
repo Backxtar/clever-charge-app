@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_2sdp"
+        android:elevation="@dimen/cardview_default_elevation"
+        app:cardCornerRadius="@dimen/_14sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/card_background">
+
+            <FrameLayout
+                android:id="@+id/picFrame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/newsImg"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_150sdp"
+                    android:scaleType="centerCrop"
+                    android:transitionName="imgNews"
+                    android:src="@drawable/default_no_image"
+                    tools:ignore="UnusedAttribute" />
+
+                <ImageView
+                    android:id="@+id/shaddow_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_gravity="bottom"
+                    android:src="@drawable/bottom_shadow" />
+
+                <ProgressBar
+                    android:id="@+id/load_photo"
+                    style="@android:style/Widget.ProgressBar.Small"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+
+            </FrameLayout>
+
+
+            <TextView
+                android:id="@+id/newsAuthor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/picFrame"
+                android:layout_alignStart="@id/picFrame"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:drawablePadding="@dimen/_4sdp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Author"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_light"
+                app:drawableStartCompat="@drawable/ic_author"
+                app:drawableTint="@color/white" />
+
+            <TextView
+                android:id="@+id/newsDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/picFrame"
+                android:layout_alignBottom="@id/picFrame"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@drawable/menu_bar"
+                android:drawablePadding="@dimen/_4sdp"
+                android:maxLines="1"
+                android:padding="@dimen/_4sdp"
+                android:text="12-16-2021"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/_14sdp"
+                android:fontFamily="@font/poppins_light"
+                app:drawableStartCompat="@drawable/ic_calendar"
+                app:drawableTint="@color/primary_text" />
+
+            <TextView
+                android:id="@+id/newsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/picFrame"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:text="Title"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_light"/>
+
+            <TextView
+                android:id="@+id/newsDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/newsTitle"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="Desc"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="italic"
+                android:fontFamily="@font/poppins_light"/>
+
+            <TextView
+                android:id="@+id/contentNews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/newsDesc"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:text="Lorep ipsum irgendwas blabla bla bla bla"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="@font/poppins_light"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

@@ -1,0 +1,182 @@
+\hypertarget{_map_fragment_8java_source}{}\doxysection{Map\+Fragment.\+java}
+\label{_map_fragment_8java_source}\index{D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-\/softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/MapFragment.java@{D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-\/softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/MapFragment.java}}
+\mbox{\hyperlink{_map_fragment_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00001}00001 \textcolor{keyword}{package }de.backxtar.clevercharge.fragmentsMain;}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00002}00002 }
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00003}00003 \textcolor{keyword}{import} android.annotation.SuppressLint;}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00004}00004 \textcolor{keyword}{import} android.content.Context;}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00005}00005 \textcolor{keyword}{import} android.graphics.Bitmap;}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00006}00006 \textcolor{keyword}{import} android.graphics.Canvas;}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00007}00007 \textcolor{keyword}{import} android.graphics.drawable.Drawable;}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00008}00008 \textcolor{keyword}{import} android.os.Bundle;}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00009}00009 \textcolor{keyword}{import} androidx.core.content.ContextCompat;}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00010}00010 \textcolor{keyword}{import} androidx.fragment.app.Fragment;}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00011}00011 }
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00012}00012 \textcolor{keyword}{import} android.view.Gravity;}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00013}00013 \textcolor{keyword}{import} android.view.LayoutInflater;}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00014}00014 \textcolor{keyword}{import} android.view.View;}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00015}00015 \textcolor{keyword}{import} android.view.ViewGroup;}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00016}00016 \textcolor{keyword}{import} android.widget.Button;}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00017}00017 }
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00018}00018 \textcolor{keyword}{import} com.google.android.gms.maps.CameraUpdateFactory;}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00019}00019 \textcolor{keyword}{import} com.google.android.gms.maps.GoogleMap;}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00020}00020 \textcolor{keyword}{import} com.google.android.gms.maps.SupportMapFragment;}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00021}00021 \textcolor{keyword}{import} com.google.android.gms.maps.model.BitmapDescriptor;}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00022}00022 \textcolor{keyword}{import} com.google.android.gms.maps.model.BitmapDescriptorFactory;}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00023}00023 \textcolor{keyword}{import} com.google.android.gms.maps.model.LatLng;}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00024}00024 \textcolor{keyword}{import} com.google.android.gms.maps.model.Marker;}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00025}00025 \textcolor{keyword}{import} com.google.android.gms.maps.model.MarkerOptions;}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00027}00027 \textcolor{keyword}{import} java.util.ArrayList;}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00028}00028 \textcolor{keyword}{import} java.util.Locale;}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00030}00030 \textcolor{keyword}{import} de.backxtar.clevercharge.R;}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00031}00031 \textcolor{keyword}{import} de.backxtar.clevercharge.data.ChargingStation;}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00032}00032 \textcolor{keyword}{import} de.backxtar.clevercharge.managers.StationManager;}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00033}00033 \textcolor{keyword}{import} de.backxtar.clevercharge.managers.UserManager;}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00034}00034 \textcolor{keyword}{import} de.backxtar.clevercharge.services.MessageService;}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00035}00035 \textcolor{keyword}{import} de.backxtar.clevercharge.services.PopupService;}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00043}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_map_fragment}{00043}} \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_map_fragment}{MapFragment}} \textcolor{keyword}{extends} Fragment \{}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00044}00044 }
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00045}00045     \textcolor{comment}{/* Global variables */}}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00046}00046 }
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00050}00050     \textcolor{keyword}{private} SupportMapFragment mapFragment;}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00051}00051 }
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00055}00055     \textcolor{keyword}{private} GoogleMap googleMap;}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00056}00056 }
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00060}00060     \textcolor{keyword}{private} Button showStations;}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00061}00061 }
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00065}00065     \textcolor{keyword}{private} \textcolor{keywordtype}{boolean} isClicked;}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00066}00066     \textcolor{comment}{//======================================}}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00067}00067 }
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00071}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_map_fragment_a797500239d1ebd8dd7b81b7163275335}{00071}}     \textcolor{keyword}{public} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_map_fragment_a797500239d1ebd8dd7b81b7163275335}{MapFragment}}() \{}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00072}00072         \textcolor{comment}{// Constructor}}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00073}00073     \}}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00074}00074 }
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00079}00079     @Override}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00080}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_map_fragment_a50dc5db6fd651cc77a19b1bd8f7cc548}{00080}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_map_fragment_a50dc5db6fd651cc77a19b1bd8f7cc548}{onCreate}}(Bundle savedInstanceState) \{}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00081}00081         super.onCreate(savedInstanceState);}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00082}00082     \}}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00083}00083 }
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00091}00091     @SuppressLint(\{\textcolor{stringliteral}{"{}DefaultLocale"{}}, \textcolor{stringliteral}{"{}MissingPermission"{}}, \textcolor{stringliteral}{"{}SetTextI18n"{}}\})}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00092}00092     @Override}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00093}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_map_fragment_a185997fb5a375cc5549dc62ea7a239f7}{00093}}     \textcolor{keyword}{public} View \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_map_fragment_a185997fb5a375cc5549dc62ea7a239f7}{onCreateView}}(LayoutInflater inflater, ViewGroup container,}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00094}00094                              Bundle savedInstanceState) \{}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00095}00095         View view = inflater.inflate(R.layout.fragment\_map, container, \textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00096}00096         showStations = view.findViewById(R.id.showStations);}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00097}00097 }
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00098}00098         mapFragment = (SupportMapFragment) getChildFragmentManager()}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00099}00099                 .findFragmentById(R.id.google\_map);}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00100}00100         checkButtonState();}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00101}00101         initMap();}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00102}00102         initButton();}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00103}00103 }
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00104}00104         \textcolor{keywordflow}{return} view;}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00105}00105     \}}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00106}00106 }
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00110}00110     @SuppressLint(\textcolor{stringliteral}{"{}MissingPermission"{}})}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00111}00111     private \textcolor{keywordtype}{void} initMap() \{}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00112}00112         mapFragment.getMapAsync(googleMap -\/> \{}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00113}00113             this.googleMap = googleMap;}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00114}00114             googleMap.setMapType(GoogleMap.MAP\_TYPE\_NORMAL);}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00115}00115             googleMap.setTrafficEnabled(\textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00116}00116             googleMap.setBuildingsEnabled(\textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00117}00117             googleMap.setMyLocationEnabled(\textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00118}00118             initMapFunctions();}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00119}00119         \});}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00120}00120     \}}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00121}00121 }
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00125}00125     \textcolor{keyword}{private} \textcolor{keywordtype}{void} initMapFunctions() \{}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00126}00126         googleMap.setOnMapLongClickListener(latLng -\/> \{}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00127}00127             isClicked = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00128}00128             showStations.setText(getResources().getString(R.string.remove\_marked\_stations));}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00129}00129 }
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00130}00130             MarkerOptions markerOptions = \textcolor{keyword}{new} MarkerOptions()}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00131}00131                     .position(latLng)}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00132}00132                     .title(getResources().getString(R.string.central\_point));}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00133}00133             googleMap.clear();}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00134}00134             googleMap.addMarker(markerOptions);}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00135}00135             googleMap.animateCamera(CameraUpdateFactory}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00136}00136                     .newLatLngZoom(latLng, 12), 2000, \textcolor{keyword}{null});}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00137}00137             setPoints(latLng.latitude, latLng.longitude, \textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00138}00138         \});}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00139}00139 }
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00140}00140         googleMap.setOnInfoWindowClickListener(marker -\/> \{}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00141}00141             \textcolor{keywordflow}{if} (marker.getTag() == \textcolor{keyword}{null}) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00142}00142             ChargingStation station = (ChargingStation) marker.getTag();}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00143}00143             PopupService popupService = \textcolor{keyword}{new} PopupService(getActivity(), station, marker);}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00144}00144             popupService.showPopup();}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00145}00145         \});}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00146}00146     \}}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00147}00147 }
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00151}00151     \textcolor{keyword}{private} \textcolor{keywordtype}{void} initButton() \{}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00152}00152         showStations.setOnClickListener(v -\/> \{}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00153}00153             \textcolor{keywordflow}{if} (!isClicked) \{}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00154}00154                 \textcolor{keywordflow}{if} (UserManager.getMyPosition() != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00155}00155                     if (setPoints(UserManager.getMyPosition().latitude, UserManager.getMyPosition().longitude, false)) \{}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00156}00156                         showStations.setText(getResources().getString(R.string.remove\_marked\_stations));}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00157}00157                         isClicked = true;}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00158}00158                     \}}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00159}00159                 \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00160}00160                     MessageService msgService = \textcolor{keyword}{new} MessageService(getActivity(), getResources().getString(R.string.location\_cant\_be\_tracked), Gravity.CENTER, \textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00161}00161                     msgService.sendToast();}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00162}00162                 \}}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00163}00163             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00164}00164                 googleMap.clear();}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00165}00165                 showStations.setText(getResources().getString(R.string.get\_nearby\_stations));}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00166}00166                 isClicked = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00167}00167             \}}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00168}00168         \});}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00169}00169     \}}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00170}00170 }
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00174}00174     \textcolor{keyword}{private} \textcolor{keywordtype}{void} checkButtonState() \{}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00175}00175         \textcolor{keywordflow}{if} (isClicked) showStations.setText(getResources().getString(R.string.remove\_marked\_stations));}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00176}00176         \textcolor{keywordflow}{else} showStations.setText(getResources().getString(R.string.get\_nearby\_stations));}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00177}00177     \}}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00178}00178 }
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00185}00185     \textcolor{keyword}{private} \textcolor{keywordtype}{boolean} setPoints(\textcolor{keyword}{final} \textcolor{keywordtype}{double} lat, \textcolor{keyword}{final} \textcolor{keywordtype}{double} lon, \textcolor{keywordtype}{boolean} onMapClick) \{}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00186}00186         ArrayList<ChargingStation> stations\_near = StationManager.sort(lat, lon);}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00187}00187         BitmapDescriptor bitMap = bitMapFromPng(getActivity(), R.drawable.ic\_marker);}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00188}00188         BitmapDescriptor bitMapFav = bitMapFromPng(getActivity(), R.drawable.ic\_marker\_fav);}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00189}00189         }
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00190}00190         \textcolor{keywordflow}{if} (stations\_near.isEmpty()) \{}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00191}00191             MessageService msgService = \textcolor{keyword}{new} MessageService(getActivity(), getResources().getString(R.string.no\_stations\_available), Gravity.CENTER, \textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00192}00192             msgService.sendToast();}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00193}00193             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00194}00194         \}}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00195}00195         stations\_near.forEach(station -\/> \{}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00196}00196             \textcolor{keyword}{final} \textcolor{keywordtype}{double} distance;}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00197}00197             \textcolor{keywordflow}{if} (!onMapClick) distance = station.getDistance();}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00198}00198             \textcolor{keywordflow}{else} distance = station.getDistance(lat, lon);}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00199}00199             MarkerOptions markerOptions = \textcolor{keyword}{new} MarkerOptions();}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00200}00200             markerOptions.position(\textcolor{keyword}{new} LatLng(station.getLat(), station.getLon()));}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00201}00201 }
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00202}00202             if (UserManager.getApi\_data().getDefect\_stations\_map().containsKey(station.getId()))}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00203}00203                 markerOptions.icon(BitmapDescriptorFactory.defaultMarker());}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00204}00204             \textcolor{keywordflow}{else} if (UserManager.getApi\_data().getFavorites().contains(station.getId()) \&\&}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00205}00205                     !UserManager.getApi\_data().getDefect\_stations\_map().containsKey(station.getId()))}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00206}00206                 markerOptions.icon(bitMapFav);}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00207}00207             \textcolor{keywordflow}{else} markerOptions.icon(bitMap);}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00208}00208 }
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00209}00209             markerOptions.title(station.getOperator() + \textcolor{stringliteral}{"{} | "{}}}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00210}00210                     + String.format(Locale.getDefault(),\textcolor{stringliteral}{"{}\%.2f"{}}, distance)}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00211}00211                     + \textcolor{stringliteral}{"{}km | "{}} + getResources().getString(R.string.more) + \textcolor{stringliteral}{"{}..."{}});}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00212}00212             Marker marker = googleMap.addMarker(markerOptions);}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00213}00213             marker.setTag(station);}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00214}00214         \});}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00215}00215         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00216}00216     \}}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00217}00217 }
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00224}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_map_fragment_aebc41ff63d2d8d9bceb12853e7709f77}{00224}}     \textcolor{keyword}{public} \textcolor{keyword}{static} BitmapDescriptor \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_map_fragment_aebc41ff63d2d8d9bceb12853e7709f77}{bitMapFromPng}}(Context context, \textcolor{keywordtype}{int} drawableID) \{}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00225}00225         Drawable drawable = ContextCompat.getDrawable(context, drawableID);}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00226}00226         drawable.setBounds(0, 0, drawable.getIntrinsicWidth(), drawable.getIntrinsicHeight());}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00227}00227         Bitmap bitmap = Bitmap.createBitmap(drawable.getIntrinsicWidth(), drawable.getIntrinsicHeight(), Bitmap.Config.ARGB\_8888);}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00228}00228         Canvas canvas = \textcolor{keyword}{new} Canvas(bitmap);}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00229}00229         drawable.draw(canvas);}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00230}00230         \textcolor{keywordflow}{return} BitmapDescriptorFactory.fromBitmap(bitmap);}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00231}00231     \}}
+\DoxyCodeLine{\Hypertarget{_map_fragment_8java_source_l00232}00232 \}}
+
+\end{DoxyCode}

@@ -1,0 +1,61 @@
+\hypertarget{_user_manager_8java_source}{}\doxysection{User\+Manager.\+java}
+\label{_user_manager_8java_source}\index{D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-\/softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/managers/UserManager.java@{D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-\/softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/managers/UserManager.java}}
+\mbox{\hyperlink{_user_manager_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_user_manager_8java_source_l00001}00001 \textcolor{keyword}{package }de.backxtar.clevercharge.managers;}
+\DoxyCodeLine{\Hypertarget{_user_manager_8java_source_l00002}00002 }
+\DoxyCodeLine{\Hypertarget{_user_manager_8java_source_l00003}00003 \textcolor{keyword}{import} com.google.android.gms.maps.model.LatLng;}
+\DoxyCodeLine{\Hypertarget{_user_manager_8java_source_l00004}00004 }
+\DoxyCodeLine{\Hypertarget{_user_manager_8java_source_l00005}00005 \textcolor{keyword}{import} java.util.ArrayList;}
+\DoxyCodeLine{\Hypertarget{_user_manager_8java_source_l00006}00006 }
+\DoxyCodeLine{\Hypertarget{_user_manager_8java_source_l00007}00007 \textcolor{keyword}{import} de.backxtar.clevercharge.data.APIResponse;}
+\DoxyCodeLine{\Hypertarget{_user_manager_8java_source_l00008}00008 \textcolor{keyword}{import} de.backxtar.clevercharge.data.Article;}
+\DoxyCodeLine{\Hypertarget{_user_manager_8java_source_l00009}00009 \textcolor{keyword}{import} de.backxtar.clevercharge.services.SaveStateService;}
+\DoxyCodeLine{\Hypertarget{_user_manager_8java_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{_user_manager_8java_source_l00017}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager}{00017}} \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager}{UserManager}} \{}
+\DoxyCodeLine{\Hypertarget{_user_manager_8java_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{_user_manager_8java_source_l00019}00019     \textcolor{comment}{/* Global variables */}}
+\DoxyCodeLine{\Hypertarget{_user_manager_8java_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{_user_manager_8java_source_l00024}00024     \textcolor{keyword}{private} \textcolor{keyword}{static} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response}{APIResponse}} api\_data;}
+\DoxyCodeLine{\Hypertarget{_user_manager_8java_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{_user_manager_8java_source_l00029}00029     \textcolor{keyword}{private} \textcolor{keyword}{static} ArrayList<Article> articles;}
+\DoxyCodeLine{\Hypertarget{_user_manager_8java_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{_user_manager_8java_source_l00034}00034     \textcolor{keyword}{private} \textcolor{keyword}{static} LatLng myPosition;}
+\DoxyCodeLine{\Hypertarget{_user_manager_8java_source_l00035}00035 }
+\DoxyCodeLine{\Hypertarget{_user_manager_8java_source_l00039}00039     \textcolor{keyword}{private} \textcolor{keyword}{static} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1services_1_1_save_state_service}{SaveStateService}} saveStateService;}
+\DoxyCodeLine{\Hypertarget{_user_manager_8java_source_l00040}00040     \textcolor{comment}{//================================================}}
+\DoxyCodeLine{\Hypertarget{_user_manager_8java_source_l00041}00041 }
+\DoxyCodeLine{\Hypertarget{_user_manager_8java_source_l00046}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager_aa4e7c73b0bb07f0dcf5a612f9bce416a}{00046}}     \textcolor{keyword}{public} \textcolor{keyword}{static} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response}{APIResponse}} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager_aa4e7c73b0bb07f0dcf5a612f9bce416a}{getApi\_data}}() \{}
+\DoxyCodeLine{\Hypertarget{_user_manager_8java_source_l00047}00047         \textcolor{keywordflow}{return} api\_data;}
+\DoxyCodeLine{\Hypertarget{_user_manager_8java_source_l00048}00048     \}}
+\DoxyCodeLine{\Hypertarget{_user_manager_8java_source_l00049}00049 }
+\DoxyCodeLine{\Hypertarget{_user_manager_8java_source_l00054}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager_ac60fac25ace90ce70aa5778abdc38a9b}{00054}}     \textcolor{keyword}{public} \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager_ac60fac25ace90ce70aa5778abdc38a9b}{setApi\_data}}(\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response}{APIResponse}} api\_data) \{}
+\DoxyCodeLine{\Hypertarget{_user_manager_8java_source_l00055}00055         \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager}{UserManager}}.api\_data = api\_data;}
+\DoxyCodeLine{\Hypertarget{_user_manager_8java_source_l00056}00056     \}}
+\DoxyCodeLine{\Hypertarget{_user_manager_8java_source_l00057}00057 }
+\DoxyCodeLine{\Hypertarget{_user_manager_8java_source_l00062}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager_aec331a849cb8f78997bafd5432f2115e}{00062}}     \textcolor{keyword}{public} \textcolor{keyword}{static} ArrayList<Article> \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager_aec331a849cb8f78997bafd5432f2115e}{getArticles}}() \{}
+\DoxyCodeLine{\Hypertarget{_user_manager_8java_source_l00063}00063         \textcolor{keywordflow}{return} articles;}
+\DoxyCodeLine{\Hypertarget{_user_manager_8java_source_l00064}00064     \}}
+\DoxyCodeLine{\Hypertarget{_user_manager_8java_source_l00065}00065 }
+\DoxyCodeLine{\Hypertarget{_user_manager_8java_source_l00070}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager_a7762c6854143eb0e8eeb0bf235f17f52}{00070}}     \textcolor{keyword}{public} \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager_a7762c6854143eb0e8eeb0bf235f17f52}{setArticles}}(ArrayList<Article> articles) \{}
+\DoxyCodeLine{\Hypertarget{_user_manager_8java_source_l00071}00071         \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager}{UserManager}}.articles = articles;}
+\DoxyCodeLine{\Hypertarget{_user_manager_8java_source_l00072}00072     \}}
+\DoxyCodeLine{\Hypertarget{_user_manager_8java_source_l00073}00073 }
+\DoxyCodeLine{\Hypertarget{_user_manager_8java_source_l00078}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager_ae4f909b33cee9349c04878d1106de0cb}{00078}}     \textcolor{keyword}{public} \textcolor{keyword}{static} LatLng \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager_ae4f909b33cee9349c04878d1106de0cb}{getMyPosition}}() \{}
+\DoxyCodeLine{\Hypertarget{_user_manager_8java_source_l00079}00079         \textcolor{keywordflow}{return} myPosition;}
+\DoxyCodeLine{\Hypertarget{_user_manager_8java_source_l00080}00080     \}}
+\DoxyCodeLine{\Hypertarget{_user_manager_8java_source_l00081}00081 }
+\DoxyCodeLine{\Hypertarget{_user_manager_8java_source_l00086}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager_a95d82602fdeb77e8f7e8e8da92c415a1}{00086}}     \textcolor{keyword}{public} \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager_a95d82602fdeb77e8f7e8e8da92c415a1}{setMyPosition}}(LatLng myPosition) \{}
+\DoxyCodeLine{\Hypertarget{_user_manager_8java_source_l00087}00087         \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager}{UserManager}}.myPosition = myPosition;}
+\DoxyCodeLine{\Hypertarget{_user_manager_8java_source_l00088}00088     \}}
+\DoxyCodeLine{\Hypertarget{_user_manager_8java_source_l00089}00089 }
+\DoxyCodeLine{\Hypertarget{_user_manager_8java_source_l00094}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager_af79a96e5576cc556c0a06b1073d63d92}{00094}}     \textcolor{keyword}{public} \textcolor{keyword}{static} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1services_1_1_save_state_service}{SaveStateService}} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager_af79a96e5576cc556c0a06b1073d63d92}{getSaveStateService}}() \{}
+\DoxyCodeLine{\Hypertarget{_user_manager_8java_source_l00095}00095         \textcolor{keywordflow}{return} saveStateService;}
+\DoxyCodeLine{\Hypertarget{_user_manager_8java_source_l00096}00096     \}}
+\DoxyCodeLine{\Hypertarget{_user_manager_8java_source_l00097}00097 }
+\DoxyCodeLine{\Hypertarget{_user_manager_8java_source_l00102}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager_adaede50edb5f5283c2c38819a3c0e18d}{00102}}     \textcolor{keyword}{public} \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager_adaede50edb5f5283c2c38819a3c0e18d}{setSaveStateService}}(\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1services_1_1_save_state_service}{SaveStateService}} saveStateService) \{}
+\DoxyCodeLine{\Hypertarget{_user_manager_8java_source_l00103}00103         \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager}{UserManager}}.saveStateService = saveStateService;}
+\DoxyCodeLine{\Hypertarget{_user_manager_8java_source_l00104}00104     \}}
+\DoxyCodeLine{\Hypertarget{_user_manager_8java_source_l00105}00105 \}}
+
+\end{DoxyCode}

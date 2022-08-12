@@ -1,0 +1,56 @@
+\hypertarget{_message_service_8java_source}{}\doxysection{Message\+Service.\+java}
+\label{_message_service_8java_source}\index{D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-\/softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/MessageService.java@{D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-\/softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/MessageService.java}}
+\mbox{\hyperlink{_message_service_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_message_service_8java_source_l00001}00001 \textcolor{keyword}{package }de.backxtar.clevercharge.services;}
+\DoxyCodeLine{\Hypertarget{_message_service_8java_source_l00002}00002 }
+\DoxyCodeLine{\Hypertarget{_message_service_8java_source_l00003}00003 \textcolor{keyword}{import} android.app.Activity;}
+\DoxyCodeLine{\Hypertarget{_message_service_8java_source_l00004}00004 \textcolor{keyword}{import} android.view.LayoutInflater;}
+\DoxyCodeLine{\Hypertarget{_message_service_8java_source_l00005}00005 \textcolor{keyword}{import} android.view.View;}
+\DoxyCodeLine{\Hypertarget{_message_service_8java_source_l00006}00006 \textcolor{keyword}{import} android.widget.TextView;}
+\DoxyCodeLine{\Hypertarget{_message_service_8java_source_l00007}00007 \textcolor{keyword}{import} android.widget.Toast;}
+\DoxyCodeLine{\Hypertarget{_message_service_8java_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{_message_service_8java_source_l00009}00009 \textcolor{keyword}{import} de.backxtar.clevercharge.R;}
+\DoxyCodeLine{\Hypertarget{_message_service_8java_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{_message_service_8java_source_l00017}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1services_1_1_message_service}{00017}} \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1services_1_1_message_service}{MessageService}} \{}
+\DoxyCodeLine{\Hypertarget{_message_service_8java_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{_message_service_8java_source_l00019}00019     \textcolor{comment}{/* Global variables */}}
+\DoxyCodeLine{\Hypertarget{_message_service_8java_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{_message_service_8java_source_l00024}00024     \textcolor{keyword}{private} Activity activity;}
+\DoxyCodeLine{\Hypertarget{_message_service_8java_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{_message_service_8java_source_l00029}00029     \textcolor{keyword}{private} String message;}
+\DoxyCodeLine{\Hypertarget{_message_service_8java_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{_message_service_8java_source_l00034}00034     \textcolor{keywordtype}{int} gravity;}
+\DoxyCodeLine{\Hypertarget{_message_service_8java_source_l00035}00035 }
+\DoxyCodeLine{\Hypertarget{_message_service_8java_source_l00039}00039     \textcolor{keywordtype}{boolean} error;}
+\DoxyCodeLine{\Hypertarget{_message_service_8java_source_l00040}00040     \textcolor{comment}{//========================}}
+\DoxyCodeLine{\Hypertarget{_message_service_8java_source_l00041}00041 }
+\DoxyCodeLine{\Hypertarget{_message_service_8java_source_l00049}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1services_1_1_message_service_a250fe10f8b9fc126b42b51488e4150a6}{00049}}     \textcolor{keyword}{public} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1services_1_1_message_service_a250fe10f8b9fc126b42b51488e4150a6}{MessageService}}(Activity activity, String message, \textcolor{keywordtype}{int} gravity, \textcolor{keywordtype}{boolean} error) \{}
+\DoxyCodeLine{\Hypertarget{_message_service_8java_source_l00050}00050         this.activity = activity;}
+\DoxyCodeLine{\Hypertarget{_message_service_8java_source_l00051}00051         this.message = message;}
+\DoxyCodeLine{\Hypertarget{_message_service_8java_source_l00052}00052         this.gravity = gravity;}
+\DoxyCodeLine{\Hypertarget{_message_service_8java_source_l00053}00053         this.error = error;}
+\DoxyCodeLine{\Hypertarget{_message_service_8java_source_l00054}00054     \}}
+\DoxyCodeLine{\Hypertarget{_message_service_8java_source_l00055}00055 }
+\DoxyCodeLine{\Hypertarget{_message_service_8java_source_l00059}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1services_1_1_message_service_ac4ac04d455ed4804dca168aa75203943}{00059}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1services_1_1_message_service_ac4ac04d455ed4804dca168aa75203943}{sendToast}}() \{}
+\DoxyCodeLine{\Hypertarget{_message_service_8java_source_l00060}00060         \textcolor{keywordflow}{if} (activity != \textcolor{keyword}{null})}
+\DoxyCodeLine{\Hypertarget{_message_service_8java_source_l00061}00061             activity.runOnUiThread(() -\/> \{}
+\DoxyCodeLine{\Hypertarget{_message_service_8java_source_l00062}00062                 LayoutInflater inflater = LayoutInflater.from(activity);}
+\DoxyCodeLine{\Hypertarget{_message_service_8java_source_l00063}00063                 View view;}
+\DoxyCodeLine{\Hypertarget{_message_service_8java_source_l00064}00064 }
+\DoxyCodeLine{\Hypertarget{_message_service_8java_source_l00065}00065                 \textcolor{keywordflow}{if} (!error) view = inflater.inflate(R.layout.toast\_success, \textcolor{keyword}{null});}
+\DoxyCodeLine{\Hypertarget{_message_service_8java_source_l00066}00066                 \textcolor{keywordflow}{else} view = inflater.inflate(R.layout.toast\_fail, \textcolor{keyword}{null});}
+\DoxyCodeLine{\Hypertarget{_message_service_8java_source_l00067}00067 }
+\DoxyCodeLine{\Hypertarget{_message_service_8java_source_l00068}00068                 TextView msg = view.findViewById(R.id.message\_toast);}
+\DoxyCodeLine{\Hypertarget{_message_service_8java_source_l00069}00069                 msg.setText(message);}
+\DoxyCodeLine{\Hypertarget{_message_service_8java_source_l00070}00070 }
+\DoxyCodeLine{\Hypertarget{_message_service_8java_source_l00071}00071                 Toast toast = \textcolor{keyword}{new} Toast(activity);}
+\DoxyCodeLine{\Hypertarget{_message_service_8java_source_l00072}00072                 toast.setView(view);}
+\DoxyCodeLine{\Hypertarget{_message_service_8java_source_l00073}00073                 toast.setDuration(Toast.LENGTH\_LONG);}
+\DoxyCodeLine{\Hypertarget{_message_service_8java_source_l00074}00074                 toast.setGravity(gravity, 0, 0);}
+\DoxyCodeLine{\Hypertarget{_message_service_8java_source_l00075}00075                 toast.show();}
+\DoxyCodeLine{\Hypertarget{_message_service_8java_source_l00076}00076             \});}
+\DoxyCodeLine{\Hypertarget{_message_service_8java_source_l00077}00077     \}}
+\DoxyCodeLine{\Hypertarget{_message_service_8java_source_l00078}00078 \}}
+
+\end{DoxyCode}

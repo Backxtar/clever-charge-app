@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "category": "news",
+    "author": "Jörg Quick",
+    "title": "Neue Version v1.1.0",
+    "description": "Beinhaltet neue Features wie News-Page, Umkreissuche.",
+    "urlToImage": "https://api.aurora-theogenia.de/clever_charge/news/images/radius-app.jpg",
+    "publishedAt": "12-19-2021",
+    "content": "Dieses Update bringt eine neue Art von Startseite. Das Feature zeigt den Nutzern ohne lästiges Suchen immer wichtige Informationen über die Updates, Versionen oder kommende Features an."
+  },
+  {
+    "id": 2,
+    "category": "Bugfix",
+    "author": "Tilo Steinmetzer",
+    "title": "RecyclerView Search-Blocking",
+    "description": "Automatische Aktualisierung von Suchergebnissen bei der Umkreissuche.",
+    "urlToImage": "https://api.aurora-theogenia.de/clever_charge/news/images/bugfix-app.jpg",
+    "publishedAt": "12-19-2021",
+    "content": "Es wurde ein Fehler behoben, bei dem User jedes mal eine neue Suche aufgeben mussten, nachdem Sie den #In-der-Nähe Switch aktiviert hatten."
+  },
+  {
+    "id": 3,
+    "category": "upcomming",
+    "author": "Jörg Quick",
+    "title": "Favoritenliste",
+    "description": "Neues Feature Favoritenliste",
+    "urlToImage": "https://api.aurora-theogenia.de/clever_charge/news/images/comming-app.jpg",
+    "publishedAt": "12-20-2021",
+    "content": "Clever Charge bekommt eine Favoritenliste. Somit können User eine Ladesäule als Favorit markieren. Damit fällt das lästige Filtern nach einer favorisierten Ladesäule weg."
+  }
+]

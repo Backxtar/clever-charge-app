@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="dir_1bcba9f73d764033c63623b6f23296c5" kind="dir">
+    <compoundname>D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/build/generated/source/buildConfig/debug/de/backxtar/clevercharge</compoundname>
+    <innerfile refid="d6/d12/_build_config_8java">BuildConfig.java</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/build/generated/source/buildConfig/debug/de/backxtar/clevercharge/"/>
+  </compounddef>
+</doxygen>

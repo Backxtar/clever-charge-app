@@ -1,0 +1,220 @@
+\hypertarget{_charging_station_8java_source}{}\doxysection{Charging\+Station.\+java}
+\label{_charging_station_8java_source}\index{D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-\/softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ChargingStation.java@{D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-\/softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ChargingStation.java}}
+\mbox{\hyperlink{_charging_station_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00001}00001 \textcolor{keyword}{package }de.backxtar.clevercharge.data;}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00002}00002 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00003}00003 \textcolor{keyword}{import} com.google.android.gms.maps.model.LatLng;}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00004}00004 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00005}00005 \textcolor{keyword}{import} java.util.ArrayList;}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00006}00006 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00007}00007 \textcolor{keyword}{import} de.backxtar.clevercharge.managers.UserManager;}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00015}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station}{00015}} \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station}{ChargingStation}} \{}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00017}00017     \textcolor{comment}{/* General information */}}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00022}00022     \textcolor{keyword}{private} \textcolor{keywordtype}{int} id;}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00027}00027     \textcolor{keyword}{private} String operator;}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00032}00032     \textcolor{keyword}{private} String street;}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00033}00033 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00037}00037     \textcolor{keyword}{private} String number;}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00038}00038 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00042}00042     \textcolor{keyword}{private} String additional;}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00043}00043 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00047}00047     \textcolor{keyword}{private} \textcolor{keywordtype}{int} postal\_code;}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00048}00048 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00052}00052     \textcolor{keyword}{private} String location;}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00053}00053 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00057}00057     \textcolor{keyword}{private} String state;}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00058}00058 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00062}00062     \textcolor{keyword}{private} String area;}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00063}00063 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00067}00067     \textcolor{keyword}{private} \textcolor{keywordtype}{double} lat;}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00068}00068 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00072}00072     \textcolor{keyword}{private} \textcolor{keywordtype}{double} lon;}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00073}00073 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00077}00077     \textcolor{keyword}{private} String installation\_date;}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00078}00078 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00082}00082     \textcolor{keyword}{private} \textcolor{keywordtype}{double} conn\_power;}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00083}00083 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00087}00087     \textcolor{keyword}{private} \mbox{\hyperlink{enumde_1_1backxtar_1_1clevercharge_1_1data_1_1_module_type}{ModuleType}} module\_type;}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00088}00088 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00092}00092     \textcolor{keyword}{private} \textcolor{keywordtype}{int} number\_of\_connections;}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00093}00093 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00094}00094     \textcolor{comment}{/* Charging Point 1 */}}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00095}00095 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00099}00099     \textcolor{keyword}{private} ArrayList<PlugType> plug\_types\_1;}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00100}00100 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00104}00104     \textcolor{keyword}{private} \textcolor{keywordtype}{double} power\_1;}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00105}00105 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00109}00109     \textcolor{keyword}{private} String public\_key\_1;}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00110}00110 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00111}00111     \textcolor{comment}{/* Charging Point 2 */}}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00112}00112 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00116}00116     \textcolor{keyword}{private} ArrayList<PlugType> plug\_types\_2;}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00117}00117 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00121}00121     \textcolor{keyword}{private} \textcolor{keywordtype}{double} power\_2;}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00122}00122 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00126}00126     \textcolor{keyword}{private} String public\_key\_2;}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00127}00127 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00128}00128     \textcolor{comment}{/* Charging Point 3 */}}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00129}00129 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00133}00133     \textcolor{keyword}{private} ArrayList<PlugType> plug\_types\_3;}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00134}00134 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00138}00138     \textcolor{keyword}{private} \textcolor{keywordtype}{double} power\_3;}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00139}00139 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00143}00143     \textcolor{keyword}{private} String public\_key\_3;}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00144}00144 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00145}00145     \textcolor{comment}{/* Charging Point 4 */}}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00146}00146 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00150}00150     \textcolor{keyword}{private} ArrayList<PlugType> plug\_types\_4;}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00151}00151 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00155}00155     \textcolor{keyword}{private} \textcolor{keywordtype}{double} power\_4;}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00156}00156 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00160}00160     \textcolor{keyword}{private} String public\_key\_4;}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00161}00161     \textcolor{comment}{//=============================================}}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00162}00162 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00167}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_a66043478cfd9a40c66f4e86a7d39748a}{00167}}     \textcolor{keyword}{public} \textcolor{keywordtype}{double} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_a66043478cfd9a40c66f4e86a7d39748a}{getDistance}}() \{}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00168}00168         LatLng myPosition = \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager}{UserManager}}.\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager_ae4f909b33cee9349c04878d1106de0cb}{getMyPosition}}();}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00169}00169         \textcolor{keyword}{final} \textcolor{keywordtype}{double} earth\_radius = 6371000.785;}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00170}00170 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00171}00171         \textcolor{keyword}{final} \textcolor{keywordtype}{double} myLat = Math.toRadians(myPosition.latitude);}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00172}00172         \textcolor{keyword}{final} \textcolor{keywordtype}{double} myLon = Math.toRadians(myPosition.longitude);}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00173}00173         \textcolor{keyword}{final} \textcolor{keywordtype}{double} latStation = Math.toRadians(lat);}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00174}00174         \textcolor{keyword}{final} \textcolor{keywordtype}{double} lonStation = Math.toRadians(lon);}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00175}00175 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00176}00176         \textcolor{keyword}{final} \textcolor{keywordtype}{double} zeta = Math.acos(}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00177}00177                 Math.sin(myLat) * Math.sin(latStation)}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00178}00178                         + Math.cos(myLat) * Math.cos(latStation)}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00179}00179                         * Math.cos(lonStation -\/ myLon));}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00180}00180         \textcolor{keywordflow}{return} (zeta * earth\_radius) / 1000;}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00181}00181     \}}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00182}00182 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00189}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_ab0e273b9ce51e780f5634e89d933d636}{00189}}     \textcolor{keyword}{public} \textcolor{keywordtype}{double} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_ab0e273b9ce51e780f5634e89d933d636}{getDistance}}(\textcolor{keyword}{final} \textcolor{keywordtype}{double} mLat, \textcolor{keyword}{final} \textcolor{keywordtype}{double} mLon) \{}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00190}00190         \textcolor{keyword}{final} \textcolor{keywordtype}{double} earth\_radius = 6371000.785;}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00191}00191 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00192}00192         \textcolor{keyword}{final} \textcolor{keywordtype}{double} myLat = Math.toRadians(mLat);}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00193}00193         \textcolor{keyword}{final} \textcolor{keywordtype}{double} myLon = Math.toRadians(mLon);}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00194}00194         \textcolor{keyword}{final} \textcolor{keywordtype}{double} latStation = Math.toRadians(lat);}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00195}00195         \textcolor{keyword}{final} \textcolor{keywordtype}{double} lonStation = Math.toRadians(lon);}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00196}00196 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00197}00197         \textcolor{keyword}{final} \textcolor{keywordtype}{double} zeta = Math.acos(}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00198}00198                 Math.sin(myLat) * Math.sin(latStation)}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00199}00199                         + Math.cos(myLat) * Math.cos(latStation)}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00200}00200                         * Math.cos(lonStation -\/ myLon));}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00201}00201         \textcolor{keywordflow}{return} (zeta * earth\_radius) / 1000;}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00202}00202     \}}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00203}00203 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00208}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_a52d94922f31a010d91640f14f61d400f}{00208}}     \textcolor{keyword}{public} \textcolor{keyword}{final} \textcolor{keywordtype}{int} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_a52d94922f31a010d91640f14f61d400f}{getId}}() \{}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00209}00209         \textcolor{keywordflow}{return} id;}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00210}00210     \}}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00211}00211 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00216}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_af753f3a0c179e10f6713c473ea3db300}{00216}}     \textcolor{keyword}{public} \textcolor{keyword}{final} String \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_af753f3a0c179e10f6713c473ea3db300}{getOperator}}() \{}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00217}00217         \textcolor{keywordflow}{return} operator;}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00218}00218     \}}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00219}00219 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00224}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_afadcdca20dcbb26ec63f1329d8587fb4}{00224}}     \textcolor{keyword}{public} \textcolor{keyword}{final} String \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_afadcdca20dcbb26ec63f1329d8587fb4}{getStreet}}() \{}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00225}00225         \textcolor{keywordflow}{return} street;}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00226}00226     \}}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00227}00227 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00232}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_a458efa55632d03f2f2c187414bf056ab}{00232}}     \textcolor{keyword}{public} \textcolor{keyword}{final} String \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_a458efa55632d03f2f2c187414bf056ab}{getNumber}}() \{}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00233}00233         \textcolor{keywordflow}{return} number;}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00234}00234     \}}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00235}00235 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00240}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_a6f4caa6d78500584f3230d0639e91692}{00240}}     \textcolor{keyword}{public} \textcolor{keyword}{final} String \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_a6f4caa6d78500584f3230d0639e91692}{getAdditional}}() \{}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00241}00241         \textcolor{keywordflow}{return} additional;}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00242}00242     \}}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00243}00243 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00248}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_ac3c6cb9ec9ecfe14bb0923d82178bc74}{00248}}     \textcolor{keyword}{public} \textcolor{keyword}{final} \textcolor{keywordtype}{int} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_ac3c6cb9ec9ecfe14bb0923d82178bc74}{getPostal\_code}}() \{}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00249}00249         \textcolor{keywordflow}{return} postal\_code;}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00250}00250     \}}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00251}00251 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00256}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_a46d8eb13339b35d44f74ec14d548ac9b}{00256}}     \textcolor{keyword}{public} \textcolor{keyword}{final} String \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_a46d8eb13339b35d44f74ec14d548ac9b}{getLocation}}() \{}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00257}00257         \textcolor{keywordflow}{return} location;}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00258}00258     \}}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00259}00259 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00264}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_a160ef6a55077db4209be45e4b6a2b862}{00264}}     \textcolor{keyword}{public} \textcolor{keyword}{final} String \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_a160ef6a55077db4209be45e4b6a2b862}{getState}}() \{}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00265}00265         \textcolor{keywordflow}{return} state;}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00266}00266     \}}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00267}00267 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00272}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_a5897760f00ae7a8e622cfdef668d0f9b}{00272}}     \textcolor{keyword}{public} \textcolor{keyword}{final} String \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_a5897760f00ae7a8e622cfdef668d0f9b}{getArea}}() \{}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00273}00273         \textcolor{keywordflow}{return} area;}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00274}00274     \}}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00275}00275 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00280}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_acaf8faeb0b7185065f51a53202425a21}{00280}}     \textcolor{keyword}{public} \textcolor{keyword}{final} \textcolor{keywordtype}{double} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_acaf8faeb0b7185065f51a53202425a21}{getLat}}() \{}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00281}00281         \textcolor{keywordflow}{return} lat;}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00282}00282     \}}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00283}00283 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00288}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adad1920e00435ac7510479e7b20b6c66}{00288}}     \textcolor{keyword}{public} \textcolor{keyword}{final} \textcolor{keywordtype}{double} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adad1920e00435ac7510479e7b20b6c66}{getLon}}() \{}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00289}00289         \textcolor{keywordflow}{return} lon;}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00290}00290     \}}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00291}00291 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00296}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_ac83b83c43ec5aa1dd0383be5e5ccde31}{00296}}     \textcolor{keyword}{public} \textcolor{keyword}{final} String \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_ac83b83c43ec5aa1dd0383be5e5ccde31}{getInstallation\_date}}() \{}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00297}00297         \textcolor{keywordflow}{return} installation\_date;}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00298}00298     \}}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00299}00299 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00304}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_a70b83589966d095b6b632a3d1e3d89d9}{00304}}     \textcolor{keyword}{public} \textcolor{keyword}{final} \textcolor{keywordtype}{double} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_a70b83589966d095b6b632a3d1e3d89d9}{getConn\_power}}() \{}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00305}00305         \textcolor{keywordflow}{return} conn\_power;}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00306}00306     \}}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00307}00307 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00312}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_abb768a34fbb34b02767bdd1ad2238730}{00312}}     \textcolor{keyword}{public} \textcolor{keyword}{final} \mbox{\hyperlink{enumde_1_1backxtar_1_1clevercharge_1_1data_1_1_module_type}{ModuleType}} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_abb768a34fbb34b02767bdd1ad2238730}{getModule\_type}}() \{}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00313}00313         \textcolor{keywordflow}{return} module\_type;}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00314}00314     \}}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00315}00315 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00320}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_a9666696265fec71203568bae50dca58e}{00320}}     \textcolor{keyword}{public} \textcolor{keyword}{final} \textcolor{keywordtype}{int} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_a9666696265fec71203568bae50dca58e}{getNumber\_of\_connections}}() \{}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00321}00321         \textcolor{keywordflow}{return} number\_of\_connections;}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00322}00322     \}}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00323}00323 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00328}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_a690b1a69fbe238bfec3e501138ade71c}{00328}}     \textcolor{keyword}{public} \textcolor{keyword}{final} ArrayList<PlugType> \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_a690b1a69fbe238bfec3e501138ade71c}{getPlug\_types\_1}}() \{}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00329}00329         \textcolor{keywordflow}{return} plug\_types\_1;}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00330}00330     \}}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00331}00331 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00336}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_ac76b0bbe00179bb43331927b4ecbc480}{00336}}     \textcolor{keyword}{public} \textcolor{keyword}{final} \textcolor{keywordtype}{double} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_ac76b0bbe00179bb43331927b4ecbc480}{getPower\_1}}() \{}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00337}00337         \textcolor{keywordflow}{return} power\_1;}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00338}00338     \}}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00339}00339 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00344}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_a665cb8442db27a5141226f46b97bdef3}{00344}}     \textcolor{keyword}{public} \textcolor{keyword}{final} String \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_a665cb8442db27a5141226f46b97bdef3}{getPublic\_key\_1}}() \{}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00345}00345         \textcolor{keywordflow}{return} public\_key\_1;}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00346}00346     \}}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00347}00347 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00352}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_ae7bfdf459ff99cc3460571a8012a77dc}{00352}}     \textcolor{keyword}{public} \textcolor{keyword}{final} ArrayList<PlugType> \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_ae7bfdf459ff99cc3460571a8012a77dc}{getPlug\_types\_2}}() \{}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00353}00353         \textcolor{keywordflow}{return} plug\_types\_2;}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00354}00354     \}}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00355}00355 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00360}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_a32193a7ea130c529a974741f6a22a577}{00360}}     \textcolor{keyword}{public} \textcolor{keyword}{final} \textcolor{keywordtype}{double} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_a32193a7ea130c529a974741f6a22a577}{getPower\_2}}() \{}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00361}00361         \textcolor{keywordflow}{return} power\_2;}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00362}00362     \}}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00363}00363 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00368}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_a2961a679043a5befac66d8a06a15904a}{00368}}     \textcolor{keyword}{public} \textcolor{keyword}{final} String \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_a2961a679043a5befac66d8a06a15904a}{getPublic\_key\_2}}() \{}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00369}00369         \textcolor{keywordflow}{return} public\_key\_2;}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00370}00370     \}}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00371}00371 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00376}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_a6bf96f44206fa068770614ba44425bde}{00376}}     \textcolor{keyword}{public} \textcolor{keyword}{final} ArrayList<PlugType> \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_a6bf96f44206fa068770614ba44425bde}{getPlug\_types\_3}}() \{}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00377}00377         \textcolor{keywordflow}{return} plug\_types\_3;}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00378}00378     \}}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00379}00379 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00384}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_a5e852680911243b77d8ea8c8fb7a8247}{00384}}     \textcolor{keyword}{public} \textcolor{keyword}{final} \textcolor{keywordtype}{double} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_a5e852680911243b77d8ea8c8fb7a8247}{getPower\_3}}() \{}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00385}00385         \textcolor{keywordflow}{return} power\_3;}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00386}00386     \}}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00387}00387 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00392}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_ac27c53f3f52574c859d93f5c68e6c7e2}{00392}}     \textcolor{keyword}{public} \textcolor{keyword}{final} String \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_ac27c53f3f52574c859d93f5c68e6c7e2}{getPublic\_key\_3}}() \{}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00393}00393         \textcolor{keywordflow}{return} public\_key\_3;}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00394}00394     \}}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00395}00395 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00400}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_aba52854f481f83413bafe9cacf169aa2}{00400}}     \textcolor{keyword}{public} \textcolor{keyword}{final} ArrayList<PlugType> \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_aba52854f481f83413bafe9cacf169aa2}{getPlug\_types\_4}}() \{}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00401}00401         \textcolor{keywordflow}{return} plug\_types\_4;}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00402}00402     \}}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00403}00403 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00408}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_a57fffbc4d9d6989db9cdc2d096a6f65b}{00408}}     \textcolor{keyword}{public} \textcolor{keyword}{final} \textcolor{keywordtype}{double} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_a57fffbc4d9d6989db9cdc2d096a6f65b}{getPower\_4}}() \{}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00409}00409         \textcolor{keywordflow}{return} power\_4;}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00410}00410     \}}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00411}00411 }
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00416}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_a4214858890bc0bec2040f5569db44cfd}{00416}}     \textcolor{keyword}{public} \textcolor{keyword}{final} String \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_a4214858890bc0bec2040f5569db44cfd}{getPublic\_key\_4}}() \{}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00417}00417         \textcolor{keywordflow}{return} public\_key\_4;}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00418}00418     \}}
+\DoxyCodeLine{\Hypertarget{_charging_station_8java_source_l00419}00419 \}}
+
+\end{DoxyCode}

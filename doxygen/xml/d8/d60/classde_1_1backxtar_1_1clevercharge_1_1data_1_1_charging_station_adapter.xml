@@ -1,0 +1,310 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="d8/d60/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter" kind="class" language="Java" prot="public">
+    <compoundname>de::backxtar::clevercharge::data::ChargingStationAdapter</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">RecyclerView::Adapter&lt; ChargingStationAdapter.ViewHolder &gt;</basecompoundref>
+    <innerclass refid="d4/de4/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter_1_1_view_holder" prot="public">de::backxtar::clevercharge::data::ChargingStationAdapter::ViewHolder</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d8/d60/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter_1a490149e6e5eb1736b5b96070f549d2ba" prot="private" static="no" mutable="no">
+        <type>final <ref refid="df/dc0/interfacede_1_1backxtar_1_1clevercharge_1_1interfaces_1_1_recycler_view_interface" kindref="compound">RecyclerViewInterface</ref></type>
+        <definition>final RecyclerViewInterface de.backxtar.clevercharge.data.ChargingStationAdapter.recyclerViewInterface</definition>
+        <argsstring></argsstring>
+        <name>recyclerViewInterface</name>
+        <qualifiedname>de.backxtar.clevercharge.data.ChargingStationAdapter.recyclerViewInterface</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Custom recyclerView interface. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ChargingStationAdapter.java" line="35" column="41" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ChargingStationAdapter.java" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d8/d60/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter_1a3bb43b8f9113f067845bd0d3af875387" prot="private" static="no" mutable="no">
+        <type>ArrayList&lt; <ref refid="d2/dae/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station" kindref="compound">ChargingStation</ref> &gt;</type>
+        <definition>ArrayList&lt;ChargingStation&gt; de.backxtar.clevercharge.data.ChargingStationAdapter.station_list</definition>
+        <argsstring></argsstring>
+        <name>station_list</name>
+        <qualifiedname>de.backxtar.clevercharge.data.ChargingStationAdapter.station_list</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Station ArrayList. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ChargingStationAdapter.java" line="40" column="23" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ChargingStationAdapter.java" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d8/d60/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter_1ab0f785f9439e18e0f3e7b09260a62712" prot="private" static="no" mutable="no">
+        <type>final Context</type>
+        <definition>final Context de.backxtar.clevercharge.data.ChargingStationAdapter.context</definition>
+        <argsstring></argsstring>
+        <name>context</name>
+        <qualifiedname>de.backxtar.clevercharge.data.ChargingStationAdapter.context</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Current context. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ChargingStationAdapter.java" line="45" column="27" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ChargingStationAdapter.java" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d8/d60/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter_1a7a251edaf5c0c726a0e8f69ed08bc776" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>de.backxtar.clevercharge.data.ChargingStationAdapter.ChargingStationAdapter</definition>
+        <argsstring>(RecyclerViewInterface recyclerViewInterface, ArrayList&lt; ChargingStation &gt; station_list, Context context)</argsstring>
+        <name>ChargingStationAdapter</name>
+        <qualifiedname>de.backxtar.clevercharge.data.ChargingStationAdapter.ChargingStationAdapter</qualifiedname>
+        <param>
+          <type><ref refid="df/dc0/interfacede_1_1backxtar_1_1clevercharge_1_1interfaces_1_1_recycler_view_interface" kindref="compound">RecyclerViewInterface</ref></type>
+          <declname>recyclerViewInterface</declname>
+        </param>
+        <param>
+          <type>ArrayList&lt; <ref refid="d2/dae/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station" kindref="compound">ChargingStation</ref> &gt;</type>
+          <declname>station_list</declname>
+        </param>
+        <param>
+          <type>Context</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>station_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>for the listView </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of the activity </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ChargingStationAdapter.java" line="53" column="12" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ChargingStationAdapter.java" bodystart="53" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d60/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter_1aa14214e3e8413471450d01c310dcd9b6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int de.backxtar.clevercharge.data.ChargingStationAdapter.getItemViewType</definition>
+        <argsstring>(int position)</argsstring>
+        <name>getItemViewType</name>
+        <qualifiedname>de.backxtar.clevercharge.data.ChargingStationAdapter.getItemViewType</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check station params for layout design. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of the station in the list </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>type as int </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ChargingStationAdapter.java" line="89" column="16" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ChargingStationAdapter.java" bodystart="89" bodyend="133"/>
+        <references refid="de/d7e/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager_1aa4e7c73b0bb07f0dcf5a612f9bce416a" compoundref="d3/dcc/_user_manager_8java" startline="46" endline="48">de.backxtar.clevercharge.managers.UserManager.getApi_data</references>
+        <references refid="d0/dbd/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_1a6a9d3a50e360265ecef575ebfaefcc4c" compoundref="d7/dca/_a_p_i_response_8java" startline="114" endline="116">de.backxtar.clevercharge.data.APIResponse.getDefect_stations_map</references>
+        <references refid="d0/dbd/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_1a1dfa2252e57d3dedcafcd225e709be7f" compoundref="d7/dca/_a_p_i_response_8java" startline="106" endline="108">de.backxtar.clevercharge.data.APIResponse.getFavorites</references>
+      </memberdef>
+      <memberdef kind="function" id="d8/d60/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter_1a60068cb998dfcc2f990369d554ca2b82" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d4/de4/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter_1_1_view_holder" kindref="compound">ViewHolder</ref></type>
+        <definition>ViewHolder de.backxtar.clevercharge.data.ChargingStationAdapter.onCreateViewHolder</definition>
+        <argsstring>(@NonNull ViewGroup parent, int viewType)</argsstring>
+        <name>onCreateViewHolder</name>
+        <qualifiedname>de.backxtar.clevercharge.data.ChargingStationAdapter.onCreateViewHolder</qualifiedname>
+        <param>
+          <type>@NonNull ViewGroup</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>viewType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Inflate the design for one item. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ViewGroup </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>viewType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>for design switch case </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>new <ref refid="d4/de4/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter_1_1_view_holder" kindref="compound">ViewHolder</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ChargingStationAdapter.java" line="143" column="23" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ChargingStationAdapter.java" bodystart="143" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d60/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter_1a3faf615a173caef09b3b6a62140fbda6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void de.backxtar.clevercharge.data.ChargingStationAdapter.onBindViewHolder</definition>
+        <argsstring>(@NonNull ViewHolder holder, int position)</argsstring>
+        <name>onBindViewHolder</name>
+        <qualifiedname>de.backxtar.clevercharge.data.ChargingStationAdapter.onBindViewHolder</qualifiedname>
+        <param>
+          <type>@NonNull <ref refid="d4/de4/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter_1_1_view_holder" kindref="compound">ViewHolder</ref></type>
+          <declname>holder</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set values to listItem. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>holder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>that was created. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int the list. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ChargingStationAdapter.java" line="173" column="17" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ChargingStationAdapter.java" bodystart="173" bodyend="188"/>
+        <references refid="d2/dae/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_1a66043478cfd9a40c66f4e86a7d39748a" compoundref="d4/df0/_charging_station_8java" startline="167" endline="181">de.backxtar.clevercharge.data.ChargingStation.getDistance</references>
+        <references refid="d2/dae/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_1a46d8eb13339b35d44f74ec14d548ac9b" compoundref="d4/df0/_charging_station_8java" startline="256" endline="258">de.backxtar.clevercharge.data.ChargingStation.getLocation</references>
+        <references refid="d2/dae/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_1a458efa55632d03f2f2c187414bf056ab" compoundref="d4/df0/_charging_station_8java" startline="232" endline="234">de.backxtar.clevercharge.data.ChargingStation.getNumber</references>
+        <references refid="d2/dae/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_1af753f3a0c179e10f6713c473ea3db300" compoundref="d4/df0/_charging_station_8java" startline="216" endline="218">de.backxtar.clevercharge.data.ChargingStation.getOperator</references>
+        <references refid="d2/dae/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_1ac3c6cb9ec9ecfe14bb0923d82178bc74" compoundref="d4/df0/_charging_station_8java" startline="248" endline="250">de.backxtar.clevercharge.data.ChargingStation.getPostal_code</references>
+        <references refid="d2/dae/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_1afadcdca20dcbb26ec63f1329d8587fb4" compoundref="d4/df0/_charging_station_8java" startline="224" endline="226">de.backxtar.clevercharge.data.ChargingStation.getStreet</references>
+      </memberdef>
+      <memberdef kind="function" id="d8/d60/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter_1a51bcc44fe16b44a9b889fd99c02a0608" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int de.backxtar.clevercharge.data.ChargingStationAdapter.getItemCount</definition>
+        <argsstring>()</argsstring>
+        <name>getItemCount</name>
+        <qualifiedname>de.backxtar.clevercharge.data.ChargingStationAdapter.getItemCount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get listSize. <simplesect kind="return"><para>the listSize as int </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ChargingStationAdapter.java" line="195" column="16" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ChargingStationAdapter.java" bodystart="195" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d60/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter_1a2b1bf989f6f76efa88e010b03bbe7dba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void de.backxtar.clevercharge.data.ChargingStationAdapter.updateAdapter</definition>
+        <argsstring>(ArrayList&lt; ChargingStation &gt; filteredList)</argsstring>
+        <name>updateAdapter</name>
+        <qualifiedname>de.backxtar.clevercharge.data.ChargingStationAdapter.updateAdapter</qualifiedname>
+        <param>
+          <type>ArrayList&lt; <ref refid="d2/dae/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station" kindref="compound">ChargingStation</ref> &gt;</type>
+          <declname>filteredList</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set new ArrayList and notify RecyclerView to update the data. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filteredList</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>to set </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ChargingStationAdapter.java" line="204" column="17" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ChargingStationAdapter.java" bodystart="204" bodyend="207"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="d2/dae/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station" kindref="compound">ChargingStation</ref> Adapter. <simplesect kind="author"><para>Jörg Quick, Tilo Steinmetzer </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>RecyclerView.Adapter&lt; ChargingStationAdapter.ViewHolder &gt;</label>
+      </node>
+      <node id="1">
+        <label>de.backxtar.clevercharge.data.ChargingStationAdapter</label>
+        <link refid="d8/d60/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>RecyclerView.Adapter&lt; ChargingStationAdapter.ViewHolder &gt;</label>
+      </node>
+      <node id="1">
+        <label>de.backxtar.clevercharge.data.ChargingStationAdapter</label>
+        <link refid="d8/d60/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ChargingStationAdapter.java" line="28" column="7" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/data/ChargingStationAdapter.java" bodystart="28" bodyend="208"/>
+    <listofallmembers>
+      <member refid="d8/d60/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter_1a7a251edaf5c0c726a0e8f69ed08bc776" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::data::ChargingStationAdapter</scope><name>ChargingStationAdapter</name></member>
+      <member refid="d8/d60/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter_1ab0f785f9439e18e0f3e7b09260a62712" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::data::ChargingStationAdapter</scope><name>context</name></member>
+      <member refid="d8/d60/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter_1a51bcc44fe16b44a9b889fd99c02a0608" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::data::ChargingStationAdapter</scope><name>getItemCount</name></member>
+      <member refid="d8/d60/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter_1aa14214e3e8413471450d01c310dcd9b6" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::data::ChargingStationAdapter</scope><name>getItemViewType</name></member>
+      <member refid="d8/d60/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter_1a3faf615a173caef09b3b6a62140fbda6" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::data::ChargingStationAdapter</scope><name>onBindViewHolder</name></member>
+      <member refid="d8/d60/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter_1a60068cb998dfcc2f990369d554ca2b82" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::data::ChargingStationAdapter</scope><name>onCreateViewHolder</name></member>
+      <member refid="d8/d60/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter_1a490149e6e5eb1736b5b96070f549d2ba" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::data::ChargingStationAdapter</scope><name>recyclerViewInterface</name></member>
+      <member refid="d8/d60/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter_1a3bb43b8f9113f067845bd0d3af875387" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::data::ChargingStationAdapter</scope><name>station_list</name></member>
+      <member refid="d8/d60/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter_1a2b1bf989f6f76efa88e010b03bbe7dba" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::data::ChargingStationAdapter</scope><name>updateAdapter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

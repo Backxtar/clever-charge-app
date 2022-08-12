@@ -1,0 +1,9 @@
+<map id="de.backxtar.clevercharge.LoadingScreen.onCreate" name="de.backxtar.clevercharge.LoadingScreen.onCreate">
+<area shape="rect" id="node1" title=" " alt="" coords="5,136,176,177"/>
+<area shape="rect" id="node2" href="$dc/d75/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_download_service.html#aa5f73fe4db1608145f95dc158f098e46" title=" " alt="" coords="229,5,450,47"/>
+<area shape="rect" id="node4" href="$dc/d75/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_download_service.html#ac572f7a40930620aef9d93f4500ca961" title=" " alt="" coords="229,71,450,112"/>
+<area shape="rect" id="node5" href="$da/da6/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_message_service.html#ac4ac04d455ed4804dca168aa75203943" title=" " alt="" coords="229,136,450,177"/>
+<area shape="rect" id="node6" href="$de/d7e/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager.html#a7762c6854143eb0e8eeb0bf235f17f52" title=" " alt="" coords="224,201,455,243"/>
+<area shape="rect" id="node7" href="$d2/d96/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager.html#aa32bde646cafbedd9764b704299b5cb9" title=" " alt="" coords="224,267,455,308"/>
+<area shape="rect" id="node3" href="$dc/d75/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_download_service.html#a38499dd278e4c77c5048d131ed13ab08" title=" " alt="" coords="503,39,724,80"/>
+</map>

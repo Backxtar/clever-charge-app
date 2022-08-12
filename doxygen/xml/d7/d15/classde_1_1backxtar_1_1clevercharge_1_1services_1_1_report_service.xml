@@ -1,0 +1,347 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="d7/d15/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_report_service" kind="class" language="Java" prot="public">
+    <compoundname>de::backxtar::clevercharge::services::ReportService</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d7/d15/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_report_service_1a232458bd1b2600db5b0ee17129b003c9" prot="private" static="no" mutable="no">
+        <type>final Activity</type>
+        <definition>final Activity de.backxtar.clevercharge.services.ReportService.activity</definition>
+        <argsstring></argsstring>
+        <name>activity</name>
+        <qualifiedname>de.backxtar.clevercharge.services.ReportService.activity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Current activity. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/ReportService.java" line="40" column="28" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/ReportService.java" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d15/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_report_service_1aa3ad49045a376ded8272cefa14c6f739" prot="private" static="no" mutable="no">
+        <type>final int</type>
+        <definition>final int de.backxtar.clevercharge.services.ReportService.station_id</definition>
+        <argsstring></argsstring>
+        <name>station_id</name>
+        <qualifiedname>de.backxtar.clevercharge.services.ReportService.station_id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Station ID. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/ReportService.java" line="45" column="23" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/ReportService.java" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d15/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_report_service_1adfd04c9a9d956737fcae16267f81ba22" prot="private" static="no" mutable="no">
+        <type><ref refid="d8/d60/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter" kindref="compound">ChargingStationAdapter</ref></type>
+        <definition>ChargingStationAdapter de.backxtar.clevercharge.services.ReportService.adapter</definition>
+        <argsstring></argsstring>
+        <name>adapter</name>
+        <qualifiedname>de.backxtar.clevercharge.services.ReportService.adapter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ChargingStation adapter. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/ReportService.java" line="50" column="36" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/ReportService.java" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d15/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_report_service_1a2f387b9af3013ba02798d34d3443df5b" prot="private" static="no" mutable="no">
+        <type>AppCompatButton</type>
+        <definition>AppCompatButton de.backxtar.clevercharge.services.ReportService.button</definition>
+        <argsstring></argsstring>
+        <name>button</name>
+        <qualifiedname>de.backxtar.clevercharge.services.ReportService.button</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Button object. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/ReportService.java" line="55" column="29" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/ReportService.java" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d15/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_report_service_1aae5301b501be107bc6b2705fe0da2919" prot="private" static="no" mutable="no">
+        <type>TextView</type>
+        <definition>TextView de.backxtar.clevercharge.services.ReportService.available</definition>
+        <argsstring></argsstring>
+        <name>available</name>
+        <qualifiedname>de.backxtar.clevercharge.services.ReportService.available</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TextView for available or not. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/ReportService.java" line="60" column="22" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/ReportService.java" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d15/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_report_service_1aebd9f2caa3e6e7e27cddf24c33909a7e" prot="private" static="no" mutable="no">
+        <type>AlertDialog</type>
+        <definition>AlertDialog de.backxtar.clevercharge.services.ReportService.dialog</definition>
+        <argsstring></argsstring>
+        <name>dialog</name>
+        <qualifiedname>de.backxtar.clevercharge.services.ReportService.dialog</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>AlertDialog object of current instance. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/ReportService.java" line="65" column="25" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/ReportService.java" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d15/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_report_service_1a8e41df9082574155a7079a690e2e58f7" prot="private" static="no" mutable="no">
+        <type>Marker</type>
+        <definition>Marker de.backxtar.clevercharge.services.ReportService.marker</definition>
+        <argsstring></argsstring>
+        <name>marker</name>
+        <qualifiedname>de.backxtar.clevercharge.services.ReportService.marker</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Marker object of the current station. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/ReportService.java" line="70" column="20" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/ReportService.java" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d7/d15/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_report_service_1aa91f99442bd2e466b27010a41962f8c2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>de.backxtar.clevercharge.services.ReportService.ReportService</definition>
+        <argsstring>(Activity activity, AppCompatButton button, TextView available, int station_id, Marker marker)</argsstring>
+        <name>ReportService</name>
+        <qualifiedname>de.backxtar.clevercharge.services.ReportService.ReportService</qualifiedname>
+        <param>
+          <type>Activity</type>
+          <declname>activity</declname>
+        </param>
+        <param>
+          <type>AppCompatButton</type>
+          <declname>button</declname>
+        </param>
+        <param>
+          <type>TextView</type>
+          <declname>available</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>station_id</declname>
+        </param>
+        <param>
+          <type>Marker</type>
+          <declname>marker</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor one. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>activity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>button</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>available</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>station_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as int </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>marker</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/ReportService.java" line="80" column="12" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/ReportService.java" bodystart="80" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d15/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_report_service_1a4dc14e4748417e037e6ce262b27607bf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>de.backxtar.clevercharge.services.ReportService.ReportService</definition>
+        <argsstring>(Activity activity, AppCompatButton button, TextView available, int station_id, ChargingStationAdapter adapter)</argsstring>
+        <name>ReportService</name>
+        <qualifiedname>de.backxtar.clevercharge.services.ReportService.ReportService</qualifiedname>
+        <param>
+          <type>Activity</type>
+          <declname>activity</declname>
+        </param>
+        <param>
+          <type>AppCompatButton</type>
+          <declname>button</declname>
+        </param>
+        <param>
+          <type>TextView</type>
+          <declname>available</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>station_id</declname>
+        </param>
+        <param>
+          <type><ref refid="d8/d60/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter" kindref="compound">ChargingStationAdapter</ref></type>
+          <declname>adapter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor two. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>activity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>button</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>available</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>station_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as int </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>adapter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/ReportService.java" line="96" column="12" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/ReportService.java" bodystart="96" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d15/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_report_service_1a00d302af860369770540aacfcd3d4405" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void de.backxtar.clevercharge.services.ReportService.showPopup</definition>
+        <argsstring>()</argsstring>
+        <name>showPopup</name>
+        <qualifiedname>de.backxtar.clevercharge.services.ReportService.showPopup</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Show popup window. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/ReportService.java" line="107" column="17" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/ReportService.java" bodystart="107" bodyend="153"/>
+        <references refid="de/d7e/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager_1aa4e7c73b0bb07f0dcf5a612f9bce416a" compoundref="d3/dcc/_user_manager_8java" startline="46" endline="48">de.backxtar.clevercharge.managers.UserManager.getApi_data</references>
+        <references refid="d0/dbd/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_1a6a9d3a50e360265ecef575ebfaefcc4c" compoundref="d7/dca/_a_p_i_response_8java" startline="114" endline="116">de.backxtar.clevercharge.data.APIResponse.getDefect_stations_map</references>
+        <references refid="d9/dac/classde_1_1backxtar_1_1clevercharge_1_1_main_activity_1a377aeeb370ac0b59bd79be73c6cdeedd" compoundref="d4/d79/_main_activity_8java" startline="267" endline="270">de.backxtar.clevercharge.MainActivity.updateBadges</references>
+        <referencedby refid="d9/dc7/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_popup_service_1af74f3ec6cd6fb55d81a1938af49efdd8" compoundref="d3/d34/_popup_service_8java" startline="130" endline="253">de.backxtar.clevercharge.services.PopupService.showPopup</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="d7/d15/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_report_service_1afa3edbcbcddae185411d8a38673da0bf" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void de.backxtar.clevercharge.services.ReportService.dismissPopup</definition>
+        <argsstring>()</argsstring>
+        <name>dismissPopup</name>
+        <qualifiedname>de.backxtar.clevercharge.services.ReportService.dismissPopup</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Dismiss popup window. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/ReportService.java" line="158" column="18" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/ReportService.java" bodystart="158" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d15/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_report_service_1ac6259a6c5666515366c07a7f9ac9c181" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void de.backxtar.clevercharge.services.ReportService.updateAdapter</definition>
+        <argsstring>()</argsstring>
+        <name>updateAdapter</name>
+        <qualifiedname>de.backxtar.clevercharge.services.ReportService.updateAdapter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/ReportService.java" line="162" column="18" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/ReportService.java" bodystart="162" bodyend="165"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="d7/d15/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_report_service" kindref="compound">ReportService</ref> object. <simplesect kind="author"><para>Jörg Quick, Tilo Steinmetzer </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>de.backxtar.clevercharge.services.ReportService</label>
+        <link refid="d7/d15/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_report_service"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/ReportService.java" line="33" column="7" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/ReportService.java" bodystart="33" bodyend="167"/>
+    <listofallmembers>
+      <member refid="d7/d15/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_report_service_1a232458bd1b2600db5b0ee17129b003c9" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::services::ReportService</scope><name>activity</name></member>
+      <member refid="d7/d15/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_report_service_1adfd04c9a9d956737fcae16267f81ba22" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::services::ReportService</scope><name>adapter</name></member>
+      <member refid="d7/d15/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_report_service_1aae5301b501be107bc6b2705fe0da2919" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::services::ReportService</scope><name>available</name></member>
+      <member refid="d7/d15/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_report_service_1a2f387b9af3013ba02798d34d3443df5b" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::services::ReportService</scope><name>button</name></member>
+      <member refid="d7/d15/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_report_service_1aebd9f2caa3e6e7e27cddf24c33909a7e" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::services::ReportService</scope><name>dialog</name></member>
+      <member refid="d7/d15/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_report_service_1afa3edbcbcddae185411d8a38673da0bf" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::services::ReportService</scope><name>dismissPopup</name></member>
+      <member refid="d7/d15/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_report_service_1a8e41df9082574155a7079a690e2e58f7" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::services::ReportService</scope><name>marker</name></member>
+      <member refid="d7/d15/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_report_service_1aa91f99442bd2e466b27010a41962f8c2" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::services::ReportService</scope><name>ReportService</name></member>
+      <member refid="d7/d15/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_report_service_1a4dc14e4748417e037e6ce262b27607bf" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::services::ReportService</scope><name>ReportService</name></member>
+      <member refid="d7/d15/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_report_service_1a00d302af860369770540aacfcd3d4405" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::services::ReportService</scope><name>showPopup</name></member>
+      <member refid="d7/d15/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_report_service_1aa3ad49045a376ded8272cefa14c6f739" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::services::ReportService</scope><name>station_id</name></member>
+      <member refid="d7/d15/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_report_service_1ac6259a6c5666515366c07a7f9ac9c181" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::services::ReportService</scope><name>updateAdapter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

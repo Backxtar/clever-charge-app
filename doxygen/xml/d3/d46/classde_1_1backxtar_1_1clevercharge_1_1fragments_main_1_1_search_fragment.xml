@@ -1,0 +1,463 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="d3/d46/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_search_fragment" kind="class" language="Java" prot="public">
+    <compoundname>de::backxtar::clevercharge::fragmentsMain::SearchFragment</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Fragment</basecompoundref>
+    <basecompoundref refid="df/dc0/interfacede_1_1backxtar_1_1clevercharge_1_1interfaces_1_1_recycler_view_interface" prot="public" virt="non-virtual">de.backxtar.clevercharge.interfaces.RecyclerViewInterface</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d3/d46/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_search_fragment_1a8998ac08a25e2facd397def02580d0b3" prot="private" static="no" mutable="no">
+        <type><ref refid="d8/d60/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter" kindref="compound">ChargingStationAdapter</ref></type>
+        <definition>ChargingStationAdapter de.backxtar.clevercharge.fragmentsMain.SearchFragment.adapter</definition>
+        <argsstring></argsstring>
+        <name>adapter</name>
+        <qualifiedname>de.backxtar.clevercharge.fragmentsMain.SearchFragment.adapter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ChargingStation adapter. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/SearchFragment.java" line="48" column="36" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/SearchFragment.java" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d46/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_search_fragment_1a34a367e24c29a1f877fd6c376c530b98" prot="private" static="no" mutable="no">
+        <type>ArrayList&lt; <ref refid="d2/dae/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station" kindref="compound">ChargingStation</ref> &gt;</type>
+        <definition>ArrayList&lt;ChargingStation&gt; de.backxtar.clevercharge.fragmentsMain.SearchFragment.stations</definition>
+        <argsstring></argsstring>
+        <name>stations</name>
+        <qualifiedname>de.backxtar.clevercharge.fragmentsMain.SearchFragment.stations</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ArrayList of adapters chargingStations. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/SearchFragment.java" line="53" column="23" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/SearchFragment.java" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d46/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_search_fragment_1ac3b5de4fd96e4caafac7d21dd8b3232f" prot="private" static="no" mutable="no">
+        <type>SwitchCompat</type>
+        <definition>SwitchCompat de.backxtar.clevercharge.fragmentsMain.SearchFragment.nearby</definition>
+        <argsstring></argsstring>
+        <name>nearby</name>
+        <qualifiedname>de.backxtar.clevercharge.fragmentsMain.SearchFragment.nearby</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Switched for nearby and favorites. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/SearchFragment.java" line="58" column="26" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/SearchFragment.java" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d46/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_search_fragment_1a0e95afaf1e5e1aebd4a6f012098cdc6a" prot="private" static="no" mutable="no">
+        <type>SwitchCompat</type>
+        <definition>SwitchCompat de.backxtar.clevercharge.fragmentsMain.SearchFragment.fav</definition>
+        <argsstring></argsstring>
+        <name>fav</name>
+        <qualifiedname>de.backxtar.clevercharge.fragmentsMain.SearchFragment.fav</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/SearchFragment.java" line="58" column="33" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/SearchFragment.java" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d46/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_search_fragment_1a1a47169c7eaed09679c8dd4e1ba07271" prot="private" static="no" mutable="no">
+        <type>AppCompatEditText</type>
+        <definition>AppCompatEditText de.backxtar.clevercharge.fragmentsMain.SearchFragment.search</definition>
+        <argsstring></argsstring>
+        <name>search</name>
+        <qualifiedname>de.backxtar.clevercharge.fragmentsMain.SearchFragment.search</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>EditText field for search option. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/SearchFragment.java" line="63" column="31" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/SearchFragment.java" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d3/d46/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_search_fragment_1aa900f4f4ccf527eb6e2fcf228469c31c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>de.backxtar.clevercharge.fragmentsMain.SearchFragment.SearchFragment</definition>
+        <argsstring>()</argsstring>
+        <name>SearchFragment</name>
+        <qualifiedname>de.backxtar.clevercharge.fragmentsMain.SearchFragment.SearchFragment</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Search constructor. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/SearchFragment.java" line="69" column="12" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/SearchFragment.java" bodystart="69" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d46/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_search_fragment_1ae9f05985ddc7f44bac6243ad226eb088" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void de.backxtar.clevercharge.fragmentsMain.SearchFragment.onCreate</definition>
+        <argsstring>(Bundle savedInstanceState)</argsstring>
+        <name>onCreate</name>
+        <qualifiedname>de.backxtar.clevercharge.fragmentsMain.SearchFragment.onCreate</qualifiedname>
+        <param>
+          <type>Bundle</type>
+          <declname>savedInstanceState</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>On fragment create. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>savedInstanceState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/SearchFragment.java" line="78" column="17" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/SearchFragment.java" bodystart="78" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d46/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_search_fragment_1a8701efe6b123aa2c5487761b3e4bfe7b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>View</type>
+        <definition>View de.backxtar.clevercharge.fragmentsMain.SearchFragment.onCreateView</definition>
+        <argsstring>(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)</argsstring>
+        <name>onCreateView</name>
+        <qualifiedname>de.backxtar.clevercharge.fragmentsMain.SearchFragment.onCreateView</qualifiedname>
+        <param>
+          <type>LayoutInflater</type>
+          <declname>inflater</declname>
+        </param>
+        <param>
+          <type>ViewGroup</type>
+          <declname>container</declname>
+        </param>
+        <param>
+          <type>Bundle</type>
+          <declname>savedInstanceState</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>On create fragment view. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>inflater</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>container</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>savedInstanceState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>new view of fragment </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/SearchFragment.java" line="90" column="17" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/SearchFragment.java" bodystart="90" bodyend="104"/>
+        <references refid="d2/d96/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_1a0d8c6d5bcd2802d6ca42942c5a129825" compoundref="d1/dfe/_station_manager_8java" startline="44" endline="46">de.backxtar.clevercharge.managers.StationManager.getSortByDistance</references>
+        <references refid="d2/d96/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_1a4a644c181d0abc0d2c021f18bee25c41" compoundref="d1/dfe/_station_manager_8java" startline="60" endline="62">de.backxtar.clevercharge.managers.StationManager.getStation_list</references>
+      </memberdef>
+      <memberdef kind="function" id="d3/d46/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_search_fragment_1ad13d718f135a39e029721ffe65f4f909" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void de.backxtar.clevercharge.fragmentsMain.SearchFragment.onItemClick</definition>
+        <argsstring>(int position, ChargingStation station)</argsstring>
+        <name>onItemClick</name>
+        <qualifiedname>de.backxtar.clevercharge.fragmentsMain.SearchFragment.onItemClick</qualifiedname>
+        <reimplements refid="df/dc0/interfacede_1_1backxtar_1_1clevercharge_1_1interfaces_1_1_recycler_view_interface_1ada0d47aa7604b262f2c4115063510a1d">onItemClick</reimplements>
+        <param>
+          <type>int</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/dae/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station" kindref="compound">ChargingStation</ref></type>
+          <declname>station</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Custom interface for on item click of recyclerview. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as int </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>station</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/SearchFragment.java" line="170" column="17" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/SearchFragment.java" bodystart="170" bodyend="173"/>
+        <references refid="d9/dc7/classde_1_1backxtar_1_1clevercharge_1_1services_1_1_popup_service_1af74f3ec6cd6fb55d81a1938af49efdd8" compoundref="d3/d34/_popup_service_8java" startline="130" endline="253">de.backxtar.clevercharge.services.PopupService.showPopup</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="d3/d46/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_search_fragment_1a225f43289ebd1a47f33525a49bb3449b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void de.backxtar.clevercharge.fragmentsMain.SearchFragment.initSwipeRefresh</definition>
+        <argsstring>(View view)</argsstring>
+        <name>initSwipeRefresh</name>
+        <qualifiedname>de.backxtar.clevercharge.fragmentsMain.SearchFragment.initSwipeRefresh</qualifiedname>
+        <param>
+          <type>View</type>
+          <declname>view</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Init refresh object. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>view</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/SearchFragment.java" line="110" column="18" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/SearchFragment.java" bodystart="110" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d46/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_search_fragment_1a02e3f18bfa209cecbb48ebcb991c1cb2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void de.backxtar.clevercharge.fragmentsMain.SearchFragment.initRecyclerView</definition>
+        <argsstring>(View view)</argsstring>
+        <name>initRecyclerView</name>
+        <qualifiedname>de.backxtar.clevercharge.fragmentsMain.SearchFragment.initRecyclerView</qualifiedname>
+        <param>
+          <type>View</type>
+          <declname>view</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Init recyclerview object. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>view</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/SearchFragment.java" line="155" column="18" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/SearchFragment.java" bodystart="155" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d46/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_search_fragment_1ad6cc042e7fc278245042823cad4b2820" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void de.backxtar.clevercharge.fragmentsMain.SearchFragment.initSearch</definition>
+        <argsstring>(View view)</argsstring>
+        <name>initSearch</name>
+        <qualifiedname>de.backxtar.clevercharge.fragmentsMain.SearchFragment.initSearch</qualifiedname>
+        <param>
+          <type>View</type>
+          <declname>view</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Init search line object. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>view</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/SearchFragment.java" line="179" column="18" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/SearchFragment.java" bodystart="179" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d46/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_search_fragment_1a29e3482b2707ed29228ed32e6fcf05b9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ArrayList&lt; <ref refid="d2/dae/classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station" kindref="compound">ChargingStation</ref> &gt;</type>
+        <definition>ArrayList&lt; ChargingStation &gt; de.backxtar.clevercharge.fragmentsMain.SearchFragment.filterList</definition>
+        <argsstring>(Editable s)</argsstring>
+        <name>filterList</name>
+        <qualifiedname>de.backxtar.clevercharge.fragmentsMain.SearchFragment.filterList</qualifiedname>
+        <param>
+          <type>Editable</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Filter function for recyclerview. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as Editable </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>new ArrayList&lt;ChargingStation&gt; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/SearchFragment.java" line="210" column="23" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/SearchFragment.java" bodystart="210" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d46/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_search_fragment_1abab8588e938089ec67801c0ab2af54f6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void de.backxtar.clevercharge.fragmentsMain.SearchFragment.initSwitch</definition>
+        <argsstring>(View view)</argsstring>
+        <name>initSwitch</name>
+        <qualifiedname>de.backxtar.clevercharge.fragmentsMain.SearchFragment.initSwitch</qualifiedname>
+        <param>
+          <type>View</type>
+          <declname>view</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Init switches. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>view</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/SearchFragment.java" line="225" column="18" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/SearchFragment.java" bodystart="225" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d46/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_search_fragment_1a75d4d9a4680c71d362792a2d924a2cee" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void de.backxtar.clevercharge.fragmentsMain.SearchFragment.updateComponents</definition>
+        <argsstring>()</argsstring>
+        <name>updateComponents</name>
+        <qualifiedname>de.backxtar.clevercharge.fragmentsMain.SearchFragment.updateComponents</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Update components after screen swap. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/SearchFragment.java" line="243" column="18" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/SearchFragment.java" bodystart="243" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d46/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_search_fragment_1aa69946b94eecfb3b1f12502dc3fa0d09" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void de.backxtar.clevercharge.fragmentsMain.SearchFragment.updateAdapter</definition>
+        <argsstring>()</argsstring>
+        <name>updateAdapter</name>
+        <qualifiedname>de.backxtar.clevercharge.fragmentsMain.SearchFragment.updateAdapter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Update adapter function for recyclerview. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/SearchFragment.java" line="253" column="18" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/SearchFragment.java" bodystart="253" bodyend="279"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Search fragment. <simplesect kind="author"><para>Jörg Quick, Tilo Steinmetzer </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Fragment</label>
+      </node>
+      <node id="1">
+        <label>de.backxtar.clevercharge.fragmentsMain.SearchFragment</label>
+        <link refid="d3/d46/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_search_fragment"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>de.backxtar.clevercharge.interfaces.RecyclerViewInterface</label>
+        <link refid="df/dc0/interfacede_1_1backxtar_1_1clevercharge_1_1interfaces_1_1_recycler_view_interface"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Fragment</label>
+      </node>
+      <node id="1">
+        <label>de.backxtar.clevercharge.fragmentsMain.SearchFragment</label>
+        <link refid="d3/d46/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_search_fragment"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>de.backxtar.clevercharge.interfaces.RecyclerViewInterface</label>
+        <link refid="df/dc0/interfacede_1_1backxtar_1_1clevercharge_1_1interfaces_1_1_recycler_view_interface"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/SearchFragment.java" line="41" column="7" bodyfile="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/SearchFragment.java" bodystart="41" bodyend="280"/>
+    <listofallmembers>
+      <member refid="d3/d46/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_search_fragment_1a8998ac08a25e2facd397def02580d0b3" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::fragmentsMain::SearchFragment</scope><name>adapter</name></member>
+      <member refid="d3/d46/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_search_fragment_1a0e95afaf1e5e1aebd4a6f012098cdc6a" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::fragmentsMain::SearchFragment</scope><name>fav</name></member>
+      <member refid="d3/d46/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_search_fragment_1a29e3482b2707ed29228ed32e6fcf05b9" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::fragmentsMain::SearchFragment</scope><name>filterList</name></member>
+      <member refid="d3/d46/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_search_fragment_1a02e3f18bfa209cecbb48ebcb991c1cb2" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::fragmentsMain::SearchFragment</scope><name>initRecyclerView</name></member>
+      <member refid="d3/d46/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_search_fragment_1ad6cc042e7fc278245042823cad4b2820" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::fragmentsMain::SearchFragment</scope><name>initSearch</name></member>
+      <member refid="d3/d46/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_search_fragment_1a225f43289ebd1a47f33525a49bb3449b" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::fragmentsMain::SearchFragment</scope><name>initSwipeRefresh</name></member>
+      <member refid="d3/d46/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_search_fragment_1abab8588e938089ec67801c0ab2af54f6" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::fragmentsMain::SearchFragment</scope><name>initSwitch</name></member>
+      <member refid="d3/d46/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_search_fragment_1ac3b5de4fd96e4caafac7d21dd8b3232f" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::fragmentsMain::SearchFragment</scope><name>nearby</name></member>
+      <member refid="d3/d46/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_search_fragment_1ae9f05985ddc7f44bac6243ad226eb088" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::fragmentsMain::SearchFragment</scope><name>onCreate</name></member>
+      <member refid="d3/d46/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_search_fragment_1a8701efe6b123aa2c5487761b3e4bfe7b" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::fragmentsMain::SearchFragment</scope><name>onCreateView</name></member>
+      <member refid="d3/d46/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_search_fragment_1ad13d718f135a39e029721ffe65f4f909" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::fragmentsMain::SearchFragment</scope><name>onItemClick</name></member>
+      <member refid="d3/d46/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_search_fragment_1a1a47169c7eaed09679c8dd4e1ba07271" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::fragmentsMain::SearchFragment</scope><name>search</name></member>
+      <member refid="d3/d46/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_search_fragment_1aa900f4f4ccf527eb6e2fcf228469c31c" prot="public" virt="non-virtual"><scope>de::backxtar::clevercharge::fragmentsMain::SearchFragment</scope><name>SearchFragment</name></member>
+      <member refid="d3/d46/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_search_fragment_1a34a367e24c29a1f877fd6c376c530b98" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::fragmentsMain::SearchFragment</scope><name>stations</name></member>
+      <member refid="d3/d46/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_search_fragment_1aa69946b94eecfb3b1f12502dc3fa0d09" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::fragmentsMain::SearchFragment</scope><name>updateAdapter</name></member>
+      <member refid="d3/d46/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_search_fragment_1a75d4d9a4680c71d362792a2d924a2cee" prot="private" virt="non-virtual"><scope>de::backxtar::clevercharge::fragmentsMain::SearchFragment</scope><name>updateComponents</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

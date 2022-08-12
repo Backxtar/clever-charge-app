@@ -1,0 +1,95 @@
+\hypertarget{_station_manager_8java_source}{}\doxysection{Station\+Manager.\+java}
+\label{_station_manager_8java_source}\index{D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-\/softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/managers/StationManager.java@{D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-\/softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/managers/StationManager.java}}
+\mbox{\hyperlink{_station_manager_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00001}00001 \textcolor{keyword}{package }de.backxtar.clevercharge.managers;}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00002}00002 }
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00003}00003 \textcolor{keyword}{import} android.content.Context;}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00004}00004 }
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00005}00005 \textcolor{keyword}{import} com.google.android.gms.maps.model.LatLng;}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00006}00006 }
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00007}00007 \textcolor{keyword}{import} java.util.ArrayList;}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00008}00008 \textcolor{keyword}{import} java.util.Comparator;}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00009}00009 \textcolor{keyword}{import} java.util.stream.Collectors;}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00010}00010 \textcolor{keyword}{import} de.backxtar.clevercharge.R;}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00011}00011 \textcolor{keyword}{import} de.backxtar.clevercharge.data.ChargingStation;}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00012}00012 \textcolor{keyword}{import} de.backxtar.clevercharge.data.ModuleType;}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00013}00013 }
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00020}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager}{00020}} \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager}{StationManager}} \{}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00021}00021 }
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00022}00022     \textcolor{comment}{/* Global variables */}}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00027}00027     \textcolor{keyword}{private} \textcolor{keyword}{static} \textcolor{keyword}{final} Comparator<ChargingStation> sortByDistance = Comparator.comparingDouble(\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_a66043478cfd9a40c66f4e86a7d39748a}{ChargingStation::getDistance}});}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00032}00032     \textcolor{keyword}{private} \textcolor{keyword}{static} ArrayList<ChargingStation> station\_storage;}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00033}00033 }
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00037}00037     \textcolor{keyword}{private} \textcolor{keyword}{static} \textcolor{keywordtype}{int} range;}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00038}00038     \textcolor{comment}{//===========================================================================================================================}}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00044}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_a0d8c6d5bcd2802d6ca42942c5a129825}{00044}}     \textcolor{keyword}{public} \textcolor{keyword}{static} Comparator<ChargingStation> \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_a0d8c6d5bcd2802d6ca42942c5a129825}{getSortByDistance}}() \{}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00045}00045         \textcolor{keywordflow}{return} sortByDistance;}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00046}00046     \}}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00052}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_aa32bde646cafbedd9764b704299b5cb9}{00052}}     \textcolor{keyword}{public} \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_aa32bde646cafbedd9764b704299b5cb9}{setStation\_list}}(ArrayList<ChargingStation> station\_list) \{}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00053}00053         station\_storage = station\_list;}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00054}00054     \}}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00055}00055 }
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00060}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_a4a644c181d0abc0d2c021f18bee25c41}{00060}}     \textcolor{keyword}{public} \textcolor{keyword}{static} ArrayList<ChargingStation> \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_a4a644c181d0abc0d2c021f18bee25c41}{getStation\_list}}() \{}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00061}00061         \textcolor{keywordflow}{return} station\_storage;}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00062}00062     \}}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00063}00063 }
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00068}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_a6c41af67582d82de2ad7f094ca70aaab}{00068}}     \textcolor{keyword}{public} \textcolor{keyword}{static} \textcolor{keywordtype}{int} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_a6c41af67582d82de2ad7f094ca70aaab}{getRange}}() \{}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00069}00069         \textcolor{keywordflow}{return} range;}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00070}00070     \}}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00071}00071 }
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00076}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_a914e6fc28c83126e7ce15a29de76c836}{00076}}     \textcolor{keyword}{public} \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_a914e6fc28c83126e7ce15a29de76c836}{setRange}}(\textcolor{keywordtype}{int} range) \{}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00077}00077         \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager}{StationManager}}.range = range;}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00078}00078     \}}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00079}00079 }
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00084}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_a5154a6718e345d9eba0c07ec99f096fd}{00084}}     \textcolor{keyword}{public} \textcolor{keyword}{static} \textcolor{keywordtype}{int} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_a5154a6718e345d9eba0c07ec99f096fd}{getStationAmount}}() \{}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00085}00085         \textcolor{keywordflow}{return} station\_storage.size();}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00086}00086     \}}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00087}00087 }
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00093}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_a21dbe93b9bbd9b272c9ba5dcf34d535d}{00093}}     \textcolor{keyword}{public} \textcolor{keyword}{static} ArrayList<ChargingStation> \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_a21dbe93b9bbd9b272c9ba5dcf34d535d}{sort}}(\textcolor{keyword}{final} \mbox{\hyperlink{enumde_1_1backxtar_1_1clevercharge_1_1data_1_1_module_type}{ModuleType}} module\_type) \{}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00094}00094         \textcolor{keywordflow}{return} station\_storage.stream()}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00095}00095                 .filter(station -\/> station.getModule\_type() == module\_type)}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00096}00096                 .collect(Collectors.toCollection(ArrayList<ChargingStation>::new));}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00097}00097     \}}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00098}00098 }
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00105}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_a76d0ece7a7a2755f82d7b58ba9cb431b}{00105}}     \textcolor{keyword}{public} \textcolor{keyword}{static} ArrayList<ChargingStation> \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_a76d0ece7a7a2755f82d7b58ba9cb431b}{sort}}(\textcolor{keyword}{final} \textcolor{keywordtype}{double} lat, \textcolor{keyword}{final} \textcolor{keywordtype}{double} lon) \{}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00106}00106         \textcolor{keywordflow}{return} station\_storage.stream()}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00107}00107                 .filter(station -\/> station.getDistance(lat, lon) <= (\textcolor{keywordtype}{double}) range)}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00108}00108                 .collect(Collectors.toCollection(ArrayList<ChargingStation>::new));}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00109}00109     \}}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00110}00110 }
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00115}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_ab26276092c693a031e875316ddb1eb0b}{00115}}     \textcolor{keyword}{public} \textcolor{keyword}{static} ArrayList<ChargingStation> \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_ab26276092c693a031e875316ddb1eb0b}{sortByFavAndLocal}}() \{}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00116}00116         \textcolor{keywordflow}{return} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_a21dbe93b9bbd9b272c9ba5dcf34d535d}{sort}}(\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager}{UserManager}}.\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager_ae4f909b33cee9349c04878d1106de0cb}{getMyPosition}}().latitude, \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager}{UserManager}}.\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager_ae4f909b33cee9349c04878d1106de0cb}{getMyPosition}}().longitude).stream()}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00117}00117                 .filter(station -\/> \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager}{UserManager}}.\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager_aa4e7c73b0bb07f0dcf5a612f9bce416a}{getApi\_data}}().\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_a1dfa2252e57d3dedcafcd225e709be7f}{getFavorites}}().contains(station.getId()))}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00118}00118                 .collect(Collectors.toCollection(ArrayList<ChargingStation>::new));}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00119}00119     \}}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00120}00120 }
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00125}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_a90cc885bc23aaf437ec10f20c74f9355}{00125}}     \textcolor{keyword}{public} \textcolor{keyword}{static} ArrayList<ChargingStation> \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_a90cc885bc23aaf437ec10f20c74f9355}{getFavorites}}() \{}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00126}00126         \textcolor{keywordflow}{return} station\_storage.stream()}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00127}00127                 .filter(station -\/> \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager}{UserManager}}.\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager_aa4e7c73b0bb07f0dcf5a612f9bce416a}{getApi\_data}}().\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_a1dfa2252e57d3dedcafcd225e709be7f}{getFavorites}}().contains(station.getId()))}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00128}00128                 .collect(Collectors.toCollection(ArrayList<ChargingStation>::new));}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00129}00129     \}}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00130}00130 }
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00135}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_a84363e55138545c015867ac16fa9c50a}{00135}}     \textcolor{keyword}{public} \textcolor{keyword}{static} ArrayList<ChargingStation> \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_a84363e55138545c015867ac16fa9c50a}{getDefects}}() \{}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00136}00136         \textcolor{keywordflow}{return} station\_storage.stream()}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00137}00137                 .filter(station -\/> \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager}{UserManager}}.\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager_aa4e7c73b0bb07f0dcf5a612f9bce416a}{getApi\_data}}().\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_a6a9d3a50e360265ecef575ebfaefcc4c}{getDefect\_stations\_map}}().containsKey(station.getId()))}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00138}00138                 .collect(Collectors.toCollection(ArrayList<ChargingStation>::new));}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00139}00139     \}}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00140}00140 }
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00147}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_a2deb1b9045b98fec83251a5384717dd8}{00147}}     \textcolor{keyword}{public} \textcolor{keyword}{static} ArrayList<ChargingStation> \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_a2deb1b9045b98fec83251a5384717dd8}{getLocalDefects}}(\textcolor{keyword}{final} \textcolor{keywordtype}{double} lat, \textcolor{keyword}{final} \textcolor{keywordtype}{double} lon) \{}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00148}00148         \textcolor{keywordflow}{return} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_a84363e55138545c015867ac16fa9c50a}{getDefects}}().stream()}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00149}00149                 .filter(station -\/> station.getDistance(lat, lon) <= range)}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00150}00150                 .collect(Collectors.toCollection(ArrayList<ChargingStation>::new));}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00151}00151     \}}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00152}00152 }
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00158}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_a98502b65e413f3a97ad1f74db18dd540}{00158}}     \textcolor{keyword}{public} \textcolor{keyword}{static} String \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_a98502b65e413f3a97ad1f74db18dd540}{convertEnum}}(Context context, \mbox{\hyperlink{enumde_1_1backxtar_1_1clevercharge_1_1data_1_1_module_type}{ModuleType}} module\_type) \{}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00159}00159         \textcolor{keywordflow}{if} (module\_type == \mbox{\hyperlink{enumde_1_1backxtar_1_1clevercharge_1_1data_1_1_module_type}{ModuleType}}.FAST\_CHARGING) \textcolor{keywordflow}{return} context.getResources().getString(R.string.fast\_charging);}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00160}00160         \textcolor{keywordflow}{else} \textcolor{keywordflow}{return} context.getResources().getString(R.string.normal\_charging);}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00161}00161     \}}
+\DoxyCodeLine{\Hypertarget{_station_manager_8java_source_l00162}00162 \}}
+
+\end{DoxyCode}

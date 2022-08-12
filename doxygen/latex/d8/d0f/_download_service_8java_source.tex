@@ -1,0 +1,101 @@
+\hypertarget{_download_service_8java_source}{}\doxysection{Download\+Service.\+java}
+\label{_download_service_8java_source}\index{D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-\/softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/DownloadService.java@{D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-\/softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/services/DownloadService.java}}
+\mbox{\hyperlink{_download_service_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00001}\mbox{\hyperlink{namespacede_1_1backxtar_1_1clevercharge_1_1services}{00001}} \textcolor{keyword}{package }de.backxtar.clevercharge.services;}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00002}00002 }
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00003}00003 \textcolor{keyword}{import} com.google.gson.Gson;}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00004}00004 \textcolor{keyword}{import} com.google.gson.reflect.TypeToken;}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00005}00005 }
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00006}00006 \textcolor{keyword}{import} java.io.BufferedReader;}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00007}00007 \textcolor{keyword}{import} java.io.IOException;}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00008}00008 \textcolor{keyword}{import} java.io.InputStream;}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00009}00009 \textcolor{keyword}{import} java.io.InputStreamReader;}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00010}00010 \textcolor{keyword}{import} java.lang.reflect.Type;}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00011}00011 \textcolor{keyword}{import} java.net.HttpURLConnection;}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00012}00012 \textcolor{keyword}{import} java.net.URL;}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00013}00013 \textcolor{keyword}{import} java.util.ArrayList;}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00014}00014 }
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00015}00015 \textcolor{keyword}{import} de.backxtar.clevercharge.data.APIResponse;}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00016}00016 \textcolor{keyword}{import} de.backxtar.clevercharge.data.Article;}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00017}00017 \textcolor{keyword}{import} de.backxtar.clevercharge.data.ChargingStation;}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00025}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1services_1_1_download_service}{00025}} \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1services_1_1_download_service}{DownloadService}} \{}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00031}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1services_1_1_download_service_ac572f7a40930620aef9d93f4500ca961}{00031}}     \textcolor{keyword}{public} \textcolor{keyword}{static} ArrayList<ChargingStation> \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1services_1_1_download_service_ac572f7a40930620aef9d93f4500ca961}{getStations}}() \{}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00032}00032         Gson gson = \textcolor{keyword}{new} Gson();}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00033}00033         \textcolor{keyword}{final} Type return\_type = \textcolor{keyword}{new} TypeToken<ArrayList<ChargingStation>>() \{\}.getType();}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00034}00034         \textcolor{keyword}{final} String json = \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1services_1_1_download_service_a38499dd278e4c77c5048d131ed13ab08}{getJson}}(\textcolor{stringliteral}{"{}https://api.aurora-\/theogenia.de/chargingstations/charging\_stations.json"{}});}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00035}00035         \textcolor{keywordflow}{return} gson.fromJson(json, return\_type);}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00036}00036     \}}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00037}00037 }
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00044}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1services_1_1_download_service_a518fd601ccdd20b9d22ac754eff30d54}{00044}}     \textcolor{keyword}{public} \textcolor{keyword}{static} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response}{APIResponse}} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1services_1_1_download_service_a518fd601ccdd20b9d22ac754eff30d54}{getResponse}}(String endpoint, String[] params) \{}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00045}00045         String conn = \textcolor{stringliteral}{"{}https://api.aurora-\/theogenia.de/clever\_charge/"{}} + endpoint +}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00046}00046                 \textcolor{stringliteral}{"{}/?access\_token=xoMLoIxPaQtHUt2k3ROjQRf3CV0WoSo7"{}} + \textcolor{stringliteral}{"{}\&"{}};}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00048}00048         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < params.length; i++) \{}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00049}00049             conn += params[i];}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00050}00050             \textcolor{keywordflow}{if} (i < (params.length -\/ 1)) conn += \textcolor{stringliteral}{"{}\&"{}};}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00051}00051         \}}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00052}00052 }
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00053}00053         Gson gson = \textcolor{keyword}{new} Gson();}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00054}00054         \textcolor{keyword}{final} Type return\_type = \textcolor{keyword}{new} TypeToken<APIResponse>() \{\}.getType();}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00055}00055         \textcolor{keyword}{final} String json = \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1services_1_1_download_service_a38499dd278e4c77c5048d131ed13ab08}{getJson}}(conn);}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00056}00056         \textcolor{keywordflow}{return} gson.fromJson(json, return\_type);}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00057}00057     \}}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00058}00058 }
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00064}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1services_1_1_download_service_a8ea9fda7e2197ffd3452267d599b3b23}{00064}}     \textcolor{keyword}{public} \textcolor{keyword}{static} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response}{APIResponse}} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1services_1_1_download_service_a8ea9fda7e2197ffd3452267d599b3b23}{getResponse}}(String endpoint) \{}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00065}00065         String conn = \textcolor{stringliteral}{"{}https://api.aurora-\/theogenia.de/clever\_charge/"{}} + endpoint +}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00066}00066                 \textcolor{stringliteral}{"{}/?access\_token=xoMLoIxPaQtHUt2k3ROjQRf3CV0WoSo7"{}};}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00067}00067 }
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00068}00068         Gson gson = \textcolor{keyword}{new} Gson();}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00069}00069         \textcolor{keyword}{final} Type return\_type = \textcolor{keyword}{new} TypeToken<APIResponse>() \{\}.getType();}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00070}00070         \textcolor{keyword}{final} String json = \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1services_1_1_download_service_a38499dd278e4c77c5048d131ed13ab08}{getJson}}(conn);}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00071}00071         \textcolor{keywordflow}{return} gson.fromJson(json, return\_type);}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00072}00072     \}}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00073}00073 }
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00078}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1services_1_1_download_service_aa5f73fe4db1608145f95dc158f098e46}{00078}}     \textcolor{keyword}{public} \textcolor{keyword}{static} ArrayList<Article> \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1services_1_1_download_service_aa5f73fe4db1608145f95dc158f098e46}{getArticles}}() \{}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00079}00079         Gson gson = \textcolor{keyword}{new} Gson();}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00080}00080         \textcolor{keyword}{final} Type return\_type = \textcolor{keyword}{new} TypeToken<ArrayList<Article>>() \{\}.getType();}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00081}00081         \textcolor{keyword}{final} String json = \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1services_1_1_download_service_a38499dd278e4c77c5048d131ed13ab08}{getJson}}(\textcolor{stringliteral}{"{}https://api.aurora-\/theogenia.de/clever\_charge/news/news.json"{}});}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00082}00082         ArrayList<Article> articles = gson.fromJson(json, return\_type);}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00083}00083         \textcolor{keywordflow}{return} articles;}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00084}00084     \}}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00085}00085 }
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00086}00086 }
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00093}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1services_1_1_download_service_a38499dd278e4c77c5048d131ed13ab08}{00093}}     \textcolor{keyword}{public} \textcolor{keyword}{static} String \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1services_1_1_download_service_a38499dd278e4c77c5048d131ed13ab08}{getJson}}(String endpoint) \{}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00094}00094         BufferedReader reader = \textcolor{keyword}{null};}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00095}00095         \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00096}00096             \textcolor{keyword}{final} URL url = \textcolor{keyword}{new} URL(endpoint);}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00097}00097             reader = \textcolor{keyword}{new} BufferedReader(\textcolor{keyword}{new} InputStreamReader(read(url)));}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00098}00098             StringBuffer buffer = \textcolor{keyword}{new} StringBuffer();}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00099}00099             \textcolor{keywordtype}{int} read;}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00100}00100             \textcolor{keywordtype}{char}[] chars = \textcolor{keyword}{new} \textcolor{keywordtype}{char}[1024];}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00101}00101             \textcolor{keywordflow}{while} ((read = reader.read(chars)) != -\/1) \{}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00102}00102                 buffer.append(chars, 0, read);}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00103}00103             \}}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00104}00104             \textcolor{keywordflow}{return} buffer.toString();}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00105}00105         \} \textcolor{keywordflow}{catch} (IOException e) \{}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00106}00106             e.printStackTrace();}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00107}00107             \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00108}00108         \} \textcolor{keywordflow}{finally} \{}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00109}00109             \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00110}00110                 \textcolor{keywordflow}{if} (reader != \textcolor{keyword}{null})}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00111}00111                     reader.close();}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00112}00112             \} \textcolor{keywordflow}{catch} (IOException e) \{}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00113}00113                 e.printStackTrace();}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00114}00114             \}}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00115}00115         \}}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00116}00116     \}}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00117}00117 }
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00124}00124     \textcolor{keyword}{private} \textcolor{keyword}{static} InputStream read(URL url) \textcolor{keywordflow}{throws} IOException \{}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00125}00125         \textcolor{keyword}{final} HttpURLConnection httpCon = (HttpURLConnection) url.openConnection();}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00126}00126         httpCon.setRequestProperty(\textcolor{stringliteral}{"{}User-\/Agent"{}}, \textcolor{stringliteral}{"{}Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36"{}});}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00127}00127         httpCon.setConnectTimeout(10000);}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00128}00128         httpCon.setReadTimeout(10000);}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00129}00129         httpCon.setRequestMethod(\textcolor{stringliteral}{"{}GET"{}});}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00130}00130         \textcolor{keywordflow}{return} httpCon.getInputStream();}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00131}00131     \}}
+\DoxyCodeLine{\Hypertarget{_download_service_8java_source_l00132}00132 \}}
+
+\end{DoxyCode}

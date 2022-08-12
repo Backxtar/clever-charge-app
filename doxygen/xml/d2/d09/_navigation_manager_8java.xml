@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="d2/d09/_navigation_manager_8java" kind="file" language="Java">
+    <compoundname>NavigationManager.java</compoundname>
+    <innerclass refid="d3/dc6/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_navigation_manager" prot="public">de::backxtar::clevercharge::managers::NavigationManager</innerclass>
+    <innernamespace refid="d4/d2a/namespacede_1_1backxtar_1_1clevercharge_1_1managers">de::backxtar::clevercharge::managers</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">package<sp/></highlight><highlight class="normal">de.backxtar.clevercharge.managers;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>androidx.fragment.app.Fragment;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>de.backxtar.clevercharge.fragmentsMain.DevFragment;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>de.backxtar.clevercharge.fragmentsMain.HomeFragment;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>de.backxtar.clevercharge.fragmentsMain.MapFragment;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>de.backxtar.clevercharge.fragmentsMain.SearchFragment;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>de.backxtar.clevercharge.fragmentsMain.SettingsFragment;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="d3/dc6/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_navigation_manager" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d3/dc6/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_navigation_manager" kindref="compound">NavigationManager</ref><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Global<sp/>variables<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">final</highlight><highlight class="normal"><sp/>Fragment<sp/>map;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">final</highlight><highlight class="normal"><sp/>Fragment<sp/>settings;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="d3/dc6/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_navigation_manager_1a47783e6c021ef777012a30610952674e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="d3/dc6/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_navigation_manager_1a47783e6c021ef777012a30610952674e" kindref="member">NavigationManager</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.map<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="d7/dd4/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_map_fragment" kindref="compound">MapFragment</ref>();</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.settings<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="dd/d9e/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_settings_fragment" kindref="compound">SettingsFragment</ref>();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="d3/dc6/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_navigation_manager_1a1f5ea365bb17a810ef056fbc9388b306" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Fragment<sp/><ref refid="d3/dc6/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_navigation_manager_1a1f5ea365bb17a810ef056fbc9388b306" kindref="member">getHome</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="dc/d44/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_home_fragment" kindref="compound">HomeFragment</ref>();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="d3/dc6/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_navigation_manager_1ad1cc2c79929bd21ac10926d224464bc7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Fragment<sp/><ref refid="d3/dc6/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_navigation_manager_1ad1cc2c79929bd21ac10926d224464bc7" kindref="member">getMap</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>map;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="d3/dc6/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_navigation_manager_1ab6747f672a298c8123828516e69c241b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Fragment<sp/><ref refid="d3/dc6/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_navigation_manager_1ab6747f672a298c8123828516e69c241b" kindref="member">getSearch</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="d3/d46/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_search_fragment" kindref="compound">SearchFragment</ref>();</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="d3/dc6/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_navigation_manager_1a4806817b6fddd0107692582fbf255a86" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Fragment<sp/><ref refid="d3/dc6/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_navigation_manager_1a4806817b6fddd0107692582fbf255a86" kindref="member">getSettings</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>settings;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="d3/dc6/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_navigation_manager_1a04a20dc4e4982ef47898226c522e28e2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Fragment<sp/><ref refid="d3/dc6/classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_navigation_manager_1a04a20dc4e4982ef47898226c522e28e2" kindref="member">getDev</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="da/daa/classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_dev_fragment" kindref="compound">DevFragment</ref>();</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/managers/NavigationManager.java"/>
+  </compounddef>
+</doxygen>

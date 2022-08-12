@@ -1,0 +1,158 @@
+\hypertarget{_dev_fragment_8java_source}{}\doxysection{Dev\+Fragment.\+java}
+\label{_dev_fragment_8java_source}\index{D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-\/softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/DevFragment.java@{D:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-\/softwareentwicklung/source/app/src/main/java/de/backxtar/clevercharge/fragmentsMain/DevFragment.java}}
+\mbox{\hyperlink{_dev_fragment_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00001}\mbox{\hyperlink{namespacede_1_1backxtar_1_1clevercharge_1_1fragments_main}{00001}} \textcolor{keyword}{package }de.backxtar.clevercharge.fragmentsMain;}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00002}00002 }
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00003}00003 \textcolor{keyword}{import} android.annotation.SuppressLint;}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00004}00004 \textcolor{keyword}{import} android.os.Bundle;}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00005}00005 }
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00006}00006 \textcolor{keyword}{import} androidx.appcompat.widget.SwitchCompat;}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00007}00007 \textcolor{keyword}{import} androidx.fragment.app.Fragment;}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00008}00008 \textcolor{keyword}{import} androidx.recyclerview.widget.LinearLayoutManager;}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00009}00009 \textcolor{keyword}{import} androidx.recyclerview.widget.RecyclerView;}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00010}00010 \textcolor{keyword}{import} androidx.swiperefreshlayout.widget.SwipeRefreshLayout;}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00011}00011 }
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00012}00012 \textcolor{keyword}{import} android.view.Gravity;}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00013}00013 \textcolor{keyword}{import} android.view.LayoutInflater;}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00014}00014 \textcolor{keyword}{import} android.view.View;}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00015}00015 \textcolor{keyword}{import} android.view.ViewGroup;}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00016}00016 \textcolor{keyword}{import} android.widget.TextView;}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00017}00017 }
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00018}00018 \textcolor{keyword}{import} java.util.ArrayList;}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00019}00019 \textcolor{keyword}{import} java.util.concurrent.CompletableFuture;}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00021}00021 \textcolor{keyword}{import} de.backxtar.clevercharge.R;}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00022}00022 \textcolor{keyword}{import} de.backxtar.clevercharge.data.ChargingStation;}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00023}00023 \textcolor{keyword}{import} de.backxtar.clevercharge.data.ChargingStationAdapter;}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00024}00024 \textcolor{keyword}{import} de.backxtar.clevercharge.interfaces.RecyclerViewInterface;}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00025}00025 \textcolor{keyword}{import} de.backxtar.clevercharge.managers.StationManager;}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00026}00026 \textcolor{keyword}{import} de.backxtar.clevercharge.managers.UserManager;}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00027}00027 \textcolor{keyword}{import} de.backxtar.clevercharge.services.DownloadService;}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00028}00028 \textcolor{keyword}{import} de.backxtar.clevercharge.services.MessageService;}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00029}00029 \textcolor{keyword}{import} de.backxtar.clevercharge.services.PopupService;}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00030}00030 \textcolor{keyword}{import} de.backxtar.clevercharge.services.SpacingItemService;}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00038}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_dev_fragment}{00038}} \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_dev_fragment}{DevFragment}} \textcolor{keyword}{extends} Fragment implements \mbox{\hyperlink{interfacede_1_1backxtar_1_1clevercharge_1_1interfaces_1_1_recycler_view_interface}{RecyclerViewInterface}} \{}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00040}00040     \textcolor{comment}{/* Global variables */}}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00041}00041 }
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00045}00045     \textcolor{keyword}{private} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter}{ChargingStationAdapter}} adapter;}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00046}00046 }
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00050}00050     \textcolor{keyword}{private} TextView all, def;}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00051}00051 }
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00055}00055     \textcolor{keyword}{private} SwitchCompat local;}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00056}00056     \textcolor{comment}{//======================================}}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00057}00057 }
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00061}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_dev_fragment_a9e90948d32230ea9dd087e4c2a389f65}{00061}}     \textcolor{keyword}{public} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_dev_fragment_a9e90948d32230ea9dd087e4c2a389f65}{DevFragment}}() \{}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00062}00062         \textcolor{comment}{// Required empty public constructor}}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00063}00063     \}}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00064}00064 }
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00069}00069     @Override}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00070}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_dev_fragment_a52376a3628c8d41c7ed7d5c7e1ba47d5}{00070}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_dev_fragment_a52376a3628c8d41c7ed7d5c7e1ba47d5}{onCreate}}(Bundle savedInstanceState) \{}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00071}00071         super.onCreate(savedInstanceState);}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00072}00072     \}}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00073}00073 }
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00081}00081     @Override}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00082}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_dev_fragment_aa1c7d44c08476c1ee4016a60bdc78a44}{00082}}     \textcolor{keyword}{public} View \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_dev_fragment_aa1c7d44c08476c1ee4016a60bdc78a44}{onCreateView}}(LayoutInflater inflater, ViewGroup container,}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00083}00083                              Bundle savedInstanceState) \{}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00084}00084         \textcolor{comment}{// Inflate the layout for this fragment}}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00085}00085         View view = inflater.inflate(R.layout.fragment\_dev, container, \textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00086}00086         initText(view);}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00087}00087         initSwipeRefresh(view);}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00088}00088         initRecyclerView(view);}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00089}00089         initSwitch(view);}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00090}00090 }
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00091}00091         \textcolor{keywordflow}{return} view;}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00092}00092     \}}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00093}00093 }
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00098}00098     \textcolor{keyword}{private} \textcolor{keywordtype}{void} initText(View view) \{}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00099}00099         all = view.findViewById(R.id.all\_stations\_dev);}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00100}00100         def = view.findViewById(R.id.def\_stations\_def);}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00101}00101         updateInformation();}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00102}00102     \}}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00103}00103 }
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00108}00108     \textcolor{keyword}{private} \textcolor{keywordtype}{void} initSwipeRefresh(View view) \{}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00109}00109         SwipeRefreshLayout refreshLayout = view.findViewById(R.id.swipe\_dev);}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00110}00110         refreshLayout.setColorSchemeResources(R.color.primary);}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00111}00111         refreshLayout.setOnRefreshListener(() -\/> CompletableFuture.supplyAsync(() -\/> \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1services_1_1_download_service}{DownloadService}}.\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1services_1_1_download_service_a518fd601ccdd20b9d22ac754eff30d54}{getResponse}}(\textcolor{stringliteral}{"{}get\_def"{}}))}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00112}00112                 .whenComplete((apiResponse, throwable) -\/> \{}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00113}00113                     MessageService msgService;}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00114}00114 }
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00115}00115                     if (throwable != null || apiResponse.getResponseCode() != 1) \{}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00116}00116                         msgService = new MessageService(getActivity(), getResources().getString(R.string.something\_went\_wrong), Gravity.TOP, true);}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00117}00117                         msgService.sendToast();}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00118}00118                         return;}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00119}00119                     \}}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00120}00120                     msgService = \textcolor{keyword}{new} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1services_1_1_message_service}{MessageService}}(getActivity(), getResources().getString(R.string.update\_successful), Gravity.TOP, \textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00121}00121                     msgService.\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1services_1_1_message_service_ac4ac04d455ed4804dca168aa75203943}{sendToast}}();}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00122}00122                     \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager}{UserManager}}.\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager_aa4e7c73b0bb07f0dcf5a612f9bce416a}{getApi\_data}}().\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_a_p_i_response_a1ef4ebb0932445824a673dd411eb80ab}{setDefect\_stations\_map}}(apiResponse.getDefect\_stations\_map());}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00123}00123 }
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00124}00124                     if (getActivity() != \textcolor{keyword}{null})}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00125}00125                         getActivity().runOnUiThread(() -\/> \{}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00126}00126                             updateAdapter(local.isChecked());}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00127}00127                             updateInformation();}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00128}00128                             refreshLayout.setRefreshing(\textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00129}00129                         \});}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00130}00130                 \}));}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00131}00131     \}}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00132}00132 }
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00137}00137     \textcolor{keyword}{private} \textcolor{keywordtype}{void} initRecyclerView(View view) \{}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00138}00138         RecyclerView recyclerView = view.findViewById(R.id.dev\_rv);}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00139}00139         ArrayList<ChargingStation> sorted = StationManager.getDefects();}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00140}00140         sorted.sort(StationManager.getSortByDistance());}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00141}00141         adapter = \textcolor{keyword}{new} ChargingStationAdapter(\textcolor{keyword}{this}, sorted, getContext());}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00142}00142         SpacingItemService spacingItemService = \textcolor{keyword}{new} SpacingItemService(50);}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00143}00143         recyclerView.addItemDecoration(spacingItemService);}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00144}00144         recyclerView.setAdapter(adapter);}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00145}00145         recyclerView.setLayoutManager(\textcolor{keyword}{new} LinearLayoutManager(getContext()));}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00146}00146     \}}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00147}00147 }
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00152}00152     \textcolor{keyword}{private} \textcolor{keywordtype}{void} initSwitch(View view) \{}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00153}00153         local = view.findViewById(R.id.only\_local\_dev);}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00154}00154         local.setChecked(UserManager.getSaveStateService().isLocalDef());}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00155}00155         updateAdapter(local.isChecked());}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00156}00156         local.setOnCheckedChangeListener((buttonView, isChecked) -\/> \{}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00157}00157             UserManager.getSaveStateService().setLocalDef(isChecked);}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00158}00158             updateAdapter(isChecked);}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00159}00159         \});}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00160}00160     \}}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00161}00161 }
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00167}00167     @Override}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00168}\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_dev_fragment_ac0dce7e1f324fc5bdfc3ee7a4558b99a}{00168}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1fragments_main_1_1_dev_fragment_ac0dce7e1f324fc5bdfc3ee7a4558b99a}{onItemClick}}(\textcolor{keywordtype}{int} position, \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station}{ChargingStation}} station) \{}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00169}00169         \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1services_1_1_popup_service}{PopupService}} popupService = \textcolor{keyword}{new} \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1services_1_1_popup_service}{PopupService}}(getActivity(), station, adapter, local, def);}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00170}00170         popupService.\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1services_1_1_popup_service_af74f3ec6cd6fb55d81a1938af49efdd8}{showPopup}}();}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00171}00171     \}}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00172}00172 }
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00176}00176     @SuppressLint(\textcolor{stringliteral}{"{}SetTextI18n"{}})}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00177}00177     private \textcolor{keywordtype}{void} updateInformation() \{}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00178}00178         all.setText(Integer.toString(\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager}{StationManager}}.\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_a5154a6718e345d9eba0c07ec99f096fd}{getStationAmount}}()));}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00179}00179         def.setText(Integer.toString(\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager}{StationManager}}.\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_a84363e55138545c015867ac16fa9c50a}{getDefects}}().size()));}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00180}00180     \}}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00181}00181 }
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00186}00186     @SuppressLint(\textcolor{stringliteral}{"{}NotifyDataSetChanged"{}})}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00187}00187     private \textcolor{keywordtype}{void} updateAdapter(\textcolor{keywordtype}{boolean} isChecked) \{}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00188}00188         ArrayList<ChargingStation> sorted;}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00189}00189 }
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00190}00190         \textcolor{keywordflow}{if} (isChecked) \{}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00191}00191             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager}{UserManager}}.\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager_ae4f909b33cee9349c04878d1106de0cb}{getMyPosition}}() != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00192}00192                 sorted = \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager}{StationManager}}.\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_a2deb1b9045b98fec83251a5384717dd8}{getLocalDefects}}(}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00193}00193                         \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager}{UserManager}}.\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager_ae4f909b33cee9349c04878d1106de0cb}{getMyPosition}}().latitude,}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00194}00194                         \mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager}{UserManager}}.\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_user_manager_ae4f909b33cee9349c04878d1106de0cb}{getMyPosition}}().longitude);}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00195}00195                 sorted.sort(\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager}{StationManager}}.\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1managers_1_1_station_manager_a0d8c6d5bcd2802d6ca42942c5a129825}{getSortByDistance}}());}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00196}00196                 adapter.\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter_a2b1bf989f6f76efa88e010b03bbe7dba}{updateAdapter}}(sorted);}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00197}00197             \}}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00198}00198             \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00199}00199                 MessageService msgService = \textcolor{keyword}{new} MessageService(getActivity(), getResources().getString(R.string.location\_cant\_be\_tracked), Gravity.CENTER, \textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00200}00200                 msgService.sendToast();}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00201}00201             \}}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00202}00202         \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00203}00203             sorted = StationManager.getDefects();}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00204}00204             sorted.sort(StationManager.getSortByDistance());}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00205}00205             adapter.\mbox{\hyperlink{classde_1_1backxtar_1_1clevercharge_1_1data_1_1_charging_station_adapter_a2b1bf989f6f76efa88e010b03bbe7dba}{updateAdapter}}(sorted);}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00206}00206         \}}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00207}00207         adapter.notifyDataSetChanged();}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00208}00208     \}}
+\DoxyCodeLine{\Hypertarget{_dev_fragment_8java_source_l00209}00209 \}}
+
+\end{DoxyCode}
