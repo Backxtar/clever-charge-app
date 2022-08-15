@@ -1,6 +1,9 @@
 # Clever Charge
 Eine Android App zum Thema E-Mobilität.
 
+## Voraussetzungen
+Android 8 oder höher.
+
 ## Verwendete Sprachen
 * Java
 * XML
