@@ -9,8 +9,8 @@
  /* Server data */
 $server = "127.0.0.1";
 $username = "username";
-$password = "passwort";
-$database = "database";
+$password = "password";
+$database = "clever_charge";
 
 /* Connect to database */
 $conn = new mysqli($server, $username, $password, $database);

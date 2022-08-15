@@ -31,7 +31,7 @@
     <string name="favorites">Favorites</string>
     <string name="username_set">"Username: "</string>
     <string name="email_set">"Email: "</string>
-    <string name="search_radius">Search radius</string>
+    <string name="search_radius">Radius</string>
     <string name="logout">Logout</string>
     <string name="report">Report</string>
     <string name="fix">Fix</string>

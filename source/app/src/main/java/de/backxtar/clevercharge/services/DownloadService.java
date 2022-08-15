@@ -31,7 +31,7 @@ public class DownloadService {
     public static ArrayList<ChargingStation> getStations() {
         Gson gson = new Gson();
         final Type return_type = new TypeToken<ArrayList<ChargingStation>>() {}.getType();
-        final String json = getJson("https://api.aurora-theogenia.de/chargingstations/charging_stations.json");
+        final String json = getJson("https://api.dev-backxtar.de/stations/charging_stations.json");
         return gson.fromJson(json, return_type);
     }
 
@@ -42,7 +42,7 @@ public class DownloadService {
      * @return new APIResponse class
      */
     public static APIResponse getResponse(String endpoint, String[] params) {
-        String conn = "https://api.aurora-theogenia.de/clever_charge/" + endpoint +
+        String conn = "https://api.dev-backxtar.de/" + endpoint +
                 "/?access_token=xoMLoIxPaQtHUt2k3ROjQRf3CV0WoSo7" + "&";
 
         for (int i = 0; i < params.length; i++) {
@@ -62,7 +62,7 @@ public class DownloadService {
      * @return new APIResponse class
      */
     public static APIResponse getResponse(String endpoint) {
-        String conn = "https://api.aurora-theogenia.de/clever_charge/" + endpoint +
+        String conn = "https://api.dev-backxtar.de/" + endpoint +
                 "/?access_token=xoMLoIxPaQtHUt2k3ROjQRf3CV0WoSo7";
 
         Gson gson = new Gson();
@@ -78,7 +78,7 @@ public class DownloadService {
     public static ArrayList<Article> getArticles() {
         Gson gson = new Gson();
         final Type return_type = new TypeToken<ArrayList<Article>>() {}.getType();
-        final String json = getJson("https://api.aurora-theogenia.de/clever_charge/news/news.json");
+        final String json = getJson("https://api.dev-backxtar.de/news/news.json");
         ArrayList<Article> articles = gson.fromJson(json, return_type);
         return articles;
     }
