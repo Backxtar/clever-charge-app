@@ -3,6 +3,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.Gravity;
 import android.view.WindowManager;
 import android.widget.Toast;
 
@@ -54,7 +55,7 @@ public class LoadingScreen extends AppCompatActivity {
         setContentView(R.layout.activity_loading_screen);
         intent = new Intent(LoadingScreen.this, Login.class);
 
-        CompletableFuture.supplyAsync(this::checkDatabase)
+        CompletableFuture.supplyAsync(() -> DownloadService.checkDatabase(getApplicationContext().getFilesDir().getPath() + "/checksum.json"))
                 .whenComplete(((isCorrect, throwable) -> {
                     if (throwable != null) {
                         intent.putExtra("result_download", false);
@@ -63,7 +64,7 @@ public class LoadingScreen extends AppCompatActivity {
                     CompletableFuture<ArrayList<ChargingStation>> stationList;
 
                         if (!isCorrect) {
-                            MessageService msg = new MessageService(this, getString(R.string.download_update), Toast.LENGTH_LONG, false);
+                            MessageService msg = new MessageService(this, getString(R.string.download_update), Gravity.TOP, false);
                             msg.sendToast();
 
                             stationList = CompletableFuture.supplyAsync(DownloadService::getStations)
@@ -152,27 +153,5 @@ public class LoadingScreen extends AppCompatActivity {
                     startActivity(intent);
                     finish();
                 });*/
-    }
-
-    private boolean checkDatabase() {
-        File database = new File(getApplicationContext().getFilesDir().getPath() + "/checksum.json");
-        DataChecksum dataChecksumOnline = DownloadService.checkStateOnline();
-
-        if (database.exists()) {
-            DataChecksum dataChecksumLocal = DownloadService.checkStateLocal(getApplicationContext().getFilesDir().getPath() + "/checksum.json");
-            return dataChecksumOnline.getChecksum().equalsIgnoreCase(dataChecksumLocal.getChecksum());
-        } else {
-            Gson gson = new GsonBuilder().setPrettyPrinting().create();
-            String json = gson.toJson(dataChecksumOnline);
-
-            try {
-                BufferedWriter writer = new BufferedWriter(new FileWriter(getApplicationContext().getFilesDir().getPath() + "/checksum.json"));
-                writer.write(json);
-                writer.close();
-            } catch (IOException io) {
-                io.printStackTrace();
-            }
-            return false;
-        }
     }
 }

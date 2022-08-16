@@ -16,6 +16,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.concurrent.CompletableFuture;
 import java.util.stream.Collectors;
@@ -111,7 +117,68 @@ public class SearchFragment extends Fragment implements RecyclerViewInterface {
         SwipeRefreshLayout refreshLayout = view.findViewById(R.id.swipe_search);
         refreshLayout.setColorSchemeResources(R.color.primary);
         refreshLayout.setOnRefreshListener(() -> {
-            CompletableFuture<APIResponse> futureResponseDef = CompletableFuture.supplyAsync(() -> DownloadService.getResponse("get_def"))
+            CompletableFuture.supplyAsync(() ->DownloadService.checkDatabase(getActivity().getFilesDir().getPath() + "/checksum.json"))
+                    .whenComplete(((isCorrect, throwable) -> {
+                        if (throwable != null) {
+                            MessageService msgService = new MessageService(getActivity(), getString(R.string.error_while_getting_data), Gravity.TOP, true);
+                            msgService.sendToast();
+                            throw new RuntimeException("Cant check database.");
+                        }
+                        CompletableFuture<ArrayList<ChargingStation>> stationList = null;
+
+                        if (!isCorrect) {
+                            MessageService msg = new MessageService(getActivity(), getString(R.string.download_update), Gravity.TOP, false);
+                            msg.sendToast();
+
+                            stationList = CompletableFuture.supplyAsync(DownloadService::getStations)
+                                    .whenComplete((stations, error) -> {
+                                        if (error != null || stations == null)
+                                            throw new RuntimeException("Cant download stations.");
+                                        StationManager.setStation_list(stations);
+
+                                        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+                                        String json = gson.toJson(stations);
+
+                                        try {
+                                            BufferedWriter writer = new BufferedWriter(new FileWriter(getActivity().getFilesDir().getPath() + "/database.json"));
+                                            writer.write(json);
+                                            writer.close();
+                                        } catch (IOException io) {
+                                            io.printStackTrace();
+                                        }
+                                    });
+                        }
+
+                        CompletableFuture<APIResponse> defStationList = CompletableFuture.supplyAsync(() -> DownloadService.getResponse("get_def"))
+                                .whenComplete((apiResponse, error) -> {
+                                    if (error != null || apiResponse.getResponseCode() != 1) {
+                                        MessageService msgService = new MessageService(getActivity(), getResources().getString(R.string.cant_load_defect_stations), Gravity.TOP, true);
+                                        msgService.sendToast();
+                                    } else UserManager.getApi_data().setDefect_stations_map(apiResponse.getDefect_stations_map());
+                                });
+
+                        CompletableFuture<Void> all;
+                        if (stationList == null) all = CompletableFuture.allOf(defStationList);
+                        else all = CompletableFuture.allOf(stationList, defStationList);
+                        all.whenComplete((unused, error) -> {
+                            if (error != null)
+                                throw new RuntimeException("Cant getting data.");
+                            if (!isCorrect) {
+                                MessageService msgService = new MessageService(getActivity(), getString(R.string.download_update), Gravity.TOP, false);
+                                msgService.sendToast();
+                            }
+                            if (getActivity() != null) {
+                                getActivity().runOnUiThread(() -> {
+                                    updateAdapter();
+                                    refreshLayout.setRefreshing(false);
+                                });
+                            }
+                        });
+                    }));
+
+
+
+            /*CompletableFuture<APIResponse> futureResponseDef = CompletableFuture.supplyAsync(() -> DownloadService.getResponse("get_def"))
                     .whenComplete((apiResponse, throwable) -> {
                         if (throwable != null || apiResponse.getResponseCode() != 1) {
                             MessageService msgService = new MessageService(getActivity(), getResources().getString(R.string.cant_load_defect_stations), Gravity.TOP, true);
@@ -144,7 +211,7 @@ public class SearchFragment extends Fragment implements RecyclerViewInterface {
                                 refreshLayout.setRefreshing(false);
                             });
                         }
-                    });
+                    });*/
         });
     }
 

@@ -1,11 +1,14 @@
 package de.backxtar.clevercharge.services;
 
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -173,5 +176,27 @@ public class DownloadService {
         httpCon.setReadTimeout(10000);
         httpCon.setRequestMethod("GET");
         return httpCon.getInputStream();
+    }
+
+    public static boolean checkDatabase(final String localPath) {
+        File database = new File(localPath);
+        DataChecksum dataChecksumOnline = DownloadService.checkStateOnline();
+
+        if (database.exists()) {
+            DataChecksum dataChecksumLocal = DownloadService.checkStateLocal(localPath);
+            return dataChecksumOnline.getChecksum().equalsIgnoreCase(dataChecksumLocal.getChecksum());
+        } else {
+            Gson gson = new GsonBuilder().setPrettyPrinting().create();
+            String json = gson.toJson(dataChecksumOnline);
+
+            try {
+                BufferedWriter writer = new BufferedWriter(new FileWriter(localPath));
+                writer.write(json);
+                writer.close();
+            } catch (IOException io) {
+                io.printStackTrace();
+            }
+            return false;
+        }
     }
 }
