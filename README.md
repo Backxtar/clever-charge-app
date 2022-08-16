@@ -10,6 +10,11 @@ Android 8 oder höher.
 
 Dieses Projekt ist im Rahmen eines Praktikums der Hochschule Darmstadt entstanden.
 
+## Screenshots
+Diese Screenshots wurden auf einem echten nativen Android Handy (Huawai P20 Lite) aufgenommen.
+
+[Zu den Screenshots](https://github.com/Backxtar/clever-charge-app/tree/main/images/screenshots)
+
 ## Ausführen der APK
 Die App kann in einem online Android Emulator ausgeführt werden.
 
