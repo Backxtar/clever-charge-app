@@ -72,4 +72,5 @@
     <string name="wait_for_location">Please wait until location is tracked!</string>
     <string name="need_permissions">This app needs permissions to access your location.</string>
     <string name="turn_on_provider">Please turn on a location provider!</string>
+    <string name="download_update">Update available! Downloading update…</string>
 </resources>

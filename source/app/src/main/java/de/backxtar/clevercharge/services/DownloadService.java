@@ -4,6 +4,8 @@ import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
 import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -15,6 +17,7 @@ import java.util.ArrayList;
 import de.backxtar.clevercharge.data.APIResponse;
 import de.backxtar.clevercharge.data.Article;
 import de.backxtar.clevercharge.data.ChargingStation;
+import de.backxtar.clevercharge.data.DataChecksum;
 
 /**
  * DownloadService of the app.
@@ -31,8 +34,24 @@ public class DownloadService {
     public static ArrayList<ChargingStation> getStations() {
         Gson gson = new Gson();
         final Type return_type = new TypeToken<ArrayList<ChargingStation>>() {}.getType();
-        final String json = getJson("https://api.dev-backxtar.de/stations/charging_stations.json");
+        final String json = getJsonOnline("https://api.dev-backxtar.de/stations/database.json");
         return gson.fromJson(json, return_type);
+    }
+
+    /**
+     * Docker for station arrayList.
+     * @return array of station objects
+     */
+    public static ArrayList<ChargingStation> getStations(final String path) {
+        Gson gson = new Gson();
+        final Type return_type = new TypeToken<ArrayList<ChargingStation>>() {}.getType();
+        ArrayList<ChargingStation> stations = null;
+        try {
+            stations = gson.fromJson(new FileReader(path), return_type);
+        } catch (IOException io) {
+            io.printStackTrace();
+        }
+        return stations;
     }
 
     /**
@@ -52,7 +71,7 @@ public class DownloadService {
 
         Gson gson = new Gson();
         final Type return_type = new TypeToken<APIResponse>() {}.getType();
-        final String json = getJson(conn);
+        final String json = getJsonOnline(conn);
         return gson.fromJson(json, return_type);
     }
 
@@ -67,7 +86,7 @@ public class DownloadService {
 
         Gson gson = new Gson();
         final Type return_type = new TypeToken<APIResponse>() {}.getType();
-        final String json = getJson(conn);
+        final String json = getJsonOnline(conn);
         return gson.fromJson(json, return_type);
     }
 
@@ -78,11 +97,37 @@ public class DownloadService {
     public static ArrayList<Article> getArticles() {
         Gson gson = new Gson();
         final Type return_type = new TypeToken<ArrayList<Article>>() {}.getType();
-        final String json = getJson("https://api.dev-backxtar.de/news/news.json");
+        final String json = getJsonOnline("https://api.dev-backxtar.de/news/news.json");
         ArrayList<Article> articles = gson.fromJson(json, return_type);
         return articles;
     }
 
+    /**
+     * Get checksum from api
+     * @return an checksum object
+     */
+    public static DataChecksum checkStateOnline() {
+        Gson gson = new Gson();
+        final Type return_type = new TypeToken<DataChecksum>() {}.getType();
+        final String json = getJsonOnline("https://api.dev-backxtar.de/stations/checksum.json");
+        return gson.fromJson(json, return_type);
+    }
+
+    /**
+     * Get checksum from local
+     * @return an checksum object
+     */
+    public static DataChecksum checkStateLocal(final String path) {
+        Gson gson = new Gson();
+        final Type return_type = new TypeToken<DataChecksum>() {}.getType();
+        DataChecksum dataChecksum = null;
+        try {
+            dataChecksum = gson.fromJson(new FileReader(path), return_type);
+        } catch (IOException io) {
+            io.printStackTrace();
+        }
+        return dataChecksum;
+    }
 
     /**
      * Download json from api.
@@ -90,7 +135,7 @@ public class DownloadService {
      * @param endpoint api endpoint
      * @link https://api.aurora-theogenia.de/chargingstations/charging_stations.json
      */
-    public static String getJson(String endpoint) {
+    public static String getJsonOnline(String endpoint) {
         BufferedReader reader = null;
         try {
             final URL url = new URL(endpoint);
