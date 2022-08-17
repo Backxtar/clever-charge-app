@@ -1,7 +1,7 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/Backxtar/clever-charge-app)
 ![GitHub repo file count](https://img.shields.io/github/directory-file-count/Backxtar/clever-charge-app)
 ![GitHub repo size](https://img.shields.io/github/repo-size/Backxtar/clever-charge-app?color=%23ed214d)
-![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/Backxtar/clever-charge-app?color=%23FFC433)
+![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/Backxtar/clever-charge-app?color=%23FFC433&logo=Github)
 
 # Clever Charge
 Eine Android App zum Thema E-Mobilität.
