@@ -102,4 +102,14 @@ public class UserManager {
     public static void setSaveStateService(SaveStateService saveStateService) {
         UserManager.saveStateService = saveStateService;
     }
+
+    /**
+     *
+     * @param compare as ArrayList
+     * @return true if equal or false if not
+     */
+    public static boolean compareArticles(ArrayList<Article> compare) {
+        if (articles == null || articles.size() != compare.size()) return false;
+        return articles.equals(compare);
+    }
 }

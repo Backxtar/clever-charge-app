@@ -72,4 +72,6 @@
     <string name="need_permissions">Die App benötigt die Rechte, um Deinen Standort zu ermitteln!</string>
     <string name="turn_on_provider">Bitte schalten Sie einen Standortdienst ein!</string>
     <string name="download_update">Update verfügbar! Lade Update herunter…</string>
+    <string name="no_update">Keine Updates verfügbar!</string>
+    <string name="download_finish">Update erfolgreich!</string>
 </resources>

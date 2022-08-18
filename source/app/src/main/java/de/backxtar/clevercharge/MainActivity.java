@@ -10,15 +10,9 @@ import android.Manifest;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.pm.PackageManager;
-import android.location.Criteria;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
-import android.net.ConnectivityManager;
-import android.net.Network;
-import android.net.NetworkInfo;
-import android.net.wifi.WifiInfo;
-import android.net.wifi.WifiManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.Gravity;
@@ -27,15 +21,11 @@ import android.view.WindowManager;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-
-import de.backxtar.clevercharge.data.ChargingStation;
 import de.backxtar.clevercharge.managers.NavigationManager;
-import de.backxtar.clevercharge.managers.StationManager;
 import de.backxtar.clevercharge.managers.UserManager;
-import de.backxtar.clevercharge.services.MessageService;
+import de.backxtar.clevercharge.services.messageService.MessageService;
 import de.backxtar.clevercharge.services.SaveStateService;
+import de.backxtar.clevercharge.services.messageService.Popup;
 
 /**
  * MainActivity of the app.
@@ -117,7 +107,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
         navigation.setOnItemSelectedListener(item -> {
             if (item.getItemId() == navigation.getSelectedItemId() || !areProvidersEnabled()) return false;
             if (UserManager.getMyPosition() == null) {
-                MessageService msg = new MessageService(this, getResources().getString(R.string.wait_for_location), Gravity.TOP, true);
+                MessageService msg = new MessageService(this, getResources().getString(R.string.wait_for_location), Gravity.TOP, Popup.ERROR);
                 msg.sendToast();
                 return false;
             }
@@ -171,7 +161,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
         if (requestCode == LOCATION_REQUEST_CODE && grantResults[0] == PackageManager.PERMISSION_GRANTED) runMain();
         else {
             MessageService msgService = new MessageService(
-                    this, getResources().getString(R.string.need_permissions), Gravity.TOP, true);
+                    this, getResources().getString(R.string.need_permissions), Gravity.TOP, Popup.ERROR);
             msgService.sendToast();
             new Handler().postDelayed(() -> System.exit(0), 3000);
         }
@@ -213,7 +203,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
     private boolean areProvidersEnabled() {
         if (!locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER) &&
                 !locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER)) {
-            MessageService msg = new MessageService(this, getResources().getString(R.string.turn_on_provider), Gravity.TOP, true);
+            MessageService msg = new MessageService(this, getResources().getString(R.string.turn_on_provider), Gravity.TOP, Popup.INFO);
             msg.sendToast();
             return false;
         }

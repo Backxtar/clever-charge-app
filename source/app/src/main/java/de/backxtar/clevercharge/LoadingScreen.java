@@ -10,22 +10,18 @@ import android.widget.Toast;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.concurrent.CompletableFuture;
 
 import de.backxtar.clevercharge.data.Article;
 import de.backxtar.clevercharge.data.ChargingStation;
-import de.backxtar.clevercharge.data.DataChecksum;
 import de.backxtar.clevercharge.managers.StationManager;
 import de.backxtar.clevercharge.managers.UserManager;
 import de.backxtar.clevercharge.services.DownloadService;
-import de.backxtar.clevercharge.services.MessageService;
+import de.backxtar.clevercharge.services.messageService.MessageService;
+import de.backxtar.clevercharge.services.messageService.Popup;
 
 /**
  * LoadingScreen of the app.
@@ -64,7 +60,7 @@ public class LoadingScreen extends AppCompatActivity {
                     CompletableFuture<ArrayList<ChargingStation>> stationList;
 
                         if (!isCorrect) {
-                            MessageService msg = new MessageService(this, getString(R.string.download_update), Gravity.TOP, false);
+                            MessageService msg = new MessageService(this, getString(R.string.download_update), Gravity.TOP, Popup.INFO);
                             msg.sendToast();
 
                             stationList = CompletableFuture.supplyAsync(DownloadService::getStations)
@@ -112,7 +108,7 @@ public class LoadingScreen extends AppCompatActivity {
                     CompletableFuture.allOf(stationList, articleList)
                             .whenComplete((unused, error) -> {
                                 if (error != null) {
-                                    MessageService msg = new MessageService(this, getResources().getString(R.string.error_while_getting_data), Toast.LENGTH_LONG, true);
+                                    MessageService msg = new MessageService(this, getResources().getString(R.string.error_while_getting_data), Toast.LENGTH_LONG, Popup.ERROR);
                                     msg.sendToast();
                                     new Handler().postDelayed(() -> System.exit(0), 3000);
                                     return;

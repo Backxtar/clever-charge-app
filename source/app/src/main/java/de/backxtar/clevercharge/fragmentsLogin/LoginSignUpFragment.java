@@ -18,7 +18,8 @@ import java.util.concurrent.CompletableFuture;
 import de.backxtar.clevercharge.R;
 import de.backxtar.clevercharge.managers.LoginManager;
 import de.backxtar.clevercharge.services.DownloadService;
-import de.backxtar.clevercharge.services.MessageService;
+import de.backxtar.clevercharge.services.messageService.MessageService;
+import de.backxtar.clevercharge.services.messageService.Popup;
 
 /**
  * SignUp fragment.
@@ -98,7 +99,7 @@ public class LoginSignUpFragment extends Fragment {
             if (userName.getText().toString().isEmpty() ||
                     userPasswd.getText().toString().isEmpty() ||
                     userEmail.getText().toString().isEmpty()) {
-                MessageService msgService = new MessageService(getActivity(), getResources().getString(R.string.empty_fields), Gravity.TOP, true);
+                MessageService msgService = new MessageService(getActivity(), getResources().getString(R.string.empty_fields), Gravity.TOP, Popup.ERROR);
                 msgService.sendToast();
                 return;
             }
@@ -122,12 +123,12 @@ public class LoginSignUpFragment extends Fragment {
                 new String[]{"username=" + user, "userpasswd=" + passwd, "useremail=" + email}))
                 .whenComplete((apiResponse, throwable) -> {
                     if (apiResponse.getResponseCode() == 3) {
-                        MessageService msgService = new MessageService(getActivity(), getResources().getString(R.string.user_exists), Gravity.TOP, true);
+                        MessageService msgService = new MessageService(getActivity(), getResources().getString(R.string.user_exists), Gravity.TOP, Popup.ERROR);
                         msgService.sendToast();
                         return;
                     }
                     if (apiResponse.getResponseCode() != 1 || throwable != null) {
-                        MessageService msgService = new MessageService(getActivity(), getResources().getString(R.string.register_failed), Gravity.TOP, true);
+                        MessageService msgService = new MessageService(getActivity(), getResources().getString(R.string.register_failed), Gravity.TOP, Popup.ERROR);
                         msgService.sendToast();
                         return;
                     }
@@ -135,7 +136,7 @@ public class LoginSignUpFragment extends Fragment {
                             .setCustomAnimations(R.anim.fragment_anim_in, R.anim.fragment_anim_out)
                             .replace(R.id.body_container_login, LoginManager.getSignIn(), null)
                             .commit();
-                    MessageService msgService = new MessageService(getActivity(), getResources().getString(R.string.register_success), Gravity.TOP, false);
+                    MessageService msgService = new MessageService(getActivity(), getResources().getString(R.string.register_success), Gravity.TOP, Popup.SUCCESS);
                     msgService.sendToast();
                 });
     }

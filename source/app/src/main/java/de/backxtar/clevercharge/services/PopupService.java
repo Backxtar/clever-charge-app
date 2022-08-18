@@ -29,6 +29,8 @@ import de.backxtar.clevercharge.data.ModuleType;
 import de.backxtar.clevercharge.fragmentsMain.MapFragment;
 import de.backxtar.clevercharge.managers.StationManager;
 import de.backxtar.clevercharge.managers.UserManager;
+import de.backxtar.clevercharge.services.messageService.MessageService;
+import de.backxtar.clevercharge.services.messageService.Popup;
 
 /**
  * MarkerInfo of the app.
@@ -269,7 +271,7 @@ public class PopupService {
 
         if (fav != null && nearby != null) {
             if (UserManager.getMyPosition() == null) {
-                MessageService msgService = new MessageService(activity, activity.getResources().getString(R.string.location_cant_be_tracked), Gravity.TOP, true);
+                MessageService msgService = new MessageService(activity, activity.getResources().getString(R.string.location_cant_be_tracked), Gravity.TOP, Popup.ERROR);
                 msgService.sendToast();
                 return;
             }
@@ -306,7 +308,7 @@ public class PopupService {
                 new String[]{"userid=" + UserManager.getApi_data().getUserID(), "favorites=" + station.getId()}))
                 .whenComplete((apiResponse, throwable) -> {
                     if (throwable != null || apiResponse.getResponseCode() != 1) {
-                        MessageService service = new MessageService(activity, activity.getResources().getString(R.string.something_went_wrong), Gravity.TOP, true);
+                        MessageService service = new MessageService(activity, activity.getResources().getString(R.string.something_went_wrong), Gravity.TOP, Popup.ERROR);
                         activity.runOnUiThread(service::sendToast);
                     }
                 });
@@ -321,8 +323,8 @@ public class PopupService {
                 .whenComplete(((apiResponse, throwable) -> {
                     MessageService service;
                     if (throwable != null || apiResponse.getResponseCode() != 1)
-                        service = new MessageService(activity, activity.getResources().getString(R.string.something_went_wrong), Gravity.TOP, true);
-                    else service = new MessageService(activity, "Station (" + station.getId() + ") " + activity.getResources().getString(R.string.fixed) + "!", Gravity.TOP, false);
+                        service = new MessageService(activity, activity.getResources().getString(R.string.something_went_wrong), Gravity.TOP, Popup.ERROR);
+                    else service = new MessageService(activity, "Station (" + station.getId() + ") " + activity.getResources().getString(R.string.fixed) + "!", Gravity.TOP, Popup.SUCCESS);
                     activity.runOnUiThread(service::sendToast);
                 }));
     }

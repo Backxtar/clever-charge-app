@@ -25,9 +25,10 @@ import de.backxtar.clevercharge.interfaces.RecyclerViewInterface;
 import de.backxtar.clevercharge.managers.StationManager;
 import de.backxtar.clevercharge.managers.UserManager;
 import de.backxtar.clevercharge.services.DownloadService;
-import de.backxtar.clevercharge.services.MessageService;
+import de.backxtar.clevercharge.services.messageService.MessageService;
 import de.backxtar.clevercharge.services.PopupService;
 import de.backxtar.clevercharge.services.SpacingItemService;
+import de.backxtar.clevercharge.services.messageService.Popup;
 
 /**
  * Dev fragment.
@@ -110,16 +111,20 @@ public class DevFragment extends Fragment implements RecyclerViewInterface {
         refreshLayout.setColorSchemeResources(R.color.primary);
         refreshLayout.setOnRefreshListener(() -> CompletableFuture.supplyAsync(() -> DownloadService.getResponse("get_def"))
                 .whenComplete((apiResponse, throwable) -> {
-                    MessageService msgService;
+                    MessageService msg;
 
                     if (throwable != null || apiResponse.getResponseCode() != 1) {
-                        msgService = new MessageService(getActivity(), getResources().getString(R.string.something_went_wrong), Gravity.TOP, true);
-                        msgService.sendToast();
+                        msg = new MessageService(getActivity(), getResources().getString(R.string.something_went_wrong), Gravity.TOP, Popup.ERROR);
+                        msg.sendToast();
                         return;
                     }
-                    msgService = new MessageService(getActivity(), getResources().getString(R.string.update_successful), Gravity.TOP, false);
-                    msgService.sendToast();
-                    UserManager.getApi_data().setDefect_stations_map(apiResponse.getDefect_stations_map());
+
+                    if (!UserManager.getApi_data().getDefect_stations_map().equals(apiResponse.getDefect_stations_map())) {
+                        msg = new MessageService(getActivity(), getString(R.string.download_update), Gravity.TOP, Popup.INFO);
+                        UserManager.getApi_data().setDefect_stations_map(apiResponse.getDefect_stations_map());
+                    }
+                    else msg = new MessageService(getActivity(), getString(R.string.no_update), Gravity.TOP, Popup.INFO);
+                    msg.sendToast();
 
                     if (getActivity() != null)
                         getActivity().runOnUiThread(() -> {
@@ -196,7 +201,7 @@ public class DevFragment extends Fragment implements RecyclerViewInterface {
                 adapter.updateAdapter(sorted);
             }
             else {
-                MessageService msgService = new MessageService(getActivity(), getResources().getString(R.string.location_cant_be_tracked), Gravity.CENTER, false);
+                MessageService msgService = new MessageService(getActivity(), getResources().getString(R.string.location_cant_be_tracked), Gravity.CENTER, Popup.ERROR);
                 msgService.sendToast();
             }
         } else {

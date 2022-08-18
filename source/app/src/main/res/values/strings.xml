@@ -73,4 +73,6 @@
     <string name="need_permissions">This app needs permissions to access your location.</string>
     <string name="turn_on_provider">Please turn on a location provider!</string>
     <string name="download_update">Update available! Downloading update…</string>
+    <string name="no_update">No updates available!</string>
+    <string name="download_finish">Update successful!</string>
 </resources>

@@ -16,7 +16,8 @@ import de.backxtar.clevercharge.managers.LoginManager;
 import de.backxtar.clevercharge.managers.StationManager;
 import de.backxtar.clevercharge.managers.UserManager;
 import de.backxtar.clevercharge.services.DownloadService;
-import de.backxtar.clevercharge.services.MessageService;
+import de.backxtar.clevercharge.services.messageService.MessageService;
+import de.backxtar.clevercharge.services.messageService.Popup;
 
 /**
  * Login activity.
@@ -67,7 +68,7 @@ public class Login extends AppCompatActivity {
                                 apiResponse.getResponseCode() != 1 ||
                                 apiResponse.getDefect_stations_map() == null ||
                                 apiResponse.getFavorites() == null) {
-                            MessageService msgService = new MessageService(this, getResources().getString(R.string.login_failed), Gravity.TOP, true);
+                            MessageService msgService = new MessageService(this, getResources().getString(R.string.login_failed), Gravity.TOP, Popup.ERROR);
                             msgService.sendToast();
                             return;
                         }
@@ -85,7 +86,7 @@ public class Login extends AppCompatActivity {
 
         if (!intent.getBooleanExtra("result_articles", false) ||
             !intent.getBooleanExtra("result_download", false)) {
-            MessageService msgService = new MessageService(this, getResources().getString(R.string.restart_the_app), Gravity.TOP, true);
+            MessageService msgService = new MessageService(this, getResources().getString(R.string.restart_the_app), Gravity.TOP, Popup.ERROR);
             msgService.sendToast();
             new Handler().postDelayed(() -> System.exit(0), 3000);
         }

@@ -31,8 +31,9 @@ import de.backxtar.clevercharge.R;
 import de.backxtar.clevercharge.data.ChargingStation;
 import de.backxtar.clevercharge.managers.StationManager;
 import de.backxtar.clevercharge.managers.UserManager;
-import de.backxtar.clevercharge.services.MessageService;
+import de.backxtar.clevercharge.services.messageService.MessageService;
 import de.backxtar.clevercharge.services.PopupService;
+import de.backxtar.clevercharge.services.messageService.Popup;
 
 /**
  * Map fragment.
@@ -157,7 +158,7 @@ public class MapFragment extends Fragment {
                         isClicked = true;
                     }
                 } else {
-                    MessageService msgService = new MessageService(getActivity(), getResources().getString(R.string.location_cant_be_tracked), Gravity.CENTER, true);
+                    MessageService msgService = new MessageService(getActivity(), getResources().getString(R.string.location_cant_be_tracked), Gravity.CENTER, Popup.ERROR);
                     msgService.sendToast();
                 }
             } else {
@@ -188,7 +189,7 @@ public class MapFragment extends Fragment {
         BitmapDescriptor bitMapFav = bitMapFromPng(getActivity(), R.drawable.ic_marker_fav);
         
         if (stations_near.isEmpty()) {
-            MessageService msgService = new MessageService(getActivity(), getResources().getString(R.string.no_stations_available), Gravity.CENTER, true);
+            MessageService msgService = new MessageService(getActivity(), getResources().getString(R.string.no_stations_available), Gravity.CENTER, Popup.ERROR);
             msgService.sendToast();
             return false;
         }

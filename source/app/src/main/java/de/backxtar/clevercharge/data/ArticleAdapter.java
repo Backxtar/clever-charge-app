@@ -12,7 +12,6 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -34,7 +33,8 @@ import de.backxtar.clevercharge.MainActivity;
 import de.backxtar.clevercharge.R;
 import de.backxtar.clevercharge.managers.UserManager;
 import de.backxtar.clevercharge.services.DownloadService;
-import de.backxtar.clevercharge.services.MessageService;
+import de.backxtar.clevercharge.services.messageService.MessageService;
+import de.backxtar.clevercharge.services.messageService.Popup;
 
 /**
  * ArticleAdapter
@@ -198,7 +198,7 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.ViewHold
                 new String[]{"user_id=" + UserManager.getApi_data().getUserID(), "news_id=" + article_id}))
                 .whenComplete(((apiResponse, throwable) -> {
                     if (throwable != null || apiResponse.getResponseCode() != 1) {
-                        MessageService service = new MessageService(activity, "Something went wrong!", Gravity.TOP, true);
+                        MessageService service = new MessageService(activity, "Something went wrong!", Gravity.TOP, Popup.ERROR);
                         activity.runOnUiThread(service::sendToast);
                     }
                 }));

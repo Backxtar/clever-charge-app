@@ -22,7 +22,8 @@ import de.backxtar.clevercharge.R;
 import de.backxtar.clevercharge.managers.LoginManager;
 import de.backxtar.clevercharge.managers.UserManager;
 import de.backxtar.clevercharge.services.DownloadService;
-import de.backxtar.clevercharge.services.MessageService;
+import de.backxtar.clevercharge.services.messageService.MessageService;
+import de.backxtar.clevercharge.services.messageService.Popup;
 
 /**
  * SignIn Fragment.
@@ -102,7 +103,7 @@ public class LoginSignInFragment extends Fragment {
 
             if (userName.getText() == null || userName.getText().toString().isEmpty() ||
                 userPasswd.getText() == null || userPasswd.getText().toString().isEmpty()) {
-                MessageService msgService = new MessageService(getActivity(), getResources().getString(R.string.empty_fields), Gravity.TOP, true);
+                MessageService msgService = new MessageService(getActivity(), getResources().getString(R.string.empty_fields), Gravity.TOP, Popup.ERROR);
                 msgService.sendToast();
                 return;
             }
@@ -127,7 +128,7 @@ public class LoginSignInFragment extends Fragment {
                             apiResponse.getResponseCode() != 1 ||
                             apiResponse.getDefect_stations_map() == null ||
                             apiResponse.getFavorites() == null) {
-                        MessageService msgService = new MessageService(getActivity(), getResources().getString(R.string.login_failed), Gravity.TOP, true);
+                        MessageService msgService = new MessageService(getActivity(), getResources().getString(R.string.login_failed), Gravity.TOP, Popup.ERROR);
                         msgService.sendToast();
                         return;
                     }

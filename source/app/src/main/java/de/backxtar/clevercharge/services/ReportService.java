@@ -23,6 +23,8 @@ import de.backxtar.clevercharge.MainActivity;
 import de.backxtar.clevercharge.R;
 import de.backxtar.clevercharge.data.ChargingStationAdapter;
 import de.backxtar.clevercharge.managers.UserManager;
+import de.backxtar.clevercharge.services.messageService.MessageService;
+import de.backxtar.clevercharge.services.messageService.Popup;
 
 /**
  * ReportService object.
@@ -118,7 +120,7 @@ public class ReportService {
             report.setClickable(false);
 
             if (report_msg.getText() == null || report_msg.getText().toString().isEmpty()) {
-                MessageService msgService = new MessageService(activity, activity.getResources().getString(R.string.please_enter_a_description), Gravity.TOP, true);
+                MessageService msgService = new MessageService(activity, activity.getResources().getString(R.string.please_enter_a_description), Gravity.TOP, Popup.ERROR);
                 msgService.sendToast();
             } else {
                 String msg = report_msg.getText().toString();
@@ -127,8 +129,8 @@ public class ReportService {
                         .whenComplete(((apiResponse, throwable) -> {
                             MessageService service;
                             if (throwable != null || apiResponse.getResponseCode() != 1)
-                                service = new MessageService(activity, activity.getResources().getString(R.string.something_went_wrong), Gravity.TOP, true);
-                            else service = new MessageService(activity, activity.getResources().getString(R.string.thanks_for_report), Gravity.TOP, false);
+                                service = new MessageService(activity, activity.getResources().getString(R.string.something_went_wrong), Gravity.TOP, Popup.ERROR);
+                            else service = new MessageService(activity, activity.getResources().getString(R.string.thanks_for_report), Gravity.TOP, Popup.SUCCESS);
                             activity.runOnUiThread(service::sendToast);
                         }));
                 UserManager.getApi_data().getDefect_stations_map().put(station_id, msg);

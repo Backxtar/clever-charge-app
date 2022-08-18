@@ -14,17 +14,19 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import java.util.ArrayList;
 import java.util.concurrent.CompletableFuture;
 
 import de.backxtar.clevercharge.R;
+import de.backxtar.clevercharge.data.Article;
 import de.backxtar.clevercharge.data.ArticleAdapter;
-import de.backxtar.clevercharge.data.ChargingStationAdapter;
 import de.backxtar.clevercharge.data.ModuleType;
 import de.backxtar.clevercharge.managers.UserManager;
 import de.backxtar.clevercharge.services.DownloadService;
-import de.backxtar.clevercharge.services.MessageService;
+import de.backxtar.clevercharge.services.messageService.MessageService;
 import de.backxtar.clevercharge.services.SpacingItemService;
 import de.backxtar.clevercharge.managers.StationManager;
+import de.backxtar.clevercharge.services.messageService.Popup;
 
 /**
  * ChargingStation container.
@@ -103,13 +105,18 @@ public class HomeFragment extends Fragment {
                     MessageService msgService;
 
                     if (throwable != null || articles == null) {
-                        msgService = new MessageService(getActivity(), getResources().getString(R.string.something_went_wrong), Gravity.TOP, true);
+                        msgService = new MessageService(getActivity(), getResources().getString(R.string.something_went_wrong), Gravity.TOP, Popup.ERROR);
                         msgService.sendToast();
                         return;
                     }
-                    msgService = new MessageService(getActivity(), getResources().getString(R.string.update_successful), Gravity.TOP, false);
-                    msgService.sendToast();
-                    UserManager.setArticles(articles);
+
+                    MessageService msg;
+                    if (UserManager.compareArticles(articles)) {
+                        msg = new MessageService(getActivity(), getString(R.string.download_update), Gravity.TOP, Popup.INFO);
+                        UserManager.setArticles(articles);
+                    }
+                    else msg = new MessageService(getActivity(), getString(R.string.no_update), Gravity.TOP, Popup.INFO);
+                    msg.sendToast();
 
                     if (getActivity() != null)
                         getActivity().runOnUiThread(() -> {

@@ -90,6 +90,13 @@
         <entry key="..\:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/res/menu/item_menu_dev.xml" value="0.55" />
         <entry key="..\:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.34427083333333336" />
         <entry key="..\:/Users/joerg/Dropbox/FH Darmstadt/nutzerzentrierte-softwareentwicklung/source/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.34427083333333336" />
+        <entry key="app/src/main/res/drawable/ic_check.xml" value="0.216" />
+        <entry key="app/src/main/res/drawable/state_info.xml" value="0.216" />
+        <entry key="app/src/main/res/drawable/state_off.xml" value="0.216" />
+        <entry key="app/src/main/res/drawable/state_on.xml" value="0.216" />
+        <entry key="app/src/main/res/layout/toast_fail.xml" value="0.20471014492753623" />
+        <entry key="app/src/main/res/layout/toast_info.xml" value="0.20471014492753623" />
+        <entry key="app/src/main/res/layout/toast_success.xml" value="0.1850982666015625" />
       </map>
     </option>
   </component>

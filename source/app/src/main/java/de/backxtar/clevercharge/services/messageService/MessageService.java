@@ -1,4 +1,4 @@
-package de.backxtar.clevercharge.services;
+package de.backxtar.clevercharge.services.messageService;
 
 import android.app.Activity;
 import android.view.LayoutInflater;
@@ -31,12 +31,12 @@ public class MessageService {
     /**
      * Position of the toast.
      */
-    int gravity;
+    private int gravity;
 
     /**
      * Is error message or success message.
      */
-    boolean error;
+    private Popup type;
     //========================
 
     /**
@@ -44,13 +44,13 @@ public class MessageService {
      * @param activity as object
      * @param message as String
      * @param gravity as int
-     * @param error as boolean
+     * @param type as enum
      */
-    public MessageService(Activity activity, String message, int gravity, boolean error) {
+    public MessageService(Activity activity, String message, int gravity, Popup type) {
         this.activity = activity;
         this.message = message;
         this.gravity = gravity;
-        this.error = error;
+        this.type = type;
     }
 
     /**
@@ -62,8 +62,9 @@ public class MessageService {
                 LayoutInflater inflater = LayoutInflater.from(activity);
                 View view;
 
-                if (!error) view = inflater.inflate(R.layout.toast_success, null);
-                else view = inflater.inflate(R.layout.toast_fail, null);
+                if (this.type == Popup.SUCCESS) view = inflater.inflate(R.layout.toast_success, null);
+                else if (this.type == Popup.ERROR) view = inflater.inflate(R.layout.toast_fail, null);
+                else view = inflater.inflate(R.layout.toast_info, null);
 
                 TextView msg = view.findViewById(R.id.message_toast);
                 msg.setText(message);

@@ -24,6 +24,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.stream.Collectors;
 
 import de.backxtar.clevercharge.R;
@@ -34,9 +35,10 @@ import de.backxtar.clevercharge.interfaces.RecyclerViewInterface;
 import de.backxtar.clevercharge.managers.StationManager;
 import de.backxtar.clevercharge.managers.UserManager;
 import de.backxtar.clevercharge.services.DownloadService;
-import de.backxtar.clevercharge.services.MessageService;
+import de.backxtar.clevercharge.services.messageService.MessageService;
 import de.backxtar.clevercharge.services.PopupService;
 import de.backxtar.clevercharge.services.SpacingItemService;
+import de.backxtar.clevercharge.services.messageService.Popup;
 
 /**
  * Search fragment.
@@ -120,16 +122,14 @@ public class SearchFragment extends Fragment implements RecyclerViewInterface {
             CompletableFuture.supplyAsync(() ->DownloadService.checkDatabase(getActivity().getFilesDir().getPath() + "/checksum.json"))
                     .whenComplete(((isCorrect, throwable) -> {
                         if (throwable != null) {
-                            MessageService msgService = new MessageService(getActivity(), getString(R.string.error_while_getting_data), Gravity.TOP, true);
+                            MessageService msgService = new MessageService(getActivity(), getString(R.string.error_while_getting_data), Gravity.TOP, Popup.ERROR);
                             msgService.sendToast();
                             throw new RuntimeException("Cant check database.");
                         }
                         CompletableFuture<ArrayList<ChargingStation>> stationList = null;
+                        AtomicBoolean hasUpdated = new AtomicBoolean(false);
 
                         if (!isCorrect) {
-                            MessageService msg = new MessageService(getActivity(), getString(R.string.download_update), Gravity.TOP, false);
-                            msg.sendToast();
-
                             stationList = CompletableFuture.supplyAsync(DownloadService::getStations)
                                     .whenComplete((stations, error) -> {
                                         if (error != null || stations == null)
@@ -147,26 +147,38 @@ public class SearchFragment extends Fragment implements RecyclerViewInterface {
                                             io.printStackTrace();
                                         }
                                     });
+                            hasUpdated.set(true);
                         }
 
                         CompletableFuture<APIResponse> defStationList = CompletableFuture.supplyAsync(() -> DownloadService.getResponse("get_def"))
                                 .whenComplete((apiResponse, error) -> {
                                     if (error != null || apiResponse.getResponseCode() != 1) {
-                                        MessageService msgService = new MessageService(getActivity(), getResources().getString(R.string.cant_load_defect_stations), Gravity.TOP, true);
+                                        MessageService msgService = new MessageService(getActivity(), getResources().getString(R.string.cant_load_defect_stations), Gravity.TOP, Popup.ERROR);
                                         msgService.sendToast();
-                                    } else UserManager.getApi_data().setDefect_stations_map(apiResponse.getDefect_stations_map());
+                                        throw new RuntimeException("Cant download defect stations.");
+                                    }
+                                    if (!UserManager.getApi_data().getDefect_stations_map().equals(apiResponse.getDefect_stations_map())) {
+                                        UserManager.getApi_data().setDefect_stations_map(apiResponse.getDefect_stations_map());
+                                        hasUpdated.set(true);
+                                    }
                                 });
 
                         CompletableFuture<Void> all;
                         if (stationList == null) all = CompletableFuture.allOf(defStationList);
                         else all = CompletableFuture.allOf(stationList, defStationList);
                         all.whenComplete((unused, error) -> {
-                            if (error != null)
+                            MessageService msg;
+
+                            if (error != null) {
+                                msg = new MessageService(getActivity(), getString(R.string.something_went_wrong), Gravity.TOP, Popup.ERROR);
+                                msg.sendToast();
                                 throw new RuntimeException("Cant getting data.");
-                            if (!isCorrect) {
-                                MessageService msgService = new MessageService(getActivity(), getString(R.string.download_update), Gravity.TOP, false);
-                                msgService.sendToast();
                             }
+
+                            if (hasUpdated.get()) msg = new MessageService(getActivity(), getString(R.string.download_update), Gravity.TOP, Popup.INFO);
+                            else msg = new MessageService(getActivity(), getString(R.string.no_update), Gravity.TOP, Popup.INFO);
+                            msg.sendToast();
+
                             if (getActivity() != null) {
                                 getActivity().runOnUiThread(() -> {
                                     updateAdapter();
@@ -319,7 +331,7 @@ public class SearchFragment extends Fragment implements RecyclerViewInterface {
      */
     private void updateAdapter() {
         if (UserManager.getMyPosition() == null) {
-            MessageService msgService = new MessageService(getActivity(), getResources().getString(R.string.location_cant_be_tracked), Gravity.CENTER, true);
+            MessageService msgService = new MessageService(getActivity(), getResources().getString(R.string.location_cant_be_tracked), Gravity.CENTER, Popup.ERROR);
             msgService.sendToast();
             return;
         }
