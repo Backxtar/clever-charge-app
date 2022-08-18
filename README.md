@@ -5,6 +5,7 @@
 
 # Clever Charge
 Eine Android App zum Thema E-Mobilität.
+Diese App wird noch immer weiterentwickelt!
 
 ## Voraussetzungen
 Android 8 oder höher.
