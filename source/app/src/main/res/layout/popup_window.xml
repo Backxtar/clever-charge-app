@@ -170,7 +170,7 @@
         android:layout_height="@dimen/_50sdp"
         android:layout_centerHorizontal="true"
         android:elevation="@dimen/_9sdp"
-        android:src="@drawable/ic_info" />
+        android:src="@drawable/ic_info_new" />
 
     <!--<de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="@dimen/_25sdp"
