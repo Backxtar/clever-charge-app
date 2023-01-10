@@ -137,6 +137,9 @@ public class PopupService {
         else {
             view = LayoutInflater.from(activity).inflate(R.layout.popup_window_dev, null);
 
+            TextView issue_label = view.findViewById(R.id.info_issue_label);
+            issue_label.setText(activity.getResources().getString(R.string.info_issue_label));
+            
             TextView issue = view.findViewById(R.id.info_issue);
             issue.setText(UserManager.getApi_data().getDefect_stations_map().get(station.getId()));
 
@@ -212,6 +215,9 @@ public class PopupService {
             module.setText(activity.getResources().getString(R.string.does_not_support_fast_charging));
             module.setTextColor(ContextCompat.getColor(activity, R.color.notAvailable));
         }
+
+        TextView more_info = view.findViewById(R.id.more_information);
+        more_info.setText(activity.getResources().getString(R.string.more_information));
 
         TextView max_power = view.findViewById(R.id.info_power);
         max_power.setText("Max. " + activity.getResources().getString(R.string.power) + ": " + station.getConn_power() + "kW");

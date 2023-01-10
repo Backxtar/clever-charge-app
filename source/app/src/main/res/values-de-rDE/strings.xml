@@ -74,4 +74,6 @@
     <string name="download_update">Update verfügbar! Lade Update herunter…</string>
     <string name="no_update">Keine Updates verfügbar!</string>
     <string name="download_finish">Update erfolgreich!</string>
+    <string name="more_information">Mehr Information</string>
+    <string name="info_issue_label">Fehler</string>
 </resources>

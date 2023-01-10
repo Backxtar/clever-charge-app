@@ -75,4 +75,6 @@
     <string name="download_update">Update available! Downloading update…</string>
     <string name="no_update">No updates available!</string>
     <string name="download_finish">Update successful!</string>
+    <string name="more_information">More information</string>
+    <string name="info_issue_label">Issue</string>
 </resources>

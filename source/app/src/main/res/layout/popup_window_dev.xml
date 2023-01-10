@@ -104,6 +104,7 @@
                 android:fontFamily="@font/poppins_light"/>
 
             <TextView
+                android:id="@+id/more_information"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_6sdp"
@@ -138,6 +139,7 @@
                 android:fontFamily="@font/poppins_light"/>
 
             <TextView
+                android:id="@+id/info_issue_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_6sdp"
@@ -217,7 +219,7 @@
         android:layout_height="@dimen/_50sdp"
         android:layout_centerHorizontal="true"
         android:elevation="@dimen/_9sdp"
-        android:src="@drawable/ic_info" />
+        android:src="@drawable/ic_info_new" />
 
     <!--<de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="@dimen/_25sdp"
